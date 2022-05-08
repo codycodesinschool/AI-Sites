@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and feat..." />
+    <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="228">
+<meta property="og:title" content="Node.js">
+  <meta property="og:title" content="Node.js">
+  <meta property="og:title" content="W3Schools Free Online Web Tutorials">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff" crossorigin>
+
+
+
+    <link rel="canonical" href="https://nodejs.org/en/">
+  <link rel="alternate" href="/en/feed/vulnerability.xml" title="Node.js Blog: Vulnerability Reports" type="application/rss+xml">
+
+  <script src="/static/js/themeSwitcher.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+  
+      <a href="/en/" id="logo">
+        <img src="/static/images/openjs_foundation-logo.svg" alt="OpenJS Foundation" width="120" height="38">
+          </a>
+        </div>
+      <p>© OpenJS Foundation. All Rights Reserved. Portions of this site originally © Joyent.</p>
+      <p>Node.js is a trademark of the OpenJS Foundation. Please review the <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-policy.openjsf.org">Trademark Guidelines</a> of the <a href="https://openjsf.org">OpenJS
+          Foundation</a>.</p>
+      <p>
+        <a href="https://raw.githubusercontent.com/nodejs/node/master/LICENSE">Node.js Project Licensing
+          Information</a>.
+      </p>
+      </div>
+  
+      <div class="help">
+        <ul>
+          <li><a id="editOnGitHubLink" href="#">Edit On GitHub</a></li>
+          <li><a href="https://github.com/nodejs/help/issues">Get Help</a></li>
+          <li>
+            <button data-lang="tr" title="Turkish">Türkçe</button>
+          </li>
+          <li>
+            <button data-lang="fr" title="French">Français</button>
+          </li>
+          <li>
+            <button data-lang="fr" title="French">Français</button>
+          </li>
+          <li>
+            <button data-lang="tr" title="Turkish">Türkçe</button>
+          </li>
+          <li>
+            <button data-lang="de" title="German">Deutsch</button>
+          </li>
+          <li>
+            <button data-lang="ru" title="Russian">Русский</button>
+          </li>
+          <li>
+            <button data-lang="tr" title="Turkish">Türkçe</button>
+          </li>
+          <li>
+            <button data-lang="ru" title="Russian">Русский</button>
+          </li>
+          <li>
+            <button data-lang="zh-cn" title="Simplified Chinese">简体中文</button>
+          </li>
+          <li>
+            <button data-lang="de" title="German">Deutsch</button>
+          </li>
+          <li>
+            <button data-lang="pt-br" title="Portuguese, Brazilian">Português do Brasil</button>
+          </li>
+          <li>
+            <button data-lang="es" title="Spanish">Español</button>
+          </li>
+          <li>
+            <button data-lang="ru" title="Russian">Русский</button>
+          </li>
+          <li>
+            <button data-lang="ko" title="Korean">한국어</button>
+          </li>
+          <li>
+            <button data-lang="ca" title="Catalan">Catalan</button>
+          </li>
+          <li>
+            <button data-lang="ro" title="Romanian">limba română</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="ja" title="Japanese">日本語</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="uk" title="Ukrainian">Українська</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="ro" title="Romanian">limba română</button>
+          </li>
+          <li>
+            <button data-lang="tr" title="Turkish">Türkçe</button>
+          </li>
+          <li>
+            <button data-lang="ja" title="Japanese">日本語</button>
+          </li>
+          <li>
+            <button data-lang="pt-br" title="Portuguese, Brazilian">Português do Brasil</button>
+          </li>
+          <li>
+            <button data-lang="pt-br" title="Portuguese, Brazilian">Português do Brasil</button>
+          </li>
+          <li>
+            <button data-lang="en" title="English">English</button>
+          </li>
+          <li>
+            <button data-lang="en" title="English">English</button>
+          </li>
+          <li>
+            <button data-lang="de" title="German">Deutsch</button>
+          </li>
+          <li>
+            <button data-lang="ru" title="Russian">Русский</button>
+          </li>
+          <li>
+            <button data-lang="de" title="German">Deutsch</button>
+          </li>
+          <li>
+            <button data-lang="ro" title="Romanian">limba română</button>
+          </li>
+          <li>
+            <button data-lang="gl" title="Galician">Galego</button>
+          </li>
+          <li>
+            <button data-lang="zh-tw" title="Traditional Chinese">繁體中文</button>
+          </li>
+          <li>
+            <button data-lang="zh-tw" title="Traditional Chinese">繁體中文</button>
+          </li>
+          <li>
+            <button data-lang="ro" title="Romanian">limba română</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="tr" title="Turkish">Türkçe</button>
+          </li>
+          <li>
+            <button data-lang="gl" title="Galician">Galego</button>
+          </li>
+          <li>
+            <button data-lang="uk" title="Ukrainian">Українська</button>
+          </li>
+          <li>
+            <button data-lang="fa" title="Persian">زبان فارسی</button>
+          </li>
+          <li>
+            <button data-lang="ja" title="Japanese">日本語</button>
+          </li>
+          <li>
+            <button data-lang="zh-tw" title="Traditional Chinese">繁體中文</button>
+          </li>
+          <li>
+            <a href="https://github.com/github" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to set up Enterprise trial&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Explore the Actions Marketplace;ref_loc:automate launchpad&quot;}">
+  Explore the Actions Marketplace <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1Z" fill="#010101"/></svg>        </a>
+
+            <a href="/teams/integrations/okta" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Okta" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="mt-auto fc-orange-400 svg-icon iconStarVerified" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"/></svg></div>
+            <div>Your own customer success and community building representative</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 0 1 2 10.5v-5C2 4.67 2.67 4 3.5 4H4V3Zm5 1V3H5v1h4Z"/></svg>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <form id="search" role="search" action=/search class="s-topbar--searchbar js-searchbar " autocomplete="off">
+                    <div class="rounded-2 box-shadow-active-mktg position-relative z-1 float-right home-sponsors-2">
+                      <img src="https://avatars.githubusercontent.com/hashicorp?s=64&amp;v=4" alt="Hashicorp" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async" alt="" src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" width="72" height="72" class="home-sponsors-heart-1 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">The package manager for JavaScript</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 mb-8 mb-md-9">
+            <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/assets/light-21555afbe856.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-1KkMNn8M/al/dtzBLupRwkIOgnA9MWkm8oxS+solP87jByEvY/g4BmoxLihRogKcX1obPnf4Yp7dI0ZTWO+ljg==" rel="stylesheet" data-href="https://github.githubassets.com/images/modules/site/home/matrix-workflow-success.svg" class="home-matrix-success-1" loading="lazy" alt="">
+                      <img src="https://github.githubassets.com/images/modules/site/social-cards/github-social.png" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="GitHub: Where the world builds software">
+<meta property="page-description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and feat..." />
+    <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="620">
+
+    <link rel="preload" href="/webgl-globe/data/data.json" as="fetch" type="application/json">
+  <link rel="preload" href="https://github.githubassets.com/assets/behaviors-22105b5cae28.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-KpuRNOm6MMmvWuaP8wFX26rnjPfD1Wf8KTdEyObOT5SLeLP47LFmHQbSCVcJpdBhAAqlf28Pk7fUdcsT8cZILg==" src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg" width="23" height="16"  class="d-block" loading="lazy" decoding="async">
+              <img src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" width="960" height="967" class="home-astro-mona width-full position-absolute bottom-0 height-auto" alt="Mona looking at GitHub activity across the globe">
+          </picture>
+        </div>
+
+    </div>
+  </div>
+</div>
+      <div class="river-mktg js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious" style="padding: 8% 0 10.5%">
+                  <div class="col-12">
+                    <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">                        
+                        <span class="flex--item4 bt bc-blue-300"></span>
+                        <span class="fs-caption d-block fc-light">Public questions &amp; answers</span>
+                        </a>
+                            <li class="d-flex ml8 mt16 jc-space-between">
+                            Customize settings
+                        </button>
+
+                        <button class="flex--item s-btn s-btn__primary js-accept-cookies js-consent-banner-hide">
+                            <li>
+                    <ol class="nav-links">
+                
+
+<div class="js-freemium-cta ps-relative">
+
+    <div class="fs-fine tt-uppercase ml8 mt16 mb8 fc-light">Teams</div>
+
+    <div class="px32 pt16 pb0 fc-black-600 blr-sm overflow-hidden">
+        <strong class="fc-black-750 mb6">Stack Overflow for Teams</strong>
+        – Start collaborating and sharing organizational knowledge.
+        
+        <img class="wmx100 mx-auto my8 h-auto d-block" width="139" height="114" src="https://cdn.sstatic.net/Img/product/teams/logos/dialpad-alt.svg?v=4e63facf7f79" alt="Dialpad">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="181" height="32" data-src="https://cdn.sstatic.net/Img/product/teams/logos/instacart-alt.svg?v=15bd0b39b197" alt="Instacart">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="181" height="32" data-src="https://cdn.sstatic.net/Img/product/teams/logos/chevron-alt.svg?v=3bfd2c06a64b" alt="Chevron">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="120" height="27" data-src="https://cdn.sstatic.net/Img/product/teams/screens/illo-question.png?v=14c5863a5550" alt="">
+            </noscript>
+        </div>
+    </div>
+
+    <div class="p-bg-dark-gradient bar-lg pt128 pb96 lg:pl24 lg:pr24 sm:pl0 sm:pr0 ps-relative z-selected ta-center">
+        <div class="wmx10 mx-auto fc-white d:fc-black p-font-smooth pt24">
+            <svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"/></svg></a></li>
+                    <li><a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>
+    <a href="https://www.instagram.com/w3schools.com_official/" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x"></span></a>
+    <a href="https://discord.gg/6Z7UaRbUQM" target="_blank" title='Join the W3schools community on Discord'><span class="fa fa-discord fa-2x"></span></a>    
+  </div>
+</div>
+
+<!--
+<div class="sidesection" style="margin-left:auto;margin-right:auto;max-width:230px;">
+<style>
+.codegameright .w3-btn:link,.codegameright .w3-btn:visited {
+  background-color:#04AA6D;
+  border-radius:5px;
+}
+.codegameright .w3-btn:hover,.codegameright .w3-btn:active {
+  background-color:#059862!important;
+  text-decoration:none!important;
+}
+</style>
+  <h4><a href="/codegame/index.html" class="w3-hover-text-black">CODE GAME</a></h4>
+  <a href="/codegame/index.html" target="_blank" style="padding-top:10px;padding-bottom:10px;margin-top:12px;border-top-left-radius: 0;border-top-right-radius: 0">Play Game</a>
+</div>
+
+<!--
+
+<div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px;background-color:#d4edda">
+<p>Get your<br>certification today!</p>
+<a href="/cert/default.asp" target="_blank">Paid Courses</a>
+    <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/cybersecurity_quiz.php">Cyber Security Quiz</a>
+   <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/java-certification-exam" target="_blank">PHP Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://www.w3schools.com/videos/index.php" class="w3-hover-opacity"><img style="max-width:100%;margin:16px 0;" src="/images/w3lynx_200.png" alt="Code Game" loading="lazy"></a>
+  <a class="ws-button" style="font-size:16px;text-decoration: none !important;display: block !important; color:#FFC0C7!important;  width: 100%; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; paxdding-top: 10px; padding-bottom: 20px; font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma h2 {
+  font-size:50px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 2px 0 -20px 0 !important;
+}
+
+.learn h1  {
+  margin: 10px 0 !important;
+}
+
+
+.green-border {
+  border-left: 4px solid #04AA6D;
+}
+
+.w3-round, .w3-round-medium {
+  border-radius: 5px;
+}
+
+.tryit-button {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  color: #000;
+}
+
+.ref-button:hover {
+  background-color: #E7E9EB!important;
+  color: black;
+}
+
+.black-color {
+  background-color: #282A35;
+  color: white;
+}
+
+.black-color:hover {
+  background-color: #04AA6D!important;
+  color:white!important;
+}
+
+.bar-item-hover:hover {
+  background-color: #04AA6D!important;
+  color:white!important;
+}
+
+.bar-item-hover:hover {
+  background-color:#fff080!important;
+  color:black!important;
+}
+.ribbon-topnav {
+  font-size:11px;
+  font-weight:bold;
+  padding: 6px 20px;
+  left:-20px;
+  top:-10px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+}
+</style>
+
+<div class="sidesection" id="video_sidesection">
+  <div class="w3-center" style="padding-bottom:7px">
+    <span class="ribbon-vid ws-yellow">NEW</span>
+  </div>
+  <p style="font-size: 14px;line-height: 1.5;font-family: Source Sans Pro;padding-left:4px;padding-right:4px;">We just launched<br>W3Schools videos</p>
+  <a onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')" title="Video Tutorials">Videos</a>
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);">References <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+   <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML and CSS</h3>
+   <a class="w3-bar-item w3-button" href='/python/python_reference.asp'>Python Reference</a>
+   <a class="w3-bar-item w3-button" href='/php/php_ref_overview.asp'>PHP Reference</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap 4 Exercises</a>
+   <a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+   <a class="w3-bar-item w3-button" href='/bootstrap/bootstrap_ver.asp' title='Bootstrap Tutorial'>BOOTSTRAP</a>
+      <a class="w3-bar-item w3-button" href='/tags/ref_canvas.asp'>HTML Canvas Reference</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/c-certification-exam" target="_blank">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/html" target="_blank">HTML Course</a>
+   <a class="w3-bar-item w3-button" href='/python/python_reference.asp'>Python Reference</a>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+   <a class="w3-bar-item w3-button" href='/css/default.asp' title='CSS Tutorial'>CSS</a>
+      <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+   <a class="w3-bar-item w3-button" href="/python/numpy/default.asp">Learn NumPy</a>       
+   <a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+   <a class="w3-bar-item w3-button" href="/css/css_rwd_intro.asp" title="Responsive Web Design">Learn RWD</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cert/default.asp">Web Certificates</a>
+   <a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white hidesm" href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xxlarge w3-right">&times;</a><br>
+  <div class="w3-container w3-padding-32">
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/videos/index.php">Explore now</a>
+</div>
+
+<div class="sidesection">
+<h4><a href="/colors/colors_picker.asp">
+<img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
+</a>
+</div>
+
+<div class="sidesection">
+<h4><a href="/colors/colors_picker.asp" class="w3-hover-opacity"><img src="/images/htmlvideoad_footer.png" style="max-width:100%;padding:5px 10px 25px 10px" loading="lazy"></a>
+  <a class="w3-btn w3-block ws-black" href="/codegame/index.html" target="_blank" class="w3-hover-text-green" style="text-decoration:none" title="Forum">FORUM</a> |
+    <a href="/about/default.asp" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">Shop</a>
+</div>
+
+</div>
+<hr>
+<div class="ws-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<!--
+<h4>Web Certificates</h4>
+<a href="/cert/default.asp">HTML Certificate</a><br>
+<a href="/cert/default.asp">Python Certificate</a><br>
+<a href="/cert/default.asp">Bootstrap Certificate</a><br>
+<a href="/cert/default.asp">PHP Certificate</a><br>
+<a href="/cert/default.asp">jQuery Certificate</a><br>
+<a href="//www.w3schools.com/cert/default.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">CSS</a>
+  <a href="/cert/cert_javascript.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">SQL</a>
+  <a href="/cert/default.asp" class="w3-button w3-margin-top ws-black ws-hover-black w3-round" style="text-decoration:none" onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')" title="Video Tutorials">Videos</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://shop.w3schools.com/" target="_blank" id="cert_navbtn" onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')">Videos</a>
+  <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications" target="_blank">Certificates</a></h3>
+<!-- cert
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on ' + foldername + ' course banner in tutorial');">Get certified</a>
+
+<svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/serverfault/Img/apple-touch-icon.png?v=6c3100d858bb" alt="Server Fault icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/" class="s-btn fs-body2 px32 bar-md fc-black-400 h:bg-black-050 h:fc-black-750 p-ff-source">Want to work here? <span class=" fc-blue-500">Current job openings</span></a>
+</section>
+
+
+<section class="bar-lg sm:bar0 bg-blue-900 d:bg-blue-100 fc-white d:fc-black m48 mtn96 md:ml32 md:mr32 sm:ml0 sm:mr0 mb0 pt32 pb96 sm:pl24 sm:pr24 overflow-hidden" style="clip-path:url(#curve); transform: rotate(180deg)">
+    <div class="d-flex flex__fl-grow1 ta-center jc-center sm:fd-column" style="transform: rotate(-180deg)">
+        <div class="flex--item4 sm:d-none">
+            <img width="1270" height="892" class="js-lazy-load wmx100 w100 h-auto d-block btr-sm bt bc-orange-500 bs-lg" data-src="https://cdn.sstatic.net/Img/teams/teams-illo-free-sidebar-promo.svg?v=47faa659a05e" alt="">
+
+        <a href="https://try.stackoverflow.co/why-teams/?utm_source=so-owned&amp;utm_medium=side-bar&amp;utm_campaign=campaign-38&amp;utm_content=cta" 
+           class="w100 s-btn s-btn__primary s-btn__xs bg-orange-400 js-gps-track"
+           data-gps-track="teams.create.left-sidenav.click({ Action: FreemiumTeamsCreateClick })"
+               data-ga="[&quot;top navigation&quot;,&quot;public qa submenu click&quot;,null,null,null]">
+                        Products
+                    </a>
+                            </li>
+                    <li class="mr-1 px-1">
+                      <a href="https://stackexchange.com/sites#professional" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 27 })" href="https://stackoverflow.com/teams/create/free"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-075 h:bg-black-150 fc-powder-900"
+            data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav team click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32";
+  var useCaseCur = 0;
+  var useCasePlayer;
+  var useCaseSpeed = 5000;
+
+  for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) { 
+        useCaseShow(event.currentTarget, i);
+        clearInterval(useCasePlayer);
+    });
+  }   
+
+  function useCaseReset() {
+    for (var i = 0; i < useCases.length; ++i) {
+      useCases[i].className = useCaseClass;
+    }
+  }
+
+  function useCaseShow(el) {
+    useCaseReset();
+    el.className = useCaseClassActive;
+  }
+
+  function useCaseInit() {
+      useCasePlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits fc-blue-300 tn12 r128 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="p-bits sm:d-none fc-green-400 b128 r0 w128 h128"></span>
+    <span aria-hidden="true" class="p-bits fc-gold sm:d-none t128 l128 w64 h64"></span>
+    <span aria-hidden="true" class="p-bits sm:d-none fc-blue-500 b64 l128 w64 h64"></span>
+</section>
+
+<section class="p-home-company pb128 ta-center">
+    <div class="bb bc-black-075 pb24 mb24">
+                    <div class="home-matrix-build mt-3 float-right color-bg-default width-full rounded-2 position-relative z-1" style="border-top-left-radius: 0 !important;">
+                    <div class="flex--item wmn2">

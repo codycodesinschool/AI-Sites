@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and feat..." /><meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/salesforce/Img/apple-touch-icon.png?v=4c87c90207b3" alt="Salesforce icon">
+        </a>
+
+                        <a href="https://unix.stackexchange.com" data-animation-type="show" class="flex--item m24 w128 h128 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Software Engineering" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/apple/Img/apple-touch-icon.png?v=daa7ff1d953e" alt="Ask Different icon">
+        </a>
+
+                        <a href="https://serverfault.com/">Server Fault</a> to <a class="fc-blue-300 d:fc-blue-500 h:fc-blue-200" href="https://superuser.com/">Super User</a>, much of the Stack Exchange network continues our mission to empower the world to develop technology through collective knowledge. Other sites on the Stack Exchange network further encourage knowledge sharing across topics such as cooking and medicine.</p>
+            
+            <a class="s-btn px32 p-bg-yellow d:fc-white h:p-bg-yellow-tint fc-black-900 ws-nowrap p-ff-source-bold fs-body2 bar-md mr12" href="https://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <div class="flex--item p16">
+            <div style="background: linear-gradient(0deg, var(--orange-100) 30%, var(--white))" class="h100 py48 sm:py32 bg-orange-050 bar-lg p-bs-wrapper">
+                <a href="https://stackexchange.com/sites" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;join community&quot;,null,null]">Join the community</a>
+                <p class="mb0 mt12 fc-black-400">or <a class="s-link s-link__underlined fc-black-700 h:fc-orange-600" href="/questions">search content</a></p>
+                </div>
+            <div class="flex--item fs-fine fc-light">
+                            <li><a href="https://stackoverflow.co/explore-teams" class="s-btn fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;learn more - talent&quot;,null,null]">
+                    <span class="js-billed-monthly d-none">$14 USD</span>
+                        <span class="fs-caption d-block fc-light">Reach developers &amp; technologists worldwide</span>
+                            </li>
+            </ul>
+        </div>
+
+        <div class="fc-black-200 fs-subheading mt32 pb32 ta-center">
+            Some of the premium features available with paid tiers
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a></li>
+                    <li><a href="https://stackoverflow.co/advertising" class="flex--item wmn3 bg-white bar-lg bs-sm h:bs-md py32 px24 fc-black-500 h:fc-black-750" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;create a team&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32";
+  var useCaseCur = 0;
+  var useCasePlayer;
+  var useCaseSpeed = 5000;
+
+  for (var i = 0; i < useCases.length; ++i) {
+      useCases[i].className = useCaseClass;
+    }
+  }
+
+  function useCaseShow(el) {
+    useCaseReset();
+    el.className = useCaseClassActive;
+  }
+
+  function useCaseInit() {
+      useCasePlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <span class="v-visible-sr js-screen-reader-info"></span>
+    <div class="js-ac-results overflow-y-auto hmx3 d-none"></div>
+
+    <div class="js-search-hints" aria-describedby="Tips for searching"></div>
+</div>
+                    </div>
+                    <div class="home-codeql-step-3 rounded-2 position-absolute box-shadow-active-border-light-mktg" alt="VS Code running in the browser with your project's code and development environment running. A terminal panel is visiable in the editor." loading="lazy">
+                </picture>
+                <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/footer-illustration-894.svg" type="image/svg">
+      <img
+        src="https://github.githubassets.com/assets/8630-5ad00158d0e0.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-W+9GbCgd9tSXyjPKjIaJwHD2hoMWnttGaw6SD/PdwGYTvaFJZl18dNJ11PYmqGvtRrWvuFPvZuiDj1Jl9DiKPg==" src="https://github.githubassets.com/images/modules/site/home/gh-desktop.webp" type="image/webp">
+      <source srcset="https://github.githubassets.com/assets/716-5eb5398842ed.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-Hb8d69V10VxkC90NX3zvjNovHq5vrRv0XCde5qNf5WiQAB6BziCN+gEbKG+fDj8i05B2pBdyGIh+3pmaRvzLJA==" src="https://github.githubassets.com/images/modules/site/home/pr-screen.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" class="home-git-item color-bg-default flex-shrink-0 mr-3 position-relative z-1"><path d="m0 0h28v29h-28z" fill="#041027"></path><g fill="#ffd33d"><path d="m15 19.5a1 1 0 1 1 -2 0 1 1 0 0 1 2 0zm-.25-8.25a.75.75 0 0 0 -1.5 0v4.5a.75.75 0 0 0 1.5 0z"></path><path clip-rule="evenodd" d="m11.836 5.244c.963-1.665 3.366-1.665 4.329 0l8.966 15.504c.964 1.667-.239 3.752-2.164 3.752h-17.933c-1.925 0-3.128-2.085-2.164-3.752zm3.03.751a1 1 0 0 0 -1.731 0l-8.967 15.504a1 1 0 0 0 .866 1.501h17.933a1 1 0 0 0 .865-1.5l-8.966-15.506z" fill-rule="evenodd"></path></g></svg>
+
+
+                <span class="text-truncate color-fg-attention unselectable">OAuth token found</span>
+              </li>
+
+              <li class="col-12 d-flex flex-items-center position-relative f6-mktg text-mono text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+              <img src="https://github.githubassets.com/assets/5157-ee87317516de.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-sD0ByN9hdKohKI5O4x8aDCgS3P1dI1FTFJJXvXhWnU7UzRXoZvJemMFx+6r64d+CZOFfNS8nOsc4UY78ktGLsw==" src="https://github.githubassets.com/images/modules/site/home/repo-editor-glow.svg" class="position-absolute z-n1 js-build-in-item build-in-scale-up color-bg-default rounded-2 box-shadow-active-border-mktg position-relative z-1 overflow-hidden float-right home-readme-2">
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/matrix-workflow-build.webp" type="image/webp">
+              <img src="https://avatars.githubusercontent.com/kubernetes?s=64&amp;v=4" alt="Kubernetes" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+            </picture>
+                      <div class="d-inline-block border py-1 px-2 text-mono rounded-pill f6-mktg text-gray-mktg">
+                    <svg aria-hidden="true" class="native s-avatar--badge svg-icon iconShieldXSm" width="9" height="10" viewBox="0 0 9 10"><path d="M0 1.84 4.5 0 9 1.84v3.17C9 7.53 6.3 10 4.5 10 2.7 10 0 7.53 0 5.01V1.84Z" fill="var(--white)"/><path d="M1 2.5 4.5 1 8 2.5v2.51C8 7.34 5.34 9 4.5 9 3.65 9 1 7.34 1 5.01V2.5Zm2.98 3.02L3.2 7h2.6l-.78-1.48a.4.4 0 0 1 .15-.38c.34-.24.73-.7.73-1.14 0-.71-.5-1.23-1.41-1.23-.92 0-1.39.52-1.39 1.23 0 .44.4.9.73 1.14.12.08.18.23.15.38Z" fill="var(--black-500)"/></svg>
+                                     <li class="md:d-none">
+                        <a href="https://openjsf.org/certification">Certification</a>
+            </li>
+            <li>
+              <a href="/en/download/">Downloads</a>
+            </li>
+            <li >
+                <a href="/en/blog/">News</a>
+            </li>

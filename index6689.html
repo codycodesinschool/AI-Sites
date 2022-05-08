@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=f039f0b977b7">
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/settings.mod">{"settings":{"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{"showNewFeatureNotice":true},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"questions":{"enableQuestionTitleLengthLiveWarning":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","hostBaseUrl":"https://stacksnippets.net"},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"c3d9f1e3-55f3-4eba-b268-46cee4c6789c"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}</script>
+<script>StackExchange.init();</script>
+
+    <script>
+        StackExchange.using.setCacheBreakers({"Js/adops.en.js":"6da43f5e0a84","Js/ask.en.js":"7ff9a9068fd6","Js/begin-edit-event.en.js":"dd955babf04d","Js/copy-transpiled.en.js":"b5a8ca8be147","Js/events.en.js":"","Js/explore-qlist.en.js":"2b1f34938b8b","Js/full-anon.en.js":"90c6cf09b819","Js/full.en.js":"8cd41939475c","Js/highlightjs-loader.en.js":"3c37abf5cb6d","Js/inline-tag-editing.en.js":"77f922e6e562","Js/keyboard-shortcuts.en.js":"fa78d9020f1f","Js/markdown-it-loader.en.js":"5818ef89ff9d","Js/moderator.en.js":"df5a2eb14f4c","Js/postCollections-transpiled.en.js":"529276cfb7ae","Js/post-validation.en.js":"5dfbf70d3623","Js/question-editor.en.js":"","Js/review-v2-transpiled.en.js":"b588001d0a66","Js/revisions.en.js":"a86490719687","Js/stacks-editor.en.js":"7c971287f03c","Js/tageditor.en.js":"825c9597ce2d","Js/tageditornew.en.js":"857acd8b77e4","Js/tagsuggestions.en.js":"1bcff7d98f97","Js/unlimited-transpiled.en.js":"7ed67670b600","Js/wmd.en.js":"5b8e395b37ba","Js/snippet-javascript-codemirror.en.js":"73fce5cc7219"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(false);
+        });
+    </script>
+    <noscript id="noscript-css"><style>body,.s-topbar{margin-top:1.9em}</style></noscript>
+    </head>
+    <body class="home-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+        
+<header class="s-topbar ps-fixed t0 l0 js-top-bar">
+    <div class="s-topbar--container">
+            <a href="#" class="s-topbar--menu-btn js-left-sidebar-toggle" role="menuitem" aria-haspopup="true" aria-controls="left-sidebar" aria-expanded="false"><span></span></a>
+            <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+
+    </li>
+
+            <li><a href="#" class="s-topbar--item s-btn s-btn__icon s-btn__muted d-none sm:d-inline-flex js-searchbar-trigger" role="button" aria-label="Search" aria-haspopup="true" aria-controls="search" title="Click to show search"><svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm.25-3.45a1 1 0 0 1-.73.5c-.32 0-.62-.06-.85-.29l-3-3a1 1 0 0 1 1.44-1.38l2.05 2 3.56-6.28c.27-.47.89-.65 1.36-.38.47.27.65.89.38 1.36l-4.21 7.47Z" fill="#5EBA7D"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12">Support teams</h3>
+                    <p class="fs-body3 px24 hmn1">Help engineers be more efficient and streamline knowledge sharing using a tool they already love and trust.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+        <script>
+(function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+
+<script src="/lib/uic.js?v=1.0.3"></script>
+<script data-cfasync="false" type="text/javascript">
+var k42 = false;
+
+k42 = true;
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+    window.snigelPubConf = {
+    "adengine": {
+
+      "activeAdUnits": ["main_leaderboard", "sidebar_top", "bottom_left", "bottom_right"]
+
+  }
+}
+uic_r_a()
+</script>
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"></script>
+<script src="/lib/my-learning.js?v=1.0.9"></script>
+<script type='text/javascript'>
+var stickyadstatus = "";
+function fix_stickyad() {
+  document.getElementById("stickypos").style.position = "sticky";
+    }
+  }
+}
+function w3_getStyleValue(elmnt,style) {
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+  } else {
+    return elmnt.currentStyle[style];
+  }
+}
+</script>
+
+<style>
+.w3-blue:hover {
+  background-color:#0d8bf2!important
+}
+.w3-third .bigbtn {
+ border:1px solid #e3e3e3;
+ background-color:#E7E9EB;
+ color:#555;
+ margin-bottom:16px;
+ width:100%;
+ padding:20px 0;
+ text-align: center;
+ vertical-align: middle;
+ display: inline-block;
+ text-decoration:none !important;
+background-color:#04AA6D;
+width:100%;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+  z-index:-1;
+  transition: top 0.2s;
+  user-select: none;
+}
+#darkmodemenu input,#darkmodemenu label {
+  cursor:pointer;
+}
+
+@media screen and (min-width:861px) {
+  #myAccordion,#navbtn_menu,
+  .hidesm {
+    display: none !important;
+  }
+  #googleSearch, #google_translate_element {
+  top:75px;
+  width:100%!important;
+  right:0!important;
+  padding-top:19px!important;
+}
+}
+
+
+@media screen and (max-width:768px) {
+  h1,
+  .w3-jumbo {
+    font-size: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1006px) and (min-width: 992px) {
+
+.ws-hide-special {
+  display:none;
+}
+
+
+}
+
+.grey-color {
+  background-color: #E7E9EB;
+  color: #000;
+}
+body.darkpagetheme .grey-color {
+  background-color: #E7E9EB;
+  color: #000;
+}
+body.darkpagetheme .grey-color {
+  background-color: #38444d;
+  color: #ddd;
+}
+
+body.darkpagetheme .bar-icon-hover:hover,body.darkpagetheme .fa-logo:hover {
+  background-color: white !important;
+  color:#059862!important;
+}
+
+.mystyle,.mystyle:hover {
+  background-color: #282A35!important;
+  color:white!important;
+}
+
+.bar-item-hover:hover {
+  background-color: #04AA6D!important;
+  color:white!important;
+}
+
+.bar-item-hover:hover {
+  background-color:#fff080!important;
+  color:black!important;
+}
+.ribbon-topnav {
+  font-size:11px;
+  font-weight:bold;
+  padding: 6px 20px;
+  left:-20px;
+  top:-10px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  transform: rotate(-20deg);
+}
+
+.ws-yellow-hover:hover {
+  background-color: #000!important;
+  color: white!important;
+}
+
+.grey-color {
+  background-color: #E7E9EB;
+  color: #000;
+}
+body.darkpagetheme .grey-color {
+  background-color: #38444d;
+  color: #ddd;
+}
+
+body.darkpagetheme .bar-icon-hover:hover,body.darkpagetheme .fa-logo:hover {
+  background-color: white !important;
+  color:#059862!important;
+}
+
+</style>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>CSS Tutorial</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="436">
+<meta property="og:image:height" content="620">
+
+    <link rel="preload" href="/webgl-globe/data/data.json" as="fetch" type="application/json">
+  <link rel="preload" href="https://github.githubassets.com/assets/home-e461cf7ec7b7.css" />
+
+
+
+  <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-SpZgKJyhHfrmO9ZLmJztuQzJ+J7tYz7l2uK0FahNXJpiNvVqiy1b2P1HammIlT0b/yoq6M9ZC88oDEuIBe8X+g==" src="https://github.githubassets.com/assets/notifications-global-28a2c6fa1139.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-XrU5iELtQSSz5e+xv08TibnOi4mPUjcpZ+15cFMR3IghxHuI0P7H0pZm+mHCrj4C1PkpM3G7SdSV+0ST9mCNQA==" src="https://github.githubassets.com/images/modules/site/home/logos/platform-windows.svg" alt="Windows" loading="lazy"></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row ws-turquoise" style="padding-top:40px;padding-bottom:40px;">
+ <div class="w3-col l12 w3-center" style="padding:3%;">
+  <h1 style="font-size:100px;font-weight:700;margin-top:-18px!important;">HTML</h1>
+  <p style="font-size:19px;">The language for building web pages</p>
+  <a href="/html/default.asp" class="w3-button tut-button black-color w3-margin-bottom">Learn PHP</a>
+      </div>
+
+    </div>
+    <div class="w3-col l6 w3-center" style="padding:3%;">
+  <h1 style="font-family: 'Freckle Face', cursive;font-size:48px">Code Game</h1>
+  <h2 style="font-family: 'Freckle Face', cursive;">Help the Lynx collect pine cones!</h2>
+  <a href="/codegame/index.html" target="_blank">Play a Code Game</a>
+   <a class="w3-bar-item w3-button" href='/nodejs/default.asp'>Learn Node.js</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">Front End Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href='/css/default.asp' title='CSS Tutorial'>CSS</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank">Bootstrap 3 Certificate</a>
+   <a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white w3-hide-large w3-hide-medium" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references" title="References" style="width:132px">References <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;padding-bottom:60px;">
+ <div class="w3-content" style="max-width:1100px;font-size:18px">
+ <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white sectionxsclosenavspan" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+ <div class="w3-container" style="padding-left:13px">
+   <h2 style="color:#FFF4A3;"><b>References</b></h2>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="/quiztest/default.asp">Quizzes</a></h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/css-certification-exam" target="_blank">Bootstrap 3 Certificate</a>
+   <a class="w3-bar-item w3-button" href="/r/default.asp">Learn R</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/cplusplus" target="_blank">C++ Course</a>
+   <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a>
+   <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
+   <a class="w3-bar-item w3-button" href="https://www.w3schools.com" class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex ws-hide-1200" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses banner in ads column');">Get started</a>
+</div>
+
+<!--
+<div class="sidesection" style="margin-left:auto;margin-right:auto;max-width:230px">
+  <div class="w3-container w3-left-align w3-padding-16">
+    <a href="/howto/howto_js_topnav.asp">Top Navigation</a><br>
+    <a href="/howto/howto_css_tooltip.asp">Tooltips</a><br>
+    <a href="/howto/howto_js_slideshow.asp">Slideshow</a><br>
+    <a href="/howto/howto_css_dropdown.asp">Dropdowns</a><br>
+    <a href="/howto/howto_js_progressbar.asp">Progress Bars</a><br>
+    <a href="/howto/howto_js_rangeslider.asp">Range Sliders</a><br>
+    <a href="/howto/howto_js_accordion.asp">Accordions</a><br>
+    <a href="/howto/howto_html_include.asp">HTML Includes</a><br>
+    <a href="/howto/howto_google_maps.asp">Google Maps</a><br>
+    <a href="/howto/howto_css_dropdown.asp">Dropdowns</a><br>
+    <a href="/howto/howto_css_modals.asp">Modal Boxes</a><br>
+    <a href="/howto/howto_js_rangeslider.asp">Range Sliders</a><br>
+    <a href="/howto/howto_js_sort_list.asp">Sort List</a><br>
+  </div>
+</div>
+-->
+
+<!--
+<div class="sidesection w3-round" style="margin-left:auto;margin-right:auto;max-width:230px">
+<a href="https://shop.w3schools.com" target="_blank">Shop</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://shop.w3schools.com" target="_blank">Shop</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses banner in ads column');">
+<div style="padding:0 20px 20px 20px">
+<svg id="w3_cert_badge2" style="margin:auto;width:85%" data-name="w3_cert_badge2" xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                  <h3 class="js-build-in-item build-in-slideX-left f2-mktg text-gray-light-mktg text-semibold">The future of code is in the cloud, not your local copy. <span class="color-fg-default">Codespaces gives you a complete, configurable dev environment on top of a powerful VM in minutes.</span></h3>
+          </div>
+
+          <div class="offset-1 col-11 col-sm-10 col-lg-12">
+                <div class="js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="svg-icon iconIndustry" width="18" height="18" viewBox="0 0 18 18"><path d="M16.36 1H8.78a3.42 3.42 0 0 0 3.42 3.42h1.4v1.35A3.42 3.42 0 0 0 17 9.2V1.66a.66.66 0 0 0-.64-.66Z" fill="#2684FF"/><path d="M12.33 5H4.74a3.42 3.42 0 0 0 3.42 3.43h1.4v1.35a3.42 3.42 0 0 0 3.42 3.43V9.66A.66.66 0 0 0 8.36 9Z" fill="url(#Jirab)"/><defs><linearGradient id="Jiraa" x1="12.82" y1="5.02" x2="9.6" y2="8.34" gradientUnits="userSpaceOnUse"><stop offset=".18" stop-color="#0052CC"/><stop offset="1" stop-color="#2684FF"/></linearGradient></defs></svg>        </a>
+
+            <a href="/teams/integrations/jira" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Microsoft Teams" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="native svg-icon iconLogoMd" width="187" height="37" viewBox="0 0 187 37"><path d="m42 23-2.2-.2c-1.7-.1-2.3-.8-2.3-2 0-1.4 1-2.2 3-2.2 1.3-.1 2.6.3 3.6 1.1l1.3-1.3c-1.4-1-3.1-1.5-4.8-1.4-2.9 0-4.9 1.5-4.9 3.9 0 2.2 1.4 3.4 4 3.6l2.2.2c1.6.1 2.2.8 2.2 2 0 1.6-1.4 2.4-3.6 2.4-1.6.1-3.1-.5-4.2-1.6L35 28.8c1.5 1.4 3.5 2 5.5 1.9 3.2 0 5.5-1.5 5.5-4.1 0-2.6-1.6-3.4-4-3.6Zm15.8-6.1c-2.2 0-3.5.4-4.7 1.9l1.3 1.3c.8-1.1 2.1-1.7 3.4-1.5 2.5 0 3.4 1 3.4 2.9v1.3h-4c-3 0-4.6 1.5-4.6 3.9 0 1 .3 2 1 2.7.8.9 1.9 1.2 3.8 1.2 1.4.1 2.9-.4 3.9-1.4v1.3h2v-9.1c-.1-2.9-1.9-4.5-5.5-4.5Zm3.4 8.9c.1.8-.1 1.7-.7 2.3a4 4 0 0 1-3 .9c-2.1 0-3.1-.7-3.1-2.3 0-1.6 1-2.4 3-2.4h3.8v1.5Zm9.7-7.1c1.2 0 2.4.5 3.1 1.5l1.3-1.3a5.4 5.4 0 0 0-4.4-2c-3.4 0-5.9 2.3-5.9 6.9 0 4.6 2.6 6.9 5.9 6.9 1.7.1 3.3-.7 4.4-2L74 27.4c-.7 1-1.9 1.5-3.1 1.5-1.2.1-2.4-.5-3.1-1.5-.7-1.1-1-2.3-.9-3.6-.1-1.3.2-2.5.9-3.6.7-1 1.9-1.6 3.1-1.5Zm16.8-1.6h-2.4L79.2 23V11.1h-2v19.4h2v-4.9l2.4-2.4 4.5 7.3h2.4l-5.6-8.6 4.8-4.8Zm9.2-.16c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm13.6-10.4-2.8 8.6-2.8-8.6h-3.7l5.2 14h2.7l5.1-14h-3.7Zm9.6-.1c-3.6 0-6.1 2.6-6.1 7.1 0 5.7 3.2 7.2 6.5 7.2 2 .1 4-.7 5.3-2.2l-2.1-2.1c-.8.9-2 1.4-3.2 1.3-1.6.1-3-1.1-3.1-2.7v-.4h8.7v-1.6c.1-3.8-2.1-6.6-6-6.6Zm-2.7 5.8c0-.5.1-1 .3-1.5.4-.9 1.3-1.4 2.3-1.4 1-.1 1.9.5 2.3 1.4.2.5.3 1 .3 1.5h-5.2Zm13.33-4.3v-1.3h-3.4v14h3.5v-8.4c-.1-1.3.8-2.4 2.1-2.6h.2c.7 0 1.4.3 1.8.8l2.6-2.6a4.1 4.1 0 0 0-3.3-1.3c-1.3-.1-2.6.4-3.5 1.4Zm7.6-2.8v15.4h3.5v-11h2.6v-2.7h-2.6v-1.5c-.1-.6.3-1.2.9-1.3h1.6v-3h-2a3.9 3.9 0 0 0-4 3.8v.3Zm20.27 1.3c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm20.7-10.4-2.3 8.6-2.9-8.6H175l-2.8 8.7-2.3-8.6h-3.7l4.3 14h2.9l2.9-8.8 2.9 8.8h3l4.3-14-3.8-.1Zm-31.22 9.8v-15.2h-3.5v15.4a3.8 3.8 0 0 0 3.6 4h2.5v-3h-1.3c-.6.1-1.1-.2-1.3-.8v-.4ZM52.7 17.4H49V13h-2v13.9c0 2 1.1 3.6 3.4 3.6h1.4v-1.7h-1c-1.3 0-1.8-.7-1.8-2v-7.7h1.9l1.8-1.7Z" fill="var(--black-800)"/><path d="M129.55 23.38a1.88 1.88 0 0 0-1.8-1.12c-.92 0-1.52.48-1.81 1.12-.17.39-.23.68-.25 1.15h4.1a2.94 2.94 0 0 0-.24-1.15Zm-3.86 3c0 1.37.85 2.39 2.37 2.39a3 3 0 0 0 2.44-1.02l1.65 1.6a5.16 5.16 0 0 1-4.12 1.69c-2.55 0-5-1.16-5-5.52 0-3.5 1.91-5.49 4.71-5.49 3.02 0 4.72 2.2 4.72 5.14v1.2h-6.77Zm-9.17-3.93c-1.6 0-1.76 1.36-1.76 2.79 0 1.42.16 2.8 1.76 2.8s1.79-1.38 1.79-2.8c0-1.43-.19-2.8-1.79-2.8Zm-.27 12.53c-1.66 0-2.8-.33-3.92-1.4l1.68-1.7c.6.58 1.2.83 2.12.83 1.62 0 2.18-1.14 2.18-2.23v-1.1a3.18 3.18 0 0 1-2.58 1.08 3.6 3.6 0 0 1-2.57-.95c-1.02-1.01-1.1-2.4-1.1-4.27 0-1.88.08-3.25 1.1-4.26.6-.6 1.53-.95 2.6-.95 1.13 0 1.88.31 2.63 1.14v-1.01h2.62v10.36c0 2.58-1.85 4.46-4.76 4.46Zm-8.97-4.07v-6.5c0-1.47-.93-1.96-1.78-1.96s-1.8.5-1.8 1.96v6.5H101V20.16h2.63v.99c.7-.75 1.7-1.12 2.7-1.12a3.5 3.5 0 0 1 2.55.95c.87.87 1.1 1.88 1.1 3.06v6.87h-2.7Zm-11.14-4.54H94c-.98 0-1.52.45-1.52 1.22 0 .74.5 1.24 1.56 1.24.75 0 1.22-.06 1.7-.52.3-.27.4-.7.4-1.36v-.58Zm.06 4.54v-.93c-.73.73-1.41 1.04-2.66 1.04-1.22 0-2.12-.31-2.76-.95-.58-.6-.9-1.47-.9-2.42 0-1.71 1.2-3.12 3.7-3.12h2.56V24c0-1.18-.58-1.7-2.02-1.7-1.04 0-1.51.25-2.07.9l-1.73-1.68c1.06-1.16 2.1-1.49 3.9-1.49 3.04 0 4.62 1.28 4.62 3.8v7.08H96.2Zm-11 0v-6.56c0-1.43-.91-1.9-1.77-1.9-.85 0-1.74.5-1.74 1.9v6.56h-2.7v-14.7h2.7v4.94a3.58 3.58 0 0 1 2.6-1.12c2.36 0 3.6 1.65 3.6 3.93v6.95h-2.7Zm-11.02.13c-2.16 0-4.84-1.16-4.84-5.52 0-4.35 2.68-5.49 4.84-5.49 1.5 0 2.61.46 3.57 1.45l-1.83 1.81c-.56-.6-1.04-.84-1.74-.84-.65 0-1.15.23-1.54.7-.41.52-.6 1.24-.6 2.37 0 1.14.19 1.88.6 2.4.4.47.9.7 1.54.7.7 0 1.18-.25 1.74-.85l1.83 1.8a4.64 4.64 0 0 1-3.57 1.47Zm-8.6-.13L63.6 27.7l-1.98 3.22h-3.24l3.74-5.49-3.59-5.26h3.24l1.83 3.07 1.84-3.07h3.24l-3.59 5.26 3.74 5.5h-3.24Zm-17.58 0v-14.7h9.74v2.56h-6.85v3.45h5.83v2.56H50.9v3.57h6.85v2.56H48Z" fill="#205196"/><path d="M147 3h-15v-.5c0-1.3 1.21-2.5 2.5-2.5h10c1.3 0 2.5 1.2 2.5 2.5V3Z" fill="#8FD8F7"/><path d="M132 12v.5c0 1.3 1.21 2.5 2.5 2.5h6.5v3l3-3h.5c1.3 0 2.5-1.2 2.5-2.5V12h-15Z" fill="#155397"/><path d="M132 8v3h15V8h-15Z" fill="#2D6DB5"/><path d="M132 4v3h15V4h-15Z" fill="#46A2D9"/></svg></div>
+            <h2 class="fw-normal fs-headline2 lh-sm p-ff-roboto-slab mb24 mx-auto wmx6">Explore technical topics and other disciplines across 170+ Q&A communities</h2>
+            <p class="fs-subheading fc-blue-050 d:fc-black mb32 wmx6 mx-auto">From <a class="fc-blue-300 d:fc-blue-500 h:fc-blue-200" href="https://serverfault.com/" data-animation-type="show" class="flex--item mb24 wmn2">
+        <div class="m12 h100 bs-sm ba bc-black-150 bg-black-100 d:bg-black-075 bar-lg p24 sm:pr6 sm:pl6 pb0">
+            <svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"/><path d="m23.1 25.99.68-2.95-16.1-3.35L7 23l16.1 2.99ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm4.2-7.4L26 18.4l2.1-2.5L15.4 5.3l-2.1 2.5ZM21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0ZM7 30h16v-3H7v3Z" fill="#F48024"/><path d="M75.51 13.2h-10c-.3 0-.5.2-.5.5v15.67c0 .3.2.5.5.5h2.4c.3 0 .5-.2.5-.5v-6.11h6c.3 0 .5-.2.5-.5V20.6c0-.3-.2-.5-.5-.5h-6v-3.75h7.15c.3 0 .5-.2.5-.5v-2.16c-.05-.25-.3-.5-.55-.5Zm14.09 3.5a5.02 5.02 0 0 0-1.15-1.8 6.18 6.18 0 0 0-4.5-1.8 6.07 6.07 0 0 0-5.4 3.1c-.2.45-.4.95-.5 1.45-.1.5-.15 1.05-.2 1.6-.05.55-.05 1.35-.05 2.3 0 1.26.05 2.2.1 2.9.05.71.2 1.36.45 2.01.25.65.65 1.2 1.15 1.8 1.2 1.2 2.7 1.8 4.45 1.8a5.8 5.8 0 0 0 5.65-3.66c.25-.59.35-1.29.4-2 .05-.64.05-1.64.05-2.9 0-1.25 0-2.2-.05-2.9a5 5 0 0 0-.4-1.9Zm-8.25 1.65c.1-.55.3-1 .6-1.35.2-.25.5-.45.85-.6.35-.15.75-.2 1.1-.2.4 0 .75.1 1.1.2.35.15.65.35.85.6.3.35.5.75.6 1.3.1.6.15 1.7.15 3.2 0 1 0 1.8-.05 2.4a4 4 0 0 1-.25 1.31c-.1.3-.25.55-.5.8-.5.55-1.15.8-1.95.8a2.69 2.69 0 0 1-1.95-.75c-.2-.2-.35-.4-.4-.6-.05-.1-.15-.35-.2-.75l-.15-1.25c0-.5-.05-1.15-.05-1.96.1-1.45.15-2.55.25-3.15Zm20.72 4.41a4.6 4.6 0 0 0 2.9-4.46 4.71 4.71 0 0 0-2.55-4.4 5.64 5.64 0 0 0-2.8-.66h-6.1c-.3 0-.5.2-.5.5v15.68c0 .3.2.5.5.5h2.4c.3 0 .5-.2.5-.5v-6.11h6c.3 0 .5-.2.5-.5V20.6c0-.3-.2-.5-.5-.5h-6v-3.75h7.15c.3 0 .5-.2.5-.5v-2.16c-.05-.25-.3-.5-.55-.5Zm14.09 3.5a5.02 5.02 0 0 0-1.15-1.8 6.18 6.18 0 0 0-4.5-1.8 6.07 6.07 0 0 0-5.4 3.1c-.2.45-.4.95-.5 1.45-.1.5-.15 1.05-.2 1.6-.05.55-.05 1.35-.05 2.3 0 1.26.05 2.2.1 2.9.05.71.2 1.36.45 2.01.25.65.65 1.2 1.15 1.8 1.2 1.2 2.7 1.8 4.45 1.8a5.8 5.8 0 0 0 5.65-3.66c.25-.59.35-1.29.4-2 .05-.64.05-1.64.05-2.9 0-1.25 0-2.2-.05-2.9a5 5 0 0 0-.4-1.9Zm-8.25 1.65c.1-.55.3-1 .6-1.35.2-.25.5-.45.85-.6.35-.15.75-.2 1.1-.2.4 0 .75.1 1.1.2.35.15.65.35.85.6.3.35.5.75.6 1.3.1.6.15 1.7.15 3.2 0 1 0 1.8-.05 2.4a4 4 0 0 1-.25 1.31c-.1.3-.25.55-.5.8-.5.55-1.15.8-1.95.8a2.69 2.69 0 0 1-1.95-.75c-.2-.2-.35-.4-.4-.6-.05-.1-.15-.35-.2-.75l-.15-1.25c0-.5-.05-1.15-.05-1.96.1-1.45.15-2.55.25-3.15Zm20.72 4.41a4.6 4.6 0 0 0 2.9-4.46 4.71 4.71 0 0 0-2.55-4.4 5.64 5.64 0 0 0-2.8-.66h-6.1c-.3 0-.5.2-.5.5v15.68c0 .3.2.5.5.5h2.4c.3 0 .5-.2.5-.5V13.74c-.05-.3-.25-.55-.55-.55Zm13.45 8.15a3.8 3.8 0 0 0-1.3-.8 7.7 7.7 0 0 0-1.85-.45l-1.8-.25c-.3-.05-.6-.1-.9-.25a2.1 2.1 0 0 1-.6-.35c-.3-.25-.4-.6-.4-1.1 0-.4.1-.7.25-1 .2-.3.45-.5.75-.65.35-.15.8-.25 1.3-.25.45 0 .85.05 1.2.1s.7.2 1 .35c.3.15.6.35.9.65.2.2.5.2.7 0l1.55-1.5c.1-.1.15-.25.15-.35a.45.45 0 0 0-.15-.35 7.11 7.11 0 0 0-2.3-1.46 8.4 8.4 0 0 0-2.9-.45c-1.15 0-2.15.2-3 .6a4.67 4.67 0 0 0-2 1.8c-.45.76-.7 1.66-.7 2.66 0 1.4.45 2.55 1.3 3.36.8.75 1.85 1.2 3.25 1.4l1.85.25c.4.05.75.15.95.2.2.05.35.15.5.35.3.25.45.7.45 1.25 0 .6-.2 1.05-.65 1.35-.5.35-1.2.55-2.1.55-.5 0-1-.05-1.4-.15-.4-.1-.8-.25-1.2-.45-.35-.2-.7-.45-1.05-.8a.45.45 0 0 0-.35-.15.45.45 0 0 0-.35.15l-1.6 1.55c-.1.1-.15.2-.15.35 0 .15.05.25.15.35a7.1 7.1 0 0 0 2.6 1.7c.95.36 2.05.5 3.3.5.85 0 1.7-.1 2.4-.34a5.16 5.16 0 0 0 3.25-2.66c.3-.65.45-1.35.45-2.1-.05-1.6-.55-2.8-1.5-3.6Z" fill="var(--black-800)"/><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"/><path d="m23.1 25.99.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"/></svg></a>
+                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    <div id="onetrust-consent-sdk" class="d-none"></div>
+    <div id="onetrust-style" class="d-none">&nbsp;</div>
+    <div class="d-none js-consent-banner-version" data-consent-banner-version="baseline"></div>
+
+    
+    </body>
+    </html>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>JavaScript Tutorial</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+        <meta property="og:type" content= "website" />
+        <meta property="og:url" content="https://github.com/" /><meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="https://github.githubassets.com/images/modules/site/home/pr-comment.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/flutter?s=64&amp;v=4" alt="Flutter" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">ohmyzsh/<span class="color-fg-default">core</span></p>
+                </div>
+            <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-spinner.svg" class="home-matrix-spinner-2" loading="lazy" alt="">
+                    </div>
+
+                <h4 class="f4-mktg text-semibold text-gray-mktg mb-1">Support the projects you depend on, too.</h4>
+                  <h3 class="h5-mktg mb-5 text-gradient-blue-purple">100% to developers, zero fees</h3>
+                  <a class="link-mktg text-semibold color-fg-default py-1 f4-mktg link-emphasis-mktg" href="/marketplace/actions" data-analytics-event="{&quot;category&quot;:&quot;Start a free trial&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Learn more about GitHub Actions;ref_loc:automate launchpad&quot;}">
+  Learn more about GitHub Codespaces <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="704" viewBox="0 0 704 704" width="704" class="js-webgl-globe-loading position-absolute left-0 right-0 top-0 bottom-0" style="margin: auto; z-index: -1; min-width: 100%; min-height: 100%;" hidden>
+      <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/assets/6262-f666c7f4034a.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-nZpgXrBvHm7YePk3m1UhdxY43Ra8lTPxsGk7ocBtGBimPanKdybEgnPXXulh7k7tNLnPzPXFEJ5wY7QGowGOdw==" src="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="Apple App Store" loading="lazy">
+                      </a>
+                    </li>
+              <li>
+                <a href="/en/docs/">Docs</a>
+            </li>
+            <li >
+                <a href="/en/blog/">News</a>
+            </li>
+            <li>
+              <a href="https://nodejs.org/dist/v16.15.0/" class="home-downloadbutton" title="Download 16.15.0 LTS" data-version="v16.15.0">
+            16.15.0 LTS
+            <small>Recommended For Most Users</small>
+          </a>
+
+          <ul class="list-divider-pipe home-secondary-links">
+              <li>
+                <a href="/en/docs/">Docs</a>
+            </li>
+            <li >
+                <a href="/en/blog/">News</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex py-1 px-3">
+          <img src="https://github.githubassets.com/assets/site-fafd961ebe14.css" />
+<link crossorigin="anonymous" media="all" integrity="sha512-cZa7DZqvMBwD236uzEunO/G1dvw8/QftyT2UtLWKQFEy0z0eq0R5WPwqVME+3NSZG1YaLJAaIqtU+m0zWf/6SQ==" rel="stylesheet" data-href="https://github.githubassets.com/images/modules/site/home/icons/actions-check.svg" class="home-actions-success-check"
+              alt="Large representation of the indicator that a workflow is running" loading="lazy">
+          </div>
+
+          <h3 class="col-5-max f2-mktg text-gray-mktg text-semibold mb-4 col-5-max">Write your own, or import Actions from the open source community, all within our world-class editor. Feeling stuck? Browse the Actions developer docs as you code.</h3>
+            <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="/signup" data-analytics-event="{&quot;category&quot;:&quot;Contact Sales&quot;,&quot;action&quot;:&quot;click to learn about GitHub Mobile&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Contact Sales;&quot;}" href="https://github.com/enterprise/contact">
+      Contact Sales
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:gatsbyjs/gatsby;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-column">
+      <div class="col-11 col-md-10 offset-1 home-codespaces-container">
+        <div class="col-8-max mx-lg-auto text-lg-center mb-6 mb-md-8 position-relative z-2">
+          <h2 class="h2-mktg color-fg-default mb-3">Blazing fast cloud developer environments with <span class="text-gradient-purple-coral no-wrap">GitHub Actions</span></h2>
+        <a class="link-mktg text-semibold color-fg-default py-1 f4-mktg link-emphasis-mktg" href="/features/codespaces" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to professional services&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Learn more about Sponsors;ref_loc:community launchpad&quot;}">
+  Learn more about GitHub Codespaces;ref_loc:codespaces launchpad&quot;}">
+  Learn more about Sponsors <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
+</span>      
+      
+
+
+        
+
+            <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-xl d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-column gutter gutter-spacious">
+
+        <div class="home-git-log-light col-10 offset-1 pb-5 pb-md-6 pt-6 pt-md-0">
+            <div class="col-6-max">
+          <h2 class="h2-mktg color-fg-default mb-6 mb-md-8 text-gradient-mint-blue-dark">Give your code a home in the cloud</h2>
+        </div>
+      </div>
+
+      <div class="codeeditorbr-column codeeditorbr-left">
+        <span class="codeeditorbr-dot" style="background:#FDD800;"></span>
+          <span class="codeeditorbr-dot" style="background:#5AC05A;"></span>
+        </div>
+
+        <div class="text-center text-small color-fg-subtle mb-n3">
+          bash
+        </div>
+    </div>
+
+  <div class="p-4" data-type-row-delay="100">
+
+
+      <div class="">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ npm install eslint</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>You have no open pull requests</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>9 packages are looking for funding</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Requesting a code review from you</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/</strong>
+
+        <span class="js-type-letters">$ gh repo create octocat-classifier</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>There is no pull request associated with [main]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓</em> Added remote <a href="https://github.com/jasonetco/octocat-classifier.git">https://github.com/jasonetco/octocat-classifier
+              ```
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Integrations&quot;,&quot;label&quot;:&quot;text:resources&quot;}" href="https://resources.github.com">Resources</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to get GitHub Mobile on Google Play Store&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Education;&quot;}" href="https://education.github.com">
+      Education
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click nav item to scroll to Code&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Education;&quot;}" href="https://education.github.com">
+      Education
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Customer stories&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up for GitHub;ref_loc:footer launchpad;&quot;}"
+              >
+                        <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">

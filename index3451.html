@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/askubuntu/Img/apple-touch-icon.png?v=e16e1315edd6" alt="Ask Ubuntu icon">
+        </a>
+
+                        <a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fc-black-200 fs-subheading mt32 pb32 ta-center">
+            Some of the premium features available with paid tiers
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems6 md:fd-column ta-center mx48 sm:ml0 sm:mr0">
+        <div class="flex--item s-toggle-switch">
+            <input id="billing-period" name="billing-period" type="checkbox" checked>
+            <div class="s-toggle-switch--indicator"></div>
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems3 jc-center px12 md:fd-column pt32 pb64 sm:pb128 wmx9 mx-auto">
+            <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/footer-illustration-894.webp" type="image/webp">
+                <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="macOS" loading="lazy"></li>
+                    <li class="m6">
+                        <a href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a>.
+                    </p>
+                    <p class="fs-body3 px32 hmn1">Shipping new products and features requires teamwork and coordination. Forget checklists and long docs no one ever reads.</p>
+                </div>
+            </div>
+            </div>
+    </a>
+</li>
+
+                            <li>
+                            </li>
+
+                    <li class="bg-black-025 bt bc-black-075 py6 px6 bbr-md">
+                        <a href="https://stackoverflow.co/collectives" class="flex--item wmn3 bg-white bar-lg bs-sm h:bs-md py32 px24 fc-black-500 h:fc-black-750" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;Request a demo&quot;,null,null]">For large organizations <svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconOkta" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"/></svg></div>
+            <div>Unlimited Teams within your instance</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M15 4.41 13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9 15 4.41Z"/></svg>
+                        Slack
+                    </div>
+            
+            <img class="w100 h100 d-block us-none pe-none ps-absolute t0 r0 l0 b0 z-base" style="transform: scaleX(-1)" src="https://cdn.sstatic.net/Img/home/illo-integrations-left.png?v=0a97d470e180" alt="" />
+                    <noscript>
+                        <img width="421" height="465" class="js-lazy-load wmx100 h-auto d-block" data-src="https://cdn.sstatic.net/Img/product/teams/logos/wisetech-global-alt.svg?v=3b6b11e76536" alt="WiseTech Global">
+    </div>
+</div>
+<script>
+(function () {
+    var logos = document.querySelector('.js-carousel-logos');
+    var logosShown = 4;
+    var logosTotalPages = Math.ceil(logos.children.length / logosShown) - 1;
+    var logosCurrentPage = 0;
+    var logosCarouselTime = 4000;
+    var logosCarouselPlayer;
+
+    logos.classList.remove('o100');
+    
+    for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            } else {
+                navItems[i].classList.remove('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.remove('d-none');
+                } else {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="fc-black-200 fs-subheading mt32 pb32 ta-center">
+            Some of the premium features available with paid tiers
+        </div>
+    </div>
+
+    <div class="p-bg-dark-gradient bar-lg pt128 pb96 lg:pl24 lg:pr24 sm:pl0 sm:pr0 ps-relative z-selected ta-center">
+        <div class="wmx10 mx-auto fc-white d:fc-black p-font-smooth pt24">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+                </div>
+
+                    <div class="rounded-2 box-shadow-active-border-mktg" alt="Automated pull request that updates a dependency in your repository" loading="lazy">
+                      </picture>
+                    </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Ansible is a radically simple IT automation platform.</p>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="/apple/swift"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Facebook&quot;,&quot;label&quot;:&quot;text:github&quot;}" class="color-fg-subtle">
+            <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-test.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg" width="19" height="18" class="d-block" loading="lazy" decoding="async" alt="GitHub">
+        </a>
+
+
+      </div>
+
+      <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Company
+        </h2>
+
+        <ul class="list-style-none d-flex flex-items-center">
+                    <li class="mr-1 px-1"><img src="https://github.githubassets.com/images/modules/site/home/actions-editor-actions.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@pmarsceill" loading="lazy">
+                <span class="opacity-4 text-truncate">Fixed deserialized data security vulnerability</span>
+              </li>
+
+              <li class="col-12 d-flex flex-items-center position-relative z-1 f6-mktg text-mono text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+            <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+          </div>
+
+      
+      
+      
+      
+      
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative mr-3 mb-4 mb-lg-0 d-inline-block">
+          <a href="/login"
+            class="HeaderMenu-link flex-shrink-0 no-underline"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="520d87e8f83281e6946b192f0f840552721c7fcba9b9c36d802e898a816314e2"
+            >
+              Sign&nbsp;up
+            </a>
+
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in all of GitHub">
+        Search
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="p-bits sm:d-none fc-blue-500 b64 l128 w64 h64"></span>
+</section>
+
+<section class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list js-primary-footer-links">
+                                     data-controller="s-popover"
+                                </a>
+                            <li>
+                            </li>
+                   
+
+
+<li>
+    <ol class="nav-links">
+                
+
+<div class="js-freemium-cta ps-relative">
+
+    <div class="fs-fine tt-uppercase ml8 mt16 mb8 fc-light">Teams</div>
+
+    <div class="px32 pt16 pb0 fc-black-600 blr-sm overflow-hidden">
+        <strong class="fc-black-750 mb6">Stack Overflow for Teams</strong>
+        – Start collaborating and sharing organizational knowledge.
+        
+        <img class="wmx100 mx-auto my8 h-auto d-block" width="139" height="114" src="https://cdn.sstatic.net/Img/product/teams/logos/barkbox-alt.svg?v=419890745024" alt="BarkBox">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block mtn2" width="165" height="41" src="https://cdn.sstatic.net/Img/product/teams/logos/siemens-alt.svg?v=cf0f5266d96b" alt="Siemens">
+    </div>
+    <div class="flex--item wmn3 sm:mb32 p24 sm:p8">
+        <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18" viewBox="0 0 18 18"><path d="M6.5 16A1.5 1.5 0 0 1 5 14.5v-4a1.5 1.5 0 1 1 3 0v4c0 .83-.67 1.5-1.5 1.5Zm-4-4a1.5 1.5 0 0 1 0-3H4v1.5c0 .83-.67 1.5-1.5 1.5Z" fill="#E01E5A"/><path d="M2.5 5h4a1.5 1.5 0 1 1 0 3h-4a1.5 1.5 0 1 1 0-3Zm4-4C7.33 1 8 1.67 8 2.5V4H6.5a1.5 1.5 0 1 1 0-3Z" fill="#36C5F0"/><path d="M10.5 9h4a1.5 1.5 0 0 1 0 3h-4a1.5 1.5 0 0 1 0-3Zm0 7A1.5 1.5 0 0 1 9 14.5V13h1.5a1.5 1.5 0 0 1 0 3Z" fill="#ECB22E"/><path d="M10.5 1c.83 0 1.5.67 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4c0-.83.67-1.5 1.5-1.5Zm4 4a1.5 1.5 0 0 1 0 3H13V6.5c0-.83.67-1.5 1.5-1.5Z" fill="#2EB67D"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12">Software engineers</h3>
+                    <p class="fs-body3 px32 hmn1">Shipping new products and features requires teamwork and coordination. Forget checklists and long docs no one ever reads.</p>
+                </div>
+                    <div class="fc-black-300 fs-body2 px24">Stack Overflow for Teams instances active every day</div>
+            </div>
+            </div>
+    </a>
+</li>
+
+                    </ol>
+            <div class="s-popover--arrow"></div>
+
+            <div class="ps-absolute t8 r8">
+                <svg aria-hidden="true" class="mb12 fc-green-500 svg-icon iconApprove" width="18" height="18" viewBox="0 0 18 18"><path d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"/></svg></div>
+            <div>Additional integrations &#x2014; ChatOps, Jira, GitHub &amp; Okta</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconHealth" width="18" height="18" viewBox="0 0 18 18"><path d="M8 4.41 6.59 3l-6 6 6 6L8 13.59 3.41 9 8 4.41Zm2 0L11.41 3l6 6-6 6L10 13.59 14.59 9 10 4.41Z"/></svg></div>
+            <div>Premium features of Business plus&#x2026;</div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    var billingPeriodSwitch = document.querySelectorAll('input[name="billing-period"]');
+
+    billingPeriodSwitch.forEach(function(radio) {
+        radio.addEventListener('change', function(e) {
+            var cycle = e.target.checked ? 'annually' : 'monthly';
+            var notCycle = e.target.checked ? 'monthly' : 'annually';
+
+            document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.remove('d-none');
+            });
+                </script>
+
+        
+                <div class="ff-sans ps-fixed z-nav-fixed ws4 sm:w-auto p32 sm:p16 bg-black-750 fc-white bar-lg b16 l16 r16 js-consent-banner">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotLock" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"/><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"/></svg>
+            Single sign-on with AD or SAML
+        </div>
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block mtn6" width="65" height="35" src="https://cdn.sstatic.net/Img/teams/teams-illo-free-sidebar-promo.svg?v=47faa659a05e" alt="">
+
+        <a href="https://try.stackoverflow.co/why-teams/?utm_source=so-owned&amp;utm_medium=side-bar&amp;utm_campaign=campaign-38&amp;utm_content=cta"
+               class="pl8 js-gps-track nav-links--link"
+       
+       data-gps-track="top_nav.click({is_current:false, location:1, destination:18})">
+                    Learn more
+                </a>
+            </div>
+        </div>
+
+
+</div>
+
+
+
+
+        <div id="content" class="w100 wmx100 p0 snippet-hidden bg-black-025 snippet-hidden">
+
+            
+<header class="p-wrapper-home btr-lg p48 md:p32 sm:p12 ta-center ps-relative">
+    <div style="clip-path:url(#curve)" class="p32 sm:p12 bar-lg p-bg-dark-gradient d:fc-black-750 ps-relative z-selected fc-black-025 p-font-smooth mbn128 pb128">
+        <div class="wmx9 mx-auto d-flex flex__allitems6 sm:fd-column">
+            <img src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04" alt="" />
+            <noscript>
+                        <img width="421" height="465" class="js-lazy-load wmx100 h-auto d-block" data-src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04" alt="">
+            </noscript>
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="bb bc-black-100 pb24 mb24">
+                    <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="fc-black-300 fs-body2 px24">monthly visitors to Stack Overflow & Stack Exchange</div>
+            </div>
+            
+            <img class="w100 h100 d-block us-none pe-none ps-absolute t0 r0 l0 b0 z-base" style="transform: scaleX(-1)" src="https://cdn.sstatic.net/Img/product/teams/logos/dialpad-alt.svg?v=4e63facf7f79" alt="Dialpad">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt2" width="185" height="37" data-src="https://cdn.sstatic.net/Img/product/teams/logos/barkbox-alt.svg?v=419890745024" alt="BarkBox">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block mtn6" width="65" height="35" src="https://cdn.sstatic.net/Img/product/teams/screens/illo-home-search.png?v=1ccd850cd929" alt="">
+            </noscript>
+        </div>
+        <div class="d-flex mb12 fc-black-400 mb24">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18"><path d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6c1.09 0 2 .91 2 2v2h2c1.09 0 2 .91 2 2v8h-6ZM4 4v2h2V4H4Zm0 4v2h2V8H4Zm4-4v2h2V4H8Zm0 4v2h2V8H8Zm-4 4v2h2v-2H4Zm8 0v2h2v-2h-2Zm0-4v2h2V8h-2Z"/></svg>
+                Recommended
+            </div>
+                <div class="site-footer--logo">
+                    
+                        <span class="fs-body1 d-block">Stack Overflow</span>
+                </a>
+
+
+
+            <ol class="s-navigation" role="presentation">
+
+                    <li class="px-1"><img src="https://github.githubassets.com/images/modules/site/home/gh-desktop.png" width="709" height="510" loading="lazy" class="width-full height-auto" alt="Merge pull request on GitHub" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.html</div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+                    <div  class="js-build-in-item home-codeql-comp position-relative pt-8 pt-md-9">
+                      <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">
+                        Custom pricing
+                    </div>
+                            <li>
+                    <a href="#"
+                        class="home-discussions-check-1 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+              <span class="text-gray-dark-mktg">Dependabot keeps your projects up to date</span> with automated pull requests that update all your dependencies. Just review and merge to keep your software secure.</h3>
+          <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="/marketplace/actions" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:customer stories&quot;}" href="/customer-stories">
+      Customer stories
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex min-width-0 mb-3 mb-lg-0">
+            
+
+
+
+<div class="header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 js-jump-to"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus "
+          data-hotkey=s,/
+          name="q"
+          data-test-selector="nav-search-input"
+          placeholder="Search GitHub"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+        >
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="4m+DjAiqHPybDagt4e67e8Y9SFpEgQ4+qbCxR/oDZH6S8oinWp5pMWhWPjvIFW+JyAePHJDtSZovLNOtZgAuKA==" />
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+      </div>
+
+      <div class="col-11 col-sm-10 offset-1">
+        <ul class="home-git-log-light d-flex gutter gutter-spacious flex-column flex-lg-row">
+              <div class="offset-sm-1 ml-lg-0 col-12 col-sm-11 col-md-10 col-lg-5 d-flex flex-column mb-5 mb-md-6">
+                <div class="text-center" style="max-width: 490px;">
+                  <div class="col-12 col-lg-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="js-details-target btn-link">  <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="Label">5x</span> 2 days ago</span>
+            </li>
+
+            <li class="col-12 d-flex flex-items-center position-relative z-1">
+          <div class="flex-auto ml-n7" style="height: 1rem; border-radius: 0 0 0 1rem; border-bottom: 2px solid #424d65; border-left: 2px solid #424d65;"></div>
+          <div class="ml-n7 height-full position-absolute top-0 right-0 height-full home-codespaces-illo events-none" style="padding-left: 0 !important; padding-right: 0 !important;">
+            <div class="top-0 right-0 position-sticky z-1 pt-3 pt-lg-8">
+              <div class="home-codeql-step-3 rounded-2 position-absolute box-shadow-active-border-light-mktg">
+                        <picture>
+                  <source srcset="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg" width="19" height="18" class="d-block" loading="lazy" decoding="async" width="16" height="16">
+          <div>app.js</div>
+        </div>
+
+        <div class="col-12 col-md-8 position-absolute text-right position-relative height-full right-0">
+        <picture>
+  
+  <source srcset="https://github.githubassets.com/images/modules/site/home/footer-illustration.webp" media="(min-width: 700px)" type="image/svg">
+      <source srcset="https://github.githubassets.com/images/modules/site/home/icons/actions-check.svg" class="home-actions-success-check"
+              alt="Large representation of the indicator that a workflow is running" loading="lazy">
+          </div>
+
+          <h3 class="col-5-max f2-mktg text-gray-mktg text-semibold mb-5 col-5-max">
+                    <span class="js-billed-monthly d-none">$14 USD</span>
+                        <span class="fs-caption d-block fc-light">
+Build your employer brand            </p>
+        </a>
+    </div> 
+
+    <a href="https://stackoverflow.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+    </div>
+
+                    <div class="home-matrix-tab-container position-absolute" style="width: 22%;">
+                      <picture>
+                          <source srcset="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=688 688w,https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="macOS" loading="lazy"></li>
+            <li class="px-1"><img src="https://github.githubassets.com/images/modules/site/home/iphone-notch.svg" class="width-full position-absolute top-0 right-0 height-full home-codespaces-illo events-none" style="padding-left: 0 !important; padding-right: 0 !important;">
+            <div class="top-0 right-0 position-sticky z-1 pt-3 pt-lg-8">
+              <div class="home-matrix-connector home-matrix-connector--right"><div class="home-matrix-connector-bg"></div></div>
+                    <div class="mt-auto">
+            <a
+            href="https://stackoverflow.com/help/licensing">cc by-sa</a>.                    <span id="svnrev">rev&nbsp;2022.5.6.42057</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex gs32 jc-center ai-center sm:fd-column sm:pl24 sm:pr24">
+            <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="left-sidebar js-unpinned-left-sidebar" data-can-be="left-sidebar" data-is-here-when="sm md lg"></div>
+            </div>
+        </div>
+
+        <h1 class="p-ff-roboto-slab-bold fs-title px4">179% return on investment</strong> <span class="fc-white d:fc-black">A Forrester Consulting study shows</span> <strong class="p-ff-roboto-slab-bold fs-title mb12">DevOps engineers</h3>
+                    <p class="fs-body3 fc-black-300">If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
+                </div>

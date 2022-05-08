@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.remove('bg-black-800');
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+    </style>
+
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/options.mod">{"options":{"locale":"en","serverTime":1652019172,"routeName":"Home/Index","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Stack Overflow","description":"Q\u0026A for professional and enthusiast programmers","isNoticesTabEnabled":true,"enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"cookieDomain":".stackoverflow.com","childUrl":"https://meta.stackoverflow.com","negativeVoteScoreFloor":null,"enableSocialMediaInSharePopup":true,"protocol":"https"},"user":{"fkey":"13c394b0ec019e6d03ae67efa0bcc847731781c4ea4de1bdfc03d337e6a6fbc1","tid":"21dc1582-de79-839e-39bb-bfb0eeb77502","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"hot_questions_sidebar":{"v":"signupoptincopy","g":1}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75,"likedTagsMaxLength":300,"dislikedTagsMaxLength":300},"jobPreferences":{"maxNumDeveloperRoles":2,"maxNumIndustries":4},"svgIconPath":"https://cdn.sstatic.net/Img/stacks-icons","svgIconHash":"8667b5d4a480"}}</script>
+<script type="application/json" data-role="module-args" data-module-name="Shared/options.mod">{"options":{"locale":"en","serverTime":1652019172,"routeName":"Home/Index","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Stack Overflow","description":"Q\u0026A for professional and enthusiast programmers","isNoticesTabEnabled":true,"enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"cookieDomain":".stackoverflow.com","childUrl":"https://meta.stackoverflow.com"
+       class=" site-link js-gps-track d-flex gs8 gsx"
+       data-id="552"
+       data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.co/company/work-here" class="s-btn fs-body2 px32 bar-md fc-black-400 h:bg-black-050 h:fc-black-750 p-ff-source">Want to work here? <span class=" fc-blue-500">Current job openings</span></a>
+</section>
+
+
+<section class="bar-lg sm:bar0 bg-blue-900 d:bg-blue-100 fc-white d:fc-black m48 mtn96 md:ml32 md:mr32 sm:ml0 sm:mr0 mb0 pt32 pb96 sm:pl24 sm:pr24 overflow-hidden" style="clip-path:url(#curve); transform: rotate(180deg)">
+    <div class="d-flex flex__fl-grow1 ta-center jc-center sm:fd-column" style="transform: rotate(-180deg)">
+        <div class="flex--item s-avatar va-middle bg-orange-400">
+                                    Science
+                                 <a href="https://superuser.com/" data-animation-type="show" class="flex--item m24 w64 h64 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Game Development" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/unix/Img/apple-touch-icon.png?v=5cf7fe716a89" alt="Unix &amp; Linux icon">
+        </a>
+
+            </div>
+                <div class="fs-title p-ff-roboto-slab-bold mb4">100+ million</div>
+                <div class="s-popover--arrow"></div>
+            <div>
+                <svg aria-hidden="true" class="mb12 fc-green-500 svg-icon iconApprove" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm.25-3.45a1 1 0 0 1-.73.5c-.32 0-.62-.06-.85-.29l-3-3a1 1 0 0 1 1.44-1.38l2.05 2 3.56-6.28c.27-.47.89-.65 1.36-.38.47.27.65.89.38 1.36l-4.21 7.47Z" fill="#5EBA7D"/></svg>
+                            <li>
+                                  </a>
+                            <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 33 })">LinkedIn</a></li>
+                    <li><a href="https://stackoverflow.com/teams/create/business"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-075 h:bg-black-150 fc-powder-900"
+            data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/enterprise/get-started&quot;,null,null]"
+            Basic
+            >
+                Get started
+            </a>
+        </div>
+
+                
+
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18"><path d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"/></svg></div>
+            <div>Additional integrations &#x2014; ChatOps, Jira, GitHub &amp; Okta</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/></svg>
+                    <h2 class="fs-subheading wmx3 mx-auto">Find the best answer to your technical question, help others answer theirs</h2>
+                    <a href="#"
+                        class="home-discussions-check-3 js-build-in-item position-absolute z-1" alt="Answered checkmark" loading="lazy">
+                      <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-windows.svg" alt="Windows" loading="lazy"></li>
+                    <li class="mr-1 px-1"><img src="https://github.githubassets.com/images/modules/site/home/discussions-check.svg"
+                        class="home-discussions-check-2 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+                <span class="opacity-4 text-truncate">Updated README.md</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-11 col-sm-10 offset-1">
+        <ul class="home-git-log-light d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center gutter gutter-spacious py-5 py-md-6">
+                  <div class="js-build-in-trigger js-type-in-trigger">
+            <div class="home-globe-container home-globe-container-webgl">
+  <div class="mx-auto width-full mt-n9 mt-lg-2 home-globe position-relative height-full js-webgl-globe">
+    <video width="916" height="918" loop muted playsinline preload="none" class="width-full looping-mktg js-viewport-aware-video" data-threshold="0" poster="https://github.githubassets.com/images/modules/site/home/pr-comment.png" class="width-full height-auto" width="2496" height="1480" alt="The resulting GitHub repository page from pushing" decoding="async">
+                  <p class="f5-mktg text-semibold">npm/<span class="color-fg-default">ohmyzsh</span></p>
+                </div>
+                  </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="js-build-in-trigger col-11 col-sm-10 col-lg-12">
+                <div class="js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"/></svg></a></li>
+                    <li><a href="https://stackoverflow.co/teams" class="s-btn ml8 sm:ml0 sm:mt8 fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;teams tour&quot;,null,null]">Take a tour of Teams</a>
+
+            <div class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="https://stackexchange.com/sites#science" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                            </li>
+
+                                 data-ga="[&quot;top navigation&quot;,&quot;teams submenu click&quot;,null,null,null]">
+                            <span class="flex--item4 bt bc-blue-300"></span>
+                    <span class="fc-white d:fc-black">to work on projects after using Teams.</span>
+                </div>
+            </form>
+
+        
+
+<ol class="s-topbar--content" role="presentation">
+
+
+    <li class="js-topbar-dialog-corral" role="presentation">
+            
+
+    <div class="topbar-dialog siteSwitcher-dialog dno" role="menu">
+        <div class="header fw-wrap">
+            <h3 class="flex--item">
+                <a href="https://data.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                  <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotHeadset" width="48" height="48" viewBox="0 0 48 48"><path d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z" opacity=".2"/><path d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4.5c-1.9 0-3.57-.94-4.73-2.27A7.59 7.59 0 0 1 1 25.8V11.66ZM7.62 7A4.64 4.64 0 0 0 3 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 30.63 31h3.99A2.8 2.8 0 0 1 37 35.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z"/></svg>
+        <p class="fs-body3 lh-md fc-black-600 mb32">Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals.</p>
+        
+        <div class="fs-body3 fc-black-700">
+            <strong class="bt bc-black-075 pt16 d-inline-block p-ff-source-bold">Director of Product Management</strong><br>
+            Microsoft
+        </div>
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="136" height="25" data-src="https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8" class="uc-none ps-absolute t128 mt128" style="left:8%" alt="">
+            <img src="https://cdn.sstatic.net/Img/home/illo-teams.svg?v=7e543f14fcc0" class="d-block my32 w100 h-auto" alt="Illustration of Stack Overflow">
+                <h2 class="mx48 sm:ml32 sm:mr32 mb12 p-ff-roboto-slab-bold fs-headline1">
+                   A private collaboration & knowledge sharing SaaS platform for companies
+                </h2>
+                <p class="mx48 sm:ml32 sm:mr32 mb32 fc-black-600 fs-subheading">A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+                <a href="/collectives"
+               class="js-gps-track s-btn s-btn__primary s-btn__xs"
+               data-gps-track="top_nav.products.click({location:1, destination:6})"
+                            data-ga="[&quot;top navigation&quot;,&quot;talent submenu click&quot;,null,null,null]">About the company</a><br/>
+
+    <a href="https://stackoverflow.co/talent" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                    data-gps-track="top_nav.click({is_current:false, location:1, destination:12})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex gutter-condensed gutter-md-spacious col-12 col-lg-8 flex-justify-between text-md-left">
+                  <div class="js-build-in-trigger d-flex flex-column flex-lg-row-reverse gutter flex-lg-justify-end flex-lg-items-center pt-5 pb-8 pb-md-9">
+      <div class="col-12 col-md-9 px-4 pl-md-7 pt-4 py-md-6 mb-md-0 position-relative z-1 text-center text-md-left" style="margin-bottom: 25%; box-shadow: 0 0 50px 30px #fff">
+          <h2 class="h5-mktg mb-1 mx-auto mx-md-0" style="max-width: 380px;">Take collaboration to the next level with security and administrative features built for teams.</p>
+          <div class="d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-9 py-md-10">
+                <div class="js-build-in-item home-cli position-absolute width-full">
+                      <div class="home-codeql-step-1 rounded-2 position-relative z-1">
+                        <picture>
+                          <source srcset="https://github.githubassets.com/assets/9244-eedfea9bdaec.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-RTFkqxSrW8K9FX/AiZaxiPf9Vj73r9WuA+J1ed5XOxFiOHEOezpo4MWtiPom6TLAZCohRBH61Mj12g2x/eRvpw==" src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" width="960" height="967" class="home-astro-mona width-full position-absolute bottom-0 height-auto" alt="Mona looking at GitHub activity across the globe">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">Excel</h2>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="ws-black" style="padding:30px 3px 85px 3px">
+  <div class="w3-content w3-padding" style="max-width:974px;padding-top:78px;padding-bottom:125px">
+    <h1 style="font-size:65px;font-weight:700;">Color Picker</h1>
+  <h4 style="margin-top:25px;">W3Schools' famous color picker</h4>
+  <a href="/colors/colors_picker.asp">COLOR PICKER</a></h4>
+<a href="/colors/colors_picker.asp">
+<img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
+</a>
+</div>
+
+<div class="sidesection">
+<!--<h4>LIKE US</h4>-->
+  <div class="sharethis">
+    <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>
+    <a href="https://discord.gg/6Z7UaRbUQM" target="_blank" title='Join the W3schools community on Discord'><i class='fa'>&#xe807;</i></a>
+  <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/sql-certification-exam" target="_blank">Front End Certificate</a>
+   <a class="w3-bar-item w3-button" href="/googlesheets/index.php">Learn Google Sheets</a>
+
+   <h3 class="w3-margin-top">XML</h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/python" target="_blank">Python Course</a>
+   <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/sql" target="_blank">SQL Course</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+   <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a>
+<a target="_top" href="html_comments.asp">HTML Comments</a>
+<a target="_top" href="html_editors.asp">HTML Editors</a>
+<a target="_top" href="css_table_align.asp">Table Alignment</a>
+<a target="_top" href="css_howto.asp">CSS How To</a>
+<a target="_top" href="css_outline.asp">CSS Outline</a>
+<div class="tut_overview">
+<a target="_top" href="css3_gradients_radial.asp">Radial Gradients</a>
+<a target="_top" href="js_api_web_storage.asp">Web Storage API</a>
+<a target="_top" href="js_ajax_xmlfile.asp">AJAX XML File</a>
+<a target="_top" href="js_random.asp">JS Random</a>
+<a target="_top" href="js_best_practices.asp">JS Best Practices</a>
+<a target="_top" href="js_string_templates.asp">JS String Templates</a>
+<a target="_top" href="css_boxmodel.asp">CSS Box Model</a>
+<a target="_top" href="css_quiz.asp">CSS Quiz</a>
+<a target="_top" href="html_examples.asp">HTML Examples</a><br>
+<a href="/css/css_examples.asp">CSS Examples</a><br>
+<a href="/js/js_examples.asp">JavaScript Examples</a><br>
+<a href="/howto/default.asp">How To Tutorial</a><br>
+<a href="/sql/default.asp">SQL Tutorial</a><br>
+<a href="/python/default.asp">Python Tutorial</a><br>
+<a href="/w3css/default.asp">W3.CSS Tutorial</a><br>
+<a href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a><br>
+<a href="/php/php_examples.asp">PHP Examples</a><br>
+<a href="/java/java_examples.asp">Java Examples</a><br>
+<a href="/xml/xml_examples.asp">XML Examples</a><br>
+<a href="/jquery/jquery_examples.asp">jQuery Examples</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<!--
+<h4>Web Certificates</h4>
+<a href="/cert/default.asp">HTML Certificate</a><br>
+<a href="/cert/default.asp">XML Certificate</a><br>
+<a href="/cert/default.asp">Bootstrap Certificate</a><br>
+<a href="/cert/default.asp">jQuery Certificate</a><br>
+<a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-block ref-button black-color">HTML Reference</a>
+  </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+   <h3>JavaScript Example:</h3>
+   <div class="w3-code notranslate green-border">
+   <div class="htmlHigh">
+&lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br><br>
+&lt;script&gt;<br>
+function myFunction() {<br>
+     &nbsp; let x = document.getElementById(&quot;demo&quot;);<br>
+&nbsp; x.style.fontSize = &quot;25px&quot;; <br>
+&nbsp; x.style.color = &quot;red&quot;; <br>}<br>
+&lt;/script&gt;
+    </div>
+   </div>
+   <a href="/js/tryit.asp?filename=tryjs_default" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h5 style="font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 2px 0 -20px 0 !important;
+}
+
+.learn h1  {
+  margin: 10px 0 !important;
+}
+
+
+.green-border {
+  border-left: 4px solid #04AA6D;
+}
+
+.w3-round, .w3-round-medium {
+  border-radius: 5px;
+}
+
+.tryit-button {
+  background-color: #04AA6D;
+  padding: 17px 55px
+}
+
+#getdiploma a:hover,
+#getdiploma a:active {
+  background-color: #059862 !important;
+  color:white!important;
+}
+
+.closenav_span:hover {
+  background-color: #282A35!important;
+  color: #059862!important;
+}
+
+.ref-button {
+  background-color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  color: #000;
+}
+
+.ref-button:hover {
+  background-color: #E7E9EB !important
+}
+
+.hover-yellow:hover {
+  background-color: #fff080 !important;
+  color: black !important;
+}
+
+.codeeditorbr-tablink {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;">Web Courses</h5>
+<a href="https://courses.w3schools.com/browse/certifications/courses/css-certification-exam" target="_blank">Java Certificate</a>
+   <a class="w3-bar-item w3-button" href='/jquery/jquery_ref_overview.asp'>jQuery Reference</a>
+   <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24 ws-hide-800" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references" title="References" style="width:132px">References <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a>
+   <a class="w3-bar-item w3-button" href="/css/css_rwd_intro.asp" title="Responsive Web Design Tutorial"],
+  ["graphics", "/graphics/svg_intro.asp", "SVG Tutorial"],
+  ["canvas", "/graphics/canvas_intro.asp", "Canvas Tutorial"],
+  ["raspberry pi", "/nodejs/nodejs_raspberrypi.asp" title="Raspberry Pi Tutorial">
+        <div class="w3-card-2 w3-round" style="color:black;background-color:#96D4D4;padding:24px;">
+        <h2 style="font-size:45px;font-weight:700">How To Section</h2>
+  <h4 class="xxw3-text-dark-grey">Code snippets for HTML, CSS and JavaScript</h4>
+  <h6 style="margin-top:19px;">For example, how to create a slideshow:</h6>
+  <br>
+  <div class="codeeditorbr-container" style="text-align:left;">
+    <div class="codeeditorbr-row">
+      <div class="codeeditorbr-row">
+        <div class="codeeditorbr-column codeeditorbr-middle">
+          <input type="text" disabled class="codeeditorbr-input" value="www.w3schools.com/tryit/">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xl p-responsive pb-8 pb-md-9">
+    <div class="home-git-log-center pt-10 pt-md-11 pb-8 pb-md-9">
+
+      <div class="col-8-max mx-0 mx-lg-auto text-left text-lg-center mb-4 mb-md-7 color-bg-default pb-3">
+        <h2 class="h2-mktg mb-3"> Automate anything with <span class="text-gradient-purple-coral no-wrap">GitHub Actions</span></h2>
+        <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="https://docs.github.com/github/managing-security-vulnerabilities/configuring-dependabot-security-updates" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:Create a new organization for free <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                  <h3 class="js-build-in-item build-in-slideX-left f2-mktg text-gray-mktg text-semibold mb-4 col-5-max">Speaking of automation, <span class="text-gray-dark-mktg">Work however you want.</span>
+                    Put a GUI on it with <a class="color-fg-accent" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Mobile&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Collections;&quot;}" href="/collections">
+      Collections
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold py-2" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:partner&quot;}" href="https://partner.github.com">Partners</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;}" href="/git-guides">What is Git?</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden>
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="progress-pjax-loader js-pjax-loader-bar Progress position-fixed width-full">
+    <span style="width: 0%;" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-branch mr-1">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+    <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-three-bars">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+    <button type="button" class="btn-octicon sub-nav-mktg-toggle d-lg-none p-1 flex-order-1 float-right js-toggler-target" aria-label="Toggle page navigation">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-three-bars">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+
+    
+
+    <div class="sub-nav-mktg-links flex-auto f4-mktg d-lg-flex flex-lg-justify-around">
+        <a href="#home-code" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Learning Lab&quot;,&quot;label&quot;:&quot;text:atom&quot;}" href="https://atom.io">Atom</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:google icon;ref_loc:develop launchpad;&quot;}"
+              >
+                <div class="d-flex ai-center">
+                <div class="ai-center d-flex jc-end">
+                    <button
+                        class="home-discussions-check-0 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+                        </picture>
+              </div>
+
+                <div>
+                  <h3 class="f2-mktg text-gray-light-mktg text-semibold mt-md-n5 mb-5 mb-md-n11 col-5-max"><span class="color-fg-default">Found a vulnerability?</span> Our security advisory remediation tools help developers identify and disclose them responsibly so maintainers can patch them in dedicated, private workspaces.</h3>
+              </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">An Open Source Machine Learning Framework for Everyone</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="width-full offset-lg-2 d-flex flex-justify-center gutter-condensed gutter-lg py-2 py-lg-3">
+            <div class="col-3">
+              <a href="/facebook/react"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Open source guides&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Learn how to get started with Discussions <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="704" viewBox="0 0 704 704" width="704" class="js-webgl-globe-loading position-absolute left-0 right-0 top-0 bottom-0" style="margin: auto; transform: scale(0.8)"><filter id="a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="560" width="560" x="70" y="70"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"></feBlend><feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0.447059 0 0 0 0 0.643137 0 0 0 0 0.988235 0 0 0 0.49 0"></feColorMatrix><feBlend in2="shape" mode="normal" result="effect1_innerShadow"></feBlend><feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dx="1" dy="1"></feOffset><feGaussianBlur stdDeviation="7.5"></feGaussianBlur><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.447059 0 0 0 0 0.643137 0 0 0 0 0.988235 0 0 0 0.49 0"></feColorMatrix><feBlend in2="shape" mode="normal" result="effect1_innerShadow"></feBlend><feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="effect2_innerShadow" mode="normal" result="effect3_innerShadow"></feBlend></filter><radialGradient id="b" cx="0" cy="0" gradientTransform="matrix(-199.20400108 -199.20400108 199.20400108 -199.20400108 332.08 338.37)" gradientUnits="userSpaceOnUse" r="1"><stop offset="0" stop-color="#06060e"></stop><stop offset="1" stop-color="#03009f" stop-opacity="0"></stop></radialGradient><radialGradient id="f" cx="0" cy="0" gradientTransform="matrix(-84.00137423 185.99914213 -185.99914213 -84.00137423 462 399)" gradientUnits="userSpaceOnUse" x1="352" x2="352" y1="331" y2="628"><stop offset="0" stop-color="#4b60fb"></stop><stop offset=".565687" stop-color="#33205d"></stop><stop offset="1" stop-color="#03009f" stop-opacity="0"></stop></radialGradient><circle cx="352" cy="352" fill="url(#d)" r="276"></circle><circle cx="352" cy="352" fill="url(#d)" r="276"></circle><circle cx="352" cy="352" fill="url(#d)" r="276"></circle><circle cx="352" cy="352" fill="url(#e)" r="276"></circle><circle cx="352" cy="352" fill="url(#b)" r="303" transform="matrix(.98453041 .1752138 -.1752138 .98453041 67.120553 -56.22996)"></circle><g filter="url(#a)"><circle cx="352" cy="352" fill="url(#e)" r="276"></circle><circle cx="352" cy="352" fill="url(#e)" r="276"></circle><circle cx="352" cy="352" fill="url(#c)" r="276"></circle><circle cx="352" cy="352" fill="url(#d)" r="276"></circle><circle cx="352" cy="352" fill="url(#d)" r="276">

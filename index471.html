@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/unix/Img/apple-touch-icon.png?v=5cf7fe716a89" alt="Unix &amp; Linux icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/" class="fc-light d-block py6 px6 h:fc-black-800 js-gps-track"
+                            data-ga="[&quot;teams traffic&quot;,&quot;footer - site nav&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="mln4 mb24 sm:d-none svg-spot spotCookieLg" style="color: var(--theme-button-filled-background-color)" width="96" height="96" viewBox="0 0 96 96"><path d="M86 26.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13ZM72.5 60a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" opacity=".2"/><path d="M75 17a8 8 0 1 1 6.49 7.86L68.04 50.79A7.98 7.98 0 0 1 63 65a8 8 0 0 1-7.85-9.55l-17-9.84a8 8 0 0 1-8.56 4.27L20.21 75.2a8 8 0 1 1-2.8-1.08l9.38-25.32a8 8 0 1 1 12.19-6.18l17.3 10.02a8 8 0 0 1 9.12-3.27l13.29-25.63A8 8 0 0 1 75 17Zm8-5a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM16 77a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM16 77a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm42-20a5 5 0 1 0 10 0 5 5 0 0 0-10 0Z"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12">Data scientists</h3>
+                    <p class="fs-body3 fc-black-300">If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
+                </div>
+            </div>
+            </div>
+    </a>
+</li>
+
+                            <a href="https://stackoverflow.co/talent" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                            </li>
+            <li class="ps-relative js-create-team-cta d-none">
+                <div class="flex--item s-avatar va-middle bg-orange-400">
+                            <li class="" id="consent-footer-link"><a class="js-gps-track -link js-cookie-settings" data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list">
+                                </a>
+                            </li>
+
+                <li>
+                    <a href="#"
+                        class="home-discussions-check-2 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+                      </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">A declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="width-full offset-lg-2 d-flex flex-justify-center gutter-condensed gutter-lg py-2 py-lg-3">
+            <div class="col-3">
+              <a href="/ohmyzsh/ohmyzsh"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to learn about GitHub Mobile&quot;,&quot;label&quot;:&quot;text:electron&quot;}" href="https://www.electronjs.org">Electron</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to diversity&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Community forum;&quot;}" href="https://github.com/about">About</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:pricing&quot;}" href="/pricing">Pricing</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to shop&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Events;&quot;}" href="/events">
+      Events
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Integrations&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:npm;ref_loc:code launchpad&quot;}" href="https://desktop.github.com/">GitHub Desktop</a> or stay in the command line with <a class="color-fg-accent" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:hashicorp/terraform;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-9 py-md-10">
+                <div class="js-build-in home-matrix-comp d-flex position-absolute top-6 top-lg-3 bottom-0 flex-items-center" data-build-margin-top="0" data-build-margin-bottom="0">
+              <div class="home-codeql-step-3 rounded-2 position-absolute box-shadow-active-border-light-mktg js-build-in-item" style="font-size: 0;">
+              <picture>
+                        <source srcset="https://github.githubassets.com/assets/716-5eb5398842ed.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-nZpgXrBvHm7YePk3m1UhdxY43Ra8lTPxsGk7ocBtGBimPanKdybEgnPXXulh7k7tNLnPzPXFEJ5wY7QGowGOdw==" src="https://github.githubassets.com/images/modules/site/home/codeql-step-3.png" alt="Step 3" class="width-full" loading="lazy">
+                  <img class="float-left circle border unselectable" width="32" height="32" alt="@joshaber" src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 color-bg-default circle position-relative mt-lg-n7 mx-auto js-build-in" style="width: 164px; height: 164px;" data-build-margin-top="0" data-build-margin-bottom="0">
+            <div class="position-absolute text-left top-0 right-0 bottom-0 left-0 home-actions-success circle z-1">
+              <img src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" width="72" height="72" class="home-sponsors-heart-2 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+                    </picture>
+              </div>
+
+                    <div class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-9 py-md-10">
+                <div class="js-build-in col-12 col-md-9 col-lg-6 home-codespaces-copy-item home-codespaces-copy-item-3 position-relative" data-build-non-decorative="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target width-fit p-2">
+          
+
+        </div>
+
+      <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Company
+        </h2>
+
+        <ul class="list-style-none f5">
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to get GitHub Mobile on Google Play Store&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Codespaces;&quot;}" href="/features/codespaces">
+      Codespaces
+</a>  </li>
+
+            
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:home&quot;}" class="color-fg-default" aria-label="Go to GitHub homepage">
+          <img class="footer-logo-mktg" src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
+    <video loop muted playsinline preload="none" class="js-globe-aurora position-absolute top-0 left-0 right-0 width-full events-none overflow-hidden">
+    <div class="d-flex flex-column gutter gutter-spacious">
+
+          <div class="home-branch-container position-relative f6-mktg text-mono text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+                <div class="mr-3">
+                  <img class="float-left circle border unselectable" width="32" height="32" alt="@nplasterer" src="https://avatars.githubusercontent.com/facebook?s=64&amp;v=4" alt="Facebook" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async" alt="" src="https://github.githubassets.com/static/fonts/alliance/Alliance-No-1-ExtraBold.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="lib/w3schools30.css">
+<script>
+var searchFromBox = false;
+function gSearch(el) {
+  var cx = uic_r_y();
+  var gcse = document.createElement('script'); gtra.id = 'gTra'; gtra.type = 'text/javascript'; gtra.async = true;
+  gtra.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  var el = document.getElementById('gSearch');
+  if (el == null) {
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  }
+  open_search(el, searchFromBox);
+};
+
+function gTra(el) {
+  var gtra = document.createElement('script'); gtra.id = 'gTra'; gtra.type = 'text/javascript'; gtra.async = true;
+  gtra.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  var el = document.getElementById('gSearch');
+  if (el == null) {
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gtra, s);
+  }
+  open_translate(el);
+};
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+<style>
+/* Customize w3schools23.css */
+#nav_tutorials,
+#nav_references,
+#nav_exercises {
+  margin-top: 0;
+}
+
+@media screen and (min-width:861px) {
+  #myAccordion,#navbtn_menu,
+  .hidesm {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .topnavmain_video {
+    display: none !important;
+  }
+}
+</style>
+
+  <a class="w3-bar-item w3-button" href="/googlesheets/index.php">Learn Google Sheets</a>
+
+   <h3 class="w3-margin-top">Programming</h3>
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
+   <a class="w3-bar-item w3-button" href="/excel/index.php">Learn Excel</a>
+   <a class="w3-bar-item w3-button" href="/mysql/default.asp">Learn MySQL</a>
+   <a class="w3-bar-item w3-button" href="/cs/index.php">Learn C#</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+   <a class="w3-bar-item w3-button" href='/aws/index.php'>Learn AWS Cloud</a>
+
+   <h3 class="w3-margin-top">Programming</h3>
+   <a class="w3-bar-item w3-button" href='/html/default.asp' title='HTML Tutorial' style="padding-left:18px!important;padding-right:18px!important;">HTML</a>
+      <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/css" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses in Default top navigation');" title="Courses">Paid Courses</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="/pro/index.php">Pro</a>
+  </div>
+</div>
+
+<script>
+(
+function setThemeCheckboxes() {
+  var x = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+    document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
+    }
+  }
+}
+function w3_close() {
+  document.getElementById("fblikeframe").style.display='none';
+}
+</script>
+<script src="/lib/w3codecolor.js"></script>
+<script>
+  MyLearning.loadUser('footer');
+  function docReady(fn) {
+    document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):window.attachEvent&&window.attachEvent("onload",c);}).call(this);
+window.jsl=window.jsl||{};window.jsl.dh=function(a,b,f){try{var g=document.getElementById(a);if(g)g.innerHTML=b,f&&f();else{var c={id:a,script:String(!!f),milestone:String(google.jslm||0)};google.jsla&&(c.async=google.jsla);var h=a.indexOf("_"),d=0<h?a.substring(0,h):"",k=document.createElement("div");k.innerHTML=b;var e=k.children[0];if(e&&(c.tag=e.tagName,c["class"]=String(e.className||null),c.name=String(e.getAttribute("jsname")),d)){a=[];var l=document.querySelectorAll('[id^="'+d+'_"]');for(b=0;b<l.length;++b)a.push(l[b].id);c.ids=a.join(",")}google.ml(Error(d?"Missing ID with prefix "+d:"Missing ID"),!1,c)}}catch(m){google.ml(m,!0,{"jsl.dh":!0})}};(function(){var x=false;
+google.jslm=x?2:1;})();(function(){(function(){google.csct={};google.csct.ps='AOvVaw2DuDXxKNL19fLw3D2nGfgP\x26ust\x3d1652105574178868';})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){(function(){var id='tsuid4';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_5','\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcSLsj_GqaOYmRp1_0bUkii44h2ftKgGTQHCL7Rf\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw\x3d\x3d\x22 style\x3d\x22max-width:24px;max-height:24px\x22 id\x3d\x22dimg_21\x22\x3e\x3c/span\x3e\x3c/button\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eHackerTyper. HackerTyper is one of those websites that exists but you can\x27t quite put your finger on why it exists. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3d5s93YtL5CM-yqtsP87-5iAQ\x26amp;q\x3dWhat+are+the+interesting+websites?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjShKaAi9D3AhVPmWoFHfNfDkEQMHoECAMQHg\x26amp;usg\x3dAOvVaw13QYZmM3U6qFL_OtP2Rgq5\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22q4vBJc\x22\x3e\x3c/div\x3e\x3cspan\x3e\x3ch2 class\x3d\x22zBAuLc l97dzf\x22\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eLong Doge Challenge. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eSmithsonian. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe ji5jpf tAd8D AP7Wnd\x22\x3eMore results\x3c/div\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eBees Bees Bees!\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eJustwatch. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e5\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/a\x3e\x3ca class\x3d\x22BVG0Nb\x22 href\x3d\x22/search?ie\x3dUTF-8\x26amp;q\x3dGiphy\x26amp;stick\x3dH4sIAAAAAAAAAOOQMZIozcssLE1VKM4sSS1WyM9TyMwrSS3KSy2J4kkrzVMoT00Cy5xi5NVP1zc0TKpIM47PKMo7xYhkCEwyzTgrJc8sJ_kUIydI0igtPcP4F6NEKA4bGlgYF7EKOhYkFpXkpuaVKIRkpBYlFlTeYpNkMP3YyvTLV-Ib440LDbsuaJS0hinncGXn6gMAH2BiRr0AAAA\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjShKaAi9D3AhVPmWoFHfNfDkEQzmd6BAgDEB8\x22\x3eMore results\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid3';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_11','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px\x22 class\x3d\x22hwc\x22\x3e\x3cdiv class\x3d\x22AzWLW\x22\x3e\x3cdiv class\x3d\x22ZINbbc xpd O9g5cc uUPGi\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22ZINbbc xpd O9g5cc uUPGi\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eSporcle\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eBees\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid2';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){(function(){google.csct.rl=true;})();})();(function(){
+window.xp=function(b){function f(k,g,h){return"xp"+("x"==g?"c":"x")+h}for(var c=/\bxp(x|c)(\d?)\b/,a=b;a;){var e=a.className,d=e.match(c);if(d){d="c"==d[1];a.className=e.replace(c,f);b&&b.setAttribute("aria-expanded",d);if(d)for(b=a.getElementsByTagName("img"),c=0;c<b.length;++c)if(a=b[c],e=a.getAttribute("data-ll"))a.src=e,a.removeAttribute("data-ll");break}a=a.parentElement}};})();(function(){(function(){
+window.logVe=function(a){a&&a.attributes["data-ved"]&&window.ping("/gen_204?ved="+a.attributes["data-ved"].value)};}).call(this);})();(function(){(function(){var id='tsuid3';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){(function(){google.csct.rl=true;})();})();(function(){
+window.xp=function(b){function f(k,g,h){return"xp"+("x"==g?"c":"x")+h}for(var c=/\bxp(x|c)(\d?)\b/,a=b;a;){var e=a.className,d=e.match(c);if(d){d="c"==d[1];a.className=e.replace(c,f);b&&b.setAttribute("aria-expanded",d);if(d)for(b=a.getElementsByTagName("img"),c=0;c<b.length;++c)if(a=b[c],e=a.getAttribute("data-ll"))a.src=e,a.removeAttribute("data-ll");break}a=a.parentElement}};})();(function(){(function(){
+window.logVe=function(a){a&&a.attributes["data-ved"]&&window.ping("/gen_204?ved="+a.attributes["data-ved"].value)};}).call(this);})();(function(){
+function b(a){for(a=a.target||a.srcElement;a&&"A"!==a.nodeName;)a=a.parentElement;a&&(a.href||"").match(/\/search.*[?&]tbm=isch/)&&(a.href+="&biw="+document.documentElement.clientHeight;0>c+b?g=2:c>=p&&(g=4);if(0>a+f||a>=(window.innerWidth||document.documentElement.clientWidth,a.href+="&bih="+document.documentElement.clientHeight;0>c+b?g=2:c>=p&&(g=4);if(0>a+f||a>=(window.innerWidth||document.documentElement.clientHeight)}document.addEventListener("click",b,!1);document.addEventListener("touchStart",b,!1);}).call(this);</script></div><!-- cctlcm 5 cctlcm --><textarea class="csi" name="csi" style="display:none">

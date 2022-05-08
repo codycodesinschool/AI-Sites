@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:url" content="https://github.com/" /><meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="/lib/w3schools30.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+<style>
+/* Customize w3schools23.css */
+#nav_tutorials,
+#nav_references,
+#nav_exercises {
+  margin-top: 0;
+}
+
+@media screen and (min-width:861px) {
+  #myAccordion,#navbtn_menu,
+  .hidesm {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .learntocodeh1 {
+    font-size:50px!important;
+  }
+  .learntocodeh3 {
+    font-size:21px!important;
+  }
+  .learntocodecontent {
+    padding-left:35px;
+    padding-right:35px;
+  }
+  form.example input[type=text],form.example button {
+  font-size: 16px;
+ }
+   form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-left: none;
+  cursor: pointer;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+}
+
+form.example button:hover {
+  background: #059862;
+  color: white;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#listofsearchresults {
+  display:none;
+  position:absolute;
+  //border:1px solid #000;
+  background-color:#282A35;
+  background-color:#fff;
+  color:#000;
+}
+body.darkpagetheme div.ext_icon_container {
+  background-color:#1d2a35;
+  color:#ddd;
+}
+
+#darkmodemenu {
+  position:absolute;
+  top:-40px;
+  right:16px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  z-index:-1;
+  transition: top 0.2s;
+  user-select: none;
+}
+#darkmodemenu input,#darkmodemenu label {
+  cursor:pointer;
+}
+</style>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredmode");
+  var y = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darktheme";
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+<a target="_top" href="js_object_display.asp">Object Display</a>
+<a target="_top" href="js_object_maps.asp">Object Maps</a>
+<a target="_top" href="js_exercises.asp">JS Exercises</a>
+<a target="_top" href="html_intro.asp">HTML Introduction</a>
+<a target="_top" href="js_let.asp">JS Let</a>
+<a target="_top" href="js_classes.asp">JS Classes</a>
+<a target="_top" href="js_json_html.asp">JSON HTML</a>
+<a target="_top" href="js_validation.asp">DOM Forms</a>
+<a target="_top" href="css3_fonts.asp">CSS Web Fonts</a>
+<a target="_top" href="/cssref/css_animatable.asp">CSS Animatable</a>
+<a target="_top" href="/cssref/css_animatable.asp">CSS Animatable</a>
+<a target="_top" href="/cssref/css_units.asp">CSS Units</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
+<a target="_top" href="css3_pagination.asp">CSS Pagination</a>
+<a target="_top" href="js_arrow_function.asp">JS Arrow Function</a>
+<a target="_top" href="css3_mediaqueries_ex.asp">CSS MQ Examples</a>
+<a target="_top" href="css3_object-fit.asp">CSS object-fit</a>
+<a target="_top" href="css_link.asp">CSS Links</a>
+<a target="_top" href="css_exam.asp">CSS Certificate</a>
+<br>
+<h2 class="left">JS References</h2>
+<a target="_top" href="/tags/default.asp">HTML Elements</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_attributes.asp">Attributes</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_attributes.asp">HTML Attributes</a>
+<a target="_top" href="html5_draganddrop.asp">HTML Drag/Drop</a>
+<a target="_top" href="html5_svg.asp">HTML SVG</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> SASS</h2>
+<a target="_top" href="/sass/default.php">SASS Tutorial</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Tutorial</h2>
+<a target="_top" href="default.asp">HTML HOME</a>
+<a target="_top" href="js_ie_edge.asp">JS IE / Edge</a>
+<a target="_top" href="js_api_history.asp">Web History API</a>
+<a target="_top" href="js_ajax_http_send.asp">AJAX Request</a>
+<a target="_top" href="js_const.asp">JS Const</a>
+<a target="_top" href="js_output.asp">JS Output</a>
+<a target="_top" href="js_es6.asp">JS 2015 (ES6)</a>
+<a target="_top" href="js_2018.asp">JS 2018</a>
+<a target="_top" href="js_ie_edge.asp">JS IE / Edge</a>
+<a target="_top" href="js_break.asp">JS Break</a>
+<a target="_top" href="js_input_examples.asp">JS HTML Input</a>
+<a target="_top" href="js_object_methods.asp">Object Methods</a>
+<a target="_top" href="js_htmldom.asp">DOM Intro</a>
+<a target="_top" href="css_text_spacing.asp">Text Spacing</a>
+<a target="_top" href="css_quiz.asp">CSS Quiz</a>
+<a target="_top" href="html_computercode_elements.asp">HTML Computercode</a>
+<a target="_top" href="html_filepaths.asp">HTML File Paths</a>
+<a target="_top" href="html_lists.asp">HTML Lists</a>
+<div class="tut_overview">
+  <a target="_top" href="html_colors_rgb.asp">RGB</a>
+  <a target="_top" href="css_border_rounded.asp">Rounded Borders</a>
+</div>
+<a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
+<a target="_top" href="css_grid_item.asp">Grid Item</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+<a target="_top" href="css3_box-sizing.asp">CSS Box Sizing</a>
+<a target="_top" href="css_list.asp">CSS Lists</a>
+<a target="_top" href="css3_multiple_columns.asp">CSS Multiple Columns</a>
+<a target="_top" href="css_font.asp">CSS Fonts</a>
+<div class="tut_overview">
+  <a target="_top" href="html_images_picture.asp">The Picture Element</a>
+</div>
+<a target="_top" href="css3_border_images.asp">CSS Border Images</a>
+<a target="_top" href="css_float.asp">CSS Float</a>
+<div class="tut_overview">
+  <a target="_top" href="css_colors.asp">Colors</a>
+  <a target="_top" href="html_table_colgroup.asp">Table Colgroup</a>
+</div>
+
+
+
+<a target="_top" href="html_lists_ordered.asp">Ordered Lists</a>
+<a target="_top" href="css3_image_reflection.asp">CSS Image Reflection</a>
+<a target="_top" href="css_table_responsive.asp">Table Responsive</a>
+</div>
+<a target="_top" href="css_display_visibility.asp">CSS Display</a>
+<a target="_top" href="js_json_php.asp">JSON PHP</a>
+<a target="_top" href="js_ajax_examples.asp">AJAX Examples</a>
+<br>
+<h2 class="left">JS JSON</h2>
+<a target="_top" href="js_api_history.asp">Web History API</a>
+<a target="_top" href="js_ajax_database.asp">AJAX Database</a>
+<a target="_top" href="js_reserved.asp">JS Reserved Words</a>
+<br>
+<h2 class="left">JS Versions</h2>
+<a target="_top" href="js_examples.asp">JS Examples</a>
+<a target="_top" href="js_dates.asp">JS Dates</a>
+<a target="_top" href="js_object_properties.asp">Object Properties</a>
+<a target="_top" href="html_intro.asp">HTML Introduction</a>
+<a target="_top" href="css3_variables_overriding.asp">Overriding Variables</a>
+<a target="_top" href="css3_flexbox_responsive.asp">CSS Flex Responsive</a>
+</div>
+
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+<a target="_top" href="html_formatting.asp">HTML Formatting</a>
+<a target="_top" href="js_cookies.asp">JS Cookies</a>
+<br>
+<h2 class="left">JS JSON</h2>
+<a target="_top" href="js_graphics_d3js.asp">JS D3.js</a>
+<br>
+<h2 class="left">JS Examples</h2>
+<a target="_top" href="css_rwd_mediaqueries.asp">RWD Media Queries</a>
+<a target="_top" href="css3_variables_javascript.asp">Variables and JavaScript</a>
+<a target="_top" href="css_image_transparency.asp">CSS Opacity</a>
+<a target="_top" href="css_navbar.asp">CSS Navigation Bar</a>
+<div class="tut_overview">
+<a target="_top" href="css_text.asp">CSS Text</a>
+<div class="tut_overview">
+<a target="_top" href="css3_variables_mediaqueries.asp">Variables in Media Queries</a>
+</div>
+<a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
+<a target="_top" href="css_list.asp">CSS Lists</a>
+<a target="_top" href="css_z-index.asp">CSS Z-index</a>
+<a target="_top" href="css_outline.asp">CSS Outline</a>
+<div class="tut_overview">
+<a target="_top" href="css3_gradients.asp">CSS Gradients</a>
+<div class="tut_overview">
+<a target="_top" href="css3_gradients.asp">Linear Gradients</a>
+<a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
+<a target="_top" href="html_symbols.asp">HTML Symbols</a>
+<a target="_top" href="html_intro.asp">HTML Introduction</a>
+<a target="_top" href="js_whereto.asp">JS Where To</a>
+<a target="_top" href="js_object_definition.asp">Object Definitions</a>
+<a target="_top" href="js_maps.asp">JS Maps</a>
+<a target="_top" href="js_editor.asp">JS Editor</a>
+<a target="_top" href="js_htmldom_methods.asp">DOM Methods</a>
+<a target="_top" href="js_number_methods.asp">JS Number Methods</a>
+<a target="_top" href="js_events.asp">JS Events</a>
+<a target="_top" href="html_summary.asp">HTML Summary</a>
+<a target="_top" href="html_summary.asp">HTML Summary</a>
+<a target="_top" href="html_lists_other.asp">Other Lists</a>
+</div>
+<a target="_top" href="html_css.asp">HTML CSS</a>
+<a target="_top" href="js_htmldom_events.asp">DOM Events</a>
+<a target="_top" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+  <div class='w3-row w3-white'>
+    <div class='w3-col l10 m12' id='main'>
+      <div id='mainLeaderboard' style='overflow:hidden;'>
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="adngin-main_leaderboard-0"></div>
+        <!-- adspace leaderboard -->
+
+      </div>
+<h1>HTML<span class="color_h1"> Tutorial</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="js_intro.asp">Next &#10095;</a>
+</div>
+<div id="mypagediv2" style="position:relative;text-align:center;"></div>
+<br>
+
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+  <div id="skyscraper">
+  
+    <div id="adngin-sidebar_top-0"></div>
+  
+  </div>
+</div>
+  
+<style>
+.ribbon-vid {
+  font-size:12px;
+  font-weight:bold;
+  padding: 6px 20px;
+  left:-20px;
+  top:-10px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  transform: rotate(-20deg);
+}
+.w3-blue:hover {
+  background-color:#0d8bf2!important
+}
+
+</style>
+</head>
+<body>
+<style>
+#darkmodemenu {
+  position:absolute;
+  top:-40px;
+  right:16px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+padding-top:10px;
+padding-bottom:10px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma h2 {
+  font-size:50px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma a {
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #04AA6D;
+  padding: 17px 55px
+}
+
+#getdiploma a:hover,
+#getdiploma a:active {
+  background-color: #059862 !important;
+}
+
+
+@media screen and (max-width: 680px) {
+  #w3_cert_badge {
+    width: 150px;
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: block;
+  }
+  .w3csstut {
+  height: auto;
+}
+
+}
+
+@media screen and (min-width:601px) {
+  #navbtn_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  #howto_iframe {
+    height: 280px;
+  }
+  .codeeditorbr-input {
+    margin-left: 15px;
+  }
+  .vl-howto {
+    height:45px;
+  }
+.vl-howtobtn {
+  margin-top:37px;
+}
+}
+@media screen and (max-width: 992px){
+.bigbtn {
+  display: block;
+  width: 100%;
+}
+}
+.ribbon-vidx {
+  width: 60px;
+  font-size:14px;
+  padding: 5px;
+  position: absolute;
+  left:-20px;
+  top:-10px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+}
+</style>
+
+<div class="sidesection" id="moreAboutSubject">
+</div>
+
+<!--
+<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
+  <div class="w3-container ws-black" style="border-top-right-radius:5px;border-top-left-radius:5px;">
+    <h5><a href="/cert/default.asp" class="w3-button w3-margin-top ws-black ws-hover-black w3-round" style="text-decoration:none" onclick="ga('send', 'event', 'Courses' , 'Clicked on python course link in footer');">Python Course</a><br>
+<a href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href='/bootstrap4/bootstrap_ref_all_classes.asp'>Bootstrap 4 Reference</a>
+   <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank">Play Game</a></p>
+ </div>
+</div>
+
+<div id="bgcodeimg2" class="w3-center" style="background-color:#F3ECEA;color:#000;padding-top:78px;padding-bottom:95px">
+<div class="w3-content" style="max-width:1100px;font-size:18px">
+ <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white sectionxsclosenavspan" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+ <div class="w3-container" style="padding-left:13px">
+   <h2 style="color:#FFF4A3;"><b>Tutorials</b></h2>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML and CSS</h3>
+   <a class="w3-bar-item w3-button" href="/cs/index.php">Learn C#</a>
+   <a class="w3-bar-item w3-button" href="/statistics/index.php">Learn Statistics</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">Data Science Certificate</a>
+   <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank" style="font-size:17px;margin-top:-9px;margin-left:12px" title="Exercises">EXERCISES</a>
+   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/quiztest/default.asp" style="font-size:17px;margin-top:-9px;margin-left:12px" title="Pro Subscriptions">PRO</a>
+   <nav class="w3-right w3-hide-medium w3-hide-small w3-wide">
+    <a href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px;">Report Error</a>
+</div>
+<!--
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none" title="Forum">FORUM</a> |
+    <a href="/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none" title="About W3Schools">ABOUT</a>

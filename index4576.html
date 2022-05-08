@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="GitHub" /><meta property="og:type" content= "website" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=9f3012e164b7">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems3 wmx12 px24 mx-auto gs24 mb32 sm:fd-column jc-center ff-row-wrap">
+            <div class="flex--item wmn2">
+                <div class="flex--item p16">
+            <div style="background: linear-gradient(0deg, var(--orange-100) 30%, var(--white))" class="h100 py48 sm:py32 bg-orange-050 bar-lg p-bs-wrapper">
+                <a href="/questions" class="h48 d-block"><svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12">Software engineers</h3>
+                    <p class="mb0 mt12 fc-black-400">or <a class="s-link s-link__underlined fc-black-400 h:fc-orange-500" href="/questions">search content</a></p>
+            </div>
+        </div>
+
+        <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+                <div class="fc-black-350 fs-body2">No credit card required</div>
+                </div>
+
+                
+            </div>
+            </div>
+            <nav class="site-footer--nav">
+                    <div class="mt-auto">
+            <a
+            href="https://stackoverflow.com/?products" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.                </div>
+                <div class="fc-black-300 fs-body2 px24">Times a developer got help since 2008</div>
+            </div>
+            </nav>
+            <div class="site-footer--col">
+                    <h5 class="-title"><a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                            Get started
+                        </span>
+                        </a>
+                    </li>
+                                     <li><a href="https://stackoverflow.co/explore-teams"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-700 h:bg-black-600 fc-white"
+            data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams&quot;,null,null]">
+                            <li><a href="https://www.facebook.com/officialstackoverflow/" class="-link js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+    </div>
+
+                    </li>
+                    <li class="bg-black-025 bt bc-black-075 py6 px6 bbr-md">
+                        <a href="https://api.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 1 })" href="https://stackoverflow.co/teams" 
+           class="w100 s-btn s-btn__primary s-btn__xs bg-orange-400 js-gps-track"
+           data-gps-track="teams.create.left-sidenav.click({ Action: FreemiumTeamsCreateClick })"
+               data-ga="[&quot;top navigation&quot;,&quot;public qa submenu click&quot;,null,null,null]">About the company</a>
+                    </li>
+                    <li class="mt16 md:mt0">
+                            <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 39 })" href="https://stackoverflow.co/">Company</a></h5>
+                    <ul class="-list">

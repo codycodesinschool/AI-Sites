@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="d-flex flex__allitems3 jc-center px12 md:fd-column pt32 pb64 sm:pb128 wmx9 mx-auto">
+            <div class="flex--item p16 sm:p12">
+                <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="flex--item p16">
+            <div style="background: linear-gradient(0deg, var(--blue-100) 30%, var(--white))" class="h100 py48 sm:py32 bg-orange-050 bar-lg p-bs-wrapper">
+                <a href="/questions" class="h48 d-block"><svg aria-hidden="true" class="svg-icon iconShield" width="18" height="18" viewBox="0 0 18 18"><path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"/></svg></div>
+            <div>Unlimited Teams within your instance</div>
+        </div>
+        <div id="p-pricing-grid-business" class="flex--item d-flex fd-column wmn3">
+            <div class="bg-white bar-lg ba bc-black-075 h100 p24 fs-body2 d-flex fd-column">
+                <h2 class="px8 py4 as-start bar-sm p-bg-purple d:p-bg-purple-alt fc-white d:fc-black fs-body3">
+                    Enterprise
+                </h2>
+
+                <div class="bb bc-black-075 pb32 mb12 d-inline-block"><svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconJira" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2H3ZM2 5h14v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5Zm4 3a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"/></svg></div>
+            <div>Your own customer success and community building representative</div>
+        </div>
+        <div class="d-flex mb12 fc-black-400 mb24">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconHealth" width="18" height="18" viewBox="0 0 18 18"><path d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4Z"/></svg></a>
+                    </div>
+                </div>
+                <div class="flex--item fs-fine fc-light">
+                            <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 16})">Questions</a></li>
+                                  maxlength="240"
+                                <a href="https://gamedev.stackexchange.com" data-animation-type="show" class="flex--item mb24 wmn2">
+        <div class="m12 h100 bs-sm ba bc-black-150 bg-black-100 d:bg-black-075 bar-lg p24 sm:pr6 sm:pl6 pb0">
+            <svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18"><path d="M5 3a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm0 2.5c0-.28.22-.5.5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5ZM5.5 8h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1ZM5 11.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Z"/><path opacity=".4" d="M15.09 15H4.74A2.75 2.75 0 0 1 2 12.23V4.9c-.61.59-1 1.42-1 2.34v5.5C1 14.54 2.45 16 4.24 16h8.5c.92 0 1.76-.38 2.35-1Z"/></svg></div>
+            <div>Content Health tools</div>
+        </div>
+
+
+        <div class="overflow-x-auto">
+            <div class="d-flex gutter gutter-spacious flex-column list-style-none ">
+              <li class="js-build-in-trigger col-11 col-sm-10 col-lg-12">
+                <div class="js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="svg-icon iconTool" width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"/></svg></div>
+            <div>Structured and searchable knowledge base</div>
+        </div>
+
+
+                        <div class="home-matrix-publish float-lg-left mx-auto color-bg-default width-full rounded-2 position-relative box-shadow-card-border-mktg" style="border-top-left-radius: 0 !important;">
+                    <div class="rounded-2 box-shadow-default-border-mktg" alt="Actions workflow canvas" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.js</div>
+        </div>
+
+        <div class="d-flex flex__center gs16 ff-row-wrap">
+            <a href="/teams/integrations/microsoft-teams" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Microsoft Teams" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoAdvertisingAlt" width="158" height="30" viewBox="0 0 158 30"><path d="M21 27v-8h3v11H0V19h3v8h18z" fill="#BCBBBB"/><path d="M5.4 19.1l13.6 2 .2-2.4-13.3-2.6-.5 3zm1.8-6.8l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zM17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zM5 25h14v-3H5v3zm24 10.86V28h5v1.58h-3.03v1.57h2.52v1.59h-2.52v3.1H29v.02zm6.02-3.03v-1.8c0-1.21.18-1.85.66-2.36.54-.57 1.23-.8 2.4-.8 1.23 0 1.97.28 2.5.94.38.48.54 1.1.54 2.22v1.8c0 1.21-.18 1.85-.66 2.37-.54.56-1.22.8-2.39.8-1.24 0-1.98-.28-2.5-.94-.4-.49-.55-1.1-.55-2.23zm4.14-.15v-1.5c0-1.36-.23-1.73-1.09-1.73-.86 0-1.09.37-1.09 1.73v1.5c0 1.36.23 1.74 1.1 1.74.85 0 1.08-.38 1.08-1.74zm4.88.14v3.04h-1.96V28h3.08c1.1 0 1.67.15 2.09.57.4.4.57.93.57 1.8 0 1.35-.37 2-1.35 2.29l1.7 3.19h-2.18l-1.43-3.04h-.52v.01zM44 31.34h.96c.7 0 .92-.22.92-.9 0-.66-.23-.88-.92-.88H44v1.78zm9.05 4.52v-6.27h-2.02V28h6v1.58h-2.02v6.27h-1.96v.01zm4.98 0V28h5.08v1.58h-3.14v1.52h2.65v1.58h-2.65v1.59h3.2v1.58h-5.14v.01zm10.21-1.39h-2.5l-.42 1.39H63.2L66.03 28h1.9l2.84 7.85h-2.1l-.43-1.39v.01zm-.46-1.55L67 30.27l-.8 2.65h1.58zm3.46 2.94V28h1.81l1.88 3.9 1.88-3.9h1.82v7.85h-1.87v-4.24l-1.2 2.48H74.3l-1.2-2.48v4.24h-1.87l.01.01zm8.17-1.32l1.48-.95c.36.6.82.84 1.65.84.7 0 1.03-.25 1.03-.78 0-.42-.22-.64-.8-.78-1.37-.34-1.66-.44-2.07-.7-.63-.41-.92-1-.92-1.89 0-1.57.96-2.4 2.75-2.4 1.36 0 2.21.43 2.75 1.38l-1.44.91c-.38-.54-.75-.73-1.34-.73-.55 0-.85.25-.85.71 0 .53.3.75 1.36 1.01 1 .26 1.24.34 1.64.6.53.35.79.92.79 1.8 0 .86-.21 1.42-.66 1.8-.5.42-1.28.64-2.26.64-.9 0-1.74-.2-2.29-.56a2.2 2.2 0 01-.82-.9z" fill="#F48024"/></svg>
+
+            <p class="p-ff-roboto-slab-bold fs-headline2 mb12 bt p-bc-black pt64">Ensure your company stays on course</h2>
+            <p class="fs-subheading mb0 wmx3 mx-auto">
+Build your employer brand            </p>
+        </a>
+    </div> 
+
+    <a href="https://stackoverflow.co/advertising" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 13 })" href="https://stackoverflow.co/" class="fc-light d-block py6 px6 h:fc-black-800 js-gps-track"
+                            data-gps-track="teams.create.left-sidenav.click({ Action: ShowInfo })"
+                   data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav show teams info&quot;,null,null,null]">
+                        <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="m43.05 15.18-22.29 9.35a9.1 9.1 0 0 0-10.87-3 9 9 0 0 0-4.82 11.79 9 9 0 0 0 17.17-5.2l12.28-5.22 1.5 3.57c.2.47.7.68 1.18.48l1.65-.7c.46-.19.67-.7.48-1.16l-1.5-3.58 1.92-.8 2.08 4.94c.2.47.7.68 1.17.48l1.65-.69c.47-.2.68-.7.48-1.17l-2.06-4.9 1.45-.6c.47-.2.67-.7.48-1.18l-.81-1.92a.85.85 0 0 0-1.14-.5ZM15.36 34.86a5.33 5.33 0 1 1-4.14-9.84 5.33 5.33 0 0 1 4.14 9.84Z"/><path d="M6.82 30.54a5.5 5.5 0 1 0 10.14-4.26 5.5 5.5 0 0 0-10.14 4.26Zm3.72-5.36a3.5 3.5 0 1 1 2.7 6.45 3.5 3.5 0 0 1-2.7-6.45Zm8.74-3.38a10.2 10.2 0 0 0-11.26-2.25 10.06 10.06 0 0 0-5.46 13.14 10.06 10.06 0 0 0 13.2 5.3 10.18 10.18 0 0 0 6.04-10.7l9.66-3.99 1.17 2.78a2 2 0 0 0 2.61 1.07l1.85-.78a2 2 0 0 0 1.07-2.61l-1.47-3.5c.9-.74 1.25-2.02.77-3.15l-.19-.46a2.78 2.78 0 0 0-3.63-1.48l-20.75 8.7Zm-1.12 1.74a1 1 0 0 0 1.23.38l21.41-8.99c.4-.16.85.02 1.02.42l.19.45a.73.73 0 0 1-.37.95 1 1 0 0 0-.75 1.37l1.81 4.33-1.84.77L39.08 19a1 1 0 0 0-.49-.52 1 1 0 0 0-.91-.07l-2.41 1.01a1 1 0 0 0-.55 1.28l.05.14 1.54 3.69-1.84.77-1.55-3.69a1 1 0 0 0-1.3-.53h-.01l-11.3 4.65a1 1 0 0 0-.6 1.16l.02.14A8.2 8.2 0 0 1 15 36.14a8.06 8.06 0 0 1-10.58-4.23A8.06 8.06 0 0 1 8.8 21.4a8.18 8.18 0 0 1 9.36 2.15Z"/></svg>
+            Robust read and write API
+        </div>
+    </div>
+    <div data-animation-type="show" class="flex--item m24 w64 h64 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Server Fault" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/dba/Img/apple-touch-icon.png?v=cdcd5ff7b29e" alt="Database Administrators icon">
+        </a>
+
+                        <a href="https://networkengineering.stackexchange.com" data-animation-type="show" class="flex--item mb24 wmn2">
+        <div class="m12 h100 bs-sm ba bc-black-150 bg-black-100 d:bg-black-075 bar-lg p24 sm:pr6 sm:pl6 pb0">
+            <svg aria-hidden="true" class="svg-icon iconGraph" width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"/></svg></div>
+            <div>Single sign-on (SSO) with SAML &#x2B; Okta integration</div>
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.co/advertising" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 40 })">Collectives</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list js-primary-footer-links">
+                                
+
+<li class="ps-relative  youarehere" >
+
+    <a
+       href="/"
+       class="pl8 js-gps-track nav-links--link"
+       
+       data-gps-track="top_nav.click({is_current:false, location:1, destination:3})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex ai-center jc-center wmx2 mx-auto mb12">
+                        <span class="text-gray-dark-mktg">Setup CI/CD, enhance your DevOps, and script your entire workflow with GitHub Actions.</span> Kick off automated workflows with GitHub events like push, issue creation, merge, and release.
+          </div>
+
+      
+      
+      
+      
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative">
+            <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pb-5">
+          <li class="col-12 col-md-9 col-lg-6 mt-n3 pb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" height="704" viewBox="0 0 704 704" width="704" class="js-webgl-globe-loading position-absolute left-0 right-0 top-0 bottom-0" style="margin: auto; z-index: -1; min-width: 100%; min-height: 100%;" hidden>
+      <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-test-tab.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/actions-editor-sidebar.webp" type="image/webp">
+                      <img src="https://github.githubassets.com/images/modules/site/home/discussions-check.svg"
+                        class="home-discussions-check-2 js-build-in-item position-absolute z-1" alt="Floating checkmark" loading="lazy">
+                      </a>
+                    </li>
+            </ul>
+          </div>
+
+          <div class="col-12 d-none d-lg-block">
+            <div class="d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious pt-5 pt-md-6 pb-9 pb-md-10">
+                  <div class="col-12 col-lg-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" aria-hidden="true" class="home-git-icon flex-shrink-0 mr-3 d-none d-md-block"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                <h3 class="js-build-in-item build-in-slideX-left f2-mktg text-gray-light-mktg  text-semibold mb-5 mb-lg-0 col-5-max">
+                    <span class="flex--item fc-black-600 fl-shrink0 fs-body1 z-active px12">
+                        Get started
+            </a>
+        </div>
+
+
+                        <div class="js-build-in-item home-sponsors-comp">
+                    <div class="home-codespaces-img-container overflow-hidden d-flex flex-items-start position-relative pl-2 pl-lg-4">
+                <picture>
+                          <source srcset="https://github.githubassets.com/images/modules/site/home/codeql-step-2.webp" type="image/webp">
+            <img src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" width="72" height="72" class="home-sponsors-heart-2 js-build-in-item position-absolute z-1" alt="Answered checkmark" loading="lazy">
+                      <img src="https://github.githubassets.com/assets/dark_dimmed-7196bb0d9aaf.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" integrity="sha512-WVoKqJ4y1nLsdNH4RkRT5qrM9+n9RFe1RHSiTnQkBf5TSZkJEc9GpLpTIS7T15EQaUQBJ8BwmKvwFPVqfpTEIQ==" rel="stylesheet" data-href="https://github.githubassets.com/images/modules/site/social-cards/github-social.png" /><meta property="og:image:alt" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.">
+
+<div class="position-relative z-2 mx-auto box-shadow-default-mktg wide-block py-0 position-relative home-git-log-dark-icons js-section" id="home-develop" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+  <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target width-fit p-2">
+          
+
+        </div>
+
+      <div class="river-mktg js-build-in-trigger d-flex flex-column gutter gutter-spacious flex-md-items-center my-3 my-sm-7 my-md-8 position-relative flex-md-row pb-4 pb-md-7" data-build-in-stagger="100">
+  <div class="col-12 py-3 js-build-in-item col-sm-10 col-md-6 col-lg-5 build-in-slideX-left">
+    <div class="pl-md-4">
+      
+      
+                <div class="mb-3">
+            <h4 class="h3-mktg mb-3 lh-condensed-ultra text-gradient-purple-coral">11,000+ <br>Actions</h4>
+            <h3 class="f2-mktg text-gray-light-mktg text-semibold mb-3">Record or rewind any change to your code to keep you and your team in sync. <span class="color-fg-default">Codespaces gives you a complete, configurable dev environment on top of a powerful VM in minutes.</span></h3>
+          </div>
+
+          <div class="col-12 mb-8 mb-md-9">
+            <div class="d-flex ai-center py32 jc-center wmx11 mx-auto px32 mbn128 sm:fd-column">
+        <div class="flex--item p16 sm:p12">
+                <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackoverflow.co/teams" 
+           class="w100 s-btn s-btn__primary s-btn__xs bg-orange-400 js-gps-track"
+           data-gps-track="teams.create.left-sidenav.click({ Action: ShowInfo })"
+                   data-ga="[&quot;top navigation&quot;,&quot;login button click&quot;,null,null,null]">Log in</a></li>
+                    <li><a href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a></li>
+                    </ul>
+                    </div>
+            <div class="flex--item truncate">
+                    Home
+                </div>
+            <div class="flex--item tt-uppercase fs-fine fc-light">Teams</div>
+                <div class="flex--item truncate">
+                    Home
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="ta-center pb64 pt96 sm:pt32">
+    <p class="fc-black-500 fs-subheading pb0 sm:pl24 sm:pr24">Thousands of organizations around the globe use Stack Overflow for Teams</p>
+    
+<div class="js-carousel-logos t-opacity t-slow o100 mx-auto d-flex ai-center jc-center sm:jc-start bar-pill px64 md:pl0 md:pr0 hs1 overflow-x-auto w100">
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="49" height="55" data-src="https://cdn.sstatic.net/Img/home/illo-integrations-right.png?v=90c26b9154c7" alt="">

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and feat..." />
+    <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="256">
+  <meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="/lib/w3schools30.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+
+<script src="/lib/uic.js?v=1.0.3"></script>
+<script>
+function openLangTab(evtEd, codeName) {
+  var indexEditor, proglanguage, progtablinks;
+  proglanguage = document.getElementsByClassName("codeeditorbr-tablink");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    proglanguage[indexEditor].style.display = "none";
+  }
+  progtablinks = document.getElementsByClassName("search_item");
+    if (x.length == 0) {
+      cc = 1;
+    }
+    for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf("search_active") > -1) {
+        x[i].className = "search_item";
+        n = i;
+        break;
+      }
+    }
+    if (keycode == 38) {
+      nn = n - 1;
+      if (nn < 0) nn = 0;
+    }
+    if (keycode == 40) {
+      nn = n + 1;
+      if (nn >= x.length) nn = nn - 1; 
+    }
+    x[nn].className = "search_item search_active";
+  }
+  if (keycode == 13) {  //enter
+    event.preventDefault();
+    x = document.getElementsByClassName("proglang");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    proglanguage[indexEditor].style.display = "none";
+  }
+  progtablinks = document.getElementsByClassName("search_item");
+    for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf("search_active") > -1) {
+        n = x[i].href;
+        if (n.indexOf("search_entire_w3schools") > -1) {
+          cc = 1;
+        }
+        break;
+      }
+    }
+    if (keycode == 38) {
+      nn = n - 1;
+      if (nn < 0) nn = 0;
+    }
+    if (keycode == 40) {
+      nn = n + 1;
+      if (nn >= x.length) nn = nn - 1; 
+    }
+    x[nn].className = "search_item search_active";
+  }
+  if (keycode == 13) {  //enter
+    event.preventDefault();
+    x = document.getElementsByClassName("proglang");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    proglanguage[indexEditor].style.display = "none";
+  }
+  progtablinks = document.getElementsByClassName("search_item");
+    for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf("search_active") > -1) {
+      n = x[i].href;
+      if (n.indexOf("search_entire_w3schools") > -1) {
+        cc = 1;
+      }
+      break;
+    }
+  }
+  if (cc == 1) {
+    searchFromBox = true;
+    submit_search_form();
+  } else {
+    ga('send', 'event', 'search', 'inputFocus')">
+      <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i id="learntocode_searchicon" class="fa fa-search"></i></button>
+      <div id="listofsearchresults">
+      </div>
+    </form>  
+    <h4 style="color:white;font-size:23px;font-weight:700;margin-top:30px!important;">
+      <a href="where_to_start.asp">Not Sure Where To Begin?</a>
+    </h4>
+  </div>
+</div>
+
+<svg style="background-color:#D9EEE1;" width="100%" height="70" viewbox="0 0 100 100" preserveAspectRatio="none">
+  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" />
+</svg>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredmode");
+  var y = localStorage.getItem("preferredmode");
+  var y = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.body.className += " darktheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.getElementById("radio_darkpage").checked = true;
+  }
+})();
+
+function mouseoverdarkicon() {
+  if(window.matchMedia("(pointer: coarse)").matches) {
+    return false;
+  }
+  var a = document.getElementById("google_translate_element");
+  if (a.style.display == "") {
+      a.style.visibility = "";
+      a.style.display = "none";
+      elmnt.innerHTML = "<i class='fa'>&#xe802;</i>";    
+    } else {
+      a.style.display = "";
+      a.style.visibility == "hidden"
+      ga('send', 'event', 'search', 'inputFoundBtn');
+    window.location = n;
+  }
+}
+function find_search_results(inp) {
+  var a, val, i, l, resultIndexes = [], html = "", classAtt = "", pos1, posNext, cc, c0, c1, c2;
+  a = document.getElementById("listofsearchresults");
+    a.innerHTML = "";
+    a.style.display = "none";
+    document.getElementById("navbtn_menu")) {
+      document.getElementById("stickypos").style.position = "static";
+    } else {
+        elem.style.position = "fixed";
+        elem.style.top = "60px";
+      stickyadstatus = "sticky";
+        document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop) {
+      elem.style.position = "fixed";
+      elem.style.top = "60px";
+      stickyadstatus = "sticky";
+      document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("sectionxs_" + x).innerHTML == "") {
+    document.getElementById("radio_darkcode");
+  var b = document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredmode", "light");
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+    document.getElementById("nav_" + x).style.display = "block";
+    if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+              }
+            } else {
+                if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["mid_content"]); });
+              }
+            }
+          } else {
+            window.addEventListener('adnginLoaderReady', function() {
+              if (Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
+  }
+  elem.style.width = skyWidth + "px";
+  if (window.innerWidth <= 992) {
+    elem.style.position = "";
+    elem.style.top = stickypos + "px";
+    return false;
+  }
+  var stickypos = document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+    elem.style.top = stickypos + "px";
+    return false;
+  }
+  var stickypos = document.getElementById("stickypos").style.position = "static";
+    }
+  }
+  if (stickyadstatus == "sticky") {
+    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
+      elem.style.position = "fixed";
+      elem.style.top = "60px";
+        stickyadstatus = "sticky";
+        document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+    elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "fixed";
+        elem.style.top = "60px";
+      stickyadstatus = "sticky";
+      document.getElementById("navbtn_" + x)) {
+      document.getElementById("navbtn_menu")) {
+      document.getElementById("stickypos").style.position = "static";
+    } else {
+        elem.style.position = "fixed";
+      elem.style.top = "60px";
+        stickyadstatus = "sticky";
+      document.getElementById("gsc-i-id1").focus();
+          }
+        }, 400);
+      //elmnt.innerHTML = "<span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'>&times;</span>";
+  }
+}
+function open_search(elmnt, sfb) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "44px";
+}
+function mouseoutofdarkicon() {
+  var a = document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("darktheme", "");
+    document.body.className = document.body.className.replace("darktheme", "");
+  document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredpagemode", "light");
+  }
+}
+
+function click_darkcode() {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "5px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("googleSearch");
+  if (a.style.visibility == "hidden" && a.style.display == "") {
+    a.style.display = "none";
+      elmnt.innerHTML = "<i class='fa'>&#xe802;</i>";    
+    } else {
+      a.style.display = "";
+      a.style.visibility == "hidden"
+      ga('send', 'event', 'search', 'googleInput');    
+    }
+    a.style.visibility = "hidden";
+    a.style.display = ""; 
+  }
+}
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+  pageLanguage: 'en',
+  autoDisplay: false,    
+  gaTrack: true,
+  gaId: 'UA-3855518-1',
+  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+function clickFBLike() {
+  document.getElementById("fblikeframe").style.display='block';
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color'>Close</button>";
+}
+function hideFBLike() {
+  document.getElementById("myAccordion");
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus();
+          }
+        }, 400);
+      //elmnt.innerHTML = "<span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'>&times;</span>";
+    }
+  } else {
+    if (a.style.display == "") {
+    a.style.visibility = "";
+      a.style.display = "none";
+    } else {
+      a.style.display = "";
+      a.style.visibility == "hidden"
+      ga('send', 'event', 'search', 'inputFound');
+      window.location = n;
+    }
+  }
+}
+
+function submit_search_form() {
+    searchFromBox = true;
+    gSearch();
+    var delayInMilliseconds = 100; //0.1 second
+    setTimeout(execute_google_search, 100);
+  }  
+}
+
+document.body.addEventListener("click", function(event) { 
+        useCaseShow(event.currentTarget, i);
+        clearInterval(useCasePlayer);
+    });
+  }   
+
+  function useCaseReset() {
+    for (var i = 0; i < useCases.length; ++i) {
+      useCases[i].className = useCaseClass;
+    }
+  }
+
+  function useCaseShow(el) {
+    useCaseReset();
+    el.className = useCaseClassActive;
+  }
+
+  function useCaseInit() {
+      useCasePlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems3 wmx12 px24 mx-auto gs24 mb32 sm:fd-column jc-center ff-row-wrap">
+            <div class="flex--item wmn5 sm:wmn-initial py64 sm:pt0 px32">
+            <div class="bb bc-black-075 pb24 mb24">
+                    <div class="rounded-2 box-shadow-active-border-mktg position-relative z-1 float-right home-discussions-2">
+                      <img src="https://github.githubassets.com/images/modules/site/home/pr-description.webp" type="image/webp">
+      <source srcset="https://github.githubassets.com/images/modules/site/home/actions-editor.webp" type="image/webp">
+              <img src="https://github.githubassets.com/images/modules/site/home/globe-500.hevc.mp4">
+      <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/assets/9244-eedfea9bdaec.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-K5XqHZlKou8Ex97bfu02vnw9p1q3z7EXg/hNqwyzevXKd7VQhkOwCH5y4Kx7AQ+wxdF7w2O30sb03ukDwHGVJQ==" src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-test.webp" type="image/webp">
+                  <img src="https://github.githubassets.com/assets/dark_high_contrast-595a0aa89e32.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-XpAMBMSRZ6RTXgepS8LjKiOeNK3BilRbv8qEiA/M3m+Q4GoqxtHedOI5BAZRikCzfBL4KWYvVzYZSZ8Gp/UnUg==" rel="stylesheet" data-href="https://github.githubassets.com/images/modules/site/home/actions-autocomplete.h264.mp4">
+          </video>
+        </div>
+
+    </div>
+  </div>
+</div>
+      <div class="d-flex flex-column gutter gutter-spacious flex-lg-items-center my-7 my-md-8 pb-7">
+        <div class="col-6-max">
+              <div class="mb-5 mb-md-6 mt-n3">
+                <div class="d-none d-lg-block col-4 flex-auto">
+                  <div class="col-6 col-lg-4 flex-auto">
+                  <dt>
+                    <label for="user_email" class="sr-only">Email address</label>
+                  </dt>
+                  <dd>
+                    <input class="form-control border-0 f4-mktg py-3 px-4 width-full" style="height: 3rem" placeholder="Email address" type="email" name="user_email" id="user_email" autocomplete="off" spellcheck="false">
+                  </dd>
+                </dl>
+                <input type="hidden" name="source" value="form-home-signup">
+                <button class="btn-mktg width-full width-sm-auto btn-signup-mktg" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Contact Sales&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" class="Link--secondary">Terms</a>
+        </li>
+
+        <li class="mr-3">
+          <a href="https://twitter.com/github" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Team&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:kubernetes/kubernetes;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex__center gs16 ff-row-wrap">
+            <a href="/teams/integrations/slack" class="mr-auto wmx4 d-block">
+                    <div class="fs-subheading fc-white d-block ta-center ml32">
+                        <svg aria-hidden="true" class="native svg-icon iconLogoMd" width="187" height="37" viewBox="0 0 187 37"><path d="m42 23-2.2-.2c-1.7-.1-2.3-.8-2.3-2 0-1.4 1-2.2 3-2.2 1.3-.1 2.6.3 3.6 1.1l1.3-1.3c-1.4-1-3.1-1.5-4.8-1.4-2.9 0-4.9 1.5-4.9 3.9 0 2.2 1.4 3.4 4 3.6l2.2.2c1.6.1 2.2.8 2.2 2 0 1.6-1.4 2.4-3.6 2.4-1.6.1-3.1-.5-4.2-1.6L35 28.8c1.5 1.4 3.5 2 5.5 1.9 3.2 0 5.5-1.5 5.5-4.1 0-2.6-1.6-3.4-4-3.6Zm15.8-6.1c-2.2 0-3.5.4-4.7 1.9l1.3 1.3c.8-1.1 2.1-1.7 3.4-1.5 2.5 0 3.4 1 3.4 2.9v1.3h-4c-3 0-4.6 1.5-4.6 3.9 0 1 .3 2 1 2.7.8.9 1.9 1.2 3.8 1.2 1.4.1 2.9-.4 3.9-1.4v1.3h2v-9.1c-.1-2.9-1.9-4.5-5.5-4.5Zm3.4 8.9c.1.8-.1 1.7-.7 2.3a4 4 0 0 1-3 .9c-2.1 0-3.1-.7-3.1-2.3 0-1.6 1-2.4 3-2.4h3.8v1.5Zm9.7-7.1c1.2 0 2.4.5 3.1 1.5l1.3-1.3a5.4 5.4 0 0 0-4.4-2c-3.4 0-5.9 2.3-5.9 6.9 0 4.6 2.6 6.9 5.9 6.9 1.7.1 3.3-.7 4.4-2L74 27.4c-.7 1-1.9 1.5-3.1 1.5-1.2.1-2.4-.5-3.1-1.5-.7-1.1-1-2.3-.9-3.6-.1-1.3.2-2.5.9-3.6.7-1 1.9-1.6 3.1-1.5Zm16.8-1.6h-2.4L79.2 23V11.1h-2v19.4h2v-4.9l2.4-2.4 4.5 7.3h2.4l-5.6-8.6 4.8-4.8Zm9.2-.16c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm13.6-10.4-2.8 8.6-2.8-8.6h-3.7l5.2 14h2.7l5.1-14h-3.7Zm9.6-.1c-3.6 0-6.1 2.6-6.1 7.1 0 5.7 3.2 7.2 6.5 7.2 2 .1 4-.7 5.3-2.2l-2.1-2.1c-.8.9-2 1.4-3.2 1.3-1.6.1-3-1.1-3.1-2.7v-.4h8.7v-1.6c.1-3.8-2.1-6.6-6-6.6Zm-2.7 5.8c0-.5.1-1 .3-1.5.4-.9 1.3-1.4 2.3-1.4 1-.1 1.9.5 2.3 1.4.2.5.3 1 .3 1.5h-5.2Zm13.33-4.3v-1.3h-3.4v14h3.5v-8.4c-.1-1.3.8-2.4 2.1-2.6h.2c.7 0 1.4.3 1.8.8l2.6-2.6a4.1 4.1 0 0 0-3.3-1.3c-1.3-.1-2.6.4-3.5 1.4Zm7.6-2.8v15.4h3.5v-11h2.6v-2.7h-2.6v-1.5c-.1-.6.3-1.2.9-1.3h1.6v-3h-2a3.9 3.9 0 0 0-4 3.8v.3Zm20.27 1.3c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm20.7-10.4-2.3 8.6-2.9-8.6H175l-2.8 8.7-2.3-8.6h-3.7l4.3 14h2.9l2.9-8.8 2.9 8.8h3l4.3-14-3.8-.1Zm-31.22 9.8v-15.2h-3.5v15.4a3.8 3.8 0 0 0 3.6 4h2.5v-3h-1.3c-.6.1-1.1-.2-1.3-.8v-.4ZM52.7 17.4H49V13h-2v13.9c0 2 1.1 3.6 3.4 3.6h1.4v-1.7h-1c-1.3 0-1.8-.7-1.8-2v-7.7h1.9l1.8-1.7Z" fill="var(--black-800)"/><path fill="#D6D9DC" d="M47 13h1v17h-1z"/></svg></a>
+                <img width="520" height="346" src="https://cdn.sstatic.net/Img/product/teams/microsoft-integration/microsoft-teams-logo.svg?v=00361aadd408" width="48" height="48" class="native w48 h48 wmx75" alt="">
+        </a>
+
+                        <a href="https://dba.stackexchange.com" data-animation-type="show" class="flex--item m24 w128 h128 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Unix &amp; Linux" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/serverfault/Img/apple-touch-icon.png?v=6c3100d858bb" alt="Server Fault icon">
+        </a>
+
+                        <a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                                  
+
+<li class="ps-relative" >
+
+    <a id="nav-questions"
+       href="/questions"
+       class="pl8 js-gps-track nav-links--link"
+               title="Stack Overflow for Teams is a private, secure spot for your organization's questions and answers."
+               data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                    <span class="flex--item4 bt bc-blue-300"></span>
+                </div>
+
+                <div class="bb bc-black-100 pb24 mb24">
+                    <div class="fc-black-350 fs-body2">Let’s talk about what you need</div>
+                </div>
+
+            <div class="ps-relative overflow-hidden">
+                <p class="mb2"><strong>Teams</strong></p>
+                <p class="mb12 fs-caption fc-black-400">Q&amp;A for work</p>
+                <p class="mb12 fs-caption fc-medium">Connect and share knowledge within a single location that is structured and easy to search.</p>
+                <a href="/collectives"
+               class="js-gps-track s-btn s-btn__primary s-btn__xs"
+               data-gps-track="top_nav.products.click({location:1, destination:7})"
+                            data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/business&quot;,null,null]"
+            Basic
+            >
+                Request a demo
+            </a>
+        </div>
+
+
+                <p class="fc-black-300 mb0 ta-center pt12">Always free up to 50 teammates</p>
+            </div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"/></svg></div>
+            <div>Structured and searchable knowledge base</div>
+        </div>
+
+
+        <div class="overflow-x-auto">
+            <div class="d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-9 py-md-10">
+                <div class="js-build-in-item build-in-scale-up color-bg-default rounded-2 box-shadow-active-border-mktg position-relative z-1 float-right home-discussions-2">
+                      <img src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 opacity-4 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@jasonetco" loading="lazy">
+                </picture>
+              </div>
+
+                <div class="col-12 col-md-10">
+              <div class="mb-5 mb-md-6 mt-n3">
+                <div class="d-none d-lg-flex offset-1 col-5 px-0 position-relative z-1">
+              <div class="js-build-in col-12 col-md-9 col-lg-6 home-codespaces-copy-item home-codespaces-copy-item-1 position-relative" data-build-non-decorative="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1" style="right: -0.26rem"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <h3 class="f2-mktg text-gray-light-mktg lh-condensed text-semibold mb-3">
+                  <span class="color-fg-default">Host it all for free with unlimited public and private repositories.</span></h3>
+            <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="https://docs.github.com/discussions" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="/security">Security</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Education;&quot;}" href="https://education.github.com">
+      Education
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to help&quot;,&quot;label&quot;:&quot;text:shop&quot;}" href="https://shop.github.com">Shop</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="codeeditorbr-column codeeditorbr-left">
+        <span class="codeeditorbr-dot" style="background:#FDD800;"></span>
+        <span class="codeeditorbr-dot" style="background:#5AC05A;"></span>
+        </div>
+
+        <div class="d-lg-none home-repo-editor-tab opacity-4 d-flex flex-items-center">
+          <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="macOS" loading="lazy"></li>
+                    <li class="md:d-none">
+                        <a href="https://github.com/nodejs/help/issues">Get Help</a></li>
+          <li>
+            <button data-lang="fr" title="French">Français</button>
+          </li>
+          <li>
+            <button data-lang="ca" title="Catalan">Catalan</button>
+          </li>
+          <li>
+            <button data-lang="zh-cn" title="Simplified Chinese">简体中文</button>
+          </li>
+          <li>
+            <button data-lang="pt-br" title="Portuguese, Brazilian">Português do Brasil</button>
+          </li>
+          <li>
+            <button data-lang="fr" title="French">Français</button>
+          </li>
+          <li>
+            <button data-lang="ar" title="Arabic">العربية</button>
+          </li>
+          <li>
+            <a href="https://github.com/nodejs/node/issues">Report Node.js issue</a></li>
+          <li><a href="https://github.com/nodejs/nodejs.org/edit/main/locale/en/index.md"/> 
+
+
+          <p class="home-version home-version-banner">
+            <a href="https://nodejs.org/dist/latest-v18.x/docs/api/">API Docs</a>
+              </li>
+                  </ul>
+                  <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">An Open Source Machine Learning Framework for Everyone</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="home-downloadblock">
+
+          <a href="https://nodejs.org/dist/v18.1.0/" class="home-downloadbutton"  title="Download 18.1.0 Current"  data-version="v18.1.0">
+              18.1.0 Current
+              <small>Latest Features</small>
+            </a>
+
+            <ul class="list-divider-pipe">
+          <li  class="active" >
+            <a href="/en/">Home</a>
+          </li>
+  
+            <li >
+                <a href="/en/about/">About</a>
+            </li>
+            <li >
+                <a href="https://stackoverflow.co/explore-teams" class="s-btn fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold mt-auto" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;learn more - talent&quot;,null,null]">
+                    Learn more
+                </a>
+                            <li>
+                            </li>
+
+                                 aria-controls="popover-discover-collectives"
+                                 </div>
+                                     data-gps-track="top_nav.click({is_current:false, location:1, destination:18})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex ai-center jc-center wmx2 mx-auto mb12">
+                    <span class="fs-body1 d-block">Stack Overflow</span>

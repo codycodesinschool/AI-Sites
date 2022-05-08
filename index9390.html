@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Node.js">
+  <meta name="twitter:image" content="https://nodejs.org/static/images/logo-hexagon-card.png">
+  <meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="lib/w3schools30.css">
+<script>
+var searchFromBox = false;
+function gSearch(el) {
+  var cx = uic_r_y();
+  var gcse = document.createElement('script'); gcse.id = 'gSearch'; gcse.type = 'text/javascript'; gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var el = document.getElementById('gSearch');
+  if (el == null) {
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gtra, s);
+  }
+  open_translate(el);
+};
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.trackPageView();
+            });
+                </script>
+
+        
+                <div class="ff-sans ps-fixed z-nav-fixed ws4 sm:w-auto p32 sm:p16 bg-black-750 fc-white bar-lg b16 l16 r16 js-consent-banner">
+                    <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotPeopleLg" width="96" height="96" viewBox="0 0 96 96"><path d="M78.2 14.36a1.73 1.73 0 0 1 1.27-1.85 37.5 37.5 0 0 1 7.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 0 1-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62ZM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21ZM70.1 37.93a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" opacity=".2"/><path d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm4-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM27.21 70.41l2.93 3.23a3.47 3.47 0 0 0 4.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 0 0 1.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 0 0-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 0 0-5.19 5.4 1.5 1.5 0 0 0-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0 0 17.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 0 0 .38 4.2l.4.43-2.06 2.06a3.47 3.47 0 0 0-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 0 0 2.12 2.12l.65-.65ZM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 0 1-5.8-2.27 7.13 7.13 0 0 1-2.6-4.88 39.23 39.23 0 0 1 9.59-1.8c.2 0 .35.15.34.34ZM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 0 0 3.54 6.13 12.33 12.33 0 0 0 6.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0 1 39.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 0 0-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 0 1-.06-.52 167.03 167.03 0 0 1 21.4-26.31Zm-18.3 34.48-2.35 2.35-2.43-2.69a.47.47 0 0 1 .01-.65l1.99-1.99 2.78 2.98Zm-.33 4.57 2.37-2.37 3.64 3.89L33 71.67a.47.47 0 0 1-.65-.05l-3.03-3.33ZM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 0 1-.14.24l-8.25 7.56a.47.47 0 0 1-.79-.34V67.15Zm-9.8-30.73A177.28 177.28 0 0 0 28.11 48H17.48a.47.47 0 0 1-.37-.76l5.17-6.8a.47.47 0 0 1 .26-.16l14.67-3.86ZM14.06 81.44a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9 12.12a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Z"/></svg>
+                    </button>
+                    </div>
+            </div>
+    </a>
+</li>
+
+                            
+
+<li class="ps-relative" >
+
+    <a id="nav-collective-discover"
+       href="/collectives"
+       class="pl8 ai-center js-collectives-navcta-toggle js-gps-track nav-links--link -link__with-icon"
+       
+       data-gps-track="top_nav.click({is_current:false, location:1, destination:18})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+<svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoAdvertisingAlt" width="158" height="30" viewBox="0 0 158 30"><path d="M21 27v-8h3v11H0V19h3v8h18z" fill="#BCBBBB"/><path d="M5.4 19.1l13.6 2 .2-2.4-13.3-2.6-.5 3zm1.8-6.8l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zM17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zM5 25h14v-3H5v3zm24 10.86V28h5v1.58h-3.03v1.57h2.52v1.59h-2.52v3.1H29v.02zm6.02-3.03v-1.8c0-1.21.18-1.85.66-2.36.54-.57 1.23-.8 2.4-.8 1.23 0 1.97.28 2.5.94.38.48.54 1.1.54 2.22v1.8c0 1.21-.18 1.85-.66 2.37-.54.56-1.22.8-2.39.8-1.24 0-1.98-.28-2.5-.94-.4-.49-.55-1.1-.55-2.23zm4.14-.15v-1.5c0-1.36-.23-1.73-1.09-1.73-.86 0-1.09.37-1.09 1.73v1.5c0 1.36.23 1.74 1.1 1.74.85 0 1.08-.38 1.08-1.74zm4.88.14v3.04h-1.96V28h3.08c1.1 0 1.67.15 2.09.57.4.4.57.93.57 1.8 0 1.35-.37 2-1.35 2.29l1.7 3.19h-2.18l-1.43-3.04h-.52v.01zM44 31.34h.96c.7 0 .92-.22.92-.9 0-.66-.23-.88-.92-.88H44v1.78zm9.05 4.52v-6.27h-2.02V28h6v1.58h-2.02v6.27h-1.96v.01zm4.98 0V28h5.08v1.58h-3.14v1.52h2.65v1.58h-2.65v1.59h3.2v1.58h-5.14v.01zm10.21-1.39h-2.5l-.42 1.39H63.2L66.03 28h1.9l2.84 7.85h-2.1l-.43-1.39v.01zm-.46-1.55L67 30.27l-.8 2.65h1.58zm3.46 2.94V28h1.81l1.88 3.9 1.88-3.9h1.82v7.85h-1.87v-4.24l-1.2 2.48H74.3l-1.2-2.48v4.24h-1.87l.01.01zm8.17-1.32l1.48-.95c.36.6.82.84 1.65.84.7 0 1.03-.25 1.03-.78 0-.42-.22-.64-.8-.78-1.37-.34-1.66-.44-2.07-.7-.63-.41-.92-1-.92-1.89 0-1.57.96-2.4 2.75-2.4 1.36 0 2.21.43 2.75 1.38l-1.44.91c-.38-.54-.75-.73-1.34-.73-.55 0-.85.25-.85.71 0 .53.3.75 1.36 1.01 1 .26 1.24.34 1.64.6.53.35.79.92.79 1.8 0 .86-.21 1.42-.66 1.8-.5.42-1.28.64-2.26.64-.9 0-1.74-.2-2.29-.56a2.2 2.2 0 01-.82-.9z" fill="#F48024"/></svg>
+
+            <p class="p-ff-roboto-slab-bold fs-title mb12">Software engineers</h3>
+                    <p class="fs-body3 px24 hmn1">Help engineers be more efficient and streamline knowledge sharing using a tool they already love and trust.</p>
+                </div>
+                <div class="fs-title p-ff-roboto-slab-bold mb4">45.1+ billion</div>
+                <div class="s-popover--arrow"></div>
+
+            <div class="ps-relative overflow-hidden">
+     <div class="d-flex ai-center py32 jc-center wmx11 mx-auto px32 mbn128 sm:fd-column">
+        <div class="flex--item4 sm:d-none">
+            <img width="1270" height="892" class="js-lazy-load wmx100 w100 h-auto d-block btr-sm bbr-lg bt bc-orange-500 bs-lg" data-src="https://cdn.sstatic.net/Img/product/teams/logos/chevron-alt.svg?v=3bfd2c06a64b" alt="Chevron">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block mtn2" width="165" height="41" src="https://cdn.sstatic.net/Img/product/teams/screens/illo-home-search.png?v=1ccd850cd929" alt="" />
+            <noscript>
+                        <img width="421" height="465" class="js-lazy-load wmx100 h-auto d-block" data-src="https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009" class="d-block my32 w100 h-auto" alt="Illustration of Stack Overflow">
+                <h2 class="mx48 sm:ml32 sm:mr32 mb12 p-ff-roboto-slab-bold fs-headline1">
+                   A private collaboration & knowledge sharing SaaS platform for companies
+                </h2>
+                <p class="fs-subheading mb0 wmx3 mx-auto">
+Build your employer brand                            </span>
+                    <span class="flex--item4 bt bc-blue-300"></span>
+                        </a>
+            </div>
+                <div class="fc-black-300 fs-body2 px24">Times a developer got help since 2008</div>
+            </div>
+                </div>
+                </div>
+
+                            <a href="https://stackoverflow.com/teams/create/free?utm_source=so-owned&amp;utm_medium=side-bar&amp;utm_campaign=campaign-38&amp;utm_content=cta" 
+           class="w100 s-btn s-btn__primary s-btn__xs bg-orange-400 js-gps-track"
+           data-gps-track="teams.create.left-sidenav.click({ Action: ShowInfo })"
+                   data-ga="[&quot;top navigation&quot;,&quot;teams submenu click&quot;,null,null,null]">About the company</a><br/>
+
+    <a href="https://stackoverflow.co/talent" class="flex--item wmn3 bg-white bar-lg bs-sm h:bs-md py32 px24 fc-black-500 h:fc-black-750" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;join community&quot;,null,null]">Join the community</a>
+                <p class="mb0 mt12 fc-black-400">or <a class="s-link s-link__underlined fc-black-700 h:fc-orange-600" href="/questions">search content</a></p>
+            </div>
+        </div>
+
+
+                        <div class="js-build-in-item build-in-slideX-left f2-mktg text-gray-mktg text-semibold mb-5 mb-lg-0 col-5-max"><span class="color-fg-default">Keep your secrets.</span> We automatically scan repositories for OAuth tokens, API keys, personal tokens, and more. If we find one, we’ll notify you and the partner that issued it to invalidate the secret.</h3>
+                  </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+          </li>
+
+          <li class="col-12 d-flex flex-items-center position-relative f5-mktg text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2" transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3" transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+</div>
+
+</a>
+<a class="w3-btn" id="courses_get_started_btn" 
+href="https://courses.w3schools.com/browse/certifications/courses/xml-certification-exam" target="_blank">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+   <a class="w3-bar-item w3-button" href='/cpp/default.asp' title='C++ Tutorial'>C++</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/numpy-fundamentals" target="_blank">Accessibility Course</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:155px;font-size:21px" href="/exercises/index.php">Exercises</a></h3>
+   <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_ascii.asp'>HTML ASCII</a>
+   <a class="w3-bar-item w3-button" href='/java/default.asp' title='Java Tutorial'>JAVA</a>
+      <a class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex topnavmain_video" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromBottomNavDefault', 'click');" title="Get Your Own Website With W3schools Spaces">Spaces</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="/cert/default.asp" target="_blank">View options</a>
+</div>
+-->
+
+<style>
+#courses_get_started_btn {
+text-decoration:none !important;
+background-color:#04AA6D;
+width:100%;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+  z-index:-1;
+  transition: top 0.2s;
+  user-select: none;
+}
+#darkmodemenu input,#darkmodemenu label {
+  cursor:pointer;
+}
+</style>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredmode");
+  var y = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darktheme";
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+    document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.getElementById("radio_darkpage");
+  if (b.checked) {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="html5_canvas.asp">HTML Canvas</a>
+<a target="_top" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn" href="/cssref/css_pxtoemconversion.asp">CSS PX-EM Converter</a>
+<a target="_top" href="/cssref/default.asp">CSS Reference</a><br>
+<a href="/bootstrap/bootstrap_ref_all_classes.asp'>Bootstrap 4 Reference</a>
+   <a class="w3-bar-item w3-button" href="/git/git_exercises.asp">Git Exercises</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Server Side</h3>
+   <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_exercises.asp">Bootstrap Exercises</a>
+   <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/introduction-to-cyber-security" target="_blank">Cyber Security Course</a>
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+   <h3 class="w3-margin-top">CSS</h3>
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href='/sql/default.asp' title='SQL Tutorial'>SQL</a>
+      <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+   <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank" style="padding-top:10px;padding-bottom:10px;margin-top:12px;border-top-left-radius: 0;border-top-right-radius: 0">Play Game</a>
+</div>
+
+<!--
+
+<div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px">
+<a href="https://shop.w3schools.com/" target="_blank"  onclick="ga('send', 'event', 'Courses' , 'Clicked on css course link in footer');">

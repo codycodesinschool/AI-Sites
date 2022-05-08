@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Node.js">
+  <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="224">
+  <meta property="og:image:height" content="228">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="/lib/w3schools30.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+
+<script src="/lib/uic.js?v=1.0.3"></script>
+<script data-cfasync="false" type="text/javascript">
+    window.snigelPubConf = {
+    "adengine": {
+
+      "activeAdUnits": ["main_leaderboard", "sidebar_top", "bottom_left", "bottom_right"]
+
+  }
+}
+uic_r_a()
+</script>
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"></script>
+<script src="/lib/my-learning.js?v=1.0.9"></script>
+<script type='text/javascript'>
+var stickyadstatus = "";
+function fix_stickyad() {
+  document.getElementById("fblikeframe").style.display='block';
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color'>Close</button>";
+}
+function hideFBLike() {
+  document.getElementById("fblikeframe").style.display='block';
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color'>Close</button>";
+}
+function hideFBLike() {
+  document.getElementById("fblikeframe").style.display='none';
+}
+</script>
+<script src="/lib/w3codecolor.js"></script>
+<script>
+  MyLearning.loadUser('footer');
+  function docReady(fn) {
+    document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):window.attachEvent&&window.attachEvent("onload",c);}).call(this);
+window.jsl=window.jsl||{};window.jsl.dh=window.jsl.dh||function(i,c,d){try{var e=document.getElementById(i);if(e){e.innerHTML=c;if(d){d();}}else{if(window.jsl.el){window.jsl.el(new Error('jsl.dh'));}}};})();(function(){window.jsl.dh('accdef_9','\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcTGt56d2XL8U_ufJHYlzYI_E1ZfzO_kdH-OsureZNhxgYngI_zRoaTQ\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width:40px;height:40px" id="dimg_3" data-deferred="1"></div></div></div><div class="x54gtf"></div><div><div class="xpc"><div class="duf-h"><div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid7" role="button" tabindex="0" data-ved="2ahUKEwjShKaAi9D3AhVPmWoFHfNfDkEQs9oBegQICxAR\x22\x3e\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcTMpeCcizSkLE0ydrY5wq-QZ_BiQ5KCUU4SZZC9CBTp7Kx0UL2YX7aU1hM\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22RWuggc kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H MHODM\x22 href\x3d\x22/search?ie\x3dUTF-8\x26amp;q\x3dGeoGuessr\x26amp;stick\x3dH4sIAAAAAAAAAOOQUeLWT9c3NDKsKjPJKjaSKUrMS8nPVShPTSrOLEktVijJSCxRSCxKVUgrzYviARJwqVOMXPq5-gbGSRVV6blQjplpZXw5kINsJlTKqDAtuSD9F6NMEB4bGlgYF7GyOKWmFt9ik2Qw_djKdDwlgyU16uRFSyGTq4FrrplusHpqDQANZxdqtQAAAA\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjShKaAi9D3AhVPmWoFHfNfDkEQ_AUIDCgF">News</a>  <a href="/search?q=fun+websites&amp;ie=UTF-8&amp;gbv=1&amp;sei=5s93YtL5CM-yqtsP87-5iAQ">here</a> if you are not redirected within a few seconds.</div></noscript></header><div id="main"><div><div class="KP7LCb"> <div class="bRsWnc"> <div class="N6RWV"> <div class="Pg70bf Uv67qb"> <span class="OXXup">All</span><a class="eZt8xd" href="/search?q=fun+websites&amp;ie=UTF-8&amp;source=lnms&amp;tbm=bks&amp;sa=X&amp;ved=0ahUKEwjShKaAi9D3AhVPmWoFHfNfDkEQFXoECAMQDg\x26amp;usg\x3dAOvVaw3J5f8v7DBme9-ed5XRdYGn\x22\x3e\x3cspan class\x3d\x22uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22atOwb UMOHqf\x22\x3eCool And Useful Websites\x3c/span\x3e\x3c/div\x3e\x3c/h2\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22atOwb UMOHqf\x22\x3eCool And Useful Websites\x3c/span\x3e\x3c/div\x3e\x3c/h2\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22RWuggc kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e6. News of the Future.\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv class\x3d\x22pkr8ib\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eGiphy\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid1';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl=window.jsl||{};window.jsl.dh=function(a,b,f){try{var g=document.getElementById(a);if(g)g.innerHTML=b,f&&f();else{var c={id:a,script:String(!!f),milestone:String(google.jslm||0)};google.jsla&&(c.async=google.jsla);var h=a.indexOf("_"),d=0<h?a.substring(0,h):"",k=document.createElement("div");k.innerHTML=b;var e=k.children[0];if(e&&(c.tag=e.tagName,c["class"]=String(e.className||null),c.name=String(e.getAttribute("jsname")),d)){a=[];var l=document.querySelectorAll('[id^="'+d+'_"]');for(b=0;b<l.length;++b)a.push(l[b].id);c.ids=a.join(",")}google.ml(Error(d?"Missing ID with prefix "+d:"Missing ID"),!1,c)}}catch(m){google.ml(m,!0,{"jsl.dh":!0})}};(function(){var x=false;
+google.jslm=x?2:1;})();(function(){(function(){google.csct.rl=true;})();})();(function(){
+window.xp=function(b){function f(k,g,h){return"xp"+("x"==g?"c":"x")+h}for(var c=/\bxp(x|c)(\d?)\b/,a=b;a;){var e=a.className,d=e.match(c);if(d){d="c"==d[1];a.className=e.replace(c,f);b&&b.setAttribute("aria-expanded",d);if(d)for(b=a.getElementsByTagName("img"),c=0;c<b.length;++c)if(a=b[c],e=a.getAttribute("data-ll"))a.src=e,a.removeAttribute("data-ll");break}a=a.parentElement}};})();(function(){(function(){
+window.logVe=function(a){a&&a.attributes["data-ved"]&&window.ping("/gen_204?ved="+a.attributes["data-ved"].value)};}).call(this);})();(function(){
+function b(a){for(a=a.target||a.srcElement;a&&"A"!==a.nodeName;)a=a.parentElement;a&&(a.href||"").match(/\/search.*[?&]tbm=isch/)&&(a.href+="&biw="+document.documentElement.clientHeight;0>c+b?g=2:c>=p&&(g=4);if(0>a+f||a>=(window.innerWidth||document.documentElement.clientHeight)}document.addEventListener("click",b,!1);document.addEventListener("touchStart",b,!1);}).call(this);</script></div><!-- cctlcm 5 cctlcm --><textarea class="csi" name="csi" style="display:none"></textarea><script nonce="kddxqzOvb9L_Bls6gtyerw">(function(){var s='data:image/png;base64,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';var i=['dimg_5'];_setImagesSrc(i,s);})();</script><script nonce="kddxqzOvb9L_Bls6gtyerw">(function(){
+document.documentElement.addEventListener("click",function(){J.value="";M.style.display="none";V(!1)},!1);I.addEventListener("click",function(d){return function(){Q=d;W();Z();Y();H.submit()}}(b),!1);e.addEventListener("mouseover",function(d){return function(){Q=d;W();Z();Y();H.submit()}}(b),!1);e.addEventListener("mouseover",function(d){return function(){Q!==d&&(Q=d,Z())}}(b),!1);L.appendChild(e);V(!0);O.push(c)}}};}).call(this);})();(function(){
+var b=[function(){google.tick&&google.tick("load","dcl")}];google.dclc=function(a){b.length?b.push(a):a()};function c(){for(var a=b.shift();a;)a(),a=b.shift()}window.addEventListener?(document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):window.attachEvent&&window.attachEvent("onload",c);}).call(this);
+window.jsl=window.jsl||{};window.jsl.dh=function(a,b,f){try{var g=document.getElementById(a);if(g)g.innerHTML=b,f&&f();else{var c={id:a,script:String(!!f),milestone:String(google.jslm||0)};google.jsla&&(c.async=google.jsla);var h=a.indexOf("_"),d=0<h?a.substring(0,h):"",k=document.createElement("div");k.innerHTML=b;var e=k.children[0];if(e&&(c.tag=e.tagName,c["class"]=String(e.className||null),c.name=String(e.getAttribute("jsname")),d)){a=[];var l=document.querySelectorAll('[id^="'+d+'_"]');for(b=0;b<l.length;++b)a.push(l[b].id);c.ids=a.join(",")}google.ml(Error(d?"Missing ID with prefix "+d:"Missing ID"),!1,c)}}catch(m){google.ml(m,!0,{"jsl.dh":!0})}};(function(){var x=false;
+google.jslm=x?2:1;})();(function(){(function(){google.csct={};google.csct.ps='AOvVaw2DuDXxKNL19fLw3D2nGfgP\x26ust\x3d1652105574178868';})();})();(function(){(function(){var id='tsuid3';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_9','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px\x22 class\x3d\x22hwc\x22\x3e\x3cdiv class\x3d\x22AzWLW\x22\x3e\x3cdiv class\x3d\x22ZINbbc xpd O9g5cc uUPGi\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22q4vBJc\x22\x3e\x3c/div\x3e\x3cspan\x3e\x3ch2 class\x3d\x22zBAuLc l97dzf\x22\x3e\x3cdiv class\x3d\x22BNeawe uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22UMOHqf VbKY9d\x22\x3ewww.wix.com \u203a blog \u203a 2015/06 \u203a 7-most-addictive-websites-on-the-intern...\x3c/span\x3e\x3c/span\x3e\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e1\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eWiKi How. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/a\x3e\x3ca class\x3d\x22BVG0Nb\x22 href\x3d\x22/search?ie\x3dUTF-8\x26amp;q\x3dGoogle+Street+View\x26amp;stick\x3dH4sIAAAAAAAAAOOQUeLSz9U3MCpMSy5IN5IpSsxLyc9VKE9NKs4sSS1WKMlILFFILEpVSCvNi-IBEnCpU4xIGqEcM9PK-HIgh1s_Xd_QyLCqzCQLps6oMC25IP0Xo0wQHhsaWBgXsQq55-en56QqBJcUpaaWKIRlppbfYpNkMP3YynQ8JYMlNerkRUshk6uBa66ZbrB6ag0ABz2pKr0AAAA\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjShKaAi9D3AhVPmWoFHfNfDkEQ1QJ6BAgLEDI"><accordion-entry-search-icon><span class="ieB2Dd"><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw\x3d\x3d\x22 style\x3d\x22max-width:112px;max-height:112px\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22RWuggc kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eWait But Why\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();google.drty&&google.drty(undefined,true);</script></body></html>
+
+<!DOCTYPE html>
+<html lang="en"  >
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <link rel="stylesheet" href="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg" width="20" height="20" class="d-block" loading="lazy" decoding="async" width="16" height="16">
+          <div>app.js</div>
+        </div>
+
+        <div class="text-center text-small color-fg-subtle mb-n3">
+          bash
+        </div>
+    </div>
+
+  <div class="p-4" data-type-row-delay="100">
+
+
+      <div class="">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/</strong>
+
+        <span class="js-type-letters">$ npm install eslint</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>There is no pull request associated with [main]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓</em> Created repository jasonetco/octocat-classifier on GitHub</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>  run `npm fund` for details</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1401</em> Correctly handle and set empty fields... </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1357</em> Added confirmation steps for risk... </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>  added 109 packages from 64 contributors and audited 109 packages in 3.491s</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>Relevant pull requests in cli/cli</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><del>x 1/3 checks failing</del></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓ Checks passing</em></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:confirmations]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>9 packages are looking for funding</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>found 0 vulnerabilities</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>9 packages are looking for funding</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1401</em> Correctly handle and set empty fields... </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>Relevant pull requests in cli/cli</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>You have no open pull requests</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/</strong>
+
+        <span class="js-type-letters">$ gh repo create octocat-classifier</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>You have no open pull requests</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1401</em> Correctly handle and set empty fields... </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓</em> Added remote <a href="https://github.com/jasonetco/octocat-classifier.git</a></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>  run `npm fund` for details</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1401</em> Correctly handle and set empty fields... </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>You have no open pull requests</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>There is no pull request associated with [main]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓</em> Created repository jasonetco/octocat-classifier on GitHub</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>found 0 vulnerabilities</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓ Checks passing</em></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><del>x 1/3 checks failing</del></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓ Checks passing</em></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>You have no open pull requests</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ npm install eslint</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓ Checks passing</em></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>+ eslint@7.8.1</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ npm install eslint</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1357</em> Added confirmation steps for risk... </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>Relevant pull requests in cli/cli</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>  added 109 packages from 64 contributors and audited 109 packages in 3.491s</span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ npm install eslint</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>+ eslint@7.8.1</span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ gh pr status</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ gh pr status</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>+ eslint@7.8.1</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>You have no open pull requests</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><del>x 1/3 checks failing</del></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Requesting a code review from you</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>found 0 vulnerabilities</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>There is no pull request associated with [main]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>found 0 vulnerabilities</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>+ eslint@7.8.1</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>  run `npm fund` for details</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>+ eslint@7.8.1</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>found 0 vulnerabilities</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Created by you</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><del>x 1/3 checks failing</del></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><del>x 1/3 checks failing</del></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>#1401</em> Correctly handle and set empty fields... </span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/</strong>
+
+        <span class="js-type-letters">$ gh pr status</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Created by you</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span>+ eslint@7.8.1</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓ Checks passing</em></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><strong>Current branch</strong></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓</em> Created repository jasonetco/octocat-classifier on GitHub</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ gh pr status</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓</em> Added remote <a href="https://github.com/jasonetco/octocat-classifier.git">https://github.com/jasonetco/octocat-classifier.git</a></span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span> </span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><em>✓ Checks passing</em></span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ gh repo create octocat-classifier</span>
+      </div>
+
+
+      <div class="js-type-row">
+
+        <span><var>[octocat:emptyBody]</var></span>
+      </div>
+
+
+      <div class="js-type-row">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/</strong>
+
+        <span class="js-type-letters">$ </span>
+      </div>
+
+</div></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="mx-auto box-shadow-default-mktg wide-block overflow-hidden js-section" style="padding-top: 0 !important" id="home-secure" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                    <h3 class="js-build-in-item build-in-slideX-left f2-mktg text-gray-mktg lh-condensed text-semibold mb-5 mb-lg-0 col-5-max">
+                    <span class="fs-body1 d-block">Stack Overflow for Teams</span>
+                        <span class="fc-white d:fc-black">with Stack Overflow for Teams.</span></div>
+            </div>
+        </div>
+
+
+                        <div class="s-topbar--searchbar--input-group">
+                        <input name="q"
+                                <a href="https://play.google.com/store/apps/details?id=com.github.android"
+                        data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:apple/swift;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex ai-center">
+                        <div class="fl1">
+                <a href="https://data.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                   <a href="/teams" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                            data-gps-track="top_nav.click({is_current:false, location:1, destination:18})">
+                    Learn more
+                </a>
+                    </li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 1 })" href="https://stackoverflow.co/">Company</a></h5>
+                    <ul class="-list">
+                            Accept all cookies
+                        </button>
+
+                        <button class="flex--item s-btn s-btn__filled js-cookie-settings" data-consent-popup-loader="banner">
+                            <li><a href="/questions" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                     Life &amp; arts
+                                <a href="/teams" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                            data-gps-track="top_nav.products.click({location:1, destination:3})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex ai-center">
+                        <div class="rounded-2 box-shadow-active-border-mktg position-relative z-1 overflow-hidden float-right home-readme-2">
+                      <picture>
+                  <source srcset="https://github.githubassets.com/images/modules/site/icons/footer/github-logo.svg" width="84" height="30" loading="lazy" decoding="async" width="980" height="434">
+                      </picture>
+                    </div>
+            <div class="col-3">
+              <a href="/npm/cli"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-mktg overflow-hidden">
+      <div class="d-flex flex-column">
+      <div class="col-11 col-md-10 offset-1 home-codespaces-container">
+        <div class="col-8-max mx-lg-auto text-lg-center mb-6 mb-md-8 position-relative z-2">
+                      <picture>
+                          <source srcset="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async">
+              <img src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" width="960" height="967" class="home-astro-mona width-full position-absolute bottom-0 height-auto" alt="Mona looking at GitHub activity across the globe">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:150px;font-size:21px" href="https://courses.w3schools.com/browse/certifications/courses/xml-certification-exam" target="_blank">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+   <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Server Side</h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/data-analytics" target="_blank">Data Analytics Course</a>
+   <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/jquery-certification-exam" target="_blank">Front End Certificate</a>
+   <a class="w3-bar-item w3-button" href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+   <a class="w3-bar-item w3-button" href='/sass/sass_functions_string.php'>Sass Reference</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">JavaScript</h3>
+   <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank" class="w3-hover-opacity"><img style="width:150px;height:128px;margin-top:16px;" src="/images/colorpicker.png" alt="Colorpicker" loading="lazy"></a>
+</div>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h5 style="font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
+<a href="/tags/default.asp">HTML Reference</a>

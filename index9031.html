@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.remove('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="s-popover"
+         id="popover-teams-create-cta"
+                   data-controller="s-popover"
+                    role="menu"
+                    aria-hidden="true">
+                <div class="ai-center d-flex jc-end">
+                    <button
+                        class="home-discussions-check-1 js-build-in-item position-absolute z-1" alt="Answered checkmark" loading="lazy">
+                    </picture>
+                    </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22" height="25" aria-hidden="true" focusable="false" viewBox="0 0 512 593.282">
+            <path fill="none" d="m12045.7 24348.4-9327.4 3292V7339.5l9327.4 3017.7v13991.2" style="fill:#000;fill-opacity:0;fill-rule:nonzero;stroke-width:500;stroke:#fff" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+          </svg>
+          <span class="sr-only">GitHub on LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/nodejs/help/issues">Get Help</a></li>
+          <li>
+            <button data-lang="pt-br" title="Portuguese, Brazilian">Português do Brasil</button>
+          </li>
+          <li>

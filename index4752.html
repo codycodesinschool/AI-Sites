@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/quantumcomputing/Img/apple-touch-icon.png?v=2af3cc2b87e8" alt="Quantum Computing icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/company/work-here">Work Here</a></li>
+                                                    maxlength="240"
+                                     <div class="s-avatar--letter mtn1">
+                                      data-s-popover-placement="bottom-start"
+                   data-s-popover-placement="bottom-start"
+                   data-s-popover-placement="bottom"
+                        data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"/><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"/></svg>
+                        Slack
+                    </div>
+                    <div class="home-matrix-connector-bg"></div></div>
+
+                    </div>
+                  </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Ansible is a radically simple IT automation platform.</p>
+              </a>
+            </div>
+            <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/repo-browser.png" class="width-full height-auto" alt="Merge pull request on GitHub" loading="lazy">
+            </picture>
+              </div>
+              </li>
+
+              <li class="js-build-in-trigger col-11 col-sm-10 col-lg-12">
+                <div class="d-flex jc-center sm:fd-column">
+                        <a href="https://ai.stackexchange.com" data-animation-type="show" class="flex--item m24 w64 h64 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Quantum Computing" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/quantumcomputing/Img/apple-touch-icon.png?v=2af3cc2b87e8" alt="Quantum Computing icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/teams/integrations/slack" class="mr-auto wmx4 d-block">
+                    <img width="421" height="465" class="wmx100 h-auto d-block" src="https://cdn.sstatic.net/Img/product/teams/logos/logitech-alt.svg?v=a99c74b88566" alt="Logitech">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="181" height="32" data-src="https://cdn.sstatic.net/Img/home/illo-integrations-right.png?v=90c26b9154c7" alt="">
+                    </noscript>
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="bb bc-black-075 pb24 mb24">
+                    <div class="flex--item truncate">
+                    Users
+                </div>
+            <div class="flex--item tt-uppercase tt-uppercase fs-fine fc-light">Collectives</div>
+                                    </a>
+            </li>
+    </ol>
+</li> 
+            </ol>
+        </nav>
+    </div>
+
+        <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+                <div class="flex--item fs-fine fc-light">
+                            </div>
+            </div>
+            </nav>
+            <div class="site-footer--col">
+                        <h5 class="-title"><a class="js-gps-track" data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="favicon favicon-stackoverflowmeta site-icon flex--item" title="Meta Stack Overflow"></div>
+        <span class="flex--item fc-black-600 fl-shrink0 fs-body1 z-active px12">
+                                <a href="https://stackoverflow.co/company/press">Press</a></li>
+                            </li>
+                            </li>
+                    <li class="related-site d-flex">
+                                </a>
+                            <div class="fc-blue-500 d-block h100 p24 ba p-bc-black fs-body3 bar-lg">
+                    <span class="flex--item fc-black-600 fl-shrink0 fs-body1 z-active px12">
+                            <span class="fs-body1 d-block">Stack Overflow</span>
+                            <li class="" id="consent-footer-link"><a class="js-gps-track -link js-cookie-settings" data-gps-track="footer.click({ location: 1, link: 39 })" href="https://stackoverflow.co/company/work-here" class="s-btn fs-body2 px32 bar-md bg-orange-500 h:bg-orange-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;roi calculator - attract &amp; retain talent&quot;,&quot;calculate roi&quot;,null,null]">
+                            <li><a href="https://stackoverflow.co/company/contact">Contact Us</a></li>
+                            <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/assets/webgl-globe-72040f00cce7.js"></script>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:description" content="Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.">
+
+  <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="GitHub: Where the world builds software">
+<meta property="page-description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and feat..." />
+    <meta property="og:image" content="https://nodejs.org/static/images/logo-hexagon-card.png">
+  <meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="lib/w3schools30.css">
+<script>
+var searchFromBox = false;
+function gSearch(el) {
+  var cx = uic_r_y();
+  var gcse = document.createElement('script'); gtra.id = 'gTra'; gtra.type = 'text/javascript'; gtra.async = true;
+  gtra.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  var el = document.getElementById('gSearch');
+  if (el == null) {
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gtra, s);
+  }
+  open_translate(el);
+};
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+
+<script src="/lib/uic.js?v=1.0.3"></script>
+<script data-cfasync="false" type="text/javascript">
+    window.snigelPubConf = {
+    "adengine": {
+
+      "activeAdUnits": ["main_leaderboard", "sidebar_top", "bottom_left", "bottom_right"]
+
+  }
+}
+uic_r_a()
+</script>
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"></script>
+<script src="/lib/my-learning.js?v=1.0.9"></script>
+<script type='text/javascript'>
+var stickyadstatus = "";
+function fix_stickyad() {
+  document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
+      document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).style.display == "block") {
+    w3_close_nav(x);
+  } else {
+    w3_close_nav("tutorials");
+    w3_close_nav("references");
+    w3_close_nav("exercises");
+    document.getElementById("wavepath").style.fill = "#282A35";    
+  }
+}
+
+function click_darkcode() {
+  var a = document.getElementById("googleSearch").style.visibility = "";  
+    }
+    searchFromBox = false;
+  }
+});
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>CSS Tutorial</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://github.githubassets.com/images/modules/site/home/icons/folder.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="16" height="16">
+          <div>README.md</div>
+        </div>
+
+        <div class="col-12 col-lg-6" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon flex-shrink-0 mr-3 d-none d-md-block"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            </div>
+          </div>
+
+          <div class="offset-1 col-11 col-sm-10 col-lg-12">
+                <div class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious" style="padding: 8% 0 10.5%">
+                  <div class="col-6 col-sm-4 col-md-3">
+                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">90%</h3>
+                    <p class="m-0 text-mono text-white-fade f6-mktg">Repositories</p>
+                  </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">🏡 Open source home automation that puts local control and privacy first</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                <img src="https://avatars.githubusercontent.com/ohmyzsh?s=64&amp;v=4" alt="Oh my zsh" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+              </picture>
+                  </div>
+                </div>
+
+                <div class="col-3 d-none d-sm-block">
+                    <h3 class="p-ff-roboto-slab-bold fs-title mb12">Data scientists</h3>
+                    <p class="fs-body2 fw-bold mb4">
+                        Your privacy
+                    </p>
+            </div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconOkta" width="18" height="18" viewBox="0 0 18 18"><path d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6c1.09 0 2 .91 2 2v2h2c1.09 0 2 .91 2 2v8h-6ZM4 4v2h2V4H4Zm0 4v2h2V8H4Zm4-4v2h2V4H8Zm0 4v2h2V8H8Zm-4 4v2h2v-2H4Zm8 0v2h2v-2h-2Zm0-4v2h2V8h-2Z"/></svg></a>
+
+                        <a href="https://stackoverflow.com"
+       class="current-site-link site-link js-gps-track d-flex gs8 gsx"
+       data-id="552"
+       data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:4 })">
+        <div class="favicon favicon-stackoverflowmeta site-icon flex--item" title="Meta Stack Overflow"></div>
+        <span class="flex--item fl1">
+            Stack Overflow
+        </span>
+    </a>
+
+    </div>
+    <div class="related-links">
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                   aria-controls="products-popover"
+                                             data-s-popover-placement="bottom-start"/>
+                        <svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"/><path d="m23.1 25.99.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"/></svg></a>
+                <img width="520" height="346" src="https://cdn.sstatic.net/Img/home/illo-se.svg?v=f7e844293cc5" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    var logos = document.querySelector('.js-carousel-logos');
+    var logosShown = 4;
+    var logosTotalPages = Math.ceil(logos.children.length / logosShown) - 1;
+    var logosCurrentPage = 0;
+    var logosCarouselTime = 4000;
+    var logosCarouselPlayer;
+
+    logos.classList.remove('o100');
+    
+    for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.remove('bg-black-800');
+            } else {
+                    logos.children[i].classList.remove('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="fc-black-200 fs-subheading mt32 pb32 ta-center">
+            Some of the premium features available with paid tiers
+        </div>
+    </div>
+
+    <div class="p-bg-dark-gradient bar-lg pt128 pb96 lg:pl24 lg:pr24 sm:pl0 sm:pr0 ps-relative z-selected ta-center">
+        <div class="wmx10 mx-auto fc-white d:fc-black p-font-smooth pt24">
+            <svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoAdvertisingAlt" width="158" height="30" viewBox="0 0 158 30"><path d="M21 27v-8h3v11H0V19h3v8h18Z" fill="#BCBBBB"/><path d="m5.4 19.1 13.56 1.96.17-2.38-13.26-2.55-.47 2.97Zm1.8-6.8 12 5.6 1.1-2.4-12-5.6-1.1 2.4Zm3.4-5.9 10.2 8.5 1.7-2-10.2-8.5-1.7 2ZM17.1.2 15 1.8l7.9 10.6 2.1-1.6L17.1.2ZM5 25h14v-3H5v3Z" fill="#F48024"/><path fill="#D6D9DC" d="M38 11h1v13h-1z"/><path d="M57.9 11.31a.37.37 0 0 0-.35-.27h-1.47a.37.37 0 0 0-.35.27l-4.47 12.14a.38.38 0 0 0 .04.35c.07.12.19.15.3.15h1.99c.15 0 .3-.11.35-.27l.74-2.17h4.23l.74 2.17c.04.16.2.27.35.27h1.98c.12 0 .23-.07.31-.15a.38.38 0 0 0 .04-.35L57.9 11.31Zm.23 7.87H55.5l1.36-3.8 1.28 3.8Zm13.83-5.54c-.2-.5-.5-.93-.9-1.36a4.68 4.68 0 0 0-3.41-1.24h-4.28c-.23 0-.38.15-.38.39v12.14c0 .23.15.38.38.38h4.28c1.44 0 2.6-.42 3.42-1.24.39-.38.7-.85.9-1.4.19-.5.3-1 .38-1.54.04-.5.08-1.09.08-1.75v-1.24a7.27 7.27 0 0 0-.47-3.14Zm-2.17 3.8c0 1-.04 1.82-.12 2.33-.08.46-.2.81-.43 1.08-.43.47-1 .7-1.79.7H65.6v-8.07h1.86c.78 0 1.36.24 1.8.7.15.16.26.39.34.66.08.31.16.62.16.97.04.39.04.93.04 1.63Zm13.14-6.4H81c-.15 0-.3.12-.39.27l-2.44 7.68-2.41-7.68c-.04-.15-.2-.27-.4-.27h-1.9c-.11 0-.23.08-.3.15-.09.08-.09.24-.05.35l4 12.14c.04.16.2.27.4.27h1.43c.16 0 .31-.11.35-.27l4.04-12.14c.04-.11 0-.23-.04-.35-.11-.07-.23-.15-.35-.15Zm10.25 0h-7.77c-.23 0-.39.15-.39.39v12.14c0 .23.16.38.39.38h1.86c.24 0 .4-.15.4-.38V11.43a.4.4 0 0 0-.4-.4Zm10.3 6.28a2.96 2.96 0 0 0-1.01-.62 6 6 0 0 0-1.44-.35l-1.4-.2a2.36 2.36 0 0 1-.7-.19c-.2-.07-.39-.19-.46-.27-.24-.2-.31-.46-.31-.85 0-.31.07-.54.19-.78.16-.23.35-.38.58-.5.28-.12.63-.2 1.01-.2.35 0 .66.04.94.08.27.04.5.16.77.28.24.11.47.27.7.5.16.15.4.15.55 0l1.2-1.16c.08-.08.12-.2.12-.28a.36.36 0 0 0-.12-.27 5.42 5.42 0 0 0-1.79-1.12 6.54 6.54 0 0 0-2.25-.35c-.9 0-1.67.15-2.33.46a3.63 3.63 0 0 0-2.1 3.46c0 1.08.35 1.97 1.01 2.6.62.58 1.44.93 2.53 1.08l1.43.2c.31.03.59.11.74.15.16.04.27.12.4.27.22.2.34.54.34.97 0 .47-.16.82-.5 1.05-.4.27-.94.43-1.64.43a4.56 4.56 0 0 1-2.02-.47 3.79 3.79 0 0 1-.81-.62.35.35 0 0 0-.28-.12.36.36 0 0 0-.27.12l-1.24 1.2a.35.35 0 0 0-.12.27c0 .12.04.2.12.27a5.52 5.52 0 0 0 2.02 1.32c.74.27 1.6.4 2.56.4a5.7 5.7 0 0 0 3.39-1.06 3.61 3.61 0 0 0 1.35-2.9 3.72 3.72 0 0 0-1.16-2.8Zm5.24-6.28h-1.86c-.23 0-.39.15-.39.39v12.14c0 .23.16.38.39.38h1.86c.24 0 .4-.15.4-.38V11.43a.4.4 0 0 0-.4-.4Zm11.69 0h-1.82c-.24 0-.4.15-.4.39v7.25l-4.89-7.45c-.07-.11-.2-.2-.3-.2h-1.72c-.23 0-.39.16-.39.4v12.14c0 .23.16.38.4.38h1.86c.23 0 .39-.15.39-.38v-4.74h1.67l2.44 4.9c.08.1.2.22.35.22h2.14c.12 0 .27-.07.35-.19a.35.35 0 0 0 0-.39l-2.56-4.96Zm-.35-3.46c0 .47-.16.82-.43 1.1-.31.26-.7.42-1.24.42h-2.34v-3.03H100c.54 0 .93.12 1.24.43.27.23.43.62.43 1.08Zm12.16-3.95h-8.54c-.24 0-.4.15-.4.39v1.66c0 .24.16.4.4.4h2.95v10.08c0 .23.15.38.39.38h1.82c.24 0 .4-.15.4-.38V13.48h2.95c.23 0 .38-.15.38-.39v-1.66c.04-.2-.15-.4-.35-.4Zm4.47 0h-1.87c-.23 0-.39.15-.39.39v12.14c0 .23.16.38.39.38h7.77c.23 0 .39-.15.39-.38V21.9a.37.37 0 0 0-.39-.39h-5.56v-2.87h4.67c.23 0 .39-.15.39-.39v-1.63c0-.23-.16-.38-.4-.38h-4.66v-2.76h5.56c.23 0 .39-.15.39-.39v-1.66a.4.4 0 0 0-.39-.4Zm8.84 7.41a3.56 3.56 0 0 0 2.25-3.45 3.66 3.66 0 0 0-1.98-3.41 4.4 4.4 0 0 0-2.18-.51h-4.74c-.23 0-.39.15-.39.39V23.6c0 .23.16.38.4.38h1.86c.23 0 .39-.15.39-.38v-4.74h1.67l2.44 4.9c.08.1.2.22.35.22h2.14c.12 0 .27-.07.35-.19a.35.35 0 0 0 0-.39l-2.56-4.96Zm-.35-3.46c0 .47-.16.82-.43 1.1-.31.26-.7.42-1.24.42h-2.34v-3.03H100c.54 0 .93.12 1.24.43.27.23.43.62.43 1.08Zm12.16-3.95h-8.54c-.24 0-.4.15-.4.39v1.66c0 .24.16.4.4.4h2.95v10.08c0 .23.15.38.39.38h1.82c.24 0 .4-.15.4-.38V13.48h2.95c.23 0 .38-.15.38-.39v-1.66c.04-.2-.15-.4-.35-.4Zm4.47 0h-1.87c-.23 0-.39.15-.39.39v12.14c0 .23.16.38.39.38h7.77c.23 0 .39-.15.39-.38V21.9a.37.37 0 0 0-.39-.39h-5.56v-2.87h4.67c.23 0 .39-.15.39-.39v-1.63c0-.23-.16-.38-.4-.38h-4.66v-2.76h5.56c.23 0 .39-.15.39-.39v-1.66a.4.4 0 0 0-.39-.4Zm8.84 7.41a3.56 3.56 0 0 0 2.25-3.45 3.66 3.66 0 0 0-1.98-3.41 4.4 4.4 0 0 0-2.18-.51h-4.74c-.23 0-.39.15-.39.39V23.6c0 .23.16.38.4.38h1.86c.23 0 .39-.15.39-.38V16.3l4.9 7.45c.07.12.19.2.3.2h1.71c.24 0 .4-.16.4-.4V11.44c-.05-.2-.24-.4-.44-.4Zm11.6 5.58h-4.43c-.23 0-.39.16-.39.4v1.54c0 .24.16.4.39.4h2.21v.3c0 .7-.19 1.24-.5 1.67-.43.5-.97.74-1.67.74a2.1 2.1 0 0 1-1.52-.59 1.37 1.37 0 0 1-.3-.46c-.09-.16-.13-.35-.2-.62l-.12-.97c0-.35-.04-.85-.04-1.51 0-1.17.04-2.02.16-2.49.07-.42.23-.77.5-1.04.2-.2.4-.35.66-.47.28-.12.55-.15.86-.15.39 0 .74.07 1.05.23.3.15.54.35.74.62.19.27.34.62.42 1 .04.2.2.32.4.32h1.86c.11 0 .23-.04.3-.16.09-.07.12-.2.09-.3a4.58 4.58 0 0 0-.82-2.06 4.57 4.57 0 0 0-4-2.02 4.72 4.72 0 0 0-4.2 2.4c-.16.35-.31.74-.39 1.13-.08.39-.11.81-.15 1.24-.04.43-.04 1-.04 1.79 0 .96.04 1.7.08 2.24.03.55.15 1.05.34 1.56.2.5.51.93.9 1.4a5.34 5.34 0 0 0 2.18 1.27c.38.12.85.16 1.28.16a4.7 4.7 0 0 0 3.61-1.52c.43-.46.74-1 .93-1.59.2-.58.28-1.28.28-2.09v-1.86c-.08-.35-.28-.5-.47-.5Z" fill="var(--black-800)"/></svg>
+            <p class="fs-subheading mb0">Reach the world’s largest audience of developers and technologists</p>
+        </a>
+        <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=https%3a%2f%2fstackoverflow.com%2f" class="login-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 19 })">Products</a></h5>
+                        <ul class="-list">
+                            </li>
+
+                    <li class="mr-1 px-1"><img src="https://github.githubassets.com/images/modules/site/social-cards/github-social.png" /><meta name="twitter:site" content="@nodejs">
+  <meta name="twitter:title" content="GitHub: Where the world builds software </h1>
+          <p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 position-relative z-2">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom color-bg-subtle p-3">
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+            </div>
+            </div>
+          </li>
+
+          <li class="col-12 d-flex flex-items-center position-relative f5-mktg text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2" transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2" transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3" transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3" transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3" transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+
+</div>
+
+<!--
+<div class="w3-center ws-black htmlvidad w3-padding" style="border-radius:20px;">
+  <a href="https://www.w3schools.com" class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex topnavmain_video" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromSidebar');" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Courses' , 'Clicked on sql course link in footer');">SQL Course</a><br>
+<a href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank">Bootstrap 4 Certificate</a>
+   <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
+   <a class="w3-bar-item w3-button" href='/graphics/canvas_intro.asp'>Learn Canvas</a>
+   <a class="w3-bar-item w3-button" href="/cpp/default.asp">Learn C++</a>
+   <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a>
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href='/xml/xsl_elementref.asp'>XSLT Reference</a>
+   <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_ansi.asp'>HTML ANSI</a>
+   <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML</h3>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_ascii.asp'>HTML ASCII</a>
+   <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href='/tags/default.asp'>HTML Tag Reference</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/html-certification-exam" target="_blank">Bootstrap 3 Certificate</a>
+   <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a>
+   <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+<a target="_top" href="js_htmldom_document.asp">DOM Document</a>
+<a target="_top" href="css_form.asp">CSS Forms</a>
+<a target="_top" href="css3_multiple_columns.asp">CSS Multiple Columns</a>
+<a target="_top" href="css3_gradients_conic.asp">Conic Gradients</a>
+</div>
+<a target="_top" href="css_display_visibility.asp">CSS Display</a>
+<a target="_top" href="js_json_objects.asp">JSON Objects</a>
+<a target="_top" href="/jsref/default.asp">HTML DOM Objects</a>
+<br>
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+  <div class='w3-row w3-white'>
+    <div class='w3-col l10 m12' id='main'>
+      <div id='mainLeaderboard' style='overflow:hidden;'>
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="adngin-main_leaderboard-0"></div>
+        <!-- adspace leaderboard -->
+
+      </div>
+<h1>CSS <span class="color_h1">Tutorial</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="css_intro.asp">Next &#10095;</a>
+</div>
+<div id="mypagediv2" style="position:relative;text-align:center;"></div>
+<br>
+
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+  <div id="skyscraper">
+  
+    <div id="adngin-sidebar_top-0"></div>
+  
+  </div>
+</div>
+  
+<style>
+.ribbon-vid {
+  font-size:12px;
+  font-weight:bold;
+  padding: 6px 20px;
+  left:-20px;
+  top:-10px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+}
+</style>
+
+<div class="sidesection" id="moreAboutSubject">
+</div>
+
+<!--
+<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
+  <div class="w3-container w3-padding-32">
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);">References <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+   <a class="w3-bar-item w3-button" href='/graphics/svg_intro.asp'>Learn SVG</a>
+   <a class="w3-bar-item w3-button" href="/git/git_exercises.asp">Git Exercises</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:155px;font-size:21px" href="/exercises/index.php">Exercises</a></h3>
+   <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_ascii.asp'>HTML ASCII</a>
+   <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 15px;" href="https://www.w3schools.com/videos/index.php" title="Video Tutorials" onclick="ga('send', 'event', 'Courses' , 'Clicked on css course link in footer');">CSS Course</a><br>
+<a href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_utf8.asp'>HTML UTF-8</a>
+  </div>
+ </div>
+ <br class="hidesm">
+ </div>
+</nav>
+
+<nav id="nav_exercises" class="w3-hide-small" style="position:absolute;padding-bottom:60px;">
+ <div class="w3-content" style="max-width:1100px;font-size:18px">
+ <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white sectionxsclosenavspan" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+ <div class="w3-row-padding w3-bar-block">
+ <div class="w3-container" style="padding-left:13px">
+   <h2 style="color:#FFF4A3;"><b>References</b></h2>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Character Sets</h3>
+   <a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white w3-hide-large w3-hide-medium" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+      -->
+      
+    </div>
+    
+<div id="darkmodemenu" class="ws-black" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()" onclick='changepagetheme(2)'  xxonclick="changecodetheme(this)" xxtitle='Toggle Dark Code'><i class='fa'>&#xe80b;</i></a>
+<div id="darkmodemenu" class="ws-black" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()" onclick='changepagetheme(2)'>&#xe80b;</a>
+
+
+      <!--
+      <a class="w3-bar-item w3-button" href='/asp/asp_ref_response.asp'>ASP Reference</a>
+   <h3 class="w3-margin-top">XML Tutorials</h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/java" target="_blank" onclick="ga('send', 'event', 'spacesFromBottomNavDefault', 'click');" title="Get Your Own Website With W3Schools Spaces">Website <span class="ribbon-topnav ws-hide-1066">NEW</span></a>

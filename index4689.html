@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow | The World&#x2019;s Largest Online Community for Developers" />
+    <script id="webpack-public-path" type="text/uri-list">https://cdn.sstatic.net/</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.remove('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="fs-title p-ff-roboto-slab-bold mb4">5,000+</div>
+                <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackoverflow.co/teams" class="h48 d-block"><svg aria-hidden="true" class="svg-icon iconLogoTeams native mb32" width="186" viewBox="0 0 146 36"><path d="M33.9 18.9l-1.62-.2c-1.25-.09-1.82-.57-1.82-1.53 0-1.05.76-1.73 2.3-1.73 1.05 0 2.01.3 2.68.77l.96-.96a5.67 5.67 0 00-3.64-1.05c-2.2 0-3.74 1.15-3.74 2.97 0 1.73 1.05 2.6 3.07 2.78l1.72.2c1.15.09 1.73.57 1.73 1.53 0 1.25-1.06 1.82-2.69 1.82-1.24 0-2.4-.29-3.16-1.15l-.96.96c1.15 1.06 2.5 1.44 4.22 1.44 2.5 0 4.12-1.15 4.12-3.07-.19-1.92-1.43-2.6-3.16-2.78h-.01zm12.77-4.6c-1.63 0-2.69.28-3.55 1.43l.96.96c.57-.86 1.24-1.15 2.59-1.15 1.82 0 2.59.77 2.59 2.2v.97h-3.07c-2.3 0-3.55 1.15-3.55 2.97 0 .77.29 1.53.77 2.11.67.67 1.44.96 2.87.96 1.35 0 2.11-.29 2.98-1.06v.96h1.53v-6.9c-.1-2.3-1.44-3.46-4.12-3.46v.01zm2.59 6.7c0 .87-.2 1.45-.48 1.73-.67.58-1.44.68-2.3.68-1.63 0-2.3-.58-2.3-1.73s.76-1.82 2.3-1.82h2.87l-.1 1.15.01-.01zm7.29-5.36c.96 0 1.53.28 2.3 1.15l.96-.96c-1.06-1.15-1.92-1.54-3.36-1.54-2.59 0-4.5 1.73-4.5 5.28 0 3.45 1.91 5.28 4.5 5.28 1.44 0 2.3-.39 3.36-1.54l-1.06-.96c-.76.86-1.34 1.15-2.3 1.15-.96 0-1.82-.38-2.4-1.15-.48-.67-.67-1.44-.67-2.78 0-1.25.2-2.11.67-2.78a3.23 3.23 0 012.5-1.15zm12.85-1.25h-1.82l-4.6 4.5V9.8h-1.54v14.77h1.54v-3.74L64.8 19l3.45 5.57h1.82l-4.22-6.62 3.55-3.55v-.01zm7-.29c-1.53 0-2.58.58-3.26 1.34-.96.96-1.24 2.21-1.24 4.13s.28 3.16 1.24 4.12a4.5 4.5 0 003.26 1.35c1.54 0 2.7-.58 3.27-1.35.96-.96 1.24-2.2 1.24-4.12s-.28-3.17-1.24-4.13c-.58-.76-1.63-1.34-3.26-1.34h-.01zm1.25 7.96c-.29.3-.67.48-1.24.48-.58 0-.96-.19-1.25-.48-.58-.57-.58-1.53-.58-2.59 0-1.15.1-2.01.58-2.59.29-.28.67-.48 1.24-.48.58 0 .96.2 1.25.48.58.58.58 1.44.58 2.6 0 1.14 0 2.1-.58 2.58zm15.83-7.86l-1.73 6.62-2.2-6.62h-1.92l-2.2 6.62-1.73-6.62h-2.79l3.26 10.65h2.21l2.2-6.72 2.21 6.72h2.21l3.26-10.65h-2.78zm-24.57 7.38V9.98h-2.68v11.8c0 1.53.96 3.07 3.07 3.07h1.53v-2.21h-.96c-.67 0-.96-.39-.96-1.06zm-76.92-5.56l1.34-1.34h-2.88v-3.36h-1.53v10.65c0 1.53.86 2.78 2.59 2.78h1.05V23.5h-.76c-.96 0-1.44-.57-1.44-1.53v-5.85l1.63-.1z" fill="#fff"/><path d="M21 27v-8h3v11H0V19h3v8h18Z" fill="#BCBBBB"/><path d="m5.4 19.1 13.56 1.96.17-2.38-13.26-2.55-.47 2.97Zm1.8-6.8 12 5.6 1.1-2.4-12-5.6-1.1 2.4Zm3.4-5.9 10.2 8.5 1.7-2-10.2-8.5-1.7 2ZM17.1.2 15 1.8l7.9 10.6 2.1-1.6L17.1.2ZM5 25h14v-3H5v3Z" fill="#F48024"/><path fill="#D6D9DC" d="M38 11h1v13h-1z"/><path d="M60.54 13.09v-1.66c0-.27-.2-.47-.48-.47h-8.58c-.28 0-.48.2-.48.47v1.66c0 .27.2.47.48.47h2.87v9.93c0 .27.2.47.48.47h1.84c.28 0 .48-.2.48-.47v-6.9l4.79 7.17c.08.12.24.2.4.2h1.71c.28 0 .48-.2.48-.47V11.47c0-.28-.2-.47-.48-.47Zm11.71 0h-8.58c-.28 0-.48.2-.48.47v1.66c0 .27.2.47.48.47h2.87v9.93c0 .27.2.47.48.47h1.84c.28 0 .48-.2.48-.47v-9.93h2.87c.32 0 .52-.2.52-.47Zm5.99-1.78a.46.46 0 0 0-.44-.31H64.6c-.2 0-.36.12-.44.31L59.7 23.37c-.04.16-.04.31.04.43s.24.2.4.2h1.96c.2 0 .4-.12.43-.32l.72-2.08h4.15l.72 2.08c.08.2.24.32.44.32h1.96a.5.5 0 0 0 .4-.2.42.42 0 0 0 .04-.43l-4.43-12.06Zm-2.4 7.76 1.24-3.42 1.2 3.42h-2.44Zm16.44 2.33h-5.42v-9.93c0-.28-.2-.47-.48-.47h-1.84c-.28 0-.48.2-.48.47v12.06c0 .27.2.47.48.47h7.74c.28 0 .48-.2.48-.47v-1.66c0-.23-.2-.47-.48-.47ZM90.34 11h-7.82c-.28 0-.48.2-.48.47v12.06c0 .27.2.47.48.47h7.74c.28 0 .48-.2.48-.47v-1.66c0-.23-.2-.47-.48-.47ZM90.34 11h-7.82c-.28 0-.48.2-.48.47v12.06c0 .27.2.47.48.47h7.74c.28 0 .48-.2.48-.47v-1.66c0-.23-.2-.47-.48-.47ZM90.34 11h-7.82c-.28 0-.48.2-.48.47v12.06c0 .27.2.47.48.47h7.82c.28 0 .48-.2.48-.47v-1.66c0-.27-.2-.47-.48-.47h-5.47v-2.68h4.6c.27 0 .47-.2.47-.47v-1.62c0-.27-.2-.47-.48-.47h-4.58v-2.6h5.46c.28 0 .48-.2.48-.47v-1.66c0-.24-.2-.43-.48-.43Zm12.25 0h-1.83c-.28 0-.48.2-.48.47v6.9l-4.8-7.18a.5.5 0 0 0-.4-.2h-1.7c-.29 0-.49.2-.49.48v12.06c0 .27.2.47.48.47h1.84c.28 0 .48-.2.48-.47V13.6h2.87c.28 0 .48-.2.48-.47v-1.66c.04-.28-.16-.47-.44-.47Z" fill="var(--black-800)"/></svg>
+            <p class="fs-subheading">Here are just a few types of technologists that we help.</p>
+        </div>
+
+
+        <div class="overflow-x-auto">
+            <div class="flex--item lg:d-none">
+                <a href="https://github.com/nodejs/node/blob/HEAD/SECURITY.md#security">Security</a>
+            </li>
+            <li >
+                <a href="/en/get-involved/">Get Involved</a>
+            </li>
+            <li >
+                <a href="/en/download/">Downloads</a>
+            </li>
+            <li >
+                <a href="/en/docs/">Docs</a>
+            </li>
+            <li >
+                <a href="/en/download/">Other Downloads</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2" transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+</div>
+
+</a>
+<a class="w3-btn" id="courses_get_started_btn" 
+href="https://courses.w3schools.com/browse/certifications/courses/java-certification-exam" target="_blank">Bootstrap 3 Certificate</a>
+   <a class="w3-bar-item w3-button" href="/accessibility/accessibility_quiz.php">Accessibility Quiz</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML</h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank">C++ Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/xml-certification-exam" target="_blank">React Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_utf8.asp'>HTML UTF-8</a>
+  </div>
+ </div>
+ <br class="hidesm">
+ </div>
+</nav>
+
+<nav id="nav_exercises" class="w3-hide-small" style="position:absolute;padding-bottom:60px;">
+ <div class="w3-content" style="max-width:1400px">
+
+ <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">Python</h1>
+  <p style="font-size:19px">A popular programming language</p>
+  <a href="/python/default.asp" class="w3-button w3-block tut-button">Learn JavaScript</a><br>
+  <a href="/jsref/default.asp" class="w3-button w3-block ref-button black-color">CSS Reference</a>
+  </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+  <h3>CSS Example:</h3>
+  <div class="w3-code sqlHigh notranslate green-border" style="height:180px">
+   SELECT * FROM Customers<br>
+   WHERE Country='Mexico';
+  </div>
+  <a href="/sql/trysql.asp?filename=trysql_select_where" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div class="w3-row w3-padding-32 ws-turquoise">
+<div class="w3-content" style="max-width:1400px">
+    <h1 class="learntocodeh1">Learn to Code</h1>
+    <h3 class="learntocodeh3">With the world's largest web developer site.</h3>
+    <br>
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+      <input type="text" placeholder="Search our tutorials, e.g. HTML" id="search2" autocomplete="off" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this);ga('send', 'event', 'search', 'inputFound');
+      window.location = n;
+    }
+  }
+}
+
+function submit_search_form() {
+    searchFromBox = true;
+    gSearch();
+    var delayInMilliseconds = 100; //0.1 second
+    setTimeout(execute_google_search, delayInMilliseconds);
+}
+
+function execute_google_search() {
+  if (typeof google == 'object') {
+    google.search.cse.element.getElement("standard0").execute(document.getElementById("search2").style.borderBottomLeftRadius = "0";
+  a.style.display = "block";
+  for (i = 0; i < resultIndexes.length; i++) {
+    cc = pagesArr[resultIndexes[i]][2];
+    pos1 = cc.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+      if (posNext > -1) {
+        cc = c2;
+        pos1 = posNext;
+      } else {
+        cc = dd + c2;
+        pos1 = -1;
+      }
+    }
+    classAtt = "";
+    linkEvent = 'ga("send", "event", "search", "inputFound")';
+    if (html == "") classAtt = " search_active";
+    html += "<a class='search_item" + classAtt + "' onclick='click_search_w3schools_link(event)' href='search_entire_w3schools'>Search W3Schools</a>";
+  }
+  a.innerHTML = html;
+}
+function click_search_w3schools_link(event) {
+  event.preventDefault();
+  submit_search_form();
+}
+function key_pressed_in_search(event) {
+  var x, n, nn, i, cc = 0;
+  var keycode = event.keyCode;
+  //console.log(keycode);
+  if (keycode == 38 || keycode == 40) { //up || down
+    x = document.getElementsByClassName("search_item");
+  if (x.length == 0) {
+    cc = 1;
+  }
+  for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf("search_active") > -1) {
+        n = x[i].href;
+        if (n.indexOf("search_entire_w3schools") > -1) {
+          cc = 1;
+        }
+        break;
+      }
+    }
+    if (keycode == 38) {
+      nn = n - 1;
+      if (nn < 0) nn = 0;
+    }
+    if (keycode == 40) {
+      nn = n + 1;
+      if (nn >= x.length) nn = nn - 1; 
+    }
+    x[nn].className = "search_item search_active";
+  }
+  if (keycode == 13) {  //enter
+    event.preventDefault();
+    x = document.getElementsByClassName("search_item");
+    if (x.length == 0) {
+      cc = 1;
+    }
+    for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf("search_active") > -1) {
+        n = x[i].href;
+        if (n.indexOf("search_entire_w3schools") > -1) {
+        cc = 1;
+      }
+      break;
+    }
+  }
+  if (cc == 1) {
+    searchFromBox = true;
+    gSearch();
+    var delayInMilliseconds = 100; //0.1 second
+    setTimeout(execute_google_search, delayInMilliseconds);
+}
+
+function execute_google_search() {
+  if (typeof google == 'object') {
+    google.search.cse.element.getElement("standard0").execute(document.getElementById("search2").style.borderBottomLeftRadius = "0";
+  a.style.display = "block";
+  for (i = 0; i < resultIndexes.length; i++) {
+    cc = pagesArr[resultIndexes[i]][2];
+    pos1 = cc.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+    dd = "";
+    while (pos1 > -1) {
+      c0 = cc.substr(0, pos1);
+      c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
+      c2 = cc.substr(pos1 + val.length);
+      dd += c0 + c1;
+      posNext = c2.toUpperCase().indexOf(val);
+      if (posNext > -1) {
+        cc = c2;
+        pos1 = posNext;
+      } else {
+        cc = dd + c2;
+        pos1 = -1;
+      }
+    }
+    classAtt = "";
+    linkEvent = 'ga("send", "event", "search", "inputFound")';
+    if (html == "") classAtt = " search_active";
+    html += "<a class='search_item" + classAtt + "' onclick='click_search_w3schools_link(event)' href='search_entire_w3schools'>Search W3Schools</a>";
+  }
+  a.innerHTML = html;
+}
+function click_search_w3schools_link(event)' href='search_entire_w3schools'>Search W3Schools</a>";
+  }
+  a.innerHTML = html;
+}
+function click_search_w3schools_link(event)' href='search_entire_w3schools'>Search W3Schools</a>";
+  }
+  a.innerHTML = html;
+}
+function click_search_w3schools_link(event)' href='search_entire_w3schools'>Search W3Schools</a>";
+  }
+  a.innerHTML = html;
+}
+function click_search_w3schools_link(event) {
+  event.preventDefault();
+  submit_search_form();
+}
+function key_pressed_in_search(event) {
+  var x, n, nn, i, cc = 0;
+  var keycode = event.keyCode;
+  //console.log(keycode);
+  if (keycode == 38 || keycode == 40) { //up || down
+    x = document.getElementsByClassName("search_item");
+    if (x.length == 0) {
+      cc = 1;
+    }
+    for (i = 0; i < x.length; i++) {
+      if (x[i].className.indexOf("search_active") > -1) {
+      n = x[i].href;
+      if (n.indexOf("search_entire_w3schools") > -1) {
+          cc = 1;
+        }
+        break;
+      }
+    }
+    if (cc == 1) {
+      searchFromBox = true;
+      submit_search_form();
+    } else {
+      ga('send', 'event', 'search', 'googleTop');        
+      if (window.innerWidth > 1000) {
+        a.style.width = "50%";
+      } else if (window.innerWidth >768) {
+        a.style.width = "80%";    
+      } else {
+        a.style.width = "80%";
+      }
+      window.setTimeout(function () {
+          if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["mid_content"]); });
+                }
+              }
+            });
+          }
+        }
+      </script>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+uic_r_c()
+</script>
+
+</div>
+</div>
+<div id="footer" class="footer w3-container w3-white">
+
+<hr>
+
+<div style="overflow:auto">
+  <div class="bottomad">
+    <!-- BottomMediumRectangle -->
+    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
+    <div id="adngin-bottom_right-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  </div>
+</div>
+
+<hr>
+<div class="w3-row-padding w3-center w3-small" style="margin:0 -16px;">
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">About</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">Forum</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+ <i class="fa fa-thumbs-o-up w3-xxlarge w3-hover-opacity"></i></a>
+ 
+ <div><a class="w3-button tut-button w3-mobile" href="https://shop.w3schools.com" target="_blank">Shop</a>
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);">Exercises <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/r/r_quiz.asp" target="_top">R Quiz</a>
+   <a class="w3-bar-item w3-button" href='/cpp/default.asp' title='C++ Tutorial'>C++</a>
+      <a class="w3-bar-item w3-button" href="/python/numpy/numpy_exercises.asp">NumPy Exercises</a>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+   <a class="w3-bar-item w3-button" href="/go/index.php">Learn Go</a>
+   <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Data Analytics</h3>
+   <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
+-->  
+   <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/cybersecurity_quiz.php">Cyber Security Quiz</a>
+   <a class="w3-bar-item w3-button" href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+   <h3 class="w3-margin-top">CSS</h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank">Python Certificate</a>

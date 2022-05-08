@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:url" content="https://github.com/" /><meta property="og:description" content="Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.">
+
+  <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="GitHub: Where the world builds software · GitHub</title>
+    <meta name="description" content="Stack Overflow is the largest, most trusted online community for developers to learn, share&#x200B; &#x200B;their programming &#x200B;knowledge, and build their careers."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="256">
+  <meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="https://github.githubassets.com/images/modules/site/home/pr-screen.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 opacity-4 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@jasonetco" loading="lazy">
+                      <img src="https://github.githubassets.com/images/modules/site/home/codeql-description.png" alt="Code injection alert" class="home-codeql-description width-full" loading="lazy" decoding="async" alt="GitHub mark">
+            <span class="sr-only">GitHub on Facebook</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="list-style-none d-flex flex-items-center mb-3 mb-sm-0 lh-condensed-ultra">
+        <li class="mr-3">
+          &copy; 2022 GitHub, Inc.
+        </li>
+
+        <li class="mr-3">
+          <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" style="margin-bottom:16px;margin-top:32px;padding:12px 28px;width:50%">W3SCHOOLS SHOP</a></div>
+
+ <div id="fblikeframe" class="w3-modal">
+  <div class="w3-modal-content w3-padding-64 w3-round" id="popupDIV"></div>
+ </div>
+</footer>
+
+<!-- END MAIN -->
+</div>
+<script src="/lib/uic.js?v=1.0.3"></script>
+<script data-cfasync="false" type="text/javascript">
+    window.snigelPubConf = {
+    "adengine": {
+
+      "activeAdUnits": ["main_leaderboard", "sidebar_top", "bottom_left", "bottom_right"]
+
+  }
+}
+uic_r_a()
+</script>
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"></script>
+<script src="/lib/my-learning.js?v=1.0.9"></script>
+<script type='text/javascript'>
+var stickyadstatus = "";
+function fix_stickyad() {
+  document.getElementById("myAccordion").style.display = "none";
+}
+function open_xs_menu(x) {
+  if (document.getElementById("skyscraper")) {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                if (document.getElementById("adngin-mid_content-0")) {
+                  adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+                }
+              }
+            });
+          }
+        }
+      </script>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+uic_r_c()
+</script>
+
+</div>
+</div>
+<div id="footer" class="footer w3-container w3-white">
+
+<hr>
+
+<div style="overflow:auto">
+  <div class="bottomad">
+    <!-- BottomMediumRectangle -->
+    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  </div>
+</div>
+
+<hr>
+<div class="w3-row-padding w3-center w3-small" style="margin:0 -16px;">
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="https://shop.w3schools.com" target="_blank">Shop</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'Videos' , 'fromHTMLdefault')">
+    <img src="htmlvideoad2.png" style="max-width:100%;" title="html video tutorial">
+  </a>
+</div>
+-->
+
+<br>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="html_intro.asp">Next &#10095;</a>
+</div>
+<div class="w3-panel w3-info intro">
+<p>HTML is the standard markup language for Web pages.</p>
+<p>With HTML you can create your own Website.</p>
+<p>HTML is easy to learn - You will enjoy it!</p>
+<a class="w3-btn w3-margin-bottom"  href="html_intro.asp" style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;">Top Tutorials</h5>
+<a href="/html/default.asp">HTML Tutorial</a><br>
+<a href="/css/default.asp">CSS Tutorial</a><br>
+<a href="/js/default.asp">JavaScript Tutorial</a><br>
+<a href="/howto/default.asp">How To Examples</a><br>
+<a href="/sql/sql_examples.asp">SQL Examples</a><br>
+<a href="/python/python_examples.asp">Python Examples</a><br>
+<a href="/w3css/w3css_examples.asp">W3.CSS Examples</a><br>
+<a href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a><br>
+<a href="/php/php_ref_overview.asp">PHP Reference</a><br>
+<a href="/colors/colors_names.asp">HTML Colors</a><br>
+<a href="/java/java_ref_keywords.asp">Java Reference</a><br>
+<a href="/angular/angular_ref_directives.asp'>AngularJS Reference</a>
+   <a class="w3-bar-item w3-button" href="/css/css_rwd_intro.asp" title="Responsive Web Design">Learn RWD</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/scipy_exercises.php">SciPy Exercises</a>
+   <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a>
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a>
+   <a class="w3-bar-item w3-button" href="/where_to_start.asp">Where To Start</a>
+   <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/index.php">Cyber Security</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/r-fundamentals" target="_blank">R Course</a>
+   <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+   <a class="w3-bar-item w3-button" href='/asp/asp_ref_response.asp'>ASP Reference</a>
+   <h3 class="w3-margin-top">Character Sets</h3>
+   <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right ws-hide-900 w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 8px;" href="https://www.w3schools.com/videos/index.php" class="w3-hover-opacity"><img src="/images/htmlvideoad_footer.png" style="max-width:100%;padding:5px 10px 25px 10px" loading="lazy"></a>
+  <a class="ws-button" style="font-size:16px;text-decoration: none !important;display: block !important; color:#FFC0C7!important;  width: 100%; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; paxdding-top: 10px; padding-bottom: 20px; font-family: 'Source Sans Pro', sans-serif;">Top Examples</h5>
+<a href="/html/html_examples.asp">HTML Examples</a><br>
+<a href="/css/css_examples.asp">CSS Examples</a>
+<a target="_top" href="css3_flexbox.asp">CSS Flexbox</a>
+<a target="_top" href="css3_flexbox_items.asp">CSS Flex Items</a>
+<a target="_top" href="css3_2dtransforms.asp">CSS 2D Transforms</a>
+<a target="_top" href="css3_gradients_radial.asp">Radial Gradients</a>
+<a target="_top" href="html_elements.asp">HTML Elements</a>
+<a target="_top" href="css3_variables.asp">CSS Variables</a>
+<div class="tut_overview">
+<a target="_top" href="css_outline_color.asp">Outline Color</a>
+<a target="_top" href="css3_image_reflection.asp">CSS Image Reflection</a>
+<a target="_top" href="html_quotation_elements.asp">HTML Quotations</a>
+<a target="_top" href="js_dom_examples.asp">JS HTML DOM</a>
+<a target="_top" href="js_if_else.asp">JS If Else</a>
+<a target="_top" href="js_timing.asp">JS Timing</a>
+<a target="_top" href="js_comments.asp">JS Comments</a>
+<a target="_top" href="js_htmldom_document.asp">DOM Document</a>
+<a target="_top" href="js_date_formats.asp">JS Date Formats</a>
+<a target="_top" href="js_object_methods.asp">Object Methods</a>
+<a target="_top" href="js_object_accessors.asp">Object Accessors</a>
+<a target="_top" href="js_object_constructors.asp">Object Constructors</a>
+<a target="_top" href="html_attributes.asp">HTML Attributes</a>
+<a target="_top" href="html_urlencode.asp">HTML URL Encode</a>
+<a target="_top" href="html_form_attributes_form.asp">HTML Input Form Attributes</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Examples</h2>
+<a target="_top" href="html_exercises.asp">HTML Exercises</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right ws-hide-900 w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 15px;" href="https://www.w3schools.com/videos/index.php">Explore now</a>
+</div>
+
+<div class="sidesection">
+<!--<h4>LIKE US</h4>-->
+  <div class="sharethis">
+    <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>
+    <a href="https://discord.gg/6Z7UaRbUQM" target="_blank" title='Join the W3schools community on Discord'><span class="fa fa-discord fa-2x"></span></a>    
+  </div>
+</div>
+
+<!--
+<div class="sidesection" style="margin-left:auto;margin-right:auto;max-width:230px">
+  <div class="w3-container ws-black" style="border-top-right-radius:5px;border-top-left-radius:5px;">
+    <h5><a href="/cert/default.asp" class="w3-hover-text-white">HOW TO</a></h4>
+  </div>
+  <div class="w3-container w3-text-white">
+    <h4>Exercises</h4>
+  </div>
+  <div>
+    <div class="w3-light-grey">
+      <a target="_blank" href="/php/exercise.asp">PHP</a>
+      <a target="_blank" href="/bootstrap/exercise_bs3.asp">Bootstrap</a>
+      <a target="_blank" href="/python/exercise.asp">Python</a>
+      <a target="_blank" href="/html/exercise.asp" style="padding-top:8px">HTML</a>
+      <a target="_blank" href="/html/exercise.asp" style="padding-top:8px">HTML</a>
+      <a target="_blank" href="/jquery/exercise_jq.asp" style="padding-bottom:8px">jQuery</a>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="sidesection codegameright ws-turquoise" style="font-size:18px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study our free HTML Tutorial &raquo;</a><br>
+<a style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;">Top Tutorials</h5>
+<a href="/html/default.asp">HTML Tutorial</a><br>
+<a href="/css/default.asp">CSS Tutorial</a><br>
+<a href="/js/default.asp">JavaScript Tutorial</a><br>
+<a href="/howto/default.asp">How To Examples</a><br>
+<a href="/sql/sql_examples.asp">SQL Examples</a><br>
+<a href="/python/python_examples.asp">Python Examples</a><br>
+<a href="/w3css/w3css_examples.asp">W3.CSS Examples</a><br>
+<a href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_exercises.php">Kotlin Exercises</a>
+   <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP</a>
+   <a class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home" style="width:77px">
+    <i class="fa fa-logo ws-text-green ws-hover-text-green" style="position:relative;font-size:42px!important;"></i>
+  </a>
+
+  <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('exercises')" id="navbtn_exercises" title="Exercises" style="width:118px">Exercises <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+    <a class="w3-button w3-block" style="font-size:22px;" href="/pro/index.php">Pro</a>
+  </div>
+</div>
+
+<script>
+(
+function setThemeCheckboxes() {
+  var x = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darkpagetheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "light");
+  } else {
+    document.body.className += " darkpagetheme";
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="js_versions.asp">JS Versions</a>
+<a target="_top" href="css3_mediaqueries.asp">CSS Media Queries</a>
+<a target="_top" href="css_units.asp">CSS Units</a>
+<a target="_top" href="css3_mediaqueries_ex.asp">CSS MQ Examples</a>
+<a target="_top" href="html_summary.asp">HTML Summary</a>
+<a target="_top" href="html_computercode_elements.asp">HTML Computercode</a>
+<a target="_top" href="/tags/ref_av_dom.asp">HTML Audio/Video</a>
+<a target="_top" href="html5_draganddrop.asp">HTML Drag/Drop</a>
+<a target="_top" href="html_tables.asp">HTML Tables</a>
+  <a target="_top" href="html_images_imagemap.asp">Image Map</a>
+  <a target="_top" href="html_links.asp">Links</a>
+  <a target="_top" href="html_table_padding_spacing.asp">Padding &amp; Spacing</a>
+  <a target="_top" href="html_images_picture.asp">The Picture Element</a>
+</div>
+<a target="_top" href="css_inline-block.asp">CSS Inline-block</a>
+<a target="_top" href="css_pseudo_elements.asp">CSS Pseudo-element</a>
+<a target="_top" href="css_overflow.asp">CSS Overflow</a>
+<a target="_top" href="css_math_functions.asp">CSS Math Functions</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+<a target="_top" href="html5_geolocation.asp">HTML Geolocation</a>
+<a target="_top" href="css_navbar_vertical.asp">Vertical Navbar</a>
+<a target="_top" href="css_website_layout.asp">CSS Website Layout</a>
+<a target="_top" href="html_youtube.asp">HTML YouTube</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> SASS</h2>
+<a target="_top" href="/sass/default.php">SASS Tutorial</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+<a target="_top" href="html_media.asp">HTML Media</a>
+<a target="_top" href="html_intro.asp">HTML Introduction</a>
+<a target="_top" href="html_basic.asp">HTML Basic</a>
+<a target="_top" href="html_summary.asp">HTML Summary</a>
+<a target="_top" href="html5_audio.asp">HTML Audio</a>
+<a target="_top" href="html_table_sizes.asp">Table Sizes</a>
+  <a target="_top" href="html_images_imagemap.asp">Image Map</a>
+  <a target="_top" href="html_links.asp">HTML Links</a>
+<div class="tut_overview">
+  <a target="_top" href="html_images.asp">HTML Images</a>
+<div class="tut_overview">
+<a target="_top" href="css3_gradients_radial.asp">Radial Gradients</a>
+<a target="_top" href="js_numbers.asp">JS Numbers</a>
+<a target="_top" href="js_htmldom_methods.asp">DOM Methods</a>
+<a target="_top" href="js_function_closures.asp">Function Closures</a>
+<br>
+<h2 class="left">JS JSON</h2>
+<a target="_top" href="js_window.asp">JS Window</a>
+<a target="_top" href="js_window_navigator.asp">JS Navigator</a>
+<a target="_top" href="js_json_objects.asp">JSON Objects</a>
+<a target="_top" href="js_object_sets.asp">Object Sets</a>
+<a target="_top" href="/tags/ref_colornames.asp">Color Names</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_keyboardshortcuts.asp">Keyboard Shortcuts</a>
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+  <div class='w3-row w3-white'>
+    <div class='w3-col l10 m12' id='main'>
+      <div id='mainLeaderboard' style='overflow:hidden;'>
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="adngin-main_leaderboard-0"></div>
+        <!-- adspace leaderboard -->
+
+      </div>
+<h1>JavaScript <span class="color_h1">Tutorial</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="css_intro.asp">Next &#10095;</a>
+</div>
+<div class="w3-panel w3-info intro">
+<p>CSS is the language we use to style an HTML document.</p>
+<p>CSS describes how HTML elements should be displayed.</p>
+<p>This tutorial will teach you JavaScript from basic to advanced.</p>
+<a class="w3-btn w3-margin-bottom" style="text-decoration:none">Python</a>
+  <a href="/cert/cert_sql.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">Front End</a>
+  <a href="/cert/cert_python.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">JavaScript</a>
+  <a href="/cert/cert_frontend.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">Front End</a>
+  <a href="/cert/cert_python.asp" class="w3-button ws-grey w3-block" style="text-decoration:none;">And more</a>
+  </div>
+</div>
+-->
+
+<div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
+  <div id="stickyadcontainer">
+    <div style="position:relative;margin:auto;">
+      
+      <div id="adngin-sidebar_sticky-0"></div>
+        <script>
+        function secondSnigel() {
+          if(window.adngin && window.adngin.adnginLoaderReady) {
+            if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky", "mid_content" ]); });
+              } else {
+              if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+              }
+            }
+          } else {
+            window.addEventListener('adnginLoaderReady', function() {
+              if (Number(w3_getStyleValue(document.getElementById("skyscraper")) {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {         
+              if (document.getElementById("adngin-mid_content-0")) {
+                  adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+                }
+              } else {
+                if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky", "mid_content" ]); });
+              } else {
+                if (document.getElementById("adngin-mid_content-0")) {
+                  adngin.queue.push(function(){  adngin.cmd.startAuction(["mid_content"]); });
+                }
+              } else {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["mid_content"]); });
+              }
+            } else {
+                  adngin.queue.push(function(){  adngin.cmd.startAuction(["mid_content"]); });
+              }
+            } else {
+              if (document.getElementById("adngin-mid_content-0")) {
+                  adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky", "mid_content" ]); });
+              } else {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+              }
+            }
+          } else {
+            window.addEventListener('adnginLoaderReady', function() {
+              if (Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {         
+              if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus();
+          }
+        }, 400);
+      //elmnt.innerHTML = "<span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'>&times;</span>";
+  }
+}
+function open_search(elmnt, sfb) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "44px";
+}
+function mouseoutofdarkicon() {
+  var a = document.getElementById("googleSearch");
+  if (a.style.visibility == "hidden" && a.style.display == "") {
+    a.style.display = "none";
+      elmnt.innerHTML = "<i class='fa'>&#xe801;</i>";
+  } else {
+    a.style.display = "";
+    if (window.innerWidth > 830) {
+      a.style.width = "32%";
+    } else {
+      a.style.width = "60%";
+    }
+    elmnt.innerHTML = "<span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'>&times;</span>";
+  }
+}
+function open_search(elmnt, sfb) {
+  var a = document.getElementById("radio_darkcode");
+  var b = document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "dark");
+  }
+}
+function open_translate(elmnt) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className += " darkpagetheme";
+    document.body.className = document.body.className.replace("darktheme", "");
+  document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredmode", "dark");
+  }
+}
+function open_translate(elmnt) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("radio_darkcode");
+  var b = document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "light");
+  }
+}
+
+function click_darkcode() {
+  var a = document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "light");
+  }
+}
+
+function changecodetheme() {
+  var cc = document.body.className;
+  if (cc.indexOf("darktheme") > -1) {
+    document.body.className += " darkpagetheme";
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.body.className += " darktheme";
+    document.body.className += " darkpagetheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
+    document.getElementById("nav_" + x).style.display = "block";
+    if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+                }
+              } else {
+              if (document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "none";
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+  } else {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") foldername = "";
+  if (foldername == "CS") foldername = "C#";
+  if (foldername == "CYBERSECURITY") foldername = "Cyber Security";  
+  if (foldername == "CPP") foldername = "C++";
+  document.getElementById("coursetopic").innerText = foldername;
+}
+getCourseFolder();
+</script>
+<a class="w3-btn w3-margin-bottom" href="css_intro.asp" style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma a {
+  border-radius: 50px;
+  mxargin-top: 50px;
+  font-size: 18px;
+  background-color: #04AA6D;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.w3csstut {
+  height: 390px;
+}
+
+.tut-button:hover,.tryit-button:hover,.exercise-button:hover,#getdiploma a:hover {
+  background-color: #059862 !important;
+}
+
+
+@media screen and (max-width: 600px) {
+  .learntocodeh1 {
+    font-size:50px!important;
+  }
+  .learntocodecontent {
+    padding-left:35px;
+    padding-right:35px;
+  }
+  form.example input[type=text],form.example button {
+  font-size: 16px;
+ }
+   form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-left: none;
+  cursor: pointer;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+}
+
+form.example button:hover {
+  background: #059862;
+  color: white;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#listofsearchresults {
+  display:none;
+  position:absolute;
+  //border:1px solid #000;
+  background-color:#282A35;
+  background-color:#fff;
+  color:#777;
+  text-decoration:none;
+  display:block;
+  padding:10px 30px;
+  width:100%;
+  opacity:0.95;
+}
+#listofsearchresults a:hover {
+  color:#000;
+  opacity:1;
+}
+.span_search {
+  background-color:#ffecee;
+}
+.search_active {
+  background-color:#ffecee!important;
+  color:#000!important;
+}
+.search_active .span_search {
+  background-color:#ffecee;
+}
+.search_active {
+  background-color:#ffecee!important;
+  color:#000!important;
+}
+.search_active .span_search {
+  background-color:#ffccd1;
+}
+
+.learntocodeh1 {
+  font-size:70px;
+  font-weight:700;
+}
+
+.learntocodeh3 {
+  color:#FFC0C7;
+  font-weight:700;
+  margin-top:30px!important;
+  font-size:23px;
+}
+.learntocodecontent {
+  padding-left:90px;
+  padding-right:90px;
+}
+
+@media screen and (max-width: 1155px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+  #getdiploma h2 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .learntocodeh1 {
+    font-size:50px!important;
+  }
+  .learntocodeh3 {
+    font-size:21px!important;
+  }
+  .learntocodecontent {
+    padding-left:35px;
+    padding-right:35px;
+  }
+  form.example input[type=text],form.example button {
+  font-size: 16px;
+ }
+   form.example input[type=text] {
+   padding-left:16px;
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .learntocodeh1 {
+    font-size:50px!important;
+  }
+  .learntocodeh3 {
+    font-size:21px!important;
+  }
+  .learntocodeh3 {
+    font-size:21px!important;
+  }
+  .learntocodecontent {
+    padding-left:35px;
+    padding-right:35px;
+  }
+  form.example input[type=text],form.example button {
+  font-size: 16px;
+ }
+   form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 80%;
+  padding-left:25px;
+  background: white;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-right:0;
+  border-right: 1px solid #04AA6D;
+  outline:0;
+}
+
+form.example button {
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-radius:25px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#04AA6D;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.w3csstut {
+  height: 390px;
+}
+
+.tut-button:hover,.tryit-button:hover,.exercise-button:hover,#getdiploma a:hover {
+  background-color: #059862 !important;
+}
+
+
+@media screen and (max-width: 992px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+  #getdiploma h2 {
+    font-size: 44px;
+  }
+  #getdiploma p {
+    font-size: 30px;
+  }
+
+  #getdiploma a {
+    width: 100%;
+  }
+  div.ext_icon_container {
+    background-color:transparent!important;
+  }
+}
+.tutbuttons a{
+  text-decoration:none;
+}
+
+.tutbuttons a div {
+  opacity:0.9;
+}
+
+.tutbuttons a:hover div {
+  opacity:1;
+}
+
+.ribbon-vid {
+  width: 60px;
+  font-size:14px;
+  padding: 4px;
+  position: absolute;
+  left:-20px;
+  top:-10px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+}
+</style>
+
+<div class="sidesection" id="video_sidesection">
+  <div class="w3-center" style="padding-bottom:7px">
+    <span class="ribbon-vid ws-yellow">NEW</span>
+  </div>
+  <p style="font-size: 14px;line-height: 1.5;font-family: Source Sans Pro;padding-left:4px;padding-right:4px;">We just launched<br>W3Schools videos</p>

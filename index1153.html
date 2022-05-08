@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.add('bg-black-800');
+            } else {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--copyright fs-fine md:mt24">
+                <ul class="-list">
+                            </li>
+
+                <li>
+                            </div>
+                </div>
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a>.
+                    </p>
+                    <div class="rounded-2 box-shadow-active-border-mktg position-relative z-1 overflow-hidden home-discussions-1">
+                      <picture>
+                <source srcset="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="16" height="16">
+          <div>package.json</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="overflow-hidden js-section" id="home-automate">
+  <div class="container-xl p-responsive">
+    <div class="d-flex flex-wrap py-5 mb-5">
+      <div class="col-12 col-sm-10 offset-sm-1">
+        <div class="col-6-max">
+              <div class="mb-5 mb-md-6 mt-n3">
+                <div class="d-flex jc-center sm:fd-column">
+                        <a href="https://askubuntu.com/" data-animation-type="show" class="flex--item mb24 wmn2">
+        <div class="m12 h100 bs-sm ba bc-black-150 bg-black-100 d:bg-black-075 bar-lg p24 sm:pr6 sm:pl6 pb0">
+            <svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1 2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1Zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3Z"/></svg></div>
+            <div>Priority customer support</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconSpeechBubbleQuestion" width="18" height="18" viewBox="0 0 18 18"><path d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4Z"/></svg></a>
+                    </div>
+                <div class="flex--item lg:d-none ta-center">
+                <a href="https://play.google.com/store/apps/details?id=com.github.android"
+                        data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;go to YouTube&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up;ref_loc:Homepage;&quot;,&quot;ref_loc&quot;:&quot;Homepage&quot;}" href="/join?ref_cta=Sign+up&amp;ref_loc=homepage+sticky+nav&amp;ref_page=%2F&amp;source=homepage-sticky-nav">
+  Sign up
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" aria-hidden="true" class="position-absolute top-0 z-n1 height-auto home-pr-screen" alt="Timeline of a pull request on GitHub" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">tensorflow/<span class="color-fg-default">rust</span></p>
+                </div>
+                  <div class="col-12 col-lg-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><path clip-rule="evenodd" d="m7.5 12c0-1.7239.68482-3.37721 1.90381-4.59619 1.21899-1.21899 2.87229-1.90381 4.59619-1.90381s3.3772.68482 4.5962 1.90381c1.219 1.21898 1.9038 2.87229 1.9038 4.59619s-.6848 3.3772-1.9038 4.5962-2.8723 1.9038-4.5962 1.9038-3.3772-.6848-4.59619-1.9038-1.90381-2.8723-1.90381-4.5962zm6.5-8c-2.1217 0-4.15656.84285-5.65685 2.34315-1.5003 1.50029-2.34315 3.53512-2.34315 5.65685 0 2.1217.84285 4.1566 2.34315 5.6569 1.50029 1.5002 3.53515 2.3431 5.65685 2.3431s4.1566-.8429 5.6569-2.3431c1.5002-1.5003 2.3431-3.5352 2.3431-5.6569 0-2.12173-.8429-4.15656-2.3431-5.65685-1.5003-1.5003-3.5352-2.34315-5.6569-2.34315zm-3 8c.2652 0 .5196-.1054.7071-.2929s.2929-.4419.2929-.7071-.1054-.5196-.2929-.7071-.4419-.2929-.7071-.2929-.5196.1054-.7071.2929-.2929.4419-.2929.7071.1054.5196.2929.7071.4419.2929.7071.2929zm7-1c0 .2652-.1054.5196-.2929.7071s-.4419.2929-.7071.2929-.5196-.1054-.7071-.2929-.2929-.4419-.2929-.7071.1054-.5196.2929-.7071.4419-.2929.7071-.2929.5196.1054.7071.2929.2929.4419.2929.7071zm-6.68 2.636c.1613-.113.3606-.1579.5549-.1252.1942.0327.3677.1406.4831.3002l.007.009c.1028.118.2205.2221.35.31.264.178.683.37 1.285.37s1.02-.192 1.285-.371c.1295-.0879.2472-.192.35-.31l.007-.008c.1154-.1621.2904-.2716.4865-.3046.1962-.033.3975.0132.5595.1286s.2716.2904.3046.4865c.033.1962-.0132.3975-.1286.5595l-.614-.431c.614.43.614.431.613.431v.001l-.001.002-.002.003-.005.007-.014.019c-.0562.0753-.1177.1464-.184.213-.1607.1664-.3383.3155-.53.445-.6298.4184-1.3709.6376-2.127.629-.946 0-1.652-.308-2.126-.63-.2508-.1697-.4772-.3729-.673-.604-.0143-.0174-.0283-.0351-.042-.053l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43c-.114-.1628-.1588-.3641-.1245-.5599.0343-.1957.1449-.3698.3075-.4841z" fill="#dadfe9" fill-rule="evenodd"></path></svg>
+
+                  <h3
+                    class="js-build-in-trigger d-flex flex-column gutter gutter-spacious">
+
+          <div class="home-branch-container position-relative f6-mktg text-mono text-gray-light-mktg py-2" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 28 24" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1" style="right: -0.26rem"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                    <h3 class="js-build-in-item build-in-slideX-left col-12 col-lg-5 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><path d="m0 0h28v26h-28z" fill="#fff"></path><g fill="#8392ad"><path d="m11.25 13a.75.75 0 0 1 -.22.53l-2.75 2.75a.75.75 0 0 1 -1.06-1.06l2.22-2.22-2.22-2.22a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"></path><path clip-rule="evenodd" d="m11.836 5.244c.963-1.665 3.366-1.665 4.329 0l8.966 15.504c.964 1.667-.239 3.752-2.164 3.752h-17.933c-1.925 0-3.128-2.085-2.164-3.752zm3.03.751a1 1 0 0 0 -1.731 0l-8.967 15.504a1 1 0 0 0 .866 1.501h17.933a1 1 0 0 0 .865-1.5l-8.966-15.506z" fill-rule="evenodd"></path></g></svg>
+
+                <span class="text-truncate"><strong class="text-semibold text-gray-dark-mktg">$10/month</strong> <span title="Label: 5x" data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+        <div class="terminal-mktg text-mono f6-mktg bg-gray-dark-mktg box-shadow-active-mktg rounded-2 js-type-in" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+
+  <div class="p-4" data-type-delay="800">

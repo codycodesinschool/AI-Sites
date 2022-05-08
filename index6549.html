@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/serverfault/Img/apple-touch-icon.png?v=6c3100d858bb" alt="Server Fault icon">
+        </a>
+
+                    </li>
+                    <li class="m6">
+                        <a href="https://stackoverflow.com"><svg aria-hidden="true" class="svg-icon iconKey" width="18" height="18" viewBox="0 0 18 18"><path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"/></svg></div>
+            <div>Unlimited Teams within your instance</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/></svg>
+                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">200<span class="text-white-fade">+</span> million</h2>
+                    <p class="mb16 s-anchors s-anchors__inherit s-anchors__underlined">
+                        By clicking “Accept all cookies”, you agree Stack Exchange can store cookies on your device and disclose information in accordance with our <a href="https://stackoverflow.co/teams" class="js-gps-track -link" 
+                                       data-ga="[&quot;top navigation&quot;,&quot;public qa submenu click&quot;,null,null,null]">
+                                    <div class="home-matrix-publish float-lg-left mx-auto color-bg-default width-full rounded-2 position-relative box-shadow-card-border-mktg">
+                    <div class="fl1">
+                <a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 30 })">Stack Exchange Network</a></h5>
+                        <ul class="-list">
+                            <span class="fs-caption d-block fc-light">Where developers &amp; technologists share private knowledge with coworkers</span>
+                            <li>
+                    <ol class="nav-links">
+                            <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                        </ul>
+                    </div>
+                <div class="fc-black-300 fs-body2 px24">monthly visitors to Stack Overflow & Stack Exchange</div>
+            </div>
+        </div>
+
+
+</div>
+
+
+
+
+        <div id="content" class="w100 wmx100 p0 snippet-hidden bg-black-025 snippet-hidden">
+
+            
+<header class="p-wrapper-home btr-lg p48 md:p32 sm:p12 ta-center ps-relative">
+    <div style="clip-path:url(#curve)" class="p32 sm:p12 bar-lg p-bg-dark-gradient d:fc-black-750 ps-relative z-selected fc-black-025 p-font-smooth mbn128 pb128">
+        <div class="wmx9 mx-auto d-flex flex__allitems6 sm:fd-column">
+            <img src="https://cdn.sstatic.net/Img/product/teams/logos/wisetech-global-alt.svg?v=3b6b11e76536" alt="WiseTech Global">
+    </div>
+</div>
+<script>
+(function () {
+    var logos = document.querySelector('.js-carousel-logos');
+    var logosShown = 4;
+    var logosTotalPages = Math.ceil(logos.children.length / logosShown) - 1;
+    var logosCurrentPage = 0;
+    var logosCarouselTime = 4000;
+    var logosCarouselPlayer;
+
+    logos.classList.remove('o100');
+    
+    for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.remove('d-none');
+                } else {
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.remove('d-none');
+            });
+            document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.remove('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+            });
+            document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.remove('d-none');
+            });
+                </script>
+
+        
+                <div class="ff-sans ps-fixed z-nav-fixed ws4 sm:w-auto p32 sm:p16 bg-black-750 fc-white bar-lg b16 l16 r16 js-consent-banner">
+                    <svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoCollectives" width="154" height="30" viewBox="0 0 154 30"><path d="M21 27v-8h3v11H0V19h3v8h18z" fill="#BCBBBB"/><path d="M5.4 19.1l13.6 2 .2-2.4-13.3-2.6-.5 3zm1.8-6.8l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zM17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zM5 25h14v-3H5v3zm24 10.86V28h5v1.58h-3.03v1.57h2.52v1.59h-2.52v3.1H29v.02zm6.02-3.03v-1.8c0-1.21.18-1.85.66-2.36.54-.57 1.23-.8 2.4-.8 1.23 0 1.97.28 2.5.94.38.48.54 1.1.54 2.22v1.8c0 1.21-.18 1.85-.66 2.37-.54.56-1.22.8-2.39.8-1.24 0-1.98-.28-2.5-.94-.4-.49-.55-1.1-.55-2.23zm4.14-.15v-1.5c0-1.36-.23-1.73-1.09-1.73-.86 0-1.09.37-1.09 1.73v1.5c0 1.36.23 1.74 1.1 1.74.85 0 1.08-.38 1.08-1.74zm4.88.14v3.04h-1.96V28h3.08c1.1 0 1.67.15 2.09.57.4.4.57.93.57 1.8 0 1.35-.37 2-1.35 2.29l1.7 3.19h-2.18l-1.43-3.04h-.52v.01zM44 31.34h.96c.7 0 .92-.22.92-.9 0-.66-.23-.88-.92-.88H44v1.78zm9.05 4.52v-6.27h-2.02V28h6v1.58h-2.02v6.27h-1.96v.01zm4.98 0V28h5.08v1.58h-3.14v1.52h2.65v1.58h-2.65v1.59h3.2v1.58h-5.14v.01zm10.21-1.39h-2.5l-.42 1.39H63.2L66.03 28h1.9l2.84 7.85h-2.1l-.43-1.39v.01zm-.46-1.55L67 30.27l-.8 2.65h1.58zm3.46 2.94V28h1.81l1.88 3.9 1.88-3.9h1.82v7.85h-1.87v-4.24l-1.2 2.48H74.3l-1.2-2.48v4.24h-1.87l.01.01zm8.17-1.32l1.48-.95c.36.6.82.84 1.65.84.7 0 1.03-.25 1.03-.78 0-.42-.22-.64-.8-.78-1.37-.34-1.66-.44-2.07-.7-.63-.41-.92-1-.92-1.89 0-1.57.96-2.4 2.75-2.4 1.36 0 2.21.43 2.75 1.38l-1.44.91c-.38-.54-.75-.73-1.34-.73-.55 0-.85.25-.85.71 0 .53.3.75 1.36 1.01 1 .26 1.24.34 1.64.6.53.35.79.92.79 1.8 0 .86-.21 1.42-.66 1.8-.5.42-1.28.64-2.26.64-.9 0-1.74-.2-2.29-.56a2.2 2.2 0 01-.82-.9z" fill="#F48024"/></svg>
+
+            <p class="p-ff-roboto-slab-bold fs-headline1">
+                    A public platform building the definitive collection of coding questions & answers
+                </h2>
+                <p class="fs-subheading fc-blue-050 d:fc-black mb32 wmx6 mx-auto">From <a class="fc-blue-300 d:fc-blue-500 h:fc-blue-200" href="https://superuser.com/">Super User</a>, much of the Stack Exchange network continues our mission to empower the world to develop technology through collective knowledge. Other sites on the Stack Exchange network further encourage knowledge sharing across topics such as cooking and medicine.</p>
+            
+            <a class="s-btn px32 p-bg-yellow d:fc-white h:p-bg-yellow-tint fc-black-900 ws-nowrap p-ff-source-bold fs-body2 bar-md mr12" href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 32 })">Twitter</a></li>
+                    <li><a href="https://stackoverflow.co/explore-teams" class="s-btn fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold mt-auto" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;Request a demo&quot;,null,null]">For large organizations <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotRocketLg" width="96" height="96" viewBox="0 0 96 96"><path d="M86 26.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm-52 25a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13ZM72.5 60a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" opacity=".2"/><path d="M75 17a8 8 0 1 1 6.49 7.86L68.04 50.79A7.98 7.98 0 0 1 63 65a8 8 0 0 1-7.85-9.55l-17-9.84a8 8 0 0 1-8.56 4.27L20.21 75.2a8 8 0 1 1-2.8-1.08l9.38-25.32a8 8 0 1 1 12.19-6.18l17.3 10.02a8 8 0 0 1 9.12-3.27l13.29-25.63A8 8 0 0 1 75 17Zm8-5a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM31 37a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm42-20a5 5 0 1 0 10 0 5 5 0 0 0-10 0Z"/></svg>
+                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">4<span class="text-white-fade">+</span> million</h2>
+                    <p class="m-0 text-mono text-white-fade f6-mktg">Repositories</p>
+                  </div>
+              </div>
+
+              <h2 class="h2-mktg mb-3"><span class="text-gradient-pink-blue">Ready player two.</span> Scale your team to any size in the cloud.</h2>
+
+              <a class="link-mktg text-semibold color-fg-default py-1 f4-mktg link-emphasis-mktg" href="https://docs.github.com/discussions" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Features&quot;,&quot;label&quot;:&quot;text:api&quot;}" href="https://docs.github.com">Developer API</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Features;&quot;}" href="/features">
+      Features
+</a>  </li>
+
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Learn and contribute</li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click nav item to scroll to Develop&quot;,&quot;label&quot;:&quot;text:roadmap&quot;}" href="https://github.com/enterprise/contact">
+      Contact Sales
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Events;&quot;}" href="/events">
+      Events
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" class="Link--secondary">Terms</a>
+        </li>
+
+        <li class="mr-3">
+          <a href="https://www.facebook.com/officialstackoverflow/" class="-link js-gps-track" data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="favicon favicon-stackoverflowmeta site-icon flex--item" title="Meta Stack Overflow"></div>
+        <span class="flex--item fl-shrink0 fs-body1 z-active px12">
+                            <span class="fc-white d:fc-black d-block">You can save time and money with Stack Overflow for Teams.</span> 
+                    <span class="fs-caption d-block fc-light">Public questions &amp; answers</span>
+                            <div class="js-build-in-trigger d-flex flex-column gutter gutter-spacious position-relative">
+
+      <div class="home-git-log-dark col-12 offset-md-1 pt-10">
+        <div class="d-flex flex-items-center mb-2">
+                  <img src="https://avatars.githubusercontent.com/ampinsk?s=64&amp;v=4" loading="lazy">
+                </picture>
+                  </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">The package manager for JavaScript</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex py-1 px-4">
+          <img src="https://github.githubassets.com/assets/home-e461cf7ec7b7.css" />
+
+
+
+  <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-K5XqHZlKou8Ex97bfu02vnw9p1q3z7EXg/hNqwyzevXKd7VQhkOwCH5y4Kx7AQ+wxdF7w2O30sb03ukDwHGVJQ==" src="https://github.githubassets.com/images/modules/site/home/discussions-check.svg"
+                        class="js-close-button s-btn s-btn__muted p0 ml8 d-none sm:d-block"
+                        type="button"
+                                   </a>
+                    </li>
+
+                    <li class="m6">
+                        <a href="https://stackoverflow.com/teams/create/basic"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-700 h:bg-black-600 fc-white"
+            data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams&quot;,null,{&quot;dimension4&quot;:&quot;teams&quot;}]"
+                                        type="text"
+                                         data-ga="[&quot;top navigation&quot;,&quot;about submenu click&quot;,null,null,null]">
+                                   Business
+                                placeholder="Search&#x2026;"
+                                      data-ga="[&quot;top navigation&quot;,&quot;about menu click&quot;,null,null,null]">
+                        Products
+                    </a>

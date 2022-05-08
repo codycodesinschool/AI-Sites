@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="GitHub" /><meta property="og:type" content= "website" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+        <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="p-wrapper-home p48 pb0 sm:p12 ps-relative overflow-hidden">
+            Every <span class="js-user-slider p-home-tagline va-bottom ps-relative ws-nowrap d-inline-flex fd-column ai-center fc-orange-500 lg:d-block mx-auto ta-center" data-words="developer, data scientist, system admin, mobile developer, game developer">developer</span> has a<br class="lg:d-none"> tab open to<br class="d-none lg:d-block"> Stack Overflow
+        </h1>
+
+        <span class="w64 h8 bar-pill d-block bg-black-500 mx-auto"></span>
+
+        <div class="d-flex flex__center gs16 ff-row-wrap">
+            <a href="/teams/integrations/jira" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="GitHub" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="mt-auto fc-orange-400 svg-icon iconStarVerified" width="18" height="18" viewBox="0 0 18 18"><path d="M4.2 1.33a4.99 4.99 0 0 1 6.47 6.47L17 14.13l-2.88 2.88-6.34-6.34a4.99 4.99 0 0 1-6.45-6.45l3.22 3.2 2.88-2.87L4.2 1.33Z"/></svg></div>
+            <div>Structured and searchable knowledge base</div>
+        </div>
+
+
+                        <div class="rounded-2 box-shadow-active-mktg position-relative z-1 float-right home-discussions-2">
+                      <img src="https://github.githubassets.com/images/modules/site/home/pr-screen.webp" type="image/webp">
+                          <img src="https://github.githubassets.com/images/modules/site/home/discussions-answered-check.svg"
+                        class="js-close-button s-btn s-btn__muted p0 ml8 d-none sm:d-block"
+                        type="button"
+                                 <div class="rounded-2 box-shadow-default-border-mktg position-relative z-1 float-right home-discussions-2">
+                      <img src="https://avatars.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <link rel="stylesheet" href="https://github.githubassets.com/images/modules/site/home/actions-editor-sidebar.png" class="height-full" alt="The Actions Marketplace is available inline alongside the GitHub Actions workflow editor" width="706" height="452" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">ansible/<span class="color-fg-default">kubernetes</span></p>
+                </div>
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/logos/platform-windows.svg" alt="Windows" loading="lazy"></li>
+                  </ul>
+                  <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Terraform enables you to safely and predictably create, change, and improve infrastructure. </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5">
+                    <div class="home-codeql-step-3 rounded-2 position-absolute box-shadow-active-border-light-mktg js-build-in-item" style="font-size: 0;">
+              <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async">
+                        </picture>
+                      <source srcset="https://github.githubassets.com/assets/webgl-globe-72040f00cce7.js"></script>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://github.githubassets.com/images/modules/site/home/pr-description.png" class="width-full height-auto" alt="GitHub profile card for @prophen" loading="lazy" width="768" height="484">
+                      </picture>
+                      </div>
+              </li>
+
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Connect with others</li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Code review&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:flutter/flutter;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-items-center position-relative f5-mktg text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <img src="https://avatars.githubusercontent.com/npm?s=64&amp;v=4" alt="npm" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+              </picture>
+                  </div>
+                </div>
+            <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" alt="Linkedin icon">
+            <span class="sr-only">Toggle Language</span>
+        </button>
+      </div>
+  
+      <ul id="lang-picker" class="lang-picker hidden">
+          <li>
+            <button data-lang="uk" title="Ukrainian">Українська</button>
+          </li>
+          <li>
+            <button data-lang="ar" title="Arabic">العربية</button>
+          </li>
+          <li>
+            <a href="https://github.com/nodejs/help/issues">Get Help</a></li>
+          <li>
+            <button data-lang="ja" title="Japanese">日本語</button>
+          </li>
+          <li>
+            <button data-lang="fa" title="Persian">زبان فارسی</button>
+          </li>
+          <li>
+            <button data-lang="fr" title="French">Français</button>
+          </li>
+          <li>
+            <a href="https://github.com/nodejs/nodejs.org/edit/main/locale/en/index.md"/> 
+
+
+          <p class="home-version home-version-banner">
+            <a href="https://nodejs.org/dist/v18.1.0/" class="home-downloadbutton"  title="Download 18.1.0 Current"  data-version="v18.1.0">
+              18.1.0 Current
+              <small>Latest Features</small>
+            </a>
+
+            <ul class="list-divider-pipe home-secondary-links">
+              <li>
+                <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>.                    <span id="svnrev">rev&nbsp;2022.5.6.42057</span>
+                </p>
+                    <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">                        
+                        <span class="fc-white d:fc-black">Subject-matter experts at software platform Unqork had</span> <span class="p-ff-roboto-slab-bold fs-headline1">
+                    A public platform building the definitive collection of coding questions & answers
+                </h2>
+                <p class="mx48 sm:ml32 sm:mr32 mb32 fc-black-600 fs-subheading">A web-based platform to increase productivity, decrease cycle times, accelerate time to market, and protect institutional knowledge.</p>
+
+                <div class="d-flex flex-column">
+      <div class="col-11 col-md-10 offset-1 home-codespaces-container">
+        <div class="col-8-max mx-lg-auto text-lg-center mb-6 mb-md-8 position-relative z-2">
+                      <picture>
+            <source srcset="https://github.githubassets.com/images/modules/site/home/globe.jpg 1400w"
+      sizes="(max-width: 700px) 70vw, 700px"
+      src="https://github.githubassets.com/assets/6262-f666c7f4034a.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-KKLG+hE5uCMJHxwocsH3WQNYzT3qftRjkNe7L0b5aOMgoS5iT5oWDIwhiy38adTWwg6xdomYeWvi2+wQBjOBAg==" src="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=1376" />
+</picture>
+      </div>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left d-block d-md-none mr-n6 position-relative z-2"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <h3 class="f2-mktg text-gray-mktg text-semibold mb-5 mb-lg-0 col-5-max"><span class="text-gray-dark-mktg">Keep work moving.</span>
+                    Review or merge code, manage notifications, browse repositories, and more with <a class="color-fg-accent" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Actions Marketplace&quot;,&quot;label&quot;:&quot;text:terms&quot;}" class="Link--secondary">Terms</a>
+        </li>
+
+        <li class="mr-3">
+          <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:npm;ref_loc:code launchpad&quot;}" href="https://desktop.github.com/">
