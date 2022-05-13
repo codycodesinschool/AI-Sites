@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.remove('d-none');
+                } else {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.remove('bg-black-800');
+            } else {
+                    logos.children[i].classList.remove('d-none');
+                } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits fc-green-500 t50 ln16 w64 h64"></span>
+    <span aria-hidden="true" class="p-bits fc-orange-400 t128 r0 w64 h64"></span>
+    <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-lg-justify-end color-bg-default">
+        <div class="col-8 col-sm-7 col-md-6 col-lg-5 position-relative z-2 right-lg-n12 events-none">
+          <picture>
+                  <source srcset="https://github.githubassets.com/assets/6262-f666c7f4034a.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-hZN/C8dP1MReDsLXTtUc3f0LOjRTx6lJtfLHtplhun0uazPq9xwV77FrhzsPUG+C6SORbdzjueWfFlw5ohmAgw==" src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" width="960" height="967" class="home-astro-mona width-full position-absolute bottom-0 height-auto" alt="Mona looking at GitHub activity across the globe">
+          </picture>
+          </div>
+        </div>
+
+        <div class="d-flex py-1 px-3">
+          <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="macOS" loading="lazy"></li>
+                  </ul>
+                </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">The package manager for JavaScript</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-repo-editor rounded-2 position-relative mr-n1 ml-n1 mr-md-0 ml-md-0 overflow-hidden js-build-in-item">
+  <div class="d-flex position-absolute top-0 right-0 height-full home-codespaces-illo events-none" style="padding-left: 0 !important; padding-right: 0 !important;">
+            <div class="top-0 right-0 position-sticky z-1 pt-3 pt-lg-8">
+              <div class="home-matrix-tab position-absolute top-0 overflow-hidden width-full"></div>
+                    </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="d-inline-block border py-1 px-2 text-mono rounded-pill f6-mktg text-gray-mktg">
+                    <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/></svg>
+                    <h2 class="fs-subheading wmx3 mx-auto">Want a secure, private space for your technical knowledge?</h2>
+
+                    <div class="rounded-2 box-shadow-default-border-mktg offset-2 overflow-hidden">
+                        <picture>
+            <source srcset="https://github.githubassets.com/images/modules/site/home/community-sponsor-2.webp" type="image/webp">
+              <img src="https://github.githubassets.com/images/modules/site/home/codeql-step-1.webp" type="image/webp">
+            <img src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" class="home-git-item color-bg-default flex-shrink-0 mr-3 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                <img src="https://github.githubassets.com/images/modules/site/home/community-readme-2.png" class="width-full height-auto" width="2496" height="1480" alt="The resulting GitHub repository page from pushing" decoding="async">
+              </picture>
+                      <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">                        
+                        <span class="fs-caption d-block fc-light">Reach developers &amp; technologists worldwide</span>
+                        </a>
+            </div>
+                <div class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious" style="padding: 5% 0 14.5%">
+                  <div class="col-6 col-lg-4 flex-auto">
+                  <div class="home-matrix-connector-bg"></div></div>
+
+                    <picture>
+                <source srcset="https://github.githubassets.com/images/modules/site/home/community-discussions-2.webp" type="image/webp">
+                  <img src="https://github.githubassets.com/images/modules/site/home/codespaces-vscode-1.webp" type="image/webp">
+            <img src="https://github.githubassets.com/images/modules/site/home/globe-900.h264.mp4">
+    </video>
+    <img
+      srcset="https://github.githubassets.com/images/modules/site/home/pr-comment.png" class="width-full height-auto" alt="Viewing changelog in GitHub Desktop">
+                      </picture>
+                <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/icons/folder.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async">
+              </picture>
+                    </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">A declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="position-relative z-1 mx-auto box-shadow-default-mktg wide-block py-0 position-relative home-git-log-dark-icons js-section" id="home-develop" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+    <div class="px-4 pt-3 position-relative">
+        <div class="d-flex flex__center gs16 ff-row-wrap">
+            <a href="/teams/integrations/jira" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Okta" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoAdvertisingAlt" width="158" height="30" viewBox="0 0 158 30"><path d="M21 27v-8h3v11H0V19h3v8h18Z" fill="#BCBBBB"/><path d="m5.4 19.1 13.56 1.96.17-2.38-13.26-2.55-.47 2.97Zm1.8-6.8 12 5.6 1.1-2.4-12-5.6-1.1 2.4Zm3.4-5.9 10.2 8.5 1.7-2-10.2-8.5-1.7 2ZM17.1.2 15 1.8l7.9 10.6 2.1-1.6L17.1.2ZM5 25h14v-3H5v3Z" fill="#F48024"/>

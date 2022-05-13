@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.remove('d-none');
+                } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="p-wrapper-home p48 pb0 sm:p12 ps-relative overflow-hidden">
+            Every <span class="js-user-slider p-home-tagline va-bottom ps-relative ws-nowrap d-inline-flex fd-column ai-center fc-orange-500 lg:d-block mx-auto ta-center" data-words="developer, data scientist, system admin, mobile developer, game developer">developer</span> has a<br class="lg:d-none"> tab open to<br class="d-none lg:d-block"> Stack Overflow
+        </h1>
+
+        <span class="w64 h8 bar-pill d-block bg-black-500 mx-auto"></span>
+
+        <div class="d-flex flex-column pt-5 z-1">
+          <div class="js-build-in-item build-in-slideX-left f2-mktg text-gray-light-mktg  text-semibold mb-5 mb-lg-0 col-5-max"><span class="text-gray-dark-mktg">With 70 million jobs run per month you’re in good company with Actions, the number one CI service on the world’s largest developer platform.</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+</main>
+
+  </div>
+
+            <footer class="footer pt-6 position-relative" >
+  <div class="container-xl p-responsive">
+    <div class="d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-7 py-md-8">
+                  <div class="col-6 col-lg-4 flex-auto">
+                  <div class="home-codeql-step-2 rounded-2 position-absolute box-shadow-active-border-light-mktg" alt="VS Code running in the browser with your project's code and development environment running. A terminal panel is visiable in the editor." loading="lazy">
+                      <img src="https://github.githubassets.com/assets/dark_colorblind-5e900c04c491.css" /><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" integrity="sha512-3HF2HZ4LgEIQm77yOzoeR20CX1n2cUQlcywscqF4s+5iplolajiHV7E5ranBwkX65jN9TNciHEVSYebQ+8xxEw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/3198-f068837ff3a6.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-nZpgXrBvHm7YePk3m1UhdxY43Ra8lTPxsGk7ocBtGBimPanKdybEgnPXXulh7k7tNLnPzPXFEJ5wY7QGowGOdw==" src="https://github.githubassets.com/images/modules/site/home/discussions-check.svg"
+                        class="home-discussions-check-2 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/community-sponsor-1.png" class="width-full height-auto" alt="The GitHub Actions workflow editor" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 position-relative">
+        <div class="home-repo-comp-browser rounded-2 box-shadow-default-mktg position-absolute z-1 top-0 left-0 right-0 box-shadow-active-border-light-mktg" alt="VS Code running in the browser with your project's code and development environment running. A terminal panel is visiable in the editor." loading="lazy">
+                        </picture>
+              </div>
+              </div>
+              </li>
+
+              <li class="col-11 col-sm-10 col-lg-12">

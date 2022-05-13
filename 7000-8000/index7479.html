@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites#science" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 7 })" href="https://stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoCollectives" width="154" height="30" viewBox="0 0 154 30"><path d="M21 27v-8h3v11H0V19h3v8h18Z" fill="#BCBBBB"/><path d="m5.4 19.1 13.56 1.96.17-2.38-13.26-2.55-.47 2.97Zm1.8-6.8 12 5.6 1.1-2.4-12-5.6-1.1 2.4Zm3.4-5.9 10.2 8.5 1.7-2-10.2-8.5-1.7 2ZM17.1.2 15 1.8l7.9 10.6 2.1-1.6L17.1.2ZM5 25h14v-3H5v3Z" fill="#F48024"/><path fill="#D6D9DC" d="M38 11h1v13h-1z"/><path d="M60.54 13.09v-1.66c0-.27-.2-.47-.48-.47h-8.58c-.28 0-.48.2-.48.47v1.66c0 .27.2.47.48.47h2.87v9.93c0 .27.2.47.48.47h1.84c.28 0 .48-.2.48-.47V13.6h2.87c.28 0 .48-.2.48-.47v-1.66c.04-.28-.16-.47-.44-.47Z" fill="var(--black-800)"/></svg>
+            <p class="fs-subheading mb0 wmx3 mx-auto">
+Build your employer brand                            </span>
+                            </li>
+                    <li class="d-flex">
+                                     <a href="https://stackoverflow.co/" class="s-navigation--item js-gps-track js-products-menu"
+                        aria-controls="popover-teams-create-cta"
+                   data-controller="s-popover"
+                                     type="text"
+                                <a href="https://nodejs.org/dist/v18.1.0/" class="home-downloadbutton" title="Download 16.15.0 LTS" data-version="v16.15.0">
+            16.15.0 LTS
+            <small>Recommended For Most Users</small>
+          </a>
+
+          <ul class="list-divider-pipe home-secondary-links">
+              <li>
+                <a href="https://stackexchange.com" data-gps-track="footer.click({ location: 1, link: 36 })">Instagram</a></li>
+                </ul>
+
+                <p class="md:mb0">
+Site design / logo &#169; 2022 Stack Exchange Inc; user contributions licensed under <a href="https://stackoverflow.com/teams/create/basic&quot;,null,null]"
+            Basic
+            >
+                Create a free Team
+            </a>
+        </div>
+
+
+                        <div class="flex--item tt-uppercase fs-fine fc-light">Collectives</div>
+                                  <li>
+                                     </a>
+                            <span class="mt16 s-btn fs-body2 px32 bar-md s-btn__outlined fc-blue-400 h:bg-black-700 p-ff-source-bold">Calculate your ROI</span>
+                </a>
+                    </li>
+                            <li>
+                                 Data
+                                    
+
+<li class="ps-relative" >
+
+    <a id="nav-collective-discover"
+       href="/collectives"
+       class="pl8 ai-center js-collectives-navcta-toggle js-gps-track nav-links--link -link__with-icon"
+       
+       data-gps-track="top_nav.click({is_current:false, location:1, destination:3})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/dependabot-pr.webp" type="image/webp">
+                  <img src="https://github.githubassets.com/images/modules/site/home/repo-editor-glow.svg" class="position-absolute z-n1 js-build-in-item build-in-scale-up" style="width: 117.31%; margin: 0 -8.65%; top: 50%; transform: translateY(-50%);" alt="Light glowing behind the editor" decoding="async">
+          </picture>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7 mx-lg-auto">
+          <div class="position-relative z-2" style="max-width: 706px;">
+            <div class="js-build-in-item home-dependabot-comp position-relative">
+          <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pb-5">
+          <li class="col-12 col-md-9 col-lg-6 mt-n3 pb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3" transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+</div>
+
+</a>
+<a class="w3-btn" id="courses_get_started_btn" 
+href="https://courses.w3schools.com/courses/css" target="_blank">

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/superuser/Img/apple-touch-icon.png?v=0ad5b7a83e49" alt="Super User icon">
+        </a>
+
+                        <a href="https://stackoverflow.com">current community</a>
+            </h3>
+            <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="site_switcher.click({ item_type:4 })">
+        <div class="favicon favicon-stackoverflowmeta site-icon flex--item" title="Meta Stack Overflow"></div>
+        <span class="flex--item fl1">
+            Stack Overflow
+        </span>
+    </a>
+
+    </div>
+    <div class="related-links">
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.                </div>
+            </div>
+    </a>
+</li>
+
+                            <li>
+                                    <a href="https://stackoverflow.co/talent" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 40 })">Collectives</a></li>
+                                  <li><a href="https://stackoverflow.co/">About</a></li>
+                        </ul>
+                    </div>
+                <a href="https://api.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 36 })">Instagram</a></li>
+                </ul>
+
+                <p class="md:mb0">
+Site design / logo &#169; 2022 Stack Exchange Inc; user contributions licensed under <a href="https://stackoverflow.com/teams/create/basic"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-orange-500 h:bg-orange-600 fc-white"
+            data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md">
+                    <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotTechnicalWritingLg" width="96" height="96" viewBox="0 0 96 96"><path d="M67.37 12.9A38.67 38.67 0 0 0 50.8 9a38.02 38.02 0 0 0-16.47 3.9c-.38.3-.44.74-.19 1.2l4.74 7.49c.24.35.79.61 1.29.6.1-.01.21-.04.32-.07 1.01-.29 6.76-1.88 10.4-1.88 3.7 0 9.6 1.65 10.45 1.9.07.02.14.04.22.04.44.05 1-.15 1.25-.6l4.73-7.49c.26-.44.2-.9-.18-1.18ZM19 77.5a7.84 7.84 0 0 0 7.79 7.88 3.98 3.98 0 0 0 3.93-3.9v-18.5A4 4 0 0 0 26.8 59a7.84 7.84 0 0 0-7.8 7.89v10.6Zm57.94 6.88c4.3 0 7.78-3.54 7.78-7.89V65.9a7.84 7.84 0 0 0-7.78-7.9A4 4 0 0 0 73 61.99v18.5a3.98 3.98 0 0 0 3.94 3.89ZM49 92h6a3 3 0 0 0 0-6h-6a3 3 0 0 0 0 6Z" opacity=".2"/><path d="M54.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg></div>
+            <div>Structured and searchable knowledge base</div>
+        </div>
+
+
+        <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+            <div class="s-popover ws2 mtn2 p0"
+                    id="products-popover"
+                    role="menu"
+                    aria-hidden="true">
+                <div class="fc-black-300 fs-body2 px24">from companies using Stack Overflow for Teams</div>
+            </div>
+    </a>
+</li>
+
+                <li>
+                    <a href="/users/signup" class="s-btn w100 wmx2 fs-body2 px32 bar-md bg-orange-500 h:bg-orange-600 fc-white"
+            data-ga="[&quot;teams traffic&quot;,&quot;footer - site nav&quot;,&quot;stackoverflow.com/teams&quot;,null,null]">Why Teams?</a>
+
+    </div>
+</div>
+
+            <li class="d-flex ai-center jc-space-between ml8 mt24 mb4 js-create-team-cta d-none">
+                <div class="flex--item6">
+                <h2 class="px8 py4 as-start bar-sm p-bg-purple d:p-bg-purple-alt fc-white d:fc-black fs-body3">
+                    Basic
+                </h2>
+
+                <div class="d-flex flex-items-center mb-2">
+                  <img src="https://avatars.githubusercontent.com/flutter?s=64&amp;v=4" alt="Flutter" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">gatsbyjs/<span class="color-fg-default">kubernetes</span></p>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 offset-1">
+            <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column flex-lg-row">
+              <div class="offset-sm-1 ml-lg-0 col-12 col-sm-11 col-md-10 col-lg-5 d-flex flex-column mb-5 mb-md-6">
+                <div class="text-center" style="max-width: 490px;">
+                  <div class="col-12 col-lg-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" aria-hidden="true" class="position-absolute top-0 width-full mt-n1" style="transform: scaleY(-1);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
+
+</div>
+
+  <div class="mx-auto container-xl p-responsive py-8 py-md-9 overflow-hidden d-flex gutter gutter-spacious js-build-in-trigger" data-build-margin-bottom="20">
+  <div class="js-build-in-item build-in-slideX-left f2-mktg text-gray-mktg text-semibold mb-5 mb-lg-0 col-5-max">
+                    <span class="text-gray-dark-mktg">Better code starts with pull requests</span>—conversations around your code where you can experiment, squash bugs, and build new features.</h3>
+                  </div>
+
+                <div class="col-12 col-lg-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="29" width="28" class="home-git-item flex-shrink-0 mr-3 position-relative z-1"><path d="m2.5 10a1 1 0 1 0 0 2zm23 2a1 1 0 1 0 0-2zm-23 0h23v-2h-23z" fill="#465061"></path><circle cx="14" cy="11" fill="#041027" r="5" stroke="#465061" stroke-width="2"></circle></svg>
+
+            <h3 class="f2-mktg text-gray-light-mktg text-semibold mt-md-n5 mb-5 mb-md-n11 col-5-max"><span class="color-fg-default">Found a vulnerability?</span> Our security advisory remediation tools help developers identify and disclose them responsibly so maintainers can patch them in dedicated, private workspaces.</h3>
+              </div>
+            <div class="col-3">
+              <a href="/hashicorp/terraform"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click nav item to scroll to Community&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Develop</a>
+        <a href="#home-automate" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:ansible/ansible;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex jc-center sm:fd-column">
+                    <a href="#"
+                        class="home-discussions-check-3 js-build-in-item position-absolute z-1" alt="Floating checkmark" loading="lazy">
+                      </picture>
+          </div>
+        </div>
+
+        <div class="text-center text-small color-fg-subtle mb-n3">
+          bash
+        </div>
+    </div>
+
+  <div class="p-4" data-type-delay="800">
+
+
+      <div class="">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/</strong>

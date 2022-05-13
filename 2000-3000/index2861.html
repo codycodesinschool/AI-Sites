@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow is the largest, most trusted online community for developers to learn, share&#x200B; &#x200B;their programming &#x200B;knowledge, and build their careers."/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+        <meta property="og:type" content="object" /><meta property="og:title" content="Node.js">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.">
+
+  <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems3 wmx12 px24 mx-auto gs24 mb32 sm:fd-column jc-center ff-row-wrap">
+            <div class="flex--item p16">
+            <div style="background: linear-gradient(0deg, var(--orange-100) 30%, var(--white))" class="h100 py48 sm:py32 bg-orange-050 bar-lg p-bs-wrapper">
+                <a href="/questions" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                    data-gps-track="top_nav.click({is_current:false, location:1, destination:3})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex flex-items-center flex-column flex-lg-row gutter gutter-spacious">
+      <div class="col-12 col-lg-5">
+                    <div  class="js-build-in-item home-codeql-comp position-relative pt-8 pt-md-9">
+                      <div class="rounded-2 box-shadow-default-border-mktg position-relative z-1 overflow-hidden home-discussions-1">
+                      <picture>
+            <source srcset="https://github.githubassets.com/assets/5157-ee87317516de.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-a4WgZYeVc2aKrHPyOfYm6uY7Vcw96gOwHqRhs6hkNqnhHJuZC4f94uvcomE6JS3HhgCVZTQpvU8PgucLwSkteg==" src="https://github.githubassets.com/images/modules/site/home/community-readme-2.webp" type="image/webp">
+                <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-success.svg" class="home-matrix-success-1" loading="lazy" alt="">
+                      <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-windows.svg" alt="Windows" loading="lazy"></li>
+                  </ul>
+                  <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Ansible is a radically simple IT automation platform.</p>

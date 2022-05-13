@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/superuser/Img/apple-touch-icon.png?v=0ad5b7a83e49" alt="Super User icon">
+        </a>
+
+                        <a href="https://stackexchange.com/sites#professional" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 33 })">LinkedIn</a></li>
+                    <li><a href="https://stackoverflow.co/teams"
+               class="js-gps-track s-btn s-btn__primary s-btn__xs"
+               data-gps-track="teams.create.left-sidenav.click({ Action: 6 })"
+           data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="svg-icon iconLink" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm.25-3.45a1 1 0 0 1-.73.5c-.32 0-.62-.06-.85-.29l-3-3a1 1 0 0 1 1.44-1.38l2.05 2 3.56-6.28c.27-.47.89-.65 1.36-.38.47.27.65.89.38 1.36l-4.21 7.47Z" fill="#5EBA7D"/></svg>
+                    <h3 class="js-build-in-item build-in-slideX-left home-desktop box-shadow-default-border-mktg position-relative z-1 float-right home-sponsors-2">
+                      <img src="https://github.githubassets.com/assets/5222-6b85a0658795.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-WtABWNDgj+0Z+nTC8dZsMxFYSujm/s9SJTsHmFnzg73joAek4tmQ1zXCSLBvgAsgdPE8EQuOuOOW0NNP97Y7UA==" src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-success.svg" class="home-matrix-success-1" loading="lazy" alt="">
+                        <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-test.png" class="width-full" alt="Actions build workflow" loading="lazy">
+                      <img src="https://github.githubassets.com/">
+    
+
+
+        <meta name="hostname" content="github.com">
+
+
+
+
+  <meta http-equiv="x-pjax-version" content="de74915a74a35321fdde6d9699afc9e671a4cf8ea0d017f6d8131cbd8cb7e296" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-csp-version" content="8a71cc298af18a4abffe2d93ce3e6650d932e37df2bcd110e9cc81ce4229d217" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-csp-version" content="8a71cc298af18a4abffe2d93ce3e6650d932e37df2bcd110e9cc81ce4229d217" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-csp-version" content="8a71cc298af18a4abffe2d93ce3e6650d932e37df2bcd110e9cc81ce4229d217" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-css-version" content="9a69a278e1e639024bbe60c86130fc59260e6319f3ff80f33093f08a2665bdfc" data-turbo-track="reload">
+  <meta name="turbo-cache-control" content="no-preview">
+  
+
+      <meta name="homepage-version-ga-dimension" content ="dimension11">
+
+  <meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:title" content="W3Schools Free Online Web Tutorials">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="/lib/w3schools30.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+<style>
+/* Customize w3schools23.css */
+#nav_tutorials,
+#nav_references,
+#nav_exercises {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1844px) {
+  #w3_cert_badge {
+    width: 190px;
+    right: 2%;
+  }
+
+  #w3_cert_arrow {
+    right: 169px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .topnavmain_video {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .w3searchbtntopnav,.w3translatebtntopnav {
+    display:none!important
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .w3-bar-block .w3-button {
+    padding: 0 16px !important;
+  }
+}
+
+.fa {
+  font-size: 20px;
+}
+
+#main {
+  padding: 0;
+  border-right: none;
+}
+
+.fa-thumbs-o-up:hover {
+  color: #fff;
+}
+
+@media (min-width:1675px) {
+  #main {
+    width: auto;
+  }
+}
+
+#nav_tutorials,
+#nav_references,
+#nav_exercises {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .w3-bar-block .w3-button {
+    padding: 0 16px !important;
+  }
+}
+
+.fa {
+  font-size: 20px;
+}
+
+#main {
+  padding: 0;
+  border-right: none;
+}
+
+.fa-thumbs-o-up:hover {
+  color: #fff;
+}
+
+@media (min-width:1675px) {
+  #main {
+    width: auto;
+  }
+}
+
+#nav_tutorials,
+#nav_references,
+#nav_exercises {
+  display: none;
+  padding-bottom: 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 5 !important;
+}
+
+#nav_tutorials h3,
+#nav_references h3,
+#nav_exercises h3,
+#sectionxs_tutorials h3,
+#sectionxs_references h3,
+#sectionxs_exercises h3 {
+  padding-left: 6px;
+  color: #FFF4A3;
+}
+
+div.cse .gsc-control-cse,
+div.gsc-control-cse {
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Customize W3.CSS */
+.w3-col.l4 .w3-card-2 {
+  padding: 15px 10px;
+  height: 260px;
+}
+
+.w3-bar {
+  position: relative;
+  z-index: 4;
+  font-size: 18px;
+  xbackground-color: white;
+  xcolor:#282A35;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
+<a href="/tags/default.asp">HTML Reference</a><br>
+<a href="/cssref/default.asp">CSS Properties</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn" href="/cssref/css_pxtoemconversion.asp">CSS PX-EM Converter</a>
+<a target="_top" href="/cssref/css_default_values.asp">CSS Default Values</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn" href="/cssref/css_colors.asp">CSS Colors</a>
+<a target="_top" href="css3_mediaqueries_ex.asp">CSS MQ Examples</a>
+<a target="_top" href="js_debugging.asp">JS Debugging</a>
+<a target="_top" href="js_comments.asp">JS Comments</a>
+<a target="_top" href="js_string_templates.asp">JS String Templates</a>
+<a target="_top" href="js_string_search.asp">JS String Search</a>
+<a target="_top" href="js_strict.asp">JS Strict Mode</a>
+<a target="_top" href="js_ajax_asp.asp">AJAX ASP</a>
+<a target="_top" href="js_ajax_applications.asp">AJAX Applications</a>
+<a target="_top" href="css_howto.asp">CSS How To</a>
+<a target="_top" href="css_max-width.asp">CSS Max-width</a>
+<a target="_top" href="css_outline.asp">CSS Outline</a>
+<div class="tut_overview">
+<a target="_top" href="css_font_fallbacks.asp">Font Fallbacks</a>
+<a target="_top" href="css3_gradients_radial.asp">Radial Gradients</a>
+<a target="_top" href="css_boxmodel.asp">CSS Box Model</a>
+<a target="_top" href="css_text_spacing.asp">Text Spacing</a>
+<a target="_top" href="css_comments.asp">CSS Comments</a>
+<a target="_top" href="css_font_style.asp">Font Style</a>
+<a target="_top" href="css3_object-position.asp">CSS object-position</a>
+<a target="_top" href="html_head.asp">HTML Head</a>
+<a target="_top" href="html_iframe.asp">HTML Iframes</a>
+<a target="_top" href="html_accessibility.asp">HTML Accessibility</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="html5_geolocation.asp">HTML Geolocation</a>
+<a target="_top" href="css3_2dtransforms.asp">CSS 2D Transforms</a>
+<a target="_top" href="css_float.asp">Float</a>
+<a target="_top" href="css_pseudo_elements.asp">CSS Pseudo-element</a>
+<a target="_top" href="js_assignment.asp">JS Assignment</a>
+<a target="_top" href="js_api_history.asp">Web History API</a>
+<a target="_top" href="js_ajax_asp.asp">AJAX ASP</a>
+<a target="_top" href="js_ajax_intro.asp">AJAX Intro</a>
+<a target="_top" href="js_validation_api.asp">Web Forms API</a>
+<a target="_top" href="js_ajax_asp.asp">AJAX ASP</a>
+<a target="_top" href="js_array_const.asp">JS Array Const</a>
+<a target="_top" href="js_exam.asp">JS Certificate</a>
+<br>
+<h2 class="left">JS References</h2>
+<a target="_top" href="/jsref/default.asp">JavaScript Reference</a><br>
+<a href="/sql/sql_ref_keywords.asp">SQL Reference</a><br>
+<a href="/python/python_reference.asp" class="w3-button ref-button black-color">Python Reference</a>
+ </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+   <h3>HTML Example:</h3>
+   <div class="w3-code htmlHigh notranslate green-border">
+body {<br>
+&nbsp; background-color: lightblue;<br>}<br><br>
+h1 {<br>
+&nbsp; color: white;<br>
+&nbsp; text-align: center;<br>}</div>
+  <a href="/css/tryit.asp?filename=trycss_default" class="w3-btn w3-margin-bottom" href="js_intro.asp" style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
+<a href="/tags/default.asp">HTML Reference</a><br>
+<a href="/cssref/default.asp">CSS Properties</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+  <div class='w3-row w3-white'>
+    <div class='w3-col l10 m12' id='main'>
+      <div id='mainLeaderboard' style='overflow:hidden;'>
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="adngin-main_leaderboard-0"></div>
+        <!-- adspace leaderboard -->
+
+      </div>
+<h1>JavaScript <span class="color_h1">Tutorial</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="html_intro.asp">Next &#10095;</a>
+</div>
+<div class="w3-panel w3-info intro">
+<p>CSS is the language we use to style an HTML document.</p>
+<p>CSS describes how HTML elements should be displayed.</p>
+<p>This tutorial will teach you CSS from basic to advanced.</p>
+<a class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
+<p><a target="_blank" href="exercise.asp?filename=exercise_selectors1" method="post" target="_blank">
+<h2>Test Yourself With Exercises</h2>
+<div class="exercisewindow">
+<h2>Exercise:</h2>
+<p>Set the color of all &lt;p&gt; elements to red.</p>
+<div class="exerciseprecontainer">
+<pre>
+&lt;style&gt;
+<input name="ex1" maxlength="1" style="width: 16px;"> {
+  <input name="ex2" maxlength="6" style="width: 66px;"> red;
+}
+&lt;/style&gt;
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom" style="text-decoration:none">Front End</a>
+  <a href="/cert/cert_python.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">Python</a>
+  <a href="/cert/cert_sql.asp" class="w3-button ws-grey w3-block" style="text-decoration:none;">And more</a>
+  </div>
+</div>
+-->
+
+<div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
+  <div id="stickyadcontainer">
+    <div style="position:relative;margin:auto;">
+      
+      <div id="adngin-sidebar_sticky-0"></div>
+        <script>
+        function secondSnigel() {
+          if(window.adngin && window.adngin.adnginLoaderReady) {
+            if (Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
+  }
+  elem.style.width = skyWidth + "px";
+  if (window.innerWidth <= 992) {
+    elem.style.position = "";
+    elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("navbtn_" + x).classList.add("mystyle");
+    } 
+    if (x == "search") {
+      if (document.getElementById("navbtn_" + x)) {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") foldername = "";
+  if (foldername == "CS") foldername = "C#";
+  if (foldername == "CYBERSECURITY") foldername = "Cyber Security";  
+  if (foldername == "CPP") foldername = "C++";
+  document.getElementById("coursetopic").innerText = foldername;
+}
+getCourseFolder();
+</script>
+<a class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
+<p><a target="_blank" href="exercise_js.asp?filename=exercise_js_variables1" method="post" target="_blank">
+<h2>Test Yourself With Exercises</h2>
+<div class="exercisewindow">
+<h2>Exercise:</h2>
+<p>Set the color of all &lt;p&gt; elements to red.</p>
+<div class="exerciseprecontainer">
+<pre>
+&lt;style&gt;
+<input name="ex1" maxlength="1" style="width: 16px;"> {
+  <input name="ex2" maxlength="6" style="width: 66px;"> red;
+}
+&lt;/style&gt;
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom" href="https://courses.w3schools.com/courses/cplusplus" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on ' + foldername + ' course banner in tutorial');">Get certified</a>
+
+<svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left d-block d-md-none mr-n6 position-relative z-2"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+
+                  <div class="col-6 col-sm-4 col-md-3">
+                    <h2 class="fs-subheading wmx3 mx-auto">Want a secure, private space for your technical knowledge?</h2>
+
+                    <div class="rounded-2 box-shadow-default-border-mktg" alt="Actions workflow canvas" loading="lazy" decoding="async" width="16" height="16">
+          <div>package.json</div>
+        </div>
+      </div>
+
+      <div class="river-mktg js-build-in-trigger d-flex flex-column gutter gutter-spacious height-full events-none">
+      <div class="col-10 offset-1 home-git-log-dark height-full" style="padding: 6.5rem 0 0;">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative">
+      
+
+        <div class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious pt-5 pt-md-6 pb-9 pb-md-10">
+                  <div class="col-12 col-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+
+                  <div class="col-12 col-lg-5">
+                    <div  class="js-build-in-item home-codeql-comp position-relative pt-8 pt-md-9">
+                      <div class="site-footer--logo">
+                    
+                    <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V18.md#18.1.0">Changelog</a>
+              </li>
+                  </ul>
+                  <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Build blazing fast, modern apps and websites with React</p>
+              </a>
+            </div>
+            <img src="https://github.githubassets.com/images/modules/site/home/actions-editor-actions.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/discussions-check.svg"
+                        class="home-discussions-check-1 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/logos/platform-linux.svg" alt="Linux" loading="lazy"></li>
+                  </ul>
+                </div>
+                  <div class="col-12 col-lg-6 offset-lg-n2">
+        <div class="offset-n1 ml-lg-0 home-featured-repos position-relative">
+          <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
+        <div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left position-relative">
+            <div class="container-xl mx-auto px-lg-3">
+              <div class="py-4" style="border-top: 1px solid rgba(255,255,255,0.1)">
+                <div class="d-flex jc-center sm:fd-column">
+                        <a href="https://stackoverflow.co/company/work-here" class="s-btn fs-body2 px32 bar-md fc-black-400 h:bg-black-050 h:fc-black-750 p-ff-source">Want to work here? <span class=" fc-blue-500">Current job openings</span></a>
+</section>
+
+
+<section class="bar-lg sm:bar0 bg-blue-900 d:bg-blue-100 fc-white d:fc-black m48 mtn96 md:ml32 md:mr32 sm:ml0 sm:mr0 mb0 pt32 pb96 sm:pl24 sm:pr24 overflow-hidden" style="clip-path:url(#curve); transform: rotate(180deg)">
+    <div class="d-flex flex__allitems3 jc-center sm:ta-center ff-row-wrap p-wrapper mx-auto pt64 pb128">
+    <div class="flex--item wmn3 sm:mb32 p24 sm:p8">
+        <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotTechnicalWritingLg" width="96" height="96" viewBox="0 0 96 96"><path d="M33.3 60.21a1 1 0 0 1-.04-1.46l41.1-40.1a1 1 0 0 1 .33-.22l10.83-4.17a1 1 0 0 1 1.31 1.25l-3.26 9.78a1 1 0 0 1-.22.37L43.17 67.8a1 1 0 0 1-1.4.05l-8.48-7.64Zm-9.19 19.02a1 1 0 0 0 .38.98l2.12 1.61a1 1 0 0 1 .11 1.49l-9.1 9.48a3 3 0 0 1-4.29.04l-5.1-5.1a3 3 0 0 1 .11-4.35l12.5-11.28a1 1 0 0 1 1.33-.01l2.38 2.08a1 1 0 0 1 .33.94l-.77 4.12Z" opacity=".2"/><path d="M91.4 5.56a1.5 1.5 0 0 0-1.87-1.98l-15 5c-.24.07-.44.2-.61.38l-9.2 9.6.26-1.85a1.5 1.5 0 0 0-.86-1.58l-11-5a1.5 1.5 0 0 0-1.93.64l-4.51 8.12c-2.16-.21-4.27-.2-6.35 0l-4.52-8.12a1.5 1.5 0 0 0-1.93-.64l-11 5a1.5 1.5 0 0 0-.84 1.73l1.77 7.06c-.9.76-1.6 1.62-2.22 2.46-.32.44-.63.9-.93 1.33v.01a245.75 245.75 0 0 1-.71 1.01l-7.98-2.65a1.5 1.5 0 0 0-1.85.84l-5 12a1.5 1.5 0 0 0 .77 1.95l8 3.56c-.2 2.27-.2 4.93 0 7.14l-8 3.56a1.5 1.5 0 0 0-.77 1.95l5 12a1.5 1.5 0 0 0 1.85.84l2.58-.86-9.57 8.84a1.5 1.5 0 0 0-.04 2.16l9 9a1.5 1.5 0 0 0 2.12 0l7.77-7.76 10.05 4.57c.73.33 1.6.02 1.96-.7l3.53-7.06c2.19.22 4.34.2 6.45-.02l5.48 7.31c.4.54 1.13.74 1.76.5l10-4c.62-.26 1-.9.93-1.57l-.9-8.13a21 21 0 0 0 3.99-4.01l7.06 1.77a1.5 1.5 0 0 0 1.73-.84l5-11a1.5 1.5 0 0 0-.5-1.84L74.1 51.8c.24-2.24.22-4.44 0-6.6l6.28-4.48c.57-.4.78-1.15.52-1.8l-3.59-8.64a1.5 1.5 0 0 0-.58-.7l8.35-8.53c.14-.14.25-.3.32-.5l6-15ZM20.01 68.1c.1-.09.18-.19.25-.3 1 1.46 2.1 2.94 3.55 4.24l-1.67 6.7-.65.64-5.94-5.94a1.5 1.5 0 0 0-.86-.43l5.32-4.9ZM13 74.58c.02.36.17.7.44.98l5.94 5.94L15 85.88l-6.84-6.84L13 74.58Zm12.34 3.74 1.62-6.46a1.5 1.5 0 0 0-.53-1.54c-1.7-1.33-2.8-2.93-4.13-4.86l-.57-.82a1.5 1.5 0 0 0-1.7-.56l-7.68 2.56-3.9-9.36 7.66-3.4c.6-.28.96-.91.88-1.57a37.6 37.6 0 0 1 0-8.61 1.5 1.5 0 0 0-.88-1.57l-7.66-3.4 3.9-9.37 7.68 2.56c.6.2 1.26 0 1.65-.5.45-.57.86-1.15 1.24-1.7l.22-.32.87-1.24a10.1 10.1 0 0 1 2.35-2.43c.5-.36.75-.99.6-1.6l-1.7-6.78 8.6-3.91 4.33 7.79c.3.53.89.84 1.5.76a29.4 29.4 0 0 1 7.61 0 1.5 1.5 0 0 0 1.51-.76l4.33-7.8 8.72 3.97-.7 4.87-6.23 6.5a14.06 14.06 0 0 0-4.86-2.61A21.77 21.77 0 0 0 43.5 25C31.49 25 23 34.69 23 46.5c0 11.76 8.53 22.1 20.6 22.1C55.47 68.6 66 58.44 66 46.5a10.2 10.2 0 0 0-1.14-4.65l-.02-.02a4.72 4.72 0 0 0-.03-.06l9.84-10.06 3 7.26-6.02 4.3A1.5 1.5 0 0 0 71 44.7c.32 2.5.35 5.04 0 7.61-.07.55.17 1.1.62 1.42l6 4.28-3.98 8.74-6.79-1.7a1.5 1.5 0 0 0-1.54.53c-1.66 2.12-2.65 3.29-4.68 4.7-.45.31-.7.85-.63 1.4l.87 7.86L53 82.69l-5.31-7.08a1.5 1.5 0 0 0-1.39-.59c-2.5.32-5.04.35-7.61 0a1.5 1.5 0 0 0-1.54.82l-3.36 6.7-8.32-3.78a1.5 1.5 0 0 0-.14-.43Zm37.38-53.34a1.5 1.5 0 0 0 1.26-1.27l.01-.06 10.54-11 7.36 7.36-43.73 44.7a17.18 17.18 0 0 1-8-5.76l32.56-33.97ZM49.1 29c1.62.55 2.93 1.23 3.74 1.94L28.47 56.38A20.59 20.59 0 0 1 26 46.5C26 36.14 33.34 28 43.5 28c1.58 0 3.68.35 5.61 1Zm-5.52 36.6c-.67 0-1.34-.04-1.99-.11l20.96-21.43.02.04v.02c.21.59.42 1.42.42 2.38 0 10.23-9.12 19.1-19.4 19.1Zm39.86-48.27-6.42-6.42L87.4 7.45l-3.96 9.88Z"/></svg>
+                    </a>
+
+                        <a href="https://stackexchange.com" data-gps-track="footer.click({ location: 1, link: 24 })">
+                            Accept all cookies
+                        </button>
+                    </div>
+                    <div class="home-codeql-step-2 rounded-2 position-absolute box-shadow-active-border-light-mktg" alt="VS Code running in the browser with your project's code and development environment running. A terminal panel is visiable in the editor." loading="lazy">
+              <span class="text-truncate"><strong class="text-semibold text-gray-dark-mktg">joshaber</strong> started sponsoring you for <strong class="text-semibold text-gray-dark-mktg">pmarsceill</strong> started sponsoring you for <strong class="text-semibold text-gray-dark-mktg">$25/month</strong> 2 days ago</span>
+            </li>
+
+            <li class="col-11 col-sm-10 col-lg-12">
+                <div class="d-flex jc-center sm:fd-column">
+                        <a href="https://stackoverflow.com"
+       class=" site-link js-gps-track d-flex gs8 gsx"
+       data-id="552"
+       data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:11 })">log in</a> to customize your list.                </div>
+                <div class="flex--item lg:d-none ta-center">
+                <a href="https://askubuntu.com/" data-animation-type="show" class="flex--item m24 w128 h128 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Ask Different" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/softwareengineering/Img/apple-touch-icon.png?v=d66b1118cec8" alt="Network Engineering icon">
+        </a>
+
+                    </li>
+                    <li class="bg-black-025 bt bc-black-075 py6 px6 bbr-md">
+                        <a href="/teams" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                            data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                    <span class="js-billed-annually">$6 USD</span>
+                        </a>
+                    </li>
+            <li class="ps-relative js-create-team-cta d-none">
+                <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackoverflow.co/company/work-here">Work Here</a></li>

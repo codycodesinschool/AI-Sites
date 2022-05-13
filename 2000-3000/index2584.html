@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#1e2327">
+
+
+  <meta name="msapplication-TileImage" content="/windows-tile.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
+    
+
+    <div class="position-relative z-2" style="max-width: 706px;">
+            <div class="js-build-in-item home-discussions-comp position-relative">
+            <div class="home-globe-container home-globe-container-webgl">
+  <div class="mx-auto width-full mt-n9 mt-lg-2 home-globe position-relative height-full js-webgl-globe">
+    <video width="916" height="918" loop muted playsinline preload="none" class="js-globe-aurora position-absolute top-0 left-0 right-0 width-full events-none overflow-hidden">
+    <div class="d-flex flex-column gutter gutter-spacious position-relative">
+
+      <div class="home-git-log-dark home-security-point-3 d-flex flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
+        <div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left">
+          <h1 class="h1-mktg color-text-white mb-3 position-relative z-2"> Where the world builds software" /><meta property="og:url" content="https://stackoverflow.com/"/>
+        <meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:image" content="https://nodejs.org/static/images/logo-hexagon-card.png">
+  <meta name="twitter:image:alt" content="The Node.js Hexagon Logo">
+
+  <link rel="canonical" href="https://nodejs.org/en/">
+  <link rel="alternate" href="/en/feed/blog.xml" title="Node.js Blog" type="application/rss+xml">
+  <link rel="alternate" href="/en/feed/vulnerability.xml" title="Node.js Blog: Vulnerability Reports" type="application/rss+xml">
+
+  <script src="/static/js/themeSwitcher.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+  
+      <a href="/en/" id="logo">
+        <img src="/static/images/logo.svg" alt="Node.js" width="122" height="75">
+      </a>
+  
+      <nav aria-label="primary">
+        <ul class="list-divider-pipe">
+          <li  class="active" >
+            <a href="/en/">Home</a>
+          </li>
+  
+            <li >
+                <a href="https://stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 1 })" href="https://stackoverflow.co/company/work-here">Work Here</a></li>
+                            </li>
+                    <li class="d-flex">
+                                  value=""
+                                   <a href="https://stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md">
+                    <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotHeadset" width="48" height="48" viewBox="0 0 48 48"><path d="M13.5 28a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM7 30a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v5h11v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H33v5a1 1 0 0 1-1 1H20a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-1-1V30Zm25-6.5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 0 0-9 0ZM24.5 34a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" opacity=".2"/><path d="M16.4 26.08A6 6 0 1 0 7.53 26C5.64 26.06 4 27.52 4 29.45V40a1 1 0 0 0 1 1h9a1 1 0 1 0 0-2h-4v-7a1 1 0 1 0-2 0v7H6v-9.55c0-.73.67-1.45 1.64-1.45H16a1 1 0 0 0 .4-1.92ZM12 18a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm16.47 14a6 6 0 1 0-8.94 0A3.6 3.6 0 0 0 16 35.5V46a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V35.5c0-1.94-1.64-3.42-3.53-3.5ZM20 28a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm-.3 6h8.6c1 0 1.7.75 1.7 1.5V45h-2v-7a1 1 0 1 0-2 0v7h-4v-7a1 1 0 1 0-2 0v7h-2v-9.5c0-.75.7-1.5 1.7-1.5ZM42 22c0 1.54-.58 2.94-1.53 4A3.5 3.5 0 0 1 44 29.45V40a1 1 0 0 1-1 1h-9a1 1 0 1 1 0-2h4v-7a1 1 0 1 1 2 0v7h2v-9.55A1.5 1.5 0 0 0 40.48 28H32a1 1 0 0 1-.4-1.92A6 6 0 1 1 42 22Zm-2 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/><g opacity=".35">

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" />
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/serverfault/Img/apple-touch-icon.png?v=6c3100d858bb" alt="Server Fault icon">
+        </a>
+
+            <a href="/teams/integrations/microsoft-teams" class="ml-auto wmx4 d-block">
+                    <div class="home-matrix-tab position-absolute top-0 overflow-hidden width-full"></div>
+                    </div>
+                  <div class="col-12 col-lg-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="29" width="28" class="home-git-item flex-shrink-0 mr-3 position-relative z-1" height="22" width="28" alt="" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.html</div>
+        </div>
+      </div>
+        <div class="w3-bar" style="background-color:#f1f1f1">
+    <button class="w3-bar-item w3-button codeeditorbr-tablink" style="color:black" onclick="openLangTab(event,'Frontend')">Frontend</button>
+    <button class="w3-bar-item w3-button codeeditorbr-tablink" style="color:black" onclick="openLangTab(event,'Backend')">Backend</button>
+  </div>
+   <div id="Frontend" class="proglang">
+      <img src="codeeditor.gif" style="width:100%;height:auto;display:block;border-bottom-left-radius:4px;border-bottom-right-radius:4px;" loading="lazy" alt="Backend Code Editor">
+      </div>
+
+    </div><br>
+    <!--
+    <a href="/tryit/tryit.asp?filename=tryhtml_hello", "Tryit Editor"],
+  ["color picker", "/colors/colors_picker.asp", "Color Picker"],
+  ["code game", "/codegame/index.html", "Code Game"],
+  ["exercises", "/exercises/index.php", "Exercises"],
+  ["quizzes", "/quiztest/default.asp", "Quizzes"],
+  ["templates", "/w3css/w3css_templates.asp", "W3.CSS Templates"],
+  ["courses", "https://courses.w3schools.com/browse/certifications/courses/jquery-certification-exam" target="_blank">Data Science Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+   <a class="w3-bar-item w3-button" href="/django/index.php">Learn Django</a>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_quiz.php" target="_top">Kotlin Quiz</a>
+   <a class="w3-bar-item w3-button" href='/php/php_ref_overview.asp'>PHP Reference</a>
+   <a class="w3-bar-item w3-button" href='/mysql/mysql_ref_functions.asp'>MySQL Reference</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp" class="w3-button tut-button black-color w3-padding-16 w3-mobile" style="width:50%">BROWSE TEMPLATES</a></p>
+</div>
+
+<div class="w3-panel" id="getdiploma">
+
+<h2>Kickstart your career</h2>
+<p>Get certified by completing <span id="hey">the</span> <span id="coursetopic"></span> course</p>
+<script>
+var foldername;
+function getCourseFolder() {
+  var pathname = window.location.pathname;
+  if (pathname.substr(0,1) == "/") {pathname = pathname.substr(1);}
+  pos = pathname.indexOf("/");
+  foldername = pathname.substr(0, pos);
+  foldername = foldername.toUpperCase();
+  if (foldername == "JS") foldername = "JavaScript";
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+    document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.getElementById("sectionxs_" + x).innerHTML == "") {
+    document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredpagemode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+  }
+}
+function open_translate(elmnt) {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">CSS</span> References</h2>
+<a target="_top" href="/cssref/css_animatable.asp">CSS Animatable</a>
+<a target="_top" href="/cssref/css_websafe_fonts.asp">CSS Web Safe Fonts</a>
+<a target="_top" href="/tags/ref_attributes.asp">HTML Attributes</a>
+<a target="_top" href="/tags/ref_html_dtd.asp">HTML Doctypes</a>
+<a target="_top" href="js_object_constructors.asp">Object Constructors</a>
+<a target="_top" href="js_htmldom_events.asp">DOM Events</a>
+<a target="_top" href="css_outline_offset.asp">Outline Offset</a>
+</div>
+<a target="_top" href="css3_text_effects.asp">CSS Text Effects</a>
+<a target="_top" href="js_function_apply.asp">Function Apply</a>
+<a target="_top" href="js_jquery_selectors.asp">jQuery Selectors</a>
+<a target="_top" href="js_function_bind.asp">Function Bind</a>
+<a target="_top" href="js_api_fetch.asp">Web Fetch API</a>
+<a target="_top" href="js_api_web_storage.asp">Web Storage API</a>
+<a target="_top" href="js_array_const.asp">JS Array Const</a>
+<a target="_top" href="js_graphics_plotly.asp">JS Plotly</a>
+<a target="_top" href="js_window_screen.asp">JS Screen</a>
+<a target="_top" href="js_let.asp">JS Let</a>
+<a target="_top" href="js_syntax.asp">JS Syntax</a>
+<a target="_top" href="js_class_intro.asp">Class Intro</a>
+<a target="_top" href="js_variables.asp">JS Variables</a>
+<a target="_top" href="js_class_static.asp">Class Static</a>
+<br>
+<h2 class="left">JS Async</h2>
+<a target="_top" href="js_graphics_plotly.asp">JS Plotly</a>
+<a target="_top" href="js_window.asp">JS Window</a>
+<a target="_top" href="js_window_history.asp">JS History</a>
+<a target="_top" href="js_function_definition.asp">Function Definitions</a>
+<a target="_top" href="js_object_iterables.asp">Object Iterables</a>
+<a target="_top" href="js_htmldom.asp">DOM Intro</a>
+<a target="_top" href="css_grid_item.asp">Grid Item</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Tutorial</h2>
+<a target="_top" href="default.asp">JS HOME</a>
+<a target="_top" href="css_pseudo_elements.asp">CSS Pseudo-element</a>
+<a target="_top" href="css_table.asp">CSS Tables</a>
+<div class="tut_overview">
+<a target="_top" href="html_lists_other.asp">Other Lists</a>
+</div>
+<a target="_top" href="css3_text_effects.asp">CSS Text Effects</a>
+<a target="_top" href="css_intro.asp">CSS Introduction</a>
+<a target="_top" href="css_margin_collapse.asp">Margin Collapse</a>
+</div>
+<a target="_top" href="css_margin_collapse.asp">Margin Collapse</a>
+</div>
+<a target="_top" href="css_margin_collapse.asp">Margin Collapse</a>
+</div>
+<a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
+<a target="_top" href="css_website_layout.asp">CSS Website Layout</a>
+<a target="_top" href="css_rwd_images.asp">RWD Images</a>
+<a target="_top" href="/tags/ref_language_codes.asp">HTML Lang Codes</a>
+<a target="_top" href="/tags/ref_httpmethods.asp">HTTP Methods</a>
+<a target="_top" href="js_number_methods.asp">JS Number Methods</a>
+<a target="_top" href="js_switch.asp">JS Switch</a>
+<a target="_top" href="js_syntax.asp">JS Syntax</a>
+<a target="_top" href="js_json_php.asp">JSON PHP</a>
+<a target="_top" href="js_ajax_xmlfile.asp">AJAX XML File</a>
+<a target="_top" href="js_typeof.asp">JS Typeof</a>
+<a target="_top" href="js_loop_forof.asp">JS Loop For Of</a>
+<a target="_top" href="js_timing.asp">JS Timing</a>
+<a target="_top" href="js_string_templates.asp">JS String Templates</a>
+<a target="_top" href="js_object_accessors.asp">Object Accessors</a>
+<a target="_top" href="js_object_maps.asp">Object Maps</a>
+<a target="_top" href="js_numbers.asp">JS Numbers</a>
+<a target="_top" href="js_history.asp">JS History</a>
+<br>
+<h2 class="left">JS Objects</h2>
+<a target="_top" href="js_exam.asp">JS Certificate</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> References</h2>
+<a target="_top" href="/tags/default.asp">HTML Elements</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn" href="/cssref/css_colors.asp">CSS Colors</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_eventattributes.asp">HTML Events</a>
+<a target="_top" href="/cssref/css_pxtoemconversion.asp">CSS PX-EM Converter</a>
+<a target="_top" href="/cssref/css_colors_legal.asp">CSS Color Values</a>
+<a target="_top" href="/cssref/css_selectors.asp">CSS Selectors</a>
+<a target="_top" href="js_input_examples.asp">JS HTML Input</a>
+<a target="_top" href="js_dom_examples.asp">JS HTML DOM</a>
+<a target="_top" href="js_if_else.asp">JS If Else</a>
+<a target="_top" href="js_htmldom_elements.asp">DOM Elements</a>
+<a target="_top" href="js_exam.asp">JS Certificate</a>
+<br>
+<h2 class="left">JS References</h2>
+<a target="_top" href="/cssref/css3_browsersupport.asp", "CSS Browser Support"],
+  ["", "/cssref/css_selectors.asp", "CSS Selector Reference"],
+  ["", "/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a><br>
+<a href="/php/php_ref_overview.asp">PHP Reference</a><br>
+<a href="/colors/colors_names.asp">HTML Colors</a><br>
+<a href="/java/java_ref_keywords.asp">Java Reference</a><br>
+<a href="/angular/angular_ref_directives.asp">Angular Reference</a><br>
+<a href="/jquery/jquery_ref_overview.asp">jQuery Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px;">Report Error</a>
+</div>
+<!--
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="https://shop.w3schools.com/" target="_blank">Courses</a></h3>
+   <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a>
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_exercises.php">Kotlin Exercises</a>
+   <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/cplusplus" target="_blank" onclick="ga('send', 'event', 'Videos' , 'fromHTMLdefault')" class="w3-btn ws-black ws-hover-black" title="HTML video tutorial">Watch our Video Tutorial &raquo;<span class="ribbon-vidx ws-yellow">NEW</span></a><br>
+</div>
+<hr>
+
+<h2>Easy Learning with HTML &quot;Try it Yourself&quot;</h2>
+<p>With our &quot;Try it Yourself&quot; editor, you can edit and test each example yourself!</p>
+<p><a href="html_examples.asp" class="ws-btn ws-grey ws-hover-black">Go to HTML Examples!</a></p>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+
+  <div id="adngin-mid_content-0"></div>
+  
+</div>
+<hr>
+
+<h2>Learning Speed</h2>
+<p>In this tutorial, the learning speed is your choice.</p>
+<p>Everything is up to you.</p>
+<p>If you are struggling, take a break, or re-read the material.</p>
+<p><strong>Always</strong> make sure you understand <strong>all</strong> the &quot;Try-it-Yourself&quot; 
+examples.</p>
+<p>The only way to become a clever programmer is to:
+Practice. Practice. Practice. Code. Code. Code !</p>
+<hr>
+<form autocomplete="off" spellcheck="false" id="w3-exerciseform" action="exercise.asp?filename=exercise_html_attributes1">Start the Exercise</a></p>
+</div>
+</form>
+<hr>
+
+<h2>CSS Quiz</h2>
+<p>Test your CSS skills with a quiz.</p>
+<p><a href="css_quiz.asp" class="ws-btn w3-blue">Start HTML Quiz!</a></p>
+<hr>
+
+<h2>HTML References</h2>
+<p>At W3Schools you will find complete references about HTML elements, 
+attributes, events, color names, entities, character-sets, URL encoding, 
+language codes, HTTP messages, browser support, and more:</p>
+
+<div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px">
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
+<a target="_top" href="css3_object-position.asp">CSS object-position</a>
+<a target="_top" href="js_let.asp">JS Let</a>
+<a target="_top" href="js_this.asp">JS this Keyword</a>
+<a target="_top" href="js_function_bind.asp">Function Bind</a>
+<a target="_top" href="js_function_invocation.asp">Function Invocation</a>
+<a target="_top" href="css_image_gallery.asp">CSS Image Gallery</a>
+<a target="_top" href="css_howto.asp">CSS How To</a>
+<a target="_top" href="css_syntax.asp">CSS Syntax</a>
+<a target="_top" href="js_conventions.asp">JS Style Guide</a>
+<a target="_top" href="html_entities.asp">HTML Entities</a>
+<a target="_top" href="html_colors.asp">Colors</a>
+  <a target="_top" href="html_tables.asp">HTML Tables</a>
+<div class="tut_overview">
+  <a target="_top" href="html_images.asp">HTML Images</a>
+<div class="tut_overview">
+<a target="_top" href="css_table.asp">CSS Tables</a>
+<div class="tut_overview">
+  <a target="_top" href="html_links_colors.asp">Link Colors</a>
+  <a target="_top" href="css_background.asp">CSS Backgrounds</a>
+<div class="tut_overview">
+<a target="_top" href="css3_flexbox_responsive.asp">CSS Flex Responsive</a>
+</div>
+
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+<a target="_top" href="html5_canvas.asp">HTML Canvas</a>
+<a target="_top" href="js_object_definition.asp">Object Definitions</a>
+<a target="_top" href="js_string_templates.asp">JS String Templates</a>
+<a target="_top" href="js_date_formats.asp">JS Date Formats</a>
+<a target="_top" href="js_syntax.asp">JS Syntax</a>
+<a target="_top" href="js_class_inheritance.asp">Class Inheritance</a>
+<a target="_top" href="js_random.asp">JS Random</a>
+<a target="_top" href="js_booleans.asp">JS Booleans</a>
+<a target="_top" href="js_maps.asp">JS Maps</a>
+<a target="_top" href="js_jquery_elements.asp">jQuery HTML</a>
+<a target="_top" href="js_json_datatypes.asp">JSON Data Types</a>
+<a target="_top" href="js_timing.asp">JS Timing</a>
+<a target="_top" href="js_comments.asp">JS Comments</a>
+<a target="_top" href="/cssref/css3_browsersupport.asp", "CSS Browser Support"],
+  ["", "/cssref/css_selectors.asp", "CSS Selector Reference"],
+  ["", "/bootstrap/bootstrap_ref_all_classes.asp'>Bootstrap 4 Reference</a>
+   <a class="w3-bar-item w3-button" href="/git/git_exercises.asp">Git Exercises</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML and CSS</h3>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+   <a class="w3-bar-item w3-button" href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+   <h3 class="w3-margin-top">Character Sets</h3>
+   <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href='/r/default.asp' title='R Tutorial'>R</a>
+      <a class="w3-bar-item w3-button" href='/git/default.asp'>Learn Git</a>
+   <a class="w3-bar-item w3-button" href="/python/numpy/numpy_exercises.asp">NumPy Exercises</a>
+   <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a>
+   <a class="w3-bar-item w3-button" href="/statistics/index.php">Learn Statistics</a>
+   <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right ws-hide-900 w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 15px;" href="https://www.w3schools.com/videos/index.php">Explore now</a>
+</div>
+
+<div class="sidesection">
+<h4><a href="/colors/colors_picker.asp">COLOR PICKER</a></h4>
+<a href="/colors/colors_picker.asp">
+<img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
+</a>
+</div>
+
+<div class="sidesection">
+<!--<h4>LIKE US</h4>-->
+  <div class="sharethis">
+    <a href="https://www.facebook.com/w3schoolscom/" title='W3Schools on Facebook'><i class='fa'>&#xe806;</i></a>
+ </div>
+ <p class="w3-medium">
+ W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and learning.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using W3Schools, you agree to have read and accepted our <a href="/about/about_copyright.asp">Copyright 1999-2022</a> by Refsnes Data. All Rights Reserved.<br><br></p>
+ 
+ <a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">Forum</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">PRINT PAGE</a>
+</div>
+-->
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">Shop</a>
+</div>
+
+</div>
+<hr>
+<div class="ws-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">&times;</span>
+
+<h2>Report Error</h2>
+
+<p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</p>
+<p>help@w3schools.com</p>
+<br>
+
+<!--
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-section">      
+<label for="err_email">Page address:</label>
+<input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px;resize:vertical;"></textarea>
+</div>
+<div class="form-group">

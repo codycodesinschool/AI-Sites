@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/networkengineering/Img/apple-touch-icon.png?v=5e581fc45e58" alt="Software Engineering icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/company/work-here">Work Here</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 32 })">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>
+    <a href="https://www.instagram.com/w3schools.com_official/" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x"></span></a>
+    <a href="https://www.instagram.com/w3schools.com_official/" title='W3Schools on Instagram'><i class='fa'>&#xf16d;</i></a>
+  <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
+-->  
+   <a class="w3-bar-item w3-button" href='/xml/dom_http.asp'>XML Http Reference</a>
+   <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_html_browsersupport.asp'>HTML Browser Support</a>   
+   <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+   <a class="w3-bar-item w3-button" href='/charsets/default.asp'>HTML Character Sets</a>
+   <a class="w3-bar-item w3-button" href="/cert/default.asp">Web Certificates</a>
+   <a class="w3-bar-item w3-button" href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+   <h3 class="w3-margin-top">XML</h3>
+   <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+   <a class="w3-bar-item w3-button" href='/icons/icons_reference.asp'>Icon Reference</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/python_exercises.asp">Python Exercises</a>
+   <a class="w3-bar-item w3-button" href='/bootstrap4/bootstrap_ref_all_classes.asp'>Bootstrap 4 Reference</a>
+   <a class="w3-bar-item w3-button" href='/tags/default.asp'>HTML Tag Reference</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/sql" target="_blank" onclick="ga('send', 'event', 'spacesFromTutorialsAcc', 'click');" title="Get Your Own Website With W3schools Spaces">Spaces</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="/pro/index.php">Pro</a>
+  </div>
+</div>
+
+<script>
+(
+function setThemeCheckboxes() {
+  var x = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.getElementById("hey").innerText = "a";
+  }
+  if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+    document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.body.className += " darktheme";
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.getElementById("radio_darkcode");
+  var b = document.getElementById("radio_darkpage");
+  if (b.checked) {
+    document.body.className += " darkpagetheme";
+    document.body.className = document.body.className.replace("darktheme", "");
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+    document.getElementById("wavepath").style.fill = "#282A35";    
+  } else {
+    document.body.className = document.body.className.replace("darktheme", "");
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkpage");
+  if (b.checked) {
+    document.body.className += " darktheme";
+    document.getElementById("navbtn_" + x).classList.remove("mystyle");
+  }
+}
+function mouseoverdarkicon() {
+  if(window.matchMedia("(pointer: coarse)").matches) {
+    return false;
+  }
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "44px";
+}
+function mouseoutofdarkicon() {
+  var a = document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.body.className += " darktheme";
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkpage");
+  }
+})();
+</script>
+<div id="pagetop" class="w3-bar w3-card-2 notranslate">
+  <a href="https://www.w3schools.com/videos/index.php">Explore now</a>
+</div>
+
+<div class="sidesection">
+<h4><a href="/colors/colors_picker.asp">
+<img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
+</a>
+</div>
+
+<div class="sidesection">
+<!--<h4>LIKE US</h4>-->
+  <div class="sharethis">
+    <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>
+    <a href="https://www.instagram.com/w3schools.com_official/" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x"></span></a>
+    <a href="https://www.instagram.com/w3schools.com_official/" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x"></span></a>
+    <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">About</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="https://shop.w3schools.com" target="_blank">Shop</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://shop.w3schools.com/" target="_blank" id="cert_navbtn" onclick="ga('send', 'event', 'Courses' , 'Clicked on bootstrap C# link in footer');">C# Course</a><br>
+<a href="https://courses.w3schools.com/courses/java" target="_blank">Java Course</a>
+   <a class="w3-bar-item w3-button" href="/r/default.asp">Learn R</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+   <a class="w3-bar-item w3-button" href="/mysql/default.asp">Learn MySQL</a>
+   <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+   <a class="w3-bar-item w3-button" href="/excel/index.php">Learn Excel</a>
+   <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>

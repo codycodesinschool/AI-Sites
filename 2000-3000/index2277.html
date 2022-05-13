@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow | The World&#x2019;s Largest Online Community for Developers" />
+    <script id="webpack-public-path" type="text/uri-list">https://cdn.sstatic.net/</script>
+    <script src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                    logos.children[i].classList.add('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="p-wrapper pl24 pr24 sm:pl0 sm:pr0 mx-auto ta-left mb32 fc-white d:fc-black">
+            
+<div class="bg-contain bg-no-repeat bg-center pb32 md:p-bg-none">
+    <div class="d-flex ai-center">
+                <div class="fs-title p-ff-roboto-slab-bold mb4">100+ million</div>
+                <div class="site-footer--copyright fs-fine md:mt24">
+                <ul class="-list js-primary-footer-links">
+                                   Technology
+                                       class="s-input s-input__search js-search-field "
+                                 data-ga="[&quot;top navigation&quot;,&quot;advertising submenu click&quot;,null,null,null]">

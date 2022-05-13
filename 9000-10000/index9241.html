@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="js-io-animation p-io-animation d-flex flex__allitems4 sm:fd-column gs48 pt64 jc-center mb64 sm:mb24 sm:pl12 sm:pr12">
+                <div class="flex--item" data-animation-type="show">
+                    <svg aria-hidden="true" class="fc-orange-500 float-right ml24 svg-spot spotCollective" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="m43.05 15.18-22.29 9.35a9.1 9.1 0 0 0-10.87-3 9 9 0 0 0-4.82 11.79 9 9 0 0 0 17.17-5.2l12.28-5.22 1.5 3.57c.2.47.7.68 1.18.48l1.65-.7c.46-.19.67-.7.48-1.16l-1.5-3.58 1.92-.8 2.08 4.94c.2.47.7.68 1.17.48l1.65-.69c.47-.2.68-.7.48-1.17l-2.06-4.9 1.45-.6c.47-.2.67-.7.48-1.18l-.81-1.92a.85.85 0 0 0-1.14-.5ZM15.36 34.86a5.33 5.33 0 1 1-4.14-9.84 5.33 5.33 0 0 1 4.14 9.84Z"/><path d="M6.82 30.54a5.5 5.5 0 1 0 10.14-4.26 5.5 5.5 0 0 0-10.14 4.26Zm3.72-5.36a3.5 3.5 0 1 1 2.7 6.45 3.5 3.5 0 0 1-2.7-6.45Zm8.74-3.38a10.2 10.2 0 0 0-11.26-2.25 10.06 10.06 0 0 0-5.46 13.14 10.06 10.06 0 0 0 13.2 5.3 10.18 10.18 0 0 0 6.04-10.7l9.66-3.99 1.17 2.78a2 2 0 0 0 2.61 1.07l1.85-.78a2 2 0 0 0 1.07-2.61l-1.47-3.5c.9-.74 1.25-2.02.77-3.15l-.19-.46a2.78 2.78 0 0 0-3.63-1.48l-20.75 8.7Zm-1.12 1.74a1 1 0 0 0 1.23.38l21.41-8.99c.4-.16.85.02 1.02.42l.19.45a.73.73 0 0 1-.37.95 1 1 0 0 0-.75 1.37l1.81 4.33-1.84.77L39.08 19a1 1 0 0 0-.49-.52 1 1 0 0 0-.91-.07l-2.41 1.01a1 1 0 0 0-.55 1.28l.05.14 1.54 3.69-1.84.77-1.55-3.69a1 1 0 0 0-1.3-.53h-.01l-11.3 4.65a1 1 0 0 0-.6 1.16l.02.14A8.2 8.2 0 0 1 15 36.14a8.06 8.06 0 0 1-10.58-4.23A8.06 8.06 0 0 1 8.8 21.4a8.18 8.18 0 0 1 9.36 2.15Z"/></svg>
+            Robust read and write API
+        </div>
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block mtn2" width="165" height="41" src="https://cdn.sstatic.net/Img/product/teams/logos/verizon-media-alt.svg?v=f335b20096b2" alt="Verizon Digital Media">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="136" height="25" data-src="https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8" class="uc-none ps-absolute t128 mt128" style="left:8%" alt="">
+            <img src="https://cdn.sstatic.net/Img/product/teams/microsoft-integration/microsoft-teams-logo.svg?v=00361aadd408" width="48" height="48" class="native w48 h48 wmx75" alt="">
+        </a>
+
+                </div>
+            
+            <img class="w100 h100 d-block us-none pe-none ps-absolute t0 r0 l0 b0 z-base" src="https://cdn.sstatic.net/Img/teams/teams-illo-free-sidebar-promo.svg?v=47faa659a05e" alt="">
+
+        <a href="https://try.stackoverflow.co/why-teams/?utm_source=so-owned&amp;utm_medium=side-bar&amp;utm_campaign=campaign-38&amp;utm_content=cta" 
+           class="w100 s-btn s-btn__muted s-btn__xs js-gps-track"
+           data-gps-track="teams.create.left-sidenav.click({ Action: CtaClick })"
+               data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">
+                        Products
+                    </a>
+                            </li>
+            </ol>
+            </div>
+
+                            <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 13 })" href="https://stackoverflow.co/teams" class="h48 d-block"><svg aria-hidden="true" class="svg-icon iconPeak" width="18" height="18" viewBox="0 0 18 18"><path d="M17 5.5a4.5 4.5 0 0 1-5.8 4.3L10 11H8v2H6v2H4v2H1v-3.5l7.1-7.1A4.52 4.52 0 0 1 12.5 1 4.5 4.5 0 0 1 17 5.5Zm-4 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM50 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM42.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg></div>
+            <div>Additional integrations &#x2014; ChatOps, Jira, GitHub &amp; Okta</div>
+        </div>
+        <div class="flex--item s-avatar va-middle bg-orange-400">
+                            <li><a href="https://stackoverflow.co/explore-teams" class="s-btn fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold mt-auto" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;join community&quot;,null,null]">Join the community</a>
+                    <p class="fs-body3 px24 hmn1">Help engineers be more efficient and streamline knowledge sharing using a tool they already love and trust.</p>
+                </div>
+            <div class="flex--item wmn2">
+                <div class="fs-title p-ff-roboto-slab-bold mb4">45.1+ billion</div>
+                <div class="js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotMetricsLg" width="96" height="96" viewBox="0 0 96 96"><path d="M33.3 60.21a1 1 0 0 1-.04-1.46l41.1-40.1a1 1 0 0 1 .33-.22l10.83-4.17a1 1 0 0 1 1.31 1.25l-3.26 9.78a1 1 0 0 1-.22.37L43.17 67.8a1 1 0 0 1-1.4.05l-8.48-7.64Zm-9.19 19.02a1 1 0 0 0 .38.98l2.12 1.61a1 1 0 0 1 .11 1.49l-9.1 9.48a3 3 0 0 1-4.29.04l-5.1-5.1a3 3 0 0 1 .11-4.35l12.5-11.28a1 1 0 0 1 1.33-.01l2.38 2.08a1 1 0 0 1 .33.94l-.77 4.12Z" opacity=".2"/><path d="M91.4 5.56a1.5 1.5 0 0 0-1.87-1.98l-15 5c-.24.07-.44.2-.61.38l-9.2 9.6.26-1.85a1.5 1.5 0 0 0-.86-1.58l-11-5a1.5 1.5 0 0 0-1.93.64l-4.51 8.12c-2.16-.21-4.27-.2-6.35 0l-4.52-8.12a1.5 1.5 0 0 0-1.93-.64l-11 5a1.5 1.5 0 0 0-.84 1.73l1.77 7.06c-.9.76-1.6 1.62-2.22 2.46-.32.44-.63.9-.93 1.33v.01a245.75 245.75 0 0 1-.71 1.01l-7.98-2.65a1.5 1.5 0 0 0-1.85.84l-5 12a1.5 1.5 0 0 0 .77 1.95l8 3.56c-.2 2.27-.2 4.93 0 7.14l-8 3.56a1.5 1.5 0 0 0-.77 1.95l5 12a1.5 1.5 0 0 0 1.85.84l2.58-.86-9.57 8.84a1.5 1.5 0 0 0-.04 2.16l9 9a1.5 1.5 0 0 0 2.12 0l7.77-7.76 10.05 4.57c.73.33 1.6.02 1.96-.7l3.53-7.06c2.19.22 4.34.2 6.45-.02l5.48 7.31c.4.54 1.13.74 1.76.5l10-4c.62-.26 1-.9.93-1.57l-.9-8.13a21 21 0 0 0 3.99-4.01l7.06 1.77a1.5 1.5 0 0 0 1.73-.84l5-11a1.5 1.5 0 0 0-.5-1.84L74.1 51.8c.24-2.24.22-4.44 0-6.6l6.28-4.48c.57-.4.78-1.15.52-1.8l-3.59-8.64a1.5 1.5 0 0 0-.58-.7l8.35-8.53c.14-.14.25-.3.32-.5l6-15ZM20.01 68.1c.1-.09.18-.19.25-.3 1 1.46 2.1 2.94 3.55 4.24l-1.67 6.7-.65.64-5.94-5.94a1.5 1.5 0 0 0-.86-.43l5.32-4.9ZM13 74.58c.02.36.17.7.44.98l5.94 5.94L15 85.88l-6.84-6.84L13 74.58Zm12.34 3.74 1.62-6.46a1.5 1.5 0 0 0-.53-1.54c-1.7-1.33-2.8-2.93-4.13-4.86l-.57-.82a1.5 1.5 0 0 0-1.7-.56l-7.68 2.56-3.9-9.36 7.66-3.4c.6-.28.96-.91.88-1.57a37.6 37.6 0 0 1 0-8.61 1.5 1.5 0 0 0-.88-1.57l-7.66-3.4 3.9-9.37 7.68 2.56c.6.2 1.26 0 1.65-.5.45-.57.86-1.15 1.24-1.7l.22-.32.87-1.24a10.1 10.1 0 0 1 2.35-2.43c.5-.36.75-.99.6-1.6l-1.7-6.78 8.6-3.91 4.33 7.79c.3.53.89.84 1.5.76a29.4 29.4 0 0 1 7.61 0 1.5 1.5 0 0 0 1.51-.76l4.33-7.8 8.72 3.97-.7 4.87-6.23 6.5a14.06 14.06 0 0 0-4.86-2.61A21.77 21.77 0 0 0 43.5 25C31.49 25 23 34.69 23 46.5c0 11.76 8.53 22.1 20.6 22.1C55.47 68.6 66 58.44 66 46.5a10.2 10.2 0 0 0-1.14-4.65l-.02-.02a4.72 4.72 0 0 0-.03-.06l9.84-10.06 3 7.26-6.02 4.3A1.5 1.5 0 0 0 71 44.7c.32 2.5.35 5.04 0 7.61-.07.55.17 1.1.62 1.42l6 4.28-3.98 8.74-6.79-1.7a1.5 1.5 0 0 0-1.54.53c-1.66 2.12-2.65 3.29-4.68 4.7-.45.31-.7.85-.63 1.4l.87 7.86L53 82.69l-5.31-7.08a1.5 1.5 0 0 0-1.39-.59c-2.5.32-5.04.35-7.61 0a1.5 1.5 0 0 0-1.54.82l-3.36 6.7-8.32-3.78a1.5 1.5 0 0 0-.14-.43Zm37.38-53.34a1.5 1.5 0 0 0 1.26-1.27l.01-.06 10.54-11 7.36 7.36-43.73 44.7a17.18 17.18 0 0 1-8-5.76l32.56-33.97ZM49.1 29c1.62.55 2.93 1.23 3.74 1.94L28.47 56.38A20.59 20.59 0 0 1 26 46.5C26 36.14 33.34 28 43.5 28c1.58 0 3.68.35 5.61 1Zm-5.52 36.6c-.67 0-1.34-.04-1.99-.11l20.96-21.43.02.04v.02c.21.59.42 1.42.42 2.38 0 10.23-9.12 19.1-19.4 19.1Zm39.86-48.27-6.42-6.42L87.4 7.45l-3.96 9.88Z"/></svg>
+                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">4<span class="text-white-fade">+</span> million</h2>
+                    <p class="m-0 text-mono text-white-fade f6-mktg">Fortune 100</p>
+                  </div>
+                </div>
+                </div>
+                </div>
+                  <div class="js-build-in col-12 col-md-9 col-lg-6 home-codespaces-copy-item home-codespaces-copy-item-1 position-relative" data-build-non-decorative="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 110 142" aria-hidden="true" class="d-none d-md-block position-relative home-branch offset-n1"><path d="m1-8c0 75 108 75 108 150" stroke-width="2" vector-effect="non-scaling-stroke"></path></svg>
+
+          </div>
+
+          <div class="width-full offset-lg-2 d-flex flex-justify-center gutter-condensed gutter-lg py-2 py-lg-3">
+            <div class="col-3">
+              <a href="/hashicorp/terraform"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Events;&quot;}" href="/events">
+      Events
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/">Status</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Community forum&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:GitHub Sponsors;&quot;}" href="/sponsors">
+      GitHub Sponsors
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Topics&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:GitHub Sponsors;&quot;}" href="/sponsors">
+      GitHub Sponsors
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Mobile;&quot;}" href="/mobile">
+      Mobile
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;text:features&quot;}" href="/features">Features</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click nav item to scroll to Secure&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Team;&quot;}" href="/team">Team</a>
+</li>
+
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Connect with others</li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;text:enterprise&quot;}" href="/enterprise">Enterprise</a>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:partner&quot;}" href="https://partner.github.com">Partners</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="/security">Security</a>
+            </li>
+            <li>
+              <a href="https://github.com/github" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;click to learn more about advanced security&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Issues;&quot;}" href="/features/issues">
+      Issues
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Start a free trial;ref_loc:billboard launchpad&quot;}" href="https://desktop.github.com/">GitHub Desktop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-xl p-responsive">
+    <div class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="color-fg-muted">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container js-jump-to-suggestions-results-container js-jump-to-suggestions-results-container js-jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-owner-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="js-details-target btn-link d-lg-none mt-1 color-fg-inherit">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+          </div>
+
+      
+      
+      
+      
+    </div>
+  </div>
+
+  <div class="color-bg-subtle">
+    <div class="container-xl p-responsive">
+    <picture>
+      <source srcset="https://github.githubassets.com/images/modules/site/home/icons/actions-check.svg" class="home-actions-success-check"
+              alt="Large representation of the indicator that a workflow is running" loading="lazy">
+          </div>
+
+          <h3 class="col-5-max f2-mktg text-gray-mktg text-semibold mb-5 mb-lg-0 col-5-max"><span class="color-fg-default">Visual Studio Code, in your browser, full stop.</span> Codespaces brings the world’s most popular desktop editor to every repo. Code, build, test, use the terminal, and open pull requests from anywhere.</h3>
+          </div>
+
+          <div class="js-build-in-item home-pr-comment rounded-2 position-relative z-2">
+          <h2 class="h2-mktg color-fg-default mb-6 mb-md-8 text-gradient-mint-blue-dark">Give your code a home in the cloud</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-9 px-4 pl-md-7 pt-4 py-md-6 mb-md-0 position-relative z-1 text-center text-md-left" style="margin-bottom: 25%; box-shadow: 0 0 50px 30px #fff">
+          <h2 class="h5-mktg mb-1 mx-auto mx-md-0" style="max-width: 380px;">Take collaboration to the next level with security and administrative features built for teams.</p>
+          <div class="d-flex flex-items-center mb-2">

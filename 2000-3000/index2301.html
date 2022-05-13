@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=9f3012e164b7">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.remove('d-none');
+                } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--col">
+                        <h5 class="-title"><a class="js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.co/">Company</a></h5>
+                    <ul class="-list">
+                            <li><a href="https://stackoverflow.co/teams" class="s-btn ml8 sm:ml0 sm:mt8 fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold mt-auto" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;teams tour&quot;,null,null]">Take a tour of Teams</a>
+
+            <div class="js-io-animation p-io-animation d-flex flex__allitems3 ff-row-wrap jc-center ta-center fs-body3 wmx10 mx-auto mtn96 ps-relative z-selected px24 sm:pl0 sm:pr0">
+    <div data-animation-type="show" class="flex--item m24 w64 h64 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Unix &amp; Linux" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/gamedev/Img/apple-touch-icon.png?v=0cfb55927bd2" alt="Game Development icon">
+        </a>
+
+                        <a href="https://apple.stackexchange.com" data-animation-type="show" class="flex--item m24 w128 h128 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Unix &amp; Linux" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=9f3012e164b7">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/salesforce/Img/apple-touch-icon.png?v=4c87c90207b3" alt="Salesforce icon">
+        </a>
+
+                        <a href="https://nodejs.org/dist/latest-v16.x/docs/api/">API Docs</a>
+              </li>
+            </ul>
+
+          </div>
+        <p>
+          Or have a look at the <a href="/en/about/releases/">Long Term Support (LTS) schedule</a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <a href="#" id="scroll-to-top">&uarr; <span>Scroll to top</span></a>
+  
+  <footer  class="no-margin-top" >
+  
+    <div class="container">
+      <div class="openjsfoundation-footer">
+        <div class="issue-link-container">
+          <a class="openjsfoundation-logo" href="https://openjsf.org/">
+            <img src="/static/images/logo.svg" alt="Node.js" width="122" height="75">
+      </a>
+  
+      <nav aria-label="primary">
+        <ul class="list-divider-pipe home-secondary-links">
+            <li>
+              <a href="https://github.com/nodejs/node/issues">Report Node.js issue</a></li>
+          <li><a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V18.md#18.1.0">Changelog</a>
+              </li>
+            </ul>
+
+          </div>
+        <p>
+          Or have a look at the <a href="/en/about/releases/">Long Term Support (LTS) schedule</a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <a href="#" id="scroll-to-top">&uarr; <span>Scroll to top</span></a>
+  
+  <footer  class="no-margin-top" >
+  
+    <div class="container">
+      <div class="openjsfoundation-footer">
+        <div class="issue-link-container">
+          <a class="openjsfoundation-logo" href="https://openjsf.org/">
+            <img src="/static/images/logo.svg" alt="Node.js" width="122" height="75">
+      </a>
+  
+      <nav aria-label="primary">
+        <ul class="list-divider-pipe home-secondary-links">
+            <li>
+              <a href="https://gamedev.stackexchange.com" data-animation-type="show" class="flex--item m24 w128 h128 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Ask Different" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=9f3012e164b7">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/softwareengineering/Img/apple-touch-icon.png?v=d66b1118cec8" alt="Network Engineering icon">
+        </a>
+                
+                        <span class="fc-white d:fc-black">The world’s largest telecom firm</span> <span class="p-ff-roboto-slab-bold fs-display2 mb0 pt64 pb64 ps-relative z-active overflow-hidden">
+                <p class="mb2"><strong>Teams</strong></p>
+                <p class="mb12 fs-caption fc-medium">Connect and share knowledge within a single location that is structured and easy to search.</p>
+                <a href="/users/signup" class="s-btn w100 wmx2 fs-body2 px32 bar-md bg-orange-500 h:bg-orange-600 fc-white d:fc-black-900 p-ff-source-bold mb2 mx-auto" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;Request a demo&quot;,null,null]">For large organizations <svg aria-hidden="true" class="native s-avatar--badge svg-icon iconShieldXSm" width="9" height="10" viewBox="0 0 9 10"><path d="M0 1.84 4.5 0 9 1.84v3.17C9 7.53 6.3 10 4.5 10 2.7 10 0 7.53 0 5.01V1.84Z" fill="var(--white)"/><path d="M1 2.5 4.5 1 8 2.5v2.51C8 7.34 5.34 9 4.5 9 3.65 9 1 7.34 1 5.01V2.5Zm2.98 3.02L3.2 7h2.6l-.78-1.48a.4.4 0 0 1 .15-.38c.34-.24.73-.7.73-1.14 0-.71-.5-1.23-1.41-1.23-.92 0-1.39.52-1.39 1.23 0 .44.4.9.73 1.14.12.08.18.23.15.38Z" fill="var(--black-500)"/></svg>
+                                  </a>
+            </div>
+        </div>
+        <div class="flex--item p16 sm:p12">
+                <div class="fs-title p-ff-roboto-slab-bold mb4">100+ million</div>
+                <div class="fc-blue-500 d-block h100 p24 ba p-bc-black fs-body3 bar-lg">
+                    <span class="fs-caption d-block fc-light">Reach developers &amp; technologists share private knowledge with coworkers</span>
+                        </a>
+                    </li>
+                    <li class="mt16 md:mt0">
+                                data-ga="[&quot;top navigation&quot;,&quot;talent submenu click&quot;,null,null,null]">
+                            Create free Team
+                        </div>
+            </div>
+    </a>
+</li>
+
+                <li>
+                    <a href="javascript:void(0)" class="s-link s-link__inherit mr8 js-gps-track js-collectives-navcta-toggle"
+                                 Science
+                                class="s-navigation--item js-gps-track"
+                    data-gps-track="top_nav.click({is_current:false, location:1, destination:2})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/secret-alert.png" class="width-full rounded-2 home-secret-alert position-relative z-1" alt="An alert of found secret committed to the repository" loading="lazy">
+                      <img src="https://avatars.githubusercontent.com/rust-lang?s=64&amp;v=4" alt="The Rust Programming Language" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async" width="980" height="434">
+                      </picture>
+                <picture>
+                  <source srcset="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" alt="GitHub">
+        </a>
+
+
+      </div>
+
+      <div class="col-12 col-lg-6" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1" height="22" width="28" alt="" loading="lazy" decoding="async" width="980" height="940">
+                      </picture>
+              </div>
+              </div>
+              </li>
+
+              <li class="col-12 d-flex flex-items-center position-relative f5-mktg text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+              <img src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" width="72" height="72" class="home-sponsors-heart-3 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                    <video loop muted playsinline preload="none" class="home-globe-container-video js-globe-fallback-video-small" hidden>
+      <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/assets/7077-10871e8911f9.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-sD0ByN9hdKohKI5O4x8aDCgS3P1dI1FTFJJXvXhWnU7UzRXoZvJemMFx+6r64d+CZOFfNS8nOsc4UY78ktGLsw==" src="https://github.githubassets.com/assets/6262-f666c7f4034a.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-sD0ByN9hdKohKI5O4x8aDCgS3P1dI1FTFJJXvXhWnU7UzRXoZvJemMFx+6r64d+CZOFfNS8nOsc4UY78ktGLsw==" src="https://github.githubassets.com/images/modules/site/home/actions-autocomplete.h264.mp4">
+          </video>
+        </div>
+
+    </div>
+  </div>
+</div>
+      <div class="d-flex flex-column gutter gutter-spacious position-relative">
+
+      <div class="home-git-log-light col-12 offset-md-1 pt-5 pt-md-6">
+        <div class="d-flex flex-column">
+      <div class="col-11 col-md-10 offset-1 home-codespaces-container">
+        <div class="col-8-max mx-lg-auto text-lg-center mb-6 mb-md-8 position-relative z-2">
+                      <picture>
+                      </div>
+                <p class="f6-mktg text-gray-mktg">* GitHub CLI is available on macOS, Windows, and Linux<br>* GitHub Desktop is available on macOS and Windows</p>
+                </div>
+              </li>
+
+              <li class="col-11 col-sm-10 col-lg-12">
+                <div class="js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotLock" width="48" height="48" viewBox="0 0 48 48"><path d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z" opacity=".2"/><path d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4.5c-1.9 0-3.57-.94-4.73-2.27A7.59 7.59 0 0 1 1 25.8V11.66ZM7.62 7A4.64 4.64 0 0 0 3 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 7.62 31h4.5a2.8 2.8 0 0 1 2.4 4.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z"/></svg>
+        <p class="fs-body3 lh-md fc-black-600 mb32">Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals.</p>
+        
+        <div class="fs-body3 fc-black-700">
+            <strong class="bt bc-black-075 pt16 d-inline-block p-ff-source-bold">Director of Product Management</strong><br>
+            Microsoft
+        </div>
+    </div>
+    <div data-animation-type="show" class="flex--item m24 w64 h64 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Game Development" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/salesforce/Img/apple-touch-icon.png?v=4c87c90207b3" alt="Salesforce icon">
+        </a>
+
+            <a href="/teams/integrations/microsoft-teams" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Jira" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+                <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="macOS" loading="lazy"></li>
+                    <li class="related-site d-flex">
+                            Create free Team
+                        </div>
+                </a>
+                    </li>
+
+                <li>
+                    <a href="#"
+                        class="home-discussions-check-3 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+            <source srcset="https://github.githubassets.com/assets/93-c88b26ce3c81.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-hZN/C8dP1MReDsLXTtUc3f0LOjRTx6lJtfLHtplhun0uazPq9xwV77FrhzsPUG+C6SORbdzjueWfFlw5ohmAgw==" src="https://github.githubassets.com/images/modules/site/home/community-discussions-2.png" class="width-full height-auto" alt="GitHub profile card for @prophen" loading="lazy" width="768" height="524">
+                      </picture>
+              </div>
+
+                    <div class="js-build-in col-12 col-md-9 col-lg-6 home-codespaces-copy-item home-codespaces-copy-item-3 position-relative" data-build-non-decorative="true">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22" height="25" aria-hidden="true" focusable="false" viewBox="0 0 512 593.282">
+            <path fill="none" d="m12045.7 24348.4-9327.4 3292V7339.5l9327.4 3017.7v13991.2" style="fill:#000;fill-opacity:0;fill-rule:nonzero;stroke-width:500;stroke:#fff" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="M21810 27620V7390c-10-230-170-330-320-330-130 0-1070 320-1230 370-1260 390-2530 780-3780 1170-280 90-570 180-840 270-240 70-500 150-740 230-1070 330-2160 660-3230 1020-40 10-140 150-140 180v14130c20 50 40 110 90 150 80 90 3510 1230 4860 1680 360 130 4870 1680 5010 1680 180 0 320-130 320-320zm-610-19850-9070 2820v13550l9070 3080V7770" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="M21810 27620V7390c-10-230-170-330-320-330-130 0-1070 320-1230 370-1260 390-2530 780-3780 1170-280 90-570 180-840 270-240 70-500 150-740 230-1070 330-2160 660-3230 1020-40 10-140 150-140 180v14130c20 50 40 110 90 150 80 90 3510 1230 4860 1680 360 130 4870 1680 5010 1680 180 0 320-130 320-320zm-610-19850-9070 2820v13550l9070 3080V7770" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="M24112.1 3532.9 11995 7395l50.7 16813 12066.4-3840.5V3532.9" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="m11821.8 24358.6 9684.5 3291.9V7349.6l-9684.5 3017.7v13991.3M299.602 3785.7 11821.8 7626.2v16734.6L299.602 20520.3V3785.7" class="header-background-fill" style="fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="m11821.8 24358.6 9684.5 3291.9V7349.6l-9684.5 3017.7v13991.3M299.602 3785.7 11821.8 7626.2v16734.6L299.602 20520.3V3785.7" class="header-background-fill" style="fill-opacity:1;fill-rule:evenodd;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="M5690 2220c180-110 350-200 540-290 380-190 810-390 1220-540 560-210 1120-380 1680-510 310-70 650-130 980-180 30 0 920-110 1100-110h900c350 30 680 50 1030 100 280 40 590 90 890 160 220 50 450 100 670 170 210 60 450 140 680 220 150 50 310 120 470 180 130 60 290 130 440 190 180 80 390 190 590 290 160 80 340 180 510 280 130 70 430 300 590 300 180 0 300-160 300-300 0-290-390-380-570-510-190-130-420-230-620-340-400-210-810-390-1200-540-510-190-1070-370-1570-490-190-40-380-90-570-120-100-20-1140-180-1430-180h-1320c-350 30-720 70-1070 120-310 50-640 110-950 180-240 50-500 120-730 190-400 110-790 250-1170 400-690 260-1410 600-2090 1050-120 80-130 160-130 250 0 150 110 290 290 290 160 0 480-230 540-260m6430 22180V7600c-10-50-30-100-70-150-20-30-60-70-90-80C11710 7270 450 3490 300 3490c-120 0-230 80-290 210 0 10-10 20-10 40v16810c20 50 30 120 70 160 80 110 220 130 310 160 170 60 11260 3780 11420 3780 100 0 320-70 320-250zm-610-16550L610 4220v16080l10900 3630V7850" style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="M5690 2220c180-110 350-200 540-290 380-190 810-390 1220-540 560-210 1120-380 1680-510 310-70 650-130 980-180 30 0 920-110 1100-110h900c350 30 680 50 1030 100 280 40 590 90 890 160 220 50 450 100 670 170 210 60 450 140 680 220 150 50 310 120 470 180 130 60 290 130 440 190 180 80 390 190 590 290 160 80 340 180 510 280 130 70 430 300 590 300 180 0 300-160 300-300 0-290-390-380-570-510-190-130-420-230-620-340-400-210-810-390-1200-540-510-190-1070-370-1570-490-190-40-380-90-570-120-100-20-1140-180-1430-180h-1320c-350 30-720 70-1070 120-310 50-640 110-950 180-240 50-500 120-730 190-400 110-790 250-1170 400-690 260-1410 600-2090 1050-120 80-130 160-130 250 0 150 110 290 290 290 160 0 480-230 540-260m6430 22180V7600c-10-50-30-100-70-150-20-30-60-70-90-80C11710 7270 450 3490 300 3490c-120 0-230 80-290 210 0 10-10 20-10 40v16810c20 50 30 120 70 160 80 110 220 130 310 160 170 60 11260 3780 11420 3780 100 0 320-70 320-250zm-610-16550L610 4220v16080l10900 3630V7850" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="M5690 2220c180-110 350-200 540-290 380-190 810-390 1220-540 560-210 1120-380 1680-510 310-70 650-130 980-180 30 0 920-110 1100-110h900c350 30 680 50 1030 100 280 40 590 90 890 160 220 50 450 100 670 170 210 60 450 140 680 220 150 50 310 120 470 180 130 60 290 130 440 190 180 80 390 190 590 290 160 80 340 180 510 280 130 70 430 300 590 300 180 0 300-160 300-300 0-290-390-380-570-510-190-130-420-230-620-340-400-210-810-390-1200-540-510-190-1070-370-1570-490-190-40-380-90-570-120-100-20-1140-180-1430-180h-1320c-350 30-720 70-1070 120-310 50-640 110-950 180-240 50-500 120-730 190-400 110-790 250-1170 400-690 260-1410 600-2090 1050-120 80-130 160-130 250 0 150 110 290 290 290 160 0 480-230 540-260m6430 22180V7600c-10-50-30-100-70-150-20-30-60-70-90-80C11710 7270 450 3490 300 3490c-120 0-230 80-290 210 0 10-10 20-10 40v16810c20 50 30 120 70 160 80 110 220 130 310 160 170 60 11260 3780 11420 3780 100 0 320-70 320-250zm-610-16550L610 4220v16080l10900 3630V7850" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+            <path d="m11821.8 24358.6 9684.5 3291.9V7349.6l-9684.5 3017.7v13991.3M299.602 3785.7 11821.8 7626.2v16734.6L299.602 20520.3V3785.7" class="header-background-fill" style="fill-opacity:1;fill-rule:evenodd;stroke:none" transform="matrix(.02123 0 0 -.02123 0 593.282)"/>
+          </svg>
+          <span class="sr-only">Toggle Language</span>
+        </button>
+      </div>
+  
+      <ul id="lang-picker" class="lang-picker hidden">
+          <li>
+            <button data-lang="fa" title="Persian">زبان فارسی</button>
+          </li>
+          <li>
+            <button data-lang="ru" title="Russian">Русский</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="zh-cn" title="Simplified Chinese">简体中文</button>
+          </li>
+          <li>
+            <button data-lang="zh-tw" title="Traditional Chinese">繁體中文</button>
+          </li>
+          <li>
+            <button data-lang="zh-tw" title="Traditional Chinese">繁體中文</button>
+          </li>
+          <li>
+            <button data-lang="ro" title="Romanian">limba română</button>
+          </li>
+          <li>
+            <button data-lang="de" title="German">Deutsch</button>
+          </li>
+      </ul>
+  
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <div id="home-intro">
+
+        <p>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary"/>
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow is the largest, most trusted online community for developers to learn, share&#x200B; &#x200B;their programming &#x200B;knowledge, and build their careers."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="620">
+
+    <link rel="preload" href="/webgl-globe/data/data.json" as="fetch" type="application/json">
+  <link rel="preload" href="https://github.githubassets.com/images/modules/site/home/matrix-workflow-build.png" class="width-full" alt="Actions publish workflow" loading="lazy">
+                </div>
+
+                    <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="fc-black-350 fs-body2">Let’s talk about what you need</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+                <div class="fc-black-300 fs-body2 px24">Times a developer got help since 2008</div>
+            </div>
+            <div class="flex--item wmn2">
+                <a href="/teams/calculate/attract-and-retain-talent" class="fc-blue-500 h:fc-blue-300" href="https://stackoverflow.com/legal/terms-of-service">Terms of Service</a></li>
+                                 class="s-input s-input__search js-search-field "
+                                      data-gps-track="top_nav.products.click({location:1, destination:1})"
+                        data-ga="[&quot;top navigation&quot;,&quot;learn more - teams&quot;,null,null,null]">For Teams</a>
+                    </li>
+                    <li class="d-flex">
+                                  maxlength="240"
+                                aria-label="Search"
+                                     </a>
+                    </li>
+            </ul>
+        </div>
+
+        <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/codeql-step-3.webp" type="image/webp">
+              <img src="https://github.githubassets.com/images/modules/site/home/codeql-step-2.png" alt="Step 2" class="width-full" loading="lazy">
+                      <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-linux.svg" alt="Linux" loading="lazy"></li>
+                    <li class="m6">
+                        <a href="https://api.stackexchange.com/" class="-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/teams/create/free?utm_source=so-owned&amp;utm_medium=side-bar&amp;utm_campaign=campaign-38&amp;utm_content=cta"
+               class="pl8 js-gps-track nav-links--link -link__with-icon"
+       
+       data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                    <span class="js-billed-monthly d-none">$14 USD</span>
+                    </div>
+                            <span class="fs-body1 d-block">Talent</span>
+                            </li>
+                            <li><a href="https://linkedin.com/company/stack-overflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 40 })">Collectives</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 29 })">Teams</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                                Science
+                                   <div class="js-build-in col-12 col-md-9 col-lg-6 home-codespaces-copy-item home-codespaces-copy-item-1 position-relative" data-build-non-decorative="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2" transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3" transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="js_intro.asp">Next &#10095;</a>
+</div>
+
+<div class="w3-panel w3-info intro">
+<p>CSS is the language we use to style an HTML document.</p>
+<p>CSS describes how HTML elements should be displayed.</p>
+<p>This tutorial will teach you JavaScript from basic to advanced.</p>
+<a class="w3-btn w3-margin-bottom"  href="html_intro.asp" style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  display: inline-block;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+}
+
+.codeeditorbr-tablink:hover {
+  background-color: #E7E9EB!important;
+  color: black;
+}
+
+.black-color {
+  background-color: #282A35;
+  color: #FFC0C7;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma p {
+  font-size: 42px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;">Web Courses</h5>
+<a href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+   <a class="w3-bar-item w3-button" href='/cssref/css_selectors.asp'>CSS Selector Reference</a>
+   <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_html_browsersupport.asp">Browser Support</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn" href="/cssref/css_pxtoemconversion.asp">CSS PX-EM Converter</a>
+<a target="_top" href="/cssref/css_units.asp">CSS Units</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_eventattributes.asp">Event Attributes</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_language_codes.asp">HTML Lang Codes</a>
+<a target="_top" href="js_json_syntax.asp">JSON Syntax</a>
+<a target="_top" href="js_cookies.asp">JS Cookies</a>
+<br>
+<h2 class="left">JS JSON</h2>
+<a target="_top" href="js_callback.asp">JS Callbacks</a>
+<a target="_top" href="js_jquery_css.asp">jQuery CSS</a>
+<a target="_top" href="js_hoisting.asp">JS Hoisting</a>
+<a target="_top" href="js_string_search.asp">JS String Search</a>
+<a target="_top" href="js_switch.asp">JS Switch</a>
+<a target="_top" href="js_strings.asp">JS Strings</a>
+<a target="_top" href="html_headings.asp">HTML Headings</a>
+<a target="_top" href="js_statements.asp">JS Statements</a>
+<a target="_top" href="html_paragraphs.asp">HTML Paragraphs</a>
+<a target="_top" href="html5_serversentevents.asp">HTML SSE</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Grid</h2>
+<a target="_top" href="css_templates.asp">CSS Templates</a>
+<a target="_top" href="css_colors_hsl.asp">HSL</a>
+</div>
+<a target="_top" href="html_favicon.asp">HTML Favicon</a>
+<a target="_top" href="html_comments.asp">HTML Comments</a>
+<a target="_top" href="html_responsive.asp">HTML Responsive</a>
+<a target="_top" href="html5_draganddrop.asp">HTML Drag/Drop</a>
+<a target="_top" href="html_iframe.asp">HTML Iframes</a>
+<a target="_top" href="html5_audio.asp">HTML Audio</a>
+<a target="_top" href="html_youtube.asp">HTML YouTube</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Grid</h2>
+<a target="_top" href="css_templates.asp">CSS Templates</a>
+<a target="_top" href="js_assignment.asp">JS Assignment</a>
+<a target="_top" href="css3_flexbox.asp">CSS Flexbox</a>
+<a target="_top" href="css_float_examples.asp">Float Examples</a>
+</div>
+<a target="_top" href="css_icons.asp">CSS Icons</a>
+<a target="_top" href="css_float_examples.asp">Float Examples</a>
+</div>
+<a target="_top" href="css3_shadows.asp">CSS Shadows</a>
+<div class="tut_overview">
+<a target="_top" href="css_outline_width.asp">Outline Width</a>
+<a target="_top" href="css_font_pairings.asp">Font Pairings</a>
+<a target="_top" href="js_array_const.asp">JS Array Const</a>
+<a target="_top" href="js_type_conversion.asp">JS Type Conversion</a>
+<a target="_top" href="js_functions.asp">JS Functions</a>
+<a target="_top" href="css_selectors.asp">CSS Selectors</a>
+<a target="_top" href="css_outline.asp">Outline</a>
+<a target="_top" href="css_float_examples.asp">Float Examples</a>
+</div>
+<a target="_top" href="html_favicon.asp">HTML Favicon</a>
+<a target="_top" href="html_scripts.asp">HTML JavaScript</a>
+<a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
+<a target="_top" href="html_editors.asp">HTML Editors</a>
+<a target="_top" href="css3_animations.asp">CSS Animations</a>
+<a target="_top" href="css_outline_shorthand.asp">Outline Shorthand</a>
+<a target="_top" href="css_font.asp">CSS Fonts</a>
+<div class="tut_overview">
+  <a target="_top" href="css_border_color.asp">Border Color</a>
+  <a target="_top" href="css_border_shorthand.asp">Border Shorthand</a>
+  <a target="_top" href="css_background_image.asp">Background Image</a>
+  <a target="_top" href="css_border_shorthand.asp">Border Shorthand</a>
+  <a target="_top" href="css_colors_hsl.asp">HSL</a>
+</div>
+<a target="_top" href="css_margin.asp">Margins</a>
+<a target="_top" href="css_form.asp">CSS Forms</a>
+<a target="_top" href="js_graphics.asp">JS Graphics</a>
+<a target="_top" href="js_json.asp">JS JSON</a>
+<a target="_top" href="js_debugging.asp">JS Debugging</a>
+<a target="_top" href="js_class_intro.asp">Class Intro</a>
+<a target="_top" href="js_variables.asp">JS Variables</a>
+<a target="_top" href="js_function_invocation.asp">Function Invocation</a>
+<a target="_top" href="html_comments.asp">HTML Comments</a>
+<a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
+<a target="_top" href="html5_syntax.asp">HTML Style Guide</a>
+<a target="_top" href="js_json_xml.asp">JSON vs XML</a>
+<a target="_top" href="js_json_jsonp.asp">JSON JSONP</a>
+<br>
+<h2 class="left">JS vs jQuery</h2>
+<a target="_top" href="js_htmldom_nodes.asp">DOM Nodes</a>
+<a target="_top" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
+<a target="_top" href="css_table_size.asp">Table Size</a>
+<a target="_top" href="css_dimension.asp">CSS Height/Width</a>
+<a target="_top" href="css_table.asp">CSS Tables</a>
+<div class="tut_overview">
+  <a target="_top" href="html_table_sizes.asp">Table Sizes</a>
+  <a target="_top" href="html_table_padding_spacing.asp">Padding &amp; Spacing</a>
+  <a target="_top" href="html_tables.asp">HTML Tables</a>
+  <a target="_top" href="html_images_imagemap.asp">Image Map</a>
+  <a target="_top" href="html_links.asp">HTML Links</a>
+<div class="tut_overview">
+<a target="_top" href="css_table_responsive.asp">Table Responsive</a>
+</div>
+<a target="_top" href="css_text_spacing.asp">Text Spacing</a>
+<a target="_top" href="css3_mediaqueries.asp">CSS Media Queries</a>
+<a target="_top" href="css_rwd_intro.asp">RWD Intro</a>
+<a target="_top" href="js_htmldom_methods.asp">DOM Methods</a>
+<a target="_top" href="js_htmldom_nodelist.asp">DOM Node Lists</a>
+<br>
+<h2 class="left">JS Browser BOM</h2>
+<a target="_top" href="js_window_navigator.asp">JS Navigator</a>
+<a target="_top" href="js_json.asp">JS JSON</a>
+<a target="_top" href="js_date_methods_set.asp">JS Date Set Methods</a>
+<a target="_top" href="js_array_const.asp">JS Array Const</a>
+<a target="_top" href="js_statements.asp">JS Statements</a>
+<a target="_top" href="css_table.asp">Table Borders</a>
+<a target="_top" href="css3_transitions.asp">CSS Transitions</a>
+<a target="_top" href="css_attribute_selectors.asp">CSS Attr Selectors</a>
+<a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
+<a target="_top" href="html5_audio.asp">HTML Audio</a>
+<a target="_top" href="html_urlencode.asp">HTML URL Encode</a>
+<a target="_top" href="html_id.asp">HTML Id</a>
+<a target="_top" href="html_paragraphs.asp">HTML Paragraphs</a>
+<a target="_top" href="html_lists_other.asp">Other Lists</a>
+</div>
+<a target="_top" href="html_images_picture.asp">The Picture Element</a>
+</div>
+<a target="_top" href="css3_shadows.asp">CSS Shadows</a>
+<div class="tut_overview">
+<a target="_top" href="css3_gradients_radial.asp">Radial Gradients</a>
+<a target="_top" href="css_table_size.asp">Table Size</a>
+<a target="_top" href="css_exercises.asp">CSS Exercises</a>
+   <a class="w3-bar-item w3-button" href="/datascience/default.asp">Learn Data Science</a> 
+   <a class="w3-bar-item w3-button" href='/asp/default.asp'>Learn ASP</a>
+   <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a>
+   <a class="w3-bar-item w3-button" href="/graphics/default.asp">

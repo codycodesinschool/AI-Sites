@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/askubuntu/Img/apple-touch-icon.png?v=e16e1315edd6" alt="Ask Ubuntu icon">
+        </a>
+
+                        <a href="https://api.stackexchange.com/" class="-link js-gps-track" data-gps-track="site_switcher.click({ item_type:14 })">help</a>
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 37 })" href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=https%3a%2f%2fstackoverflow.com%2f" class="login-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 20 })">Talent</a></li>
+                        </ul>
+                </div>
+            </form>
+
+        
+
+<ol class="s-topbar--content" role="presentation">
+
+
+    <li class="js-topbar-dialog-corral" role="presentation">
+            
+
+    <div class="topbar-dialog siteSwitcher-dialog dno" role="menu">
+        <div class="header fw-wrap">
+            <h3 class="flex--item">
+                <a href="https://quantumcomputing.stackexchange.com" data-animation-type="show" class="flex--item m24 w128 h128 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Quantum Computing" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/unix/Img/apple-touch-icon.png?v=5cf7fe716a89" alt="Unix &amp; Linux icon">
+        </a>
+
+            <a href="/teams/tour" class="s-btn ws-nowrap fs-body2 px32 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;join community&quot;,null,null]">Join the community</a>
+                <p class="mb0 mt12 fc-black-600">or <a class="s-link s-link__underlined fc-black-400 h:fc-orange-500" href="/questions">search content</a></p>
+                </div>
+            <div class="flex--item ps-relative sm:d-none d-flex">
+            <div class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="https://stackoverflow.co/explore-teams" class="s-btn fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;footer callout cta&quot;,&quot;create a team&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md">
+                    <svg aria-hidden="true" class="svg-icon iconGraph" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm.25-3.45a1 1 0 0 1-.73.5c-.32 0-.62-.06-.85-.29l-3-3a1 1 0 0 1 1.44-1.38l2.05 2 3.56-6.28c.27-.47.89-.65 1.36-.38.47.27.65.89.38 1.36l-4.21 7.47Z" fill="#5EBA7D"/>

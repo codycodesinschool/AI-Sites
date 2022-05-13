@@ -15,6 +15,13 @@ var button;
 var txt;
 var links = ["https://stackoverflow.com/","https://nodejs.org/en/","https://github.com","https://google.com/search?q=fun+websites","https://w3schools.com","https://www.w3schools.com/html/default.asp","https://www.w3schools.com/css/default.asp","https://www.w3schools.com/js/default.asp"];
 
+function getRange(i) {
+  for(let j = 0; j <= 10000; j+=1000) {
+    if(i < j) {
+    return `${j-1000}-${j}`;
+    }
+  }
+}
 
 async function main() {
     txt = "";
@@ -35,8 +42,14 @@ async function main() {
     
     for(let i =0; i < 10000; i++) {
       let code = markov(txt);
-      console.log("\n\n\n\n\n\n\n\n",code,i+1)
-    await fs.writeFile(`/home/codycodes/Desktop/giving ai the power of the internet/index${i+1}.html`, code);
+      console.log("\n\n\n\n\n\n\n\n",code,i+1);
+      try{
+        await fs.writeFile(`/home/codycodes/Desktop/giving ai the power of the internet/${getRange(i)}/index${i+1}.html`, code);
+      } catch {
+        await fs.mkdir(getRange(i)).catch(console.log);
+        await fs.writeFile(`/home/codycodes/Desktop/giving ai the power of the internet/${getRange(i)}/index${i+1}.html`, code);
+
+      }
     }
       
       

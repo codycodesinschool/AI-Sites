@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.remove('d-none');
+                } else {
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-800');
+            }
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.remove('d-none');
+                } else {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.remove('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            } else {
+                logosCurrentPage = 0;
+            } else {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.remove('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+            <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+            <div class="s-popover--arrow"></div>
+            <div>
+                        <h5 class="-title"><a class="js-gps-track" data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="favicon favicon-stackoverflow site-icon flex--item" title="Stack Overflow"></div>
+        <span class="flex--item fl1">
+            Stack Overflow
+        </span>
+    </a>
+
+    </div>
+    <div class="related-links">
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 9 })" href="https://stackoverflow.com/legal">Legal</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 30 })">Stack Exchange Network</a></h5>
+                        <ul class="-list">
+                                API
+                                data-ga="[&quot;top navigation&quot;,&quot;about submenu click&quot;,null,null,null]">
+                            </li>
+                    <li class="px-1"><img src="https://github.githubassets.com/images/modules/site/home/pr-comment.webp" type="image/webp">
+                      <img src="https://github.githubassets.com/images/modules/site/home/icons/folder.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">kubernetes/<span class="color-fg-default">ohmyzsh</span></p>
+                </div>
+            <div class="col-3">
+              <a href="/npm/cli"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Open source guides;&quot;}" href="https://opensource.guide">
+      Open source guides
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:enterprise&quot;}" href="/enterprise">Enterprise</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;go to enterprise&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up;ref_loc:Homepage;&quot;,&quot;ref_loc&quot;:&quot;Homepage&quot;}" href="/join?ref_cta=Sign+up&amp;ref_loc=homepage+sticky+nav&amp;ref_page=%2F&amp;source=homepage-sticky-nav">
+  Sign up
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                    <h3 class="js-build-in-item build-in-scale-up" style="width: 117.31%; margin: 0 -8.65%; top: 50%; transform: translateY(-50%);" alt="Light glowing behind the editor" decoding="async">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-11 col-sm-10 offset-1">
+        <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pb-md-12 mb-12">
+            <li class="col-11 col-sm-10 col-lg-12">
+            <div class="home-repo-comp-browser rounded-2 box-shadow-default-mktg position-absolute z-1 top-0 left-0 right-0 box-shadow-active-border-light-mktg">
+                        <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/matrix-workflow-spinner.svg" class="home-matrix-spinner-2" loading="lazy" alt="">
+                        <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-canvas.png" class="width-full height-auto" alt="Pull request comment on GitHub" loading="lazy" decoding="async" width="980" height="940">
+                      </picture>
+                    </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">The Swift Programming Language</p>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="home-assistant/core"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Plans&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:ansible/ansible;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex ai-center py32 jc-center wmx11 mx-auto px32 mbn128 sm:fd-column">
+        <div class="flex--item wmn2">
+                <div class="fs-title p-ff-roboto-slab-bold mb4">5,000+</div>
+                <div class="js-build-in-item home-sponsors-comp">
+                    <div class="d-inline-block border py-1 px-2 text-mono rounded-pill f6-mktg text-gray-mktg">
+                    <svg aria-hidden="true" class="svg-icon iconCode" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm.25-3.45a1 1 0 0 1-.73.5c-.32 0-.62-.06-.85-.29l-3-3a1 1 0 0 1 1.44-1.38l2.05 2 3.56-6.28c.27-.47.89-.65 1.36-.38.47.27.65.89.38 1.36l-4.21 7.47Z" fill="#5EBA7D"/></svg>
+                        Slack
+                    </div>
+                </a>
+                            </li>
+                            </li>
+                </ol>
+            <div class="s-popover--arrow"></div>
+                <ol class="list-reset s-anchors s-anchors__inherit">
+                    <li class="m6">
+                        <a href="https://stackoverflow.com/jobs/companies?so_medium=stackoverflow&amp;so_source=SiteNav"
+       class=" js-gps-track nav-links--link"
+               title="Stack Overflow for Teams is a private, secure spot for your organization's questions and answers."
+               data-gps-track="top_nav.products.click({location:1, destination:7})"
+                            data-controller="s-popover"
+                                maxlength="240"
+                                aria-controls="popover-teams-create-cta"
+         role="menu"
+         aria-hidden="true">
+            <div class="s-popover ws2 mtn2 p0"
+                    id="products-popover"
+                        data-s-popover-placement="bottom"
+                        data-action="s-popover#toggle"
+                   data-s-popover-toggle-class="is-selected"
+                        data-ga="[&quot;top navigation&quot;,&quot;teams submenu click&quot;,null,null,null]">About</a>
+                    </li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 7 })" href="https://stackoverflow.blog?blb=1">Blog</a></li>
+                                       data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">
+                        Products
+                    </a>
+                            <li><a href="/questions" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 33 })">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>
+    <a href="https://discord.gg/6Z7UaRbUQM" target="_blank" title='Join the W3schools community on Discord'><span class="fa fa-discord fa-2x"></span></a>    
+  </div>
+</div>
+
+<!--
+<div class="sidesection" style="border-radius:5px;color:#555;padding-top:1px;padding-bottom:8px;margin-left:auto;margin-right:auto;max-width:230px;">
+<style>
+.codegameright .w3-btn:link,.codegameright .w3-btn:visited {
+  background-color:#04AA6D;
+  border-radius:5px;
+}
+.codegameright .w3-btn:hover,.codegameright .w3-btn:active {
+  background-color:#059862!important;
+  text-decoration:none!important;
+}
+</style>
+  <h4><a href="/codegame/index.html" class="w3-hover-text-black">CODE GAME</a></h4>
+  <a href="/codegame/index.html" target="_blank" class="w3-hover-opacity"><img style="max-width:100%;margin:16px 0;" src="/images/w3lynx_200.png" alt="Code Game" loading="lazy"></a>
+  <a class="w3-btn w3-block ws-black" href="/codegame/index.html" target="_blank">Play a Code Game</a>
+   <a class="w3-bar-item w3-button" href='/xml/dom_http.asp'>XML Http Reference</a>
+   <a class="w3-bar-item w3-button" href="/w3js/default.asp">Learn W3.JS</a>
+
+   <h3 class="w3-margin-top">Web Building</h3>
+   <a class="w3-bar-item w3-button" href='/php/default.asp' title='PHP Tutorial'>PHP</a>
+      <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+   <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px">Tutorials <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href='/python/python_reference.asp'>Python Reference</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href="/go/go_exercises.php">Go Exercises</a>
+   <a class="w3-bar-item w3-button" href="/googlesheets/index.php">Learn Google Sheets</a>
+
+   <h3 class="w3-margin-top">Programming</h3>
+   <a class="w3-bar-item w3-button" href="/excel/index.php">Learn Excel</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/pandas_quiz.asp" target="_top">Pandas Quiz</a>
+   <a class="w3-bar-item w3-button" href='/jquery/default.asp' title='jQuery Tutorial'>JQUERY</a>
+      <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+   <a class="w3-bar-item w3-button" href="/css/css_rwd_intro.asp" title="Responsive Web Design">Learn RWD</a>
+   <a class="w3-bar-item w3-button" href="/java/java_exercises.asp">Java Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/" target="_blank" title="Buy W3Schools Merchandize">
+  <img src="/images/tshirt.jpg" style="max-width:100%;">
+</a>
+</div>
+-->
+
+<div class="sidesection" id="moreAboutSubject">
+</div>
+
+<!--
+<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
+  <div class="w3-container w3-padding-32">
+   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/quiztest/default.asp" style="font-size:16px;margin-bottom:16px;" title="Exercises">EXERCISES</a>
+   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/spaces/index.html" target="_blank" style="padding-top:10px;padding-bottom:10px;margin-top:12px;border-top-left-radius: 0;border-top-right-radius: 0">Play Game</a>
+</div>
+
+<!--
+
+<div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px">
+  <div class="w3-container ws-black" style="border-top-right-radius:5px;border-top-left-radius:5px;">
+    <h5><a href="/cert/default.asp" class="w3-button w3-margin-top w3-dark-grey" style="text-decoration:none">
+Get Certified &raquo;</a>
+-->
+
+<h5 style="font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma a {
+  border-radius: 50px;
+  mxargin-top: 50px;
+  font-size: 18px;
+  background-color: #04AA6D;
+  padding: 17px 55px
+}
+
+#getdiploma a:hover,
+#getdiploma a:active {
+  background-color: #059862 !important;
+  color:white!important;
+}
+
+.bar-icon-hover:hover,.fa-logo:hover {
+  background-color: #1d2a35!important;
+  color:#059862!important;
+}
+
+.mystyle,.mystyle:hover {
+  background-color: #282A35!important;
+  color: #059862!important;
+}
+
+.ref-button {
+  background-color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  color: #000;
+}
+
+.ref-button:hover {
+  background-color: #E7E9EB!important;
+  color: black;
+}
+
+.black-color {
+  background-color: #282A35;
+  color: white;
+}
+
+.black-color:hover {
+  background-color: #04AA6D!important;
+  color:white!important;
+}
+
+.bar-item-hover:hover {
+  background-color: #000!important;
+  color: white!important;
+}
+
+.grey-color {
+  background-color: #E7E9EB;
+  color: black
+}
+
+.exercise-button {
+  padding: 70px 50px;
+  font-size: 35px;
+  width:87%;
+  opacity:0.97;
+}
+
+#w3loginbtn {
+  width:130px;
+  background-color:#04AA6D;
+  color:white;
+  border-radius:25px;
+  font-size:18px;
+  line-height:1.5;
+  display:none;
+}
+
+#loginactioncontainer {
+  margin-left:50px;
+}
+
+div.ext_icon_container {
+  background-color:#1d2a35;
+  color:#ddd;
+}
+
+#darkmodemenu {
+  position:absolute;
+  top:5px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+padding-top:10px;
+padding-bottom:10px;
+font-family: 'Source Sans Pro', sans-serif;">
+<div style='display:none;position:absolute;z-index:6;top:75px;right:0;height:75px;padding-right:15px;background-color:#04AA6D;text-align:right;padding-top:25px;' id='google_translate_element'></div>
+
+<div class='w3-card-2 topnav notranslate' id='topnav'>
+  <div style="overflow:auto;">
+    <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
+      <a href='javascript:void(0);' class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' title='Home'></a>
+      <a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_quiz.php" target="_top">Bootstrap 5 Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/jquery" target="_blank">jQuery Course</a>
+   <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/index.php" title="Cyber Security Tutorial">
+        <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">XML</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/accessibility/index.php">Accessibility</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="/quiztest/default.asp">Quizzes</a></h3>
+   <a class="w3-bar-item w3-button" href='/icons/icons_reference.asp'>Icon Reference</a>
+   <a class="w3-bar-item w3-button" href="/cpp/default.asp">Learn C++</a>
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href="/graphics/default.asp">Learn Graphics</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_8859.asp'>HTML ISO-8859-1</a>
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href="/appml/appml_reference.asp">AppML Reference</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_ascii.asp'>HTML ASCII</a>
+   <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+   <a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp">Learn Matplotlib</a>    
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/xml" target="_blank">XML Course</a>
+   <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+   <a class="w3-bar-item w3-button" href='/c/index.php' title='C Tutorial'>C</a>
+      <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+   <a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/css" target="_blank">CSS Course</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
+   <a class="w3-bar-item w3-button" href="/mysql/mysql_quiz.asp" target="_top">MySQL Quiz</a>

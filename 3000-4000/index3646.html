@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits fc-blue-300 tn12 r128 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="p-bits fc-orange-500 sm:d-none t50 r0 w128 h128"></span>
+    <span aria-hidden="true" class="p-bits fc-gold t0 l0 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="p-bits fc-blue-200 b0 l128 w24 h24"></span>
+    <span aria-hidden="true" class="p-bits fc-yellow-400 b32 r128 w24 h24"></span>
+</header>
+
+<section class="wmx12 mx-auto ps-relative z-active mtn128 sm:mt0 p32 sm:pl12 sm:pr12 sm:pt48">
+    <div class="d-flex flex__allitems6 gs32 m32 ff-row-wrap jc-center wmx8 mx-auto">
+        <a href="https://stackoverflow.co/teams/integrations/microsoft-teams" class="ml-auto wmx4 d-block">
+                    <div class="home-matrix-test mx-auto color-bg-default width-full rounded-2 position-relative box-shadow-card-border-mktg">
+                    <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackexchange.com/sites" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;create a team&quot;,null,null]">

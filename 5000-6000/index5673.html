@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow | The World&#x2019;s Largest Online Community for Developers" />
+    <script id="webpack-public-path" type="text/uri-list">https://cdn.sstatic.net/</script>
+    <script src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.remove('d-none');
+                } else {
+                navItems[i].classList.add('bg-black-800');
+            } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackexchange.com/sites#professional" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 19 })">Products</a></h5>
+                        <ul class="-list">
+                                     data-ga="[&quot;top navigation&quot;,&quot;about menu click&quot;,null,null,null]">About the company</a>
+                    </li>
+                                 </a>
+            </li>
+    </ol>
+</li> 
+            </ol>
+        </nav>
+    </div>
+
+        <div class="s-popover ws2" id="popover-discover-collectives" role="menu" aria-hidden="true">
+            <div class="s-popover p0 wmx100 wmn4 sm:wmn-initial js-top-search-popover" id="top-search" role="menu">
+    <div class="s-popover--arrow">

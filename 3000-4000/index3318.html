@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow | The World&#x2019;s Largest Online Community for Developers" />
+    <script id="webpack-public-path" type="text/uri-list">https://cdn.sstatic.net/</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+    </style>
+
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/settings.mod">{"settings":{"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{"showNewFeatureNotice":true},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"questions":{"enableQuestionTitleLengthLiveWarning":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","hostBaseUrl":"https://stacksnippets.net"},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"c3d9f1e3-55f3-4eba-b268-46cee4c6789c"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}</script>
+<script>StackExchange.init();</script>
+
+    <script>
+        StackExchange.using.setCacheBreakers({"Js/adops.en.js":"6da43f5e0a84","Js/ask.en.js":"7ff9a9068fd6","Js/begin-edit-event.en.js":"dd955babf04d","Js/copy-transpiled.en.js":"977ec0a0b497","Js/events.en.js":"","Js/explore-qlist.en.js":"2b1f34938b8b","Js/full-anon.en.js":"9606ab73611c","Js/full.en.js":"73d258849978","Js/highlightjs-loader.en.js":"3c37abf5cb6d","Js/inline-tag-editing.en.js":"77f922e6e562","Js/keyboard-shortcuts.en.js":"fa78d9020f1f","Js/markdown-it-loader.en.js":"5818ef89ff9d","Js/moderator.en.js":"df5a2eb14f4c","Js/postCollections-transpiled.en.js":"529276cfb7ae","Js/post-validation.en.js":"5dfbf70d3623","Js/question-editor.en.js":"","Js/review-v2-transpiled.en.js":"b588001d0a66","Js/revisions.en.js":"a86490719687","Js/stacks-editor.en.js":"7c971287f03c","Js/tageditor.en.js":"825c9597ce2d","Js/tageditornew.en.js":"857acd8b77e4","Js/tagsuggestions.en.js":"1bcff7d98f97","Js/unlimited-transpiled.en.js":"7ed67670b600","Js/wmd.en.js":"7014572a759f","Js/snippet-javascript-codemirror.en.js":"73fce5cc7219"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(false);
+        });
+    </script>
+    <noscript id="noscript-css"><style>body,.s-topbar{margin-top:1.9em}</style></noscript>
+    </head>
+    <body class="home-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+        
+<header class="s-topbar ps-fixed t0 l0 js-top-bar">
+    <div class="s-topbar--container">
+            <a href="#" class="s-topbar--menu-btn js-left-sidebar-toggle" role="menuitem" aria-haspopup="true" aria-controls="left-sidebar" aria-expanded="false"><span></span></a>
+            <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno">
+                <div class="flex--item fs-fine fc-light">
+                            </div>
+                    <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    </li>
+                                 data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list -social md:mb8">
+                    <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                      maxlength="240"
+                                      <a href="https://serverfault.com/">Server Fault</a> to <a class="fc-blue-300 d:fc-blue-500 h:fc-blue-200" href="https://serverfault.com/" data-animation-type="show" class="flex--item m24 w96 h96 bg-white d:bg-black bar-lg bs-sm h:bs-lg h:bg-black-050 d-flex p16" title="Software Engineering" data-controller="s-tooltip">
+            <img class="d-block wmx100 h-auto m-auto" width="79" height="79" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+    </style>
+
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/settings.mod">{"settings":{"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{"showNewFeatureNotice":true},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"questions":{"enableQuestionTitleLengthLiveWarning":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","hostBaseUrl":"https://stacksnippets.net"},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"c3d9f1e3-55f3-4eba-b268-46cee4c6789c"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}</script>
+<script>StackExchange.init();</script>
+
+    <script>
+        StackExchange.ready(function () { StackExchange.topbar.init(); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10); 
+    </script>
+
+
+
+
+
+    <div class="container wmx100 w100 p-ff-source">
+            
+
+<div id="left-sidebar" data-is-here-when="sm md lg"></div>
+            </div>
+                <div class="fs-title p-ff-roboto-slab-bold mb4">100+ million</div>
+                <div class="fs-title p-ff-roboto-slab-bold mb4">45.1+ billion</div>
+                <div class="site-footer--logo">
+                    
+                        <span class="text-truncate"><strong class="text-bold color-fg-default">jasonetco</strong> added some commits 8 minutes ago</span>
+          </li>
+
+          <li class="col-12 d-flex flex-items-center position-relative f6 text-mono text-gray-light-mktg py-2" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1" style="right: -0.26rem"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            </div>
+          </div>
+
+          <div class="width-full flex-shrink-0 offset-1 offset-lg-3 d-flex flex-justify-center gutter-condensed gutter-lg py-2 py-lg-3">
+            <div class="col-3">
+              <a href="/rust-lang/rust"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Homepage Collaborate section&quot;,&quot;action&quot;:&quot;click to go to GitHub Sponsors&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up for GitHub;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-build.png" class="width-full" alt="Actions build workflow" loading="lazy">
+                      </picture>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 class="f2-mktg text-gray-light-mktg lh-condensed text-semibold mb-3">
+                  <span class="color-fg-default">Write less code thanks to the world&#39;s largest software package registry.</span>
+                  Find the best community-approved projects to accelerate your work, then share it with the world with <a class="text-gray-light-mktg text-underline" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to diversity&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Team;&quot;}" href="/team">Team</a>
+</li>
+
+              <li class="js-build-in-trigger col-11 col-sm-10 col-lg-12">
+              <div
+                class="js-build-in-item build-in-slideX-left f2-mktg text-gray-mktg text-semibold color-bg-default pt-lg-4 pr-4 pr-lg-0 pb-lg-3"><span class="text-gray-dark-mktg">With 70 million jobs run per month you’re in good company with Actions, the number one CI service on the world’s largest developer platform.</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative z-2" style="max-width: 706px;">
+            <div class="js-build-in-item home-pr-merge rounded-2 position-relative z-2">
+                      <picture>
+                  <source srcset="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg" width="19" height="18" class="d-block" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.js</div>
+        </div>

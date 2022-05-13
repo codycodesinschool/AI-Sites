@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.remove('d-none');
+                } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="p-home-company pb128 ta-center">
+    <div class="bb bc-black-075 pb32 mb12 d-inline-block"><svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12 fc-white d:fc-black">Accelerate time to market</h3>
+                    <p class="fs-body3 px32 hmn1">Level up your support by providing information to your customers using a natural interface: questions and answers.</p>
+                </div>
+            </div>
+    </a>
+</li>
+
+                            <a href="https://nodejs.org/dist/latest-v16.x/docs/api/">API Docs</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col-11 col-sm-10 offset-1">
+        <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center gutter gutter-spacious my-4">
+              <div class="col-12">
+                    <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">
+                        Custom pricing
+                    </div>
+            </div>
+            </div>
+    </a>
+</li>
+
+                            <li><a href="https://stackoverflow.co/">Company</a></h5>
+                    <ul class="-list js-primary-footer-links">
+                            <li><a href="https://stackoverflow.co/explore-teams"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-075 h:bg-black-150 fc-powder-900"
+            data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams/create/free"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-700 h:bg-black-600 fc-white"
+            data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/business&quot;,null,null]"
+            Basic
+            >
+                Create a free Team
+            </a>
+        </div>
+
+                
+
+        <div class="d-flex mb12 fc-black-400 mb24">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconHealth" width="18" height="18" viewBox="0 0 18 18"><path d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6c1.09 0 2 .91 2 2v2h2c1.09 0 2 .91 2 2v8h-6ZM4 4v2h2V4H4Zm0 4v2h2V8H4Zm4-4v2h2V4H8Zm0 4v2h2V8H8Zm-4 4v2h2v-2H4Zm8 0v2h2v-2h-2Zm0-4v2h2V8h-2Z"/></svg></a>
+
+                        <a href="https://stackoverflow.co/" class="fc-light d-block py6 px6 h:fc-black-800 js-gps-track"
+                            data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                    <span class="fc-white d:fc-black">in deflected support cases with our centralized knowledge base.</span>
+                </div>
+            <div class="flex--item tt-uppercase fs-fine fc-light">Collectives</div>
+                        <div class="fs-subheading fc-white d-block ta-center mb8 mr96">
+                        <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotLock" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"/><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"/></svg>
+                    </button>
+                    </div>
+            </div>
+                </div>
+                    <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">
+                        Custom pricing
+                    </div>
+                <div class="fc-blue-500 d-block h100 p24 ba p-bc-black fs-body3 bar-lg">
+                    <span class="fs-body1 d-block">Stack Overflow for Teams</span>
+                        <span class="fs-body1 d-block">Advertising</span>
+                        <span class="flex--item4 bt bc-blue-300"></span>
+                    </div>
+            <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="flex--item tt-uppercase fs-fine fc-light">Teams</div>
+                <div class="flex--item">
+                    <a href="#"
+                        class="home-discussions-check-0 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+                      </picture>
+                      <div class="rounded-2 box-shadow-default-border-mktg" alt="Actions workflow canvas" loading="lazy" decoding="async" alt="Facebook icon">
+            <span class="sr-only">GitHub on YouTube</span>
+          </a>
+        </li>
+        <li class="mr-3">
+          <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:facebook&quot;}" class="color-fg-subtle">
+            <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-test-tab.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/pmarsceill?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 opacity-4 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@pmarsceill" loading="lazy">
+                  <img class="float-left circle border unselectable" width="32" height="32" alt="@nplasterer" src="https://avatars.githubusercontent.com/facebook?s=64&amp;v=4" alt="Facebook" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+                      </picture>
+                    </div>
+              </li>
+
+              <li class="js-build-in-trigger col-11 col-sm-10 col-lg-12">
+              <div
+                class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious pt-5 pt-md-6 pb-9 pb-md-10">
+                  <div class="col-12 col-lg-5 offset-lg-1">
+                  <div class="col-6 col-lg-4 flex-auto">
+                  <dt>
+                    <label for="user_email" class="sr-only">Email address</label>
+                  </dt>
+                  <dd>
+                    <input class="form-control border-0 f4-mktg py-3 px-4 width-full" style="height: 3rem" placeholder="Email address" type="email" name="user_email" id="user_email" autocomplete="off" spellcheck="false" id="w3-exerciseform" action="exercise_js.asp?filename=exercise_js_variables1" method="post" target="_blank">
+<h2>Test Yourself With Exercises</h2>
+<div class="exercisewindow">
+<h2>Exercise:</h2>
+<p>Create a variable called <code class="w3-codespan">carName</code> and assign the value <code class="w3-codespan">Volvo</code> to it.</p>
+<div class="exerciseprecontainer">
+<pre>
+&lt;style&gt;
+<input name="ex1" maxlength="1" style="width: 16px;"> {
+  <input name="ex2" maxlength="6" style="width: 66px;"> red;
+}
+&lt;/style&gt;
+</pre>
+</div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom" href="https://courses.w3schools.com/" target="_blank" style="font-size:17px;margin-top:-9px;margin-left:12px" title="Exercises">EXERCISES</a>
+   <a class="w3-button w3-white w3-hide-large w3-round" href="/exercises/index.php" style="font-size:17px;margin-top:-9px" title="Courses">COURSES</a>
+   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="/exercises/index.php" style="font-size:17px;margin-top:-9px;margin-left:12px" onclick="ga('send', 'event', 'Courses' , 'Clicked on ' + foldername + ' course banner in tutorial');">Get certified</a>
+
+<svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 110 142" aria-hidden="true" class="d-none d-md-block position-relative home-branch offset-n1"><path d="m1-8c0 75 108 75 108 150" stroke-width="2" vector-effect="non-scaling-stroke"></path></svg>
+
+          </div>
+
+          <div class="home-downloadblock">
+
+          <a href="https://nodejs.org/dist/v18.1.0/" class="home-downloadbutton" title="Download 16.15.0 LTS" data-version="v16.15.0">
+            16.15.0 LTS
+            <small>Recommended For Most Users</small>
+          </a>
+
+          <ul class="list-divider-pipe home-secondary-links">
+            <li>
+              <a href="/en/download/current/">Other Downloads</a>
+              </li>
+              <li>
+                <a href="/en/docs/">Docs</a>
+            </li>
+            <li>
+              <a href="/en/download/current/">Other Downloads</a>
+            </li>
+            <li >
+                <a href="/en/download/">Downloads</a>
+            </li>
+            <li>
+              <a href="https://nodejs.org/dist/latest-v16.x/docs/api/">API Docs</a>
+            </li>
+            <li>
+              <a href="https://nodejs.org/dist/latest-v18.x/docs/api/">API Docs</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="river-mktg js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-5 py-md-6">
+                  <div class="col-12 col-lg-5 offset-lg-1">
+                  <div class="home-matrix-tab-container position-absolute" style="width: 22%;">
+                      <picture>
+                        <source srcset="https://github.githubassets.com/assets/8630-5ad00158d0e0.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-WtABWNDgj+0Z+nTC8dZsMxFYSujm/s9SJTsHmFnzg73joAek4tmQ1zXCSLBvgAsgdPE8EQuOuOOW0NNP97Y7UA==" src="https://github.githubassets.com/assets/webgl-globe-72040f00cce7.js"></script>
+  
+
+  <title>GitHub: Where the world builds software </h1>
+          <p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 position-relative z-2">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">              <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/footer-illustration.webp" media="(min-width: 700px)" type="image/svg">
+      <source srcset="https://github.githubassets.com/images/modules/site/home/pr-screen.png" class="position-absolute top-0 width-full mt-n1" style="transform: scaleY(-1);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
+
+
+  <div class="container-xl p-responsive">
+    <picture>
+      <source srcset="https://github.githubassets.com/assets/7077-10871e8911f9.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-WtABWNDgj+0Z+nTC8dZsMxFYSujm/s9SJTsHmFnzg73joAek4tmQ1zXCSLBvgAsgdPE8EQuOuOOW0NNP97Y7UA==" src="https://github.githubassets.com/assets/7077-10871e8911f9.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-8GiDf/OmGRUxPmvFpyo0UlHbuuotpSFGs71Cv3Zm/9/WjyCMcEaDpWt4d+EiYfi+/yZIOkFeKjFNIrUGTmHobg==" src="https://github.githubassets.com/assets/behaviors-4355942935ef.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-+u5pmgAE0T03d/yI6Ha0NWwz6Pk0W6S6WEfIt8veDVdK8NTjcMbZmQB9XUCkDlrBoAKkABva8HuGJ+SzEpV1Uw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-010780c79c07.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-3HF2HZ4LgEIQm77yOzoeR20CX1n2cUQlcywscqF4s+5iplolajiHV7E5ranBwkX65jN9TNciHEVSYebQ+8xxEw==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-f89f23dd3d24.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-YxsLoqPMU0eoQvDL3hsSqKRSf4zF+QCvSG4d91Utfy7BIYgz3BVoApBXpZixQ64ZeXPNRWGAPjKzuouaMgFZrw==" rel="stylesheet" href="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=688 688w,https://github.githubassets.com/images/modules/site/home/discussions-check.svg"
+                        class="home-discussions-check-0 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/gh-mobile.png" style="border-radius: 1.75rem;">
+                      <source srcset="https://github.githubassets.com/images/modules/site/home/footer-illustration-894.webp" type="image/webp">
+            <img src="https://github.githubassets.com/assets/home-b03d01c8df61.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-a4WgZYeVc2aKrHPyOfYm6uY7Vcw96gOwHqRhs6hkNqnhHJuZC4f94uvcomE6JS3HhgCVZTQpvU8PgucLwSkteg==" src="https://github.githubassets.com/images/modules/site/icons/footer/github-logo.svg" width="84" height="30" loading="lazy" decoding="async" width="980" height="434">
+                      </picture>
+                    </div>
+
+                  <div class="col-12 col-lg-5">
+                    <div  class="js-build-in-item home-codeql-comp position-relative pt-8 pt-md-9">
+                      <div class="js-build-in-item home-pr-description rounded-2 position-relative z-2">
+                      <picture>
+                        <source srcset="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
+    <video loop muted playsinline preload="none" class="js-globe-aurora position-absolute top-0 left-0 right-0 width-full events-none overflow-hidden">
+    <div class="overflow-hidden js-section" id="home-automate">
+  <div class="container-xl p-responsive">
+    <div class="d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious py-9 py-md-10">
+                <div class="js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"/><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm4.2-7.4L26 18.4l2.1-2.5L15.4 5.3l-2.1 2.5ZM21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0ZM7 30h16v-3H7v3Z" fill="#F48024"/></svg></div>
+    <h2 class="fs-headline1 pt24 px24 p-ff-roboto-slab mb0 wmx7 mx-auto bar-lg">Additional products that reach and engage developers & technologists…</h2>
+
+    <div class="d-flex flex__allitems6 md:fd-column ta-center mx48 sm:ml0 sm:mr0">
+        <div class="flex--item6 ps-relative z-active mln12 mrn12 sm:ml0 sm:mr0">
+            <img width="1270" height="892" class="js-lazy-load wmx100 w100 h-auto d-block btr-sm bbr-lg bt bc-orange-500 bs-lg" src="https://cdn.sstatic.net/Img/home/illo-integrations-right.png?v=90c26b9154c7" alt="" />
+                    <noscript>
+                <img width="1270" height="892" class="wmx100 w100 h-auto d-block btr-sm bt bc-orange-500 bs-lg" src="https://cdn.sstatic.net/Img/product/teams/logos/intercom-alt.svg?v=3eda71aed47c" alt="Intercom">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt2" width="185" height="37" data-src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04" alt="">
+            </noscript>
+                    <div class="s-avatar--letter mtn1">
+                                role="button"
+                                        <li><a href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a>.
+                    </p>
+                    <div class="rounded-2 box-shadow-active-border-mktg position-relative z-1 overflow-hidden float-right home-readme-2">
+                      <picture>
+            <source srcset="https://github.githubassets.com/images/modules/site/home/icons/folder.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" alt="Twitter icon">
+            <span class="sr-only">Toggle Language</span>
+        </button>
+      </div>
+  
+      <ul id="lang-picker" class="lang-picker hidden">
+          <li>
+            <button data-lang="ru" title="Russian">Русский</button>
+          </li>
+          <li>
+            <button data-lang="pt-br" title="Portuguese, Brazilian">Português do Brasil</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="gl" title="Galician">Galego</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="es" title="Spanish">Español</button>
+          </li>
+          <li>
+            <button data-lang="it" title="Italian">Italiano</button>
+          </li>
+          <li>
+            <button data-lang="ca" title="Catalan">Catalan</button>
+          </li>
+      </ul>
+  
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <div id="home-intro">
+
+        <p>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.">
+
+  <link rel="apple-touch-icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#1e2327">
+
+
+  <meta name="msapplication-TileImage" content="/windows-tile.png">
+  <meta name="msapplication-TileImage" content="/windows-tile.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
+    
+
+    <div class="position-relative js-header-wrapper ">
+      <a href="#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+      <span data-view-component="true" class="octicon octicon-mark-github">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+    </clipboard-copy>
+  </div>
+</template>
+
+
+
+
+  </body>
+</html>
+
+
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>fun websites - Google Search</title><script nonce="RVZ-swdUztm8fTutpggqlg">(function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAaklEQVRYw+2VOwqAQAwFcy0/13qFYLF6ZD1ALNxWUfSByEzqnSmykAgAuIkmFad+ViptCY3KOp6EGi0kSJAgsT/JB1PcgSuJbwfeX7Ra6z9y6zv0Z/oV/ZG+R38WGMzHJULFqq8Jpx7gp2wNbJTpL+jhtwAAAABJRU5ErkJggg\x3d\x3d\x22 style\x3d\x22margin:0px 16px 0px 0px\x22 width\x3d\x2224\x22\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eGoogle Feud.\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eStumbled. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22naKQFc Ne5sAf\x22 style\x3d\x22width:40px\x22\x3e\x3cdiv class\x3d\x22xevp3d\x22\x3e\x3cimg class\x3d\x22XCaUNd\x22 height\x3d\x2224\x22 src\x3d\x22data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\x3d';var i=['dimg_15'];_setImagesSrc(i,s);})();</script><script nonce="RVZ-swdUztm8fTutpggqlg">(function(){var e='AUZ8Yt2BK4W1qtsPuoKlqAQ';(function(){
+var a=e;2===(window.performance&&window.performance.navigation&&window.performance.navigation.type)&&window.ping("/gen_204?ct=backbutton&ei="+a);}).call(this);})();(function(){
+function b(a){for(a=a.target||a.srcElement;a&&"A"!==a.nodeName;)a=a.parentElement;a&&(a.href||"").match(/\/search.*[?&]tbm=isch/)&&(a.href+="&biw="+document.documentElement.clientWidth))g|=8;g||(g=1,c+b>p&&(g|=4));return g};var L=e,M=sn,N="undefined"===typeof de?!0:!1!==de,O=[];function P(a,c,b){a="/gen_204?atyp=csi&s="+(M||"web")+"&t="+a+("&lite=1&ei="+L+"&conn="+(window.navigator&&window.navigator.connection?window.navigator.connection.type:-1)+c);c="&rt=";for(var f in b)a+=""+c+f+"."+b[f],c=",";return a}function Q(a){a={prt:a};window.wsrt&&(a.wsrt=window.wsrt);return a}function R(a){window.ping?window.ping(a):(new Image).src=a}
+(function(){for(var a=(new Date).getTime()-window.start;timl&&(c.iml=f);var h=window.performance&&window.performance.navigation&&window.performance.navigation.type)&&window.ping("/gen_204?ct=backbutton&ei="+a);}).call(this);})();(function(){(function(){var id='tsuid1';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_3','\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcRZ4dHvCNTTxJr9kMFuTC14ECt7siGc2AUT_-mKviV8yLrHXh3n9gqZ4A\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_37" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd lRVwie">This is a website</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Fun+websites+to+cure+boredom&amp;sa=X&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQuk56BAgEEAo"><div class="Lt3Tzc">What websites can cure my boredom?</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="qxDOhb" id="accdef_7"></div></div></div></div></div></div></div></div></div></div></div><div><div class="ZINbbc luh4tb xpd O9g5cc uUPGi"><div class="egMi0 kCrYT"><a href="/url?q=https://www.thetechtoys.com/50-cool-websites/&amp;sa=U&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQ4qYDegQICxAU\x22\x3eUnique sites on internet\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22RWuggc kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22UMOHqf VbKY9d\x22\x3ebeebom.com \u203a Internet\x3c/span\x3e\x3c/span\x3e\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3e2 Kinds of People. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dAUZ8Yt2BK4W1qtsPuoKlqAQ\x26amp;q\x3dWhat+is+the+most+addictive+website?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQs9oBegQICxAR\x22\x3e\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22ZAfNud\x22\x3e\x3cdiv class\x3d\x22naKQFc Ne5sAf\x22 style\x3d\x22width:40px\x22\x3e\x3cdiv class\x3d\x22xevp3d\x22\x3e\x3cimg class\x3d\x22XCaUNd\x22 height\x3d\x2224\x22 src\x3d\x22data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAaklEQVRYw+2VOwqAQAwFcy0/13qFYLF6ZD1ALNxWUfSByEzqnSmykAgAuIkmFad+ViptCY3KOp6EGi0kSJAgsT/JB1PcgSuJbwfeX7Ra6z9y6zv0Z/oV/ZG+R38WGMzHJULFqq8Jpx7gp2wNbJTpL+jhtwAAAABJRU5ErkJggg\x3d\x3d\x22 style\x3d\x22margin:0px 16px 0px 0px\x22 width\x3d\x2224\x22\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eNSA Haiku Generator. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?ie\x3dUTF-8\x26amp;ei\x3dAUZ8Yt2BK4W1qtsPuoKlqAQ\x26amp;q\x3dWhat+websites+can+cure+my+boredom?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQ_B16BAgAEAI"><img class="KMAGC" style="max-width:100%;max-height:90px" alt="HubSpot Blog" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw\x3d\x3d\x22 style\x3d\x22max-width:112px;max-height:112px\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eGoogle Street View\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.wix.com/blog/2015/06/7-most-addictive-websites-on-the-internet-what-you-can-learn-from-them/\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQs9oBegQICxAS\x22\x3e\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcQYZE3ruWaLllkTApYrD3bZfcOZO22rxw2KAKLMHCObRdFMvpgSdBrB\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_33" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span><div class="BNeawe s3v9rd AP7Wnd"><span class="xUrNXd UMOHqf">Mar 21, 2022</span><span class="xUrNXd UMOHqf"> � </span>Explore the list of 90 fun, cool and random websites that could help cure your boredom. Find out which one of these is the most funny.</div></div></div></div></div></div><div><div class="ZINbbc xpd O9g5cc uUPGi"><div style="max-height:90px"><a href="https://blog.hubspot.com/hs-fs/hubfs/gravity-points.png?width=1439&amp;name=gravity-points.png&amp;sa=X&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQ_AUICSgC">Videos</a><a class="eZt8xd" href="/search?q=fun+websites&amp;ie=UTF-8&amp;ei=AUZ8Yt2BK4W1qtsPuoKlqAQ&amp;start=10&amp;sa=N" aria-label="Next page">Next &gt;</a></div></div> </div>  <div id="EOlPnc"><div class="Srfpq"><div><span class="EYqSq unknown_loc"></span><span class="dfB0uf">76051, Grapevine, TX</span></div><span>From your IP address</span><span>&nbsp;-&nbsp;</span><a href="/url?q=https://support.google.com/websearch%3Fp%3Dfeatured_snippets%26hl%3Den-US&amp;usg=AOvVaw05Cv9U2FQuT51F3jV-sQm_"><span class="uEec3 AP7Wnd"><span class="xUrNXd UMOHqf">Dec 20, 2021</span><span class="xUrNXd UMOHqf"> � </span>Internet Live Stats is a fun website that tells you how many people are really on the Internet at the moment. You can find the total number of�...</div></div></div></div></div></div><div><div class="ZINbbc xpd O9g5cc uUPGi BmP5tf"><div class="nMymef MUxGbd lyLwlc"><a class="nBDE1b G5eFlf" href="/search?q=fun+websites&amp;ie=UTF-8&amp;gbv=1&amp;sei=AUZ8Yt2BK4W1qtsPuoKlqAQ">here</a> if you are not redirected within a few seconds.</div></noscript></header><div id="main"><div><div class="KP7LCb"> <div class="bRsWnc"> <div class="N6RWV"> <div class="Pg70bf Uv67qb"> <span class="OXXup">All</span><a class="eZt8xd" href="/search?q=fun+websites&amp;ie=UTF-8&amp;ei=AUZ8Yt2BK4W1qtsPuoKlqAQ&amp;start=10&amp;sa=N" aria-label="Next page">Next &gt;</a></div></div> </div>  <div id="EOlPnc">

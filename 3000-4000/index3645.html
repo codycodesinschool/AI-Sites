@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@nodejs">
+  <meta name="twitter:title" content="Node.js">
+  <meta name="twitter:image" content="https://nodejs.org/static/images/logo-hexagon-card.png">
+  <meta name="twitter:image:alt" content="The Node.js Hexagon Logo">
+
+  <link rel="canonical" href="https://nodejs.org/en/">
+  <link rel="alternate" href="/en/feed/vulnerability.xml" title="Node.js Blog: Vulnerability Reports" type="application/rss+xml">
+
+  <script src="/static/js/themeSwitcher.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+  
+      <a href="/en/" id="logo">
+        <img src="/static/images/openjs_foundation-logo.svg" alt="OpenJS Foundation" width="120" height="38">
+          </a>
+        </div>
+      <p>© OpenJS Foundation. All Rights Reserved. Portions of this site originally © Joyent.</p>
+      <p>Node.js is a trademark of the OpenJS Foundation. Please review the <a
+          href="https://trademark-policy.openjsf.org">Trademark Guidelines</a> of the <a href="https://openjsf.org">OpenJS
+          Foundation</a>.</p>
+      <p>
+        <a href="https://raw.githubusercontent.com/nodejs/node/master/LICENSE">Node.js Project Licensing
+          Information</a>.
+      </p>
+      </div>
+  
+      <div class="help">
+        <ul>
+          <li><a id="editOnGitHubLink" href="#">Edit On GitHub</a></li>
+          <li><a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#16.15.0">Changelog</a>
+            </li>
+            <li >
+                <a href="https://github.com/nodejs/nodejs.org/issues">Report website issue</a></li>
+          <li><a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#16.15.0">Changelog</a>
+            </li>
+            <li >
+                <a href="/en/docs/">Docs</a>
+            </li>
+            <li>
+              <a href="https://github.com/nodejs/node/blob/HEAD/SECURITY.md#security">Security</a>
+            </li>
+            <li >
+                <a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#16.15.0">Changelog</a>
+            </li>
+            <li>
+              <a href="/en/download/current/">Other Downloads</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <img src="https://github.githubassets.com/assets/home-b03d01c8df61.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-nZpgXrBvHm7YePk3m1UhdxY43Ra8lTPxsGk7ocBtGBimPanKdybEgnPXXulh7k7tNLnPzPXFEJ5wY7QGowGOdw==" src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-test.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/dependabot-pr.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/codeql-description.png" alt="Code injection alert" class="home-codeql-description width-full" loading="lazy" decoding="async">
+                      </picture>
+            </div>
+
+                    <div class="d-flex flex-row flex-nowrap position-absolute mt-1" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="position-relative z-2 mx-auto box-shadow-default-mktg wide-block js-section" id="home-code" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+  <div class="container-xl p-responsive">
+      <div class="d-flex flex-column gutter gutter-spacious">
+              <div class="col-lg-6 offset-lg-7 position-relative">
+                <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/globe.jpg"
+      alt="Planet earth with visualization of GitHub activity crossing the globe"
+      class="width-full height-auto js-globe-fallback-image"
+      loading="lazy"
+      decoding="async"
+      width="1238"
+      height="1404"
+      hidden
+    >
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1" height="32" width="28"><g fill="#fff"><path d="m17.8 24.4h-11c-.6 0-1.1-.5-1.1-1.1v-1.3c0-.8.6-1.4 1.4-1.4h7.2c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-7.3c-.5 0-.9.1-1.4.3v-12.3c0-.6.5-1.1 1.1-1.1h13.6v6.9c0 .5.4.9.9.9s.9-.4.9-.9v-7.8c0-.5-.4-.9-.9-.9h-14.4c-1.6 0-2.9 1.3-2.9 2.9v16.5c0 1.6 1.3 2.9 2.9 2.9h11c.5 0 .9-.4.9-.9s-.5-.9-.9-.9z"></path><path d="m25.4 19.2-3.5-3.8c-.3-.4-.9-.4-1.3 0l-3.5 3.8c-.2.2-.2.4-.2.6s.1.4.3.6.4.3.6.2c.2 0 .4-.1.6-.3l2-2.1v9c0 .5.4.9.9.9s.9-.4.9-.9v-9l2 2.1c.2.2.4.3.6.3s.5-.1.6-.2c.2-.2.3-.4.3-.6-.1-.3-.2-.5-.3-.6z"></path></g></svg>
+
+                <span class="text-gray-mktg text-truncate"><strong class="text-bold color-fg-default">jasonetco</strong> added some commits 8 minutes ago</span>
+          </li>
+
+          <li class="col-12 d-flex flex-items-center position-relative f6-mktg text-mono text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+                <div class="d-flex ai-center jc-center wmx2 mx-auto mb12">
+                        <span class="text-truncate"><strong class="text-semibold text-gray-dark-mktg">joshaber</strong> started sponsoring you for <strong class="text-semibold text-gray-dark-mktg">joshaber</strong> started sponsoring you for <strong class="text-semibold text-gray-dark-mktg">$25/month</strong> 2 days ago</span>
+            </li>
+
+            <li class="col-12 d-flex flex-items-center position-relative f5-mktg text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><path d="m0 0h28v26h-28z" fill="#fff"></path><g fill="#8392ad"><path d="m11.25 13a.75.75 0 0 1 -.22.53l-2.75 2.75a.75.75 0 0 1 -1.06-1.06l2.22-2.22-2.22-2.22a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"></path><path clip-rule="evenodd" d="m11.836 5.244c.963-1.665 3.366-1.665 4.329 0l8.966 15.504c.964 1.667-.239 3.752-2.164 3.752h-17.933c-1.925 0-3.128-2.085-2.164-3.752zm3.03.751a1 1 0 0 0 -1.731 0l-8.967 15.504a1 1 0 0 0 .866 1.501h17.933a1 1 0 0 0 .865-1.5l-8.966-15.506z" fill-rule="evenodd"></path></g></svg>
+
+                <span class="text-gray-dark-mktg">Run actions in any language or operating system, on Linux, macOS, Windows, ARM, and containers. Or all at once with matrix builds.</span></h3>
+          <ul class="list-style-none color-fg-muted f5">
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;click to go to Community forum&quot;,&quot;label&quot;:&quot;text:blog&quot;}" href="https://github.blog">Blog</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Develop</a>
+        <a href="#home-automate" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:facebook&quot;}" class="color-fg-subtle">
+            <img src="https://github.githubassets.com/images/modules/site/home/globe.jpg"
+      alt="Planet earth with visualization of GitHub activity crossing the globe"
+      class="width-full height-auto js-globe-fallback-image"
+      loading="lazy"
+      decoding="async"
+      width="1238"
+      height="1404"
+      hidden
+    >
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
+
+
+          <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+            
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="suggestion">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x on-visible">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+    
+      <div>{{ message }}</div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+    
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+
+  <div
+    class="application-main "
+    data-commit-hovercards-enabled
+    data-discussion-hovercards-enabled
+    data-issue-and-pr-hovercards-enabled
+  >
+        <main class="font-mktg">
+
+
+
+
+<div class="overflow-hidden">
+    <meta property="page-title" content="GitHub: Where the world builds software · GitHub</title>
+
+
+
+    
+
+  <meta name="request-id" content="FDFD:016C:9C3E74:111A91E:627C4601" data-pjax-transient="true"/><meta name="html-safe-nonce" content="625d19645637813bc880682b6aab2da30ae05bee7a8888ba5367d756866d88c2" data-pjax-transient="true"/><meta name="html-safe-nonce" content="625d19645637813bc880682b6aab2da30ae05bee7a8888ba5367d756866d88c2" data-pjax-transient="true"/><meta name="visitor-hmac" content="23ab275cafd4f21d3650ad14e64746c2b942586be955ce7d530ce06185730c6a" data-pjax-transient="true"/>
+
+
+    <meta name="page-subject" content="GitHub">
+
+  <meta name="github-keyboard-shortcuts" content="dashboards" data-pjax-transient="true" />
+  
+
+  <meta name="selected-link" value="/" data-pjax-transient>
+
+    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-url" content="https://collector.github.com/github/collect" />
+
+  
+
+  
+
+
+
+
+  
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+        <meta property="og:type" content="object" /><meta property="og:title" content="GitHub: Where the world builds software">
+<meta property="page-description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.">
+      <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+        <meta name="description" content="GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.">
+      <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <meta property="fb:app_id" content="1401488693436528">
+    <meta name="apple-itunes-app" content="app-id=1477376905" />
+      <meta name="twitter:image:src" content="https://github.githubassets.com/images/modules/site/home/pr-description.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">gatsbyjs/<span class="color-fg-default">ansible</span></p>
+                </div>
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/icons/folder.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="16" height="16">
+          <div>LICENSE</div>
+        </div>
+
+        <div class="d-flex flex-items-center mb-2">
+                    <li class="related-site d-flex">
+                            </li>
+            </ol>
+            </div>
+
+            <div class="ps-relative p-speech-bubble--left h100 p24 bbrr-lg btlr-lg btrr-lg bg-blue-100 fc-black-800">
+                    <svg aria-hidden="true" class="svg-icon iconPlus" width="18" height="18" viewBox="0 0 18 18"><path d="M4.2 1.33a4.99 4.99 0 0 1 6.47 6.47L17 14.13l-2.88 2.88-6.34-6.34a4.99 4.99 0 0 1-6.45-6.45l3.22 3.2 2.88-2.87L4.2 1.33Z"/></svg></div>
+            <div>99.5% uptime SLA and priority support</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2Z"/></svg></div>
+            <div>Structured and searchable knowledge base</div>
+        </div>
+
+
+                        <div class="d-inline-block border py-1 px-2 text-mono rounded-pill f6-mktg text-gray-mktg">
+                    <svg aria-hidden="true" class="svg-icon iconHealth" width="18" height="18" viewBox="0 0 18 18"><path d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6c1.09 0 2 .91 2 2v2h2c1.09 0 2 .91 2 2v8h-6ZM4 4v2h2V4H4Zm0 4v2h2V8H4Zm4-4v2h2V4H8Zm0 4v2h2V8H8Zm-4 4v2h2v-2H4Zm8 0v2h2v-2h-2Zm0-4v2h2V8h-2Z"/></svg></a>
+
+                    <a href="https://stackoverflow.co/company/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+            <div class="flex--item6">
+                <h2 class="p-ff-roboto-slab-bold fs-title mb12">Engineering leaders</h3>
+                    <p class="fs-body3 px32 hmn1">Level up your support by providing information to your customers using a natural interface: questions and answers.</p>
+                </div>
+            <div class="flex--item ps-relative sm:d-none d-flex">
+            <div class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="https://github.com/nodejs/nodejs.org/edit/main/locale/en/index.md"/> 
+
+
+          <p class="home-version home-version-banner">
+            <a href="https://nodejs.org/dist/latest-v16.x/docs/api/">API Docs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 d-none d-lg-block">
+            <div class="d-flex flex-items-center">
+          <img src="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="16" height="16">
+          <div>octocat-classifier</div>
+        </div>
+
+        <div class="position-relative z-2" style="max-width: 706px;">
+            <div class="js-build-in-trigger d-flex flex-column flex-lg-row-reverse gutter flex-lg-justify-end flex-lg-items-center pt-5 pb-8 pb-md-9">
+      <div class="col-12 col-lg-6" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <h3 class="f2-mktg text-gray-mktg text-semibold mb-4 col-5-max">
+                    <span class="mt16 s-btn fs-body2 px32 bar-md s-btn__outlined fc-blue-400 h:bg-black-700 p-ff-source-bold">Calculate your ROI</span>
+                </a>
+                    </li>
+                    <li class="mr-1 px-1"><img src="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="macOS" loading="lazy"></li>
+            <li class="px-1"><img src="https://github.githubassets.com/images/modules/site/home/globe.jpg"
+      alt="Planet earth with visualization of GitHub activity crossing the globe"
+      class="width-full height-auto js-globe-fallback-image"
+      loading="lazy"
+      decoding="async"
+      width="1238"
+      height="1404"
+      hidden
+    >
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon flex-shrink-0 mr-3 d-none d-md-block"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <img src="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/images/modules/site/home/community-discussions-1.png" class="opacity-4 width-full height-auto"
+                        alt="Answer to the technical question from the Gatsby community" loading="lazy" width="808" height="480">
+                      </picture>
+                      <picture>
+                      <source srcset="https://github.githubassets.com/images/modules/site/home/globe-500.hevc.mp4">
+      <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/gh-desktop.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-canvas.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/assets/environment-4a9660289ca1.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-0Eo1tvk2fS3TaBkpCcX1DHb0QadEpOrHoZhK08d+D7bRyJDo8RjvmwQhFirTGfqxPBNpBSGkbm3qpdTIDNy32A==" src="https://github.githubassets.com/images/modules/site/home/dependabot-pr.webp" type="image/webp">
+            <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-build.png" class="width-full" alt="Actions publish workflow" loading="lazy">
+                      </picture>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="overflow-hidden js-section" id="home-automate">
+  <div class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to learn about GitHub Desktop&quot;,&quot;label&quot;:&quot;text:the readme project&quot;}" href="/readme">The ReadME Project</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="/security">Security</a>
+            </li>
+            <li >
+                <a href="/en/about/">About</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <img src="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.html</div>
+        </div>
+      </div>
+
+      <div class="col-12 position-relative">
+        <div class="home-repo-editor-terminal p-3 position-absolute right-0 bottom-0 left-0 z-1 overflow-hidden" style="top: 10%;">
+              <picture>
+                        <source srcset="https://github.githubassets.com/assets/light-21555afbe856.css" /><link crossorigin="anonymous" media="all" integrity="sha512-YxsLoqPMU0eoQvDL3hsSqKRSf4zF+QCvSG4d91Utfy7BIYgz3BVoApBXpZixQ64ZeXPNRWGAPjKzuouaMgFZrw==" rel="stylesheet" href="https://github.githubassets.com/assets/7077-10871e8911f9.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-wfe2FWsVlRv1fVYwQq1X9AFoP8yO0786Qsonz8GrtXHoI8ngcJG3WecyHix5X384XHKDHer2YA3R2+5a5jzuKg==" src="https://github.githubassets.com/images/modules/site/home/actions-editor-actions.png" class="home-workflow-actions width-full" alt="The Actions Marketplace is available inline alongside the GitHub Actions workflow editor" width="706" height="452" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">tensorflow/<span class="color-fg-default">flutter</span></p>
+                </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Build blazing fast, modern apps and websites with React</p>
+              </a>
+            </div>
+            </div>
+          </div>
+
+          <div class="home-downloadblock">
+
+          <a href="https://nodejs.org/dist/latest-v18.x/docs/api/">API Docs</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="codeeditorbr-row">
+      <div class="codeeditorbr-column codeeditorbr-middle">
+          <input type="text" disabled class="codeeditorbr-input" value="www.w3schools.com/tryit/">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">              <div class="d-flex flex-items-center py-1 home-git-log-terminal unselectable" aria-hidden="true">
+                <div class="mr-3">
+                  <img class="float-left circle border unselectable" width="32" height="32" alt="@nplasterer" src="https://avatars.githubusercontent.com/facebook?s=64&amp;v=4" alt="Facebook" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async" width="980" height="940">
+                      </picture>
+            </div>
+
+              <div class="mb-3 d-flex flex-items-center" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3" transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3" transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+</div>
+
+</a>
+<a class="w3-btn" id="courses_get_started_btn" 
+href="https://courses.w3schools.com/browse/certifications/courses/html-certification-exam" target="_blank">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
+   <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/sql" target="_blank">SQL Course</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_canvas.asp'>HTML Canvas Reference</a>
+   <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>   
+   <div class="w3-hide-large w3-hide-small">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="/quiztest/default.asp">Quizzes</a></h3>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex" style="width: 140px; border-radius: 25px; margin-right: 15px;" href="https://www.w3schools.com/videos/index.php" title="Video Tutorials" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses banner in ads column');">Get started</a>
+</div>
+
+<!--
+<div class="sidesection" style="margin-left:auto;margin-right:auto;max-width:230px">
+  <div class="w3-container ws-black" style="border-top-right-radius:5px;border-top-left-radius:5px;">
+    <h5><a href="/cert/default.asp" class="w3-button w3-block ref-button black-color">HTML Reference</a>
+  </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+   <h3>HTML Example:</h3>
+   <div class="w3-code htmlHigh notranslate green-border">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" style="text-decoration:none">Python</a>
+  <a href="/cert/cert_sql.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">SQL</a>
+  <a href="/cert/default.asp" class="w3-hover-text-white">Certificates</a></h5>
+  </div>
+  <div class="w3-border" style="border-bottom-right-radius:5px;border-bottom-left-radius:5px;">
+  <a href="/cert/cert_html.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">HTML</a>
+  <a href="/cert/cert_css.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">HTML</a>
+  <a href="/cert/cert_css.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">JavaScript</a>
+  <a href="/cert/cert_frontend.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">SQL</a>
+  <a href="/cert/default.asp" class="w3-button w3-block tut-button">Learn SQL</a><br>
+  <a href="/sql/sql_ref_keywords.asp">SQL Reference</a><br>
+<a href="/python/python_reference.asp">Python Reference</a><br>
+<a href="/w3css/w3css_references.asp">W3.CSS Reference</a><br>
+<a href="/bootstrap/bootstrap_ref_all_classes.asp'>Bootstrap 3 Reference</a>
+   <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/index.php">Cyber Security</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank">jQuery Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses in Default top navigation');" title="Courses">Paid Courses</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/videos/index.php">

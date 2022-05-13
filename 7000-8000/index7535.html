@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+        <link rel="apple-touch-icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=f039f0b977b7">
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems6 gs32 m32 ff-row-wrap jc-center wmx8 mx-auto">
+        <a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://linkedin.com/company/stack-overflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 7 })" href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+            <div class="flex--item truncate">
+                    Tags
+                </div>
+                </div>
+
+                <div class="bb bc-orange-500 pb24 mb24">
+                    <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">
+                        Custom pricing
+                    </div>
+                <div class="fc-black-350 fs-body2">per teammate / month</div>
+                </div>
+                <div class="fc-black-350 fs-body2">No credit card required</div>
+                </div>
+    <div id="onetrust-consent-sdk" class="d-none">

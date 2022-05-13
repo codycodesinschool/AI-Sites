@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="GitHub" /><meta property="og:type" content= "website" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+        <link rel="apple-touch-icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+            });
+            document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--container">
+                <div class="flex--item truncate">
+                    Home
+                </div>
+            </div>
+            <div class="flex--item lg:d-none ta-center">
+                <a href="https://nodejs.org/dist/latest-v16.x/docs/api/">API Docs</a>
+            </li>
+            <li>
+              <a href="https://nodejs.org/dist/v16.15.0/" class="home-downloadbutton"  title="Download 18.1.0 Current"  data-version="v18.1.0">
+              18.1.0 Current
+              <small>Latest Features</small>
+            </a>
+
+            <ul class="list-divider-pipe home-secondary-links">
+            <li>
+              <a href="https://github.com/nodejs/nodejs.org/edit/main/locale/en/index.md"/> 
+
+
+          <p class="home-version home-version-banner">
+            <a href="https://nodejs.org/dist/v18.1.0/" class="home-downloadbutton" title="Download 16.15.0 LTS" data-version="v16.15.0">
+            16.15.0 LTS
+            <small>Recommended For Most Users</small>
+          </a>
+
+          <ul class="list-divider-pipe">
+          <li  class="active" >
+            <a href="/en/">Home</a>
+          </li>
+  
+            <li >
+                <a href="/en/download/">Downloads</a>
+            </li>
+            <li >
+                <a href="/en/get-involved/">Get Involved</a>
+            </li>
+            <li >
+                <a href="/en/download/current/">Other Downloads</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-8 position-absolute text-right position-relative height-full right-0">
+        <picture>
+  
+  <source srcset="https://github.githubassets.com/images/modules/site/home/footer-illustration-894.svg" type="image/svg">
+      <img
+        src="https://github.githubassets.com/images/modules/site/home/codespaces-vscode-3.png" class="home-codespaces-view home-codespaces-view-1 z-2 rounded-2 box-shadow-active-border-mktg overflow-hidden">
+          <div class="home-workflow-sidebar height-full position-absolute top-0 width-full mt-n1" style="transform: scaleY(-1);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
+
+
+  <div class="container-xl p-responsive mx-auto js-section" id="home-community">
+  <div class="d-flex flex-column gutter gutter-spacious position-relative">
+
+      <div class="home-git-log-light col-12 offset-md-1 pt-5 pt-md-6">
+        <div class="d-flex flex__allitems3 gs24 mln32 mrn32 sm:ml0 sm:mr0 ff-row-wrap sm:fd-column jc-center fc-black-750">
+        <div id="p-pricing-grid-free" class="flex--item d-flex fd-column wmn3">
+            <div class="bg-white bar-lg ba bc-black-075 h100 p24 fs-body2 d-flex fd-column">
+                <h2 class="p-ff-roboto-slab-bold fc-white d:fc-black fs-headline2 mb12">Integrates with and improves other tools</h2>
+                <p class="fs-subheading">Here are just a few types of technologists that we help.</p>
+        </div>
+
+
+        <div class="s-popover"
+         id="popover-teams-create-cta"
+                   data-controller="s-popover"
+                    role="menu"
+                    aria-hidden="true">
+            <div class="s-popover--arrow"></div>
+            <div>
+                        <h5 class="-title"><a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                                 Science
+                                       <li>
+                            <li><a href="https://www.instagram.com/thestackoverflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 32 })">Twitter</a></li>
+                    <li><a href="/questions" class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 29 })">Teams</a></li>
+                            <span class="js-billed-annually">$12 USD</span>
+                        </a>
+                            <span class="mt16 s-btn fs-body2 px32 bar-md s-btn__outlined p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;footer callout cta&quot;,&quot;explore the network&quot;,null,null]">Explore the network</a>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/></svg>
+                        Microsoft Teams
+                    </div>
+                    </div>
+            </div>
+                </a>
+                            <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list -social md:mb8">
+                    <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 38 })" href="#" data-consent-popup-loader="footer">Cookie Settings</a></li>

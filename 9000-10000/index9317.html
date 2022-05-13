@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:title" property="og:title" itemprop="name" content="Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+    </style>
+
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/askubuntu/Img/apple-touch-icon.png?v=e16e1315edd6" alt="Ask Ubuntu icon">
+        </a>
+
+                        <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>.                    <span id="svnrev">rev&nbsp;2022.5.11.42086</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    var logos = document.querySelector('.js-carousel-logos');
+    var logosShown = 4;
+    var logosTotalPages = Math.ceil(logos.children.length / logosShown) - 1;
+    var logosCurrentPage = 0;
+    var logosCarouselTime = 4000;
+    var logosCarouselPlayer;
+
+    logos.classList.remove('o100');
+    
+    for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+    </style>
+
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/settings.mod">{"settings":{"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{"showNewFeatureNotice":true},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"questions":{"enableQuestionTitleLengthLiveWarning":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","hostBaseUrl":"https://stacksnippets.net"},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"c3d9f1e3-55f3-4eba-b268-46cee4c6789c"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}</script>
+<script>StackExchange.init();</script>
+
+    <script>
+        StackExchange.using.setCacheBreakers({"Js/adops.en.js":"6da43f5e0a84","Js/ask.en.js":"7ff9a9068fd6","Js/begin-edit-event.en.js":"dd955babf04d","Js/copy-transpiled.en.js":"977ec0a0b497","Js/events.en.js":"","Js/explore-qlist.en.js":"2b1f34938b8b","Js/full-anon.en.js":"9606ab73611c","Js/full.en.js":"73d258849978","Js/highlightjs-loader.en.js":"3c37abf5cb6d","Js/inline-tag-editing.en.js":"77f922e6e562","Js/keyboard-shortcuts.en.js":"fa78d9020f1f","Js/markdown-it-loader.en.js":"5818ef89ff9d","Js/moderator.en.js":"df5a2eb14f4c","Js/postCollections-transpiled.en.js":"529276cfb7ae","Js/post-validation.en.js":"5dfbf70d3623","Js/question-editor.en.js":"","Js/review-v2-transpiled.en.js":"b588001d0a66","Js/revisions.en.js":"a86490719687","Js/stacks-editor.en.js":"7c971287f03c","Js/tageditor.en.js":"825c9597ce2d","Js/tageditornew.en.js":"857acd8b77e4","Js/tagsuggestions.en.js":"1bcff7d98f97","Js/unlimited-transpiled.en.js":"7ed67670b600","Js/wmd.en.js":"7014572a759f","Js/snippet-javascript-codemirror.en.js":"73fce5cc7219"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(false);
+        });
+    </script>
+    <noscript id="noscript-css"><style>body,.s-topbar{margin-top:1.9em}</style></noscript>
+    </head>
+    <body class="home-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+        
+<header class="s-topbar ps-fixed t0 l0 js-top-bar">
+    <div class="s-topbar--container">
+            <a href="#" class="s-topbar--menu-btn js-left-sidebar-toggle" role="menuitem" aria-haspopup="true" aria-controls="left-sidebar" aria-expanded="false"><span></span></a>
+            <div class="topbar-dialog leftnav-dialog js-leftnav-dialog dno">
+                <div class="fs-title p-ff-roboto-slab-bold mb4">179% ROI</div>
+                <div class="js-build-in-item home-pr-description rounded-2 position-relative z-2">
+                      <picture>
+                          <source srcset="https://github.githubassets.com/assets/notifications-global-28a2c6fa1139.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-cgQPAMzn2i/WtLDx8rAGZxzz/pk1g6oxCgajLr8mtc5dQbfKwSVI0wE+QopUKXo5IBbSXCm+5kVdbOhuMY47Xw==" src="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=1376" />
+</picture>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative js-header-wrapper ">
+      <a href="#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+      <span data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+    <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default hx_rsm" open>
+    <summary role="button" aria-label="Close dialog" data-close-dialog>
+        <svg aria-hidden="true" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"/></svg></div>
+            <div>Additional integrations &#x2014; ChatOps, Jira, GitHub &amp; Okta</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconTool" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+      </a>
+
+        <div class="d-lg-none css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        Search
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-lg-justify-end color-bg-default">
+        <div class="col-8 col-sm-7 col-md-6 col-lg-5 position-relative z-2 right-lg-n12 events-none">
+          <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/actions-editor-actions.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/logos/platform-google.svg" alt="Google Play Store" loading="lazy">
+                      </a>
+                    </li>
+            </ul>
+
+          </div>
+        <p>
+          Or have a look at the <a href="/en/about/releases/">Long Term Support (LTS) schedule</a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <a href="#" id="scroll-to-top">&uarr; <span>Scroll to top</span></a>
+  
+  <footer  class="no-margin-top" >
+  
+    <div class="container">
+      <div class="openjsfoundation-footer">
+        <div class="issue-link-container">
+          <a class="openjsfoundation-logo" href="https://openjsf.org/">
+            <img src="/static/images/openjs_foundation-logo.svg" alt="OpenJS Foundation" width="120" height="38">
+          </a>
+        </div>
+      <p>© OpenJS Foundation. All Rights Reserved. Portions of this site originally © Joyent.</p>
+      <p>Node.js is a trademark of the OpenJS Foundation. Please review the <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-policy.openjsf.org">Trademark Guidelines</a> of the <a href="https://openjsf.org">OpenJS
+          Foundation</a>.</p>
+      <p>
+        <a href="https://raw.githubusercontent.com/nodejs/node/master/LICENSE">Node.js Project Licensing
+          Information</a>.
+      </p>
+      </div>
+  
+      <div class="help">
+        <ul>
+          <li><a id="editOnGitHubLink" href="#">Edit On GitHub</a></li>
+          <li><a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#16.15.0">Changelog</a>
+            </li>
+            <li >
+                <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 1 })" href="https://stackoverflow.co/company/work-here">Work Here</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 7 })" href="https://stackoverflow.com/teams/create/free"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-700 h:bg-black-600 fc-white"
+            data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]"
+            Basic
+            >
+                Get started
+            </a>
+        </div>
+
+                
+
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconGlobe" width="18" height="18" viewBox="0 0 18 18"><path d="m1 18 3-3h11c1.09 0 2-.91 2-2V4c0-1.09-.91-2-2-2H3a2 2 0 0 0-2 2v14Zm7.96-4.94c-.57-.02-1.03-.43-1.01-1.06.02-.63.5-1.04 1.08-1.02.6.02 1.05.45 1.03 1.08-.02.63-.48 1.02-1.1 1Zm.92-3.68a3.6 3.6 0 0 0-.08.65c0 .04-.03.14-.16.14h-1.4c-.14 0-.16-.09-.16-.13-.01-.5.11-.99.36-1.42.2-.36.58-.65 1.06-.93.41-.23.78-.71.78-1.2 0-.27-.09-.53-.26-.74-.22-.26-.46-.4-.92-.4-.45 0-.83.23-1.02.52-.17.27-.16.55-.16.83v.11H6.2c0-1.17.31-1.92.98-2.36a3.5 3.5 0 0 1 1.83-.44c.88 0 1.58.16 2.2.62.58.42.88 1.02.88 1.82 0 .5-.17.9-.43 1.24-.15.2-.44.47-.86.8l-.48.3c-.2.14-.36.35-.44.6Z"/></svg></div>
+            <div>Long-form knowledge with Articles</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M6.5 16A1.5 1.5 0 0 1 5 14.5v-4a1.5 1.5 0 1 1 3 0v4c0 .83-.67 1.5-1.5 1.5Zm-4-4a1.5 1.5 0 0 1 0-3H4v1.5c0 .83-.67 1.5-1.5 1.5Z" fill="#E01E5A"/><path d="M2.5 5h4a1.5 1.5 0 1 1 0 3h-4a1.5 1.5 0 1 1 0-3Zm4-4C7.33 1 8 1.67 8 2.5V4H6.5a1.5 1.5 0 1 1 0-3Z" fill="#36C5F0"/><path d="M10.5 9h4a1.5 1.5 0 0 1 0 3h-4a1.5 1.5 0 0 1 0-3Zm0 7A1.5 1.5 0 0 1 9 14.5V13h1.5a1.5 1.5 0 0 1 0 3Z" fill="#ECB22E"/><path d="M10.5 1c.83 0 1.5.67 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4c0-.83.67-1.5 1.5-1.5Zm4 4a1.5 1.5 0 0 1 0 3H13V6.5c0-.83.67-1.5 1.5-1.5Z" fill="#2EB67D"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12">Software engineers</h3>
+                    <p class="fs-body3 fc-black-300">People come and people go, but if you capture their contributions in one central place, that expertise sticks around.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex__allitems3 wmx12 px24 mx-auto gs24 mb32 sm:fd-column jc-center ff-row-wrap">
+            <div class="flex--item" data-animation-type="show">
+                    <svg aria-hidden="true" class="svg-icon iconGlobe" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1C4.64 1 1 4.64 1 9c0 4.36 3.64 8 8 8 4.36 0 8-3.64 8-8 0-4.36-3.64-8-8-8ZM8 15.32a6.46 6.46 0 0 1-4.3-2.74 6.46 6.46 0 0 1-.93-5.01L7 11.68v.8c0 .88.12 1.32 1 1.32v1.52Zm5.72-2c-.2-.66-1-1.32-1.72-1.32h-1v-2c0-.44-.56-1-1-1H6V7h1c.44 0 1-.56 1-1V5h2c.88 0 1.4-.72 1.4-1.6v-.33a6.45 6.45 0 0 1 3.83 4.51 6.45 6.45 0 0 1-1.51 5.73v.01Z"/></svg>            <span class="-link--channel-name">Explore Collectives</span>
+    </a>
+</li>
+
+                    </ol>
+            <div class="s-popover--arrow"></div>
+            <div>
+                <svg aria-hidden="true" class="fc-black-300 mb0 mx32 svg-spot spotRocketLg" width="96" height="96" viewBox="0 0 96 96"><path d="M78.2 14.36a1.73 1.73 0 0 1 1.27-1.85 37.5 37.5 0 0 1 7.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 0 1-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62ZM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21ZM70.1 37.93a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" opacity=".2"/><path d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" opacity=".2"/><path d="M75.5 27a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm-7 7a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-7 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-14 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm4-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM27.21 70.41l2.93 3.23a3.47 3.47 0 0 0 4.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 0 0 1.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 0 0-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 0 0-5.19 5.4 1.5 1.5 0 0 0-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0 0 17.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 0 0 .38 4.2l.4.43-2.06 2.06a3.47 3.47 0 0 0-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 0 0 2.12 2.12l.65-.65ZM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 0 1-5.8-2.27 7.13 7.13 0 0 1-2.6-4.88 39.23 39.23 0 0 1 9.59-1.8c.2 0 .35.15.34.34ZM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 0 0 3.54 6.13 12.33 12.33 0 0 0 6.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0 1 39.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 0 0-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 0 1-.06-.52 167.03 167.03 0 0 1 21.4-26.31Zm-18.3 34.48-2.35 2.35-2.43-2.69a.47.47 0 0 1 .01-.65l1.99-1.99 2.78 2.98Zm-.33 4.57 2.37-2.37 3.64 3.89L33 71.67a.47.47 0 0 1-.65-.05l-3.03-3.33ZM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 0 1-.14.24l-8.25 7.56a.47.47 0 0 1-.79-.34V67.15Zm-9.8-30.73A177.28 177.28 0 0 0 28.11 48H17.48a.47.47 0 0 1-.37-.76l5.17-6.8a.47.47 0 0 1 .26-.16l14.67-3.86ZM14.06 81.44a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9-6.88a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Zm-7-4.12a1.5 1.5 0 0 1 0 2.12l-7 7a1.5 1.5 0 0 1-2.12-2.12l7-7a1.5 1.5 0 0 1 2.12 0Zm9 12.12a1.5 1.5 0 0 0-2.12-2.12l-5 5a1.5 1.5 0 0 0 2.12 2.12l5-5Z"/></svg>
+                    <h3 class="p-ff-roboto-slab-bold fs-title px4">179% return on investment</strong> <span class="fc-white d:fc-black">The world’s largest telecom firm</span> <span class="p-ff-roboto-slab-bold fs-title px4">saved $10M</span> <span class="fc-white d:fc-black">to work on projects after using Teams.</span>
+                </div>
+
+                
+                        <span class="fc-white d:fc-black">to work on projects after using Teams.</span>
+                </div>
+            <nav class="site-footer--nav">
+                    <div>
+                <svg aria-hidden="true" class="svg-icon iconGlobe" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1 2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1Zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3Z"/></svg></div>
+            <div>Flexible hosting options &#x2014; cloud or on-premises</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconTool" width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"/></svg></div>
+            <div>All the features of Basic plus&#x2026;</div>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconIndustry" width="18" height="18" viewBox="0 0 18 18"><path d="m2 4 7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4Zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 0 1 .25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 0 0 7 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59Z"/></svg></div>
+            <div>All the features of Basic plus&#x2026;</div>
+        </div>
+    </div>
+</section>
+
+<section class="d-flex flex__allitems3 jc-center px12 md:fd-column pt32 pb64 sm:pb128 wmx9 mx-auto">
+            <div class="flex--item ps-relative sm:d-none d-flex">
+            <div class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="/questions" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                            data-ga="[&quot;top navigation&quot;,&quot;products menu click&quot;,null,null,null]">
+                    <span class="fs-body1 d-block">Stack Overflow for Teams</span>
+                        <span class="mt16 s-btn fs-body2 px32 bar-md s-btn__outlined fc-blue-400 h:bg-black-700 p-ff-source-bold">Calculate your ROI</span>
+                </a>
+                    </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="bb bc-black-100 pb24 mb24">
+                    <div class="flex--item truncate">
+                    Users
+                </div>
+            <div class="flex--item p16 sm:p12">
+                <div class="flex--item p16 sm:p12 sm:mb12">
+                <div class="ps-relative overflow-hidden">
+            Every <span class="js-user-slider p-home-tagline va-bottom ps-relative ws-nowrap d-inline-flex fd-column ai-center fc-orange-500 lg:d-block mx-auto ta-center" data-words="developer, data scientist, system admin, mobile developer, game developer">developer</span>

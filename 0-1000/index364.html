@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/salesforce/Img/apple-touch-icon.png?v=4c87c90207b3" alt="Salesforce icon">
+        </a>
+
+                </div>
+            <div class="flex--item tt-uppercase fs-fine fc-light">Teams</div>
+                <div class="js-build-in-item home-sponsors-comp">
+                    <div class="mt-auto">
+            <a
+            href="https://stackoverflow.com">current community</a>
+            </h3>
+            <a href="https://stackoverflow.co/explore-teams"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-700 h:bg-black-600 fc-white"
+            data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-three-bars">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+
+    
+
+    <div class="sub-nav-mktg-links flex-auto f4-mktg d-lg-flex flex-lg-justify-around">
+        <a href="#home-code" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to GitHub Stars program&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:npm;ref_loc:code launchpad&quot;}" href="https://cli.github.com/">GitHub CLI</a>.
+                  </h3>
+              </div>
+
+                    <div class="rounded-2 box-shadow-default-border-mktg z-n1">
+            <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/codeql-step-3.png" alt="Step 3" class="width-full" loading="lazy">
+              </div>
+                  </div>
+                </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">🏡 Open source home automation that puts local control and privacy first</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 d-none d-lg-block">
+            <div class="d-flex ai-center">
+                <div class="flex--item wmn2">
+                <div class="fc-black-350 fs-body2">Let’s talk about what you need</div>
+                </div>
+            <div class="flex--item tt-uppercase tt-uppercase fs-fine fc-light">Teams</div>
+                <div class="site-footer--col">
+                        <h5 class="-title"><a class="js-gps-track" data-gps-track="site_switcher.click({ item_type:4 })">
+        <div class="favicon favicon-stackoverflow site-icon flex--item" title="Stack Overflow"></div>
+        <span class="flex--item fl1">
+            Stack Overflow
+        </span>
+    </a>
+
+    </div>
+    <div class="related-links">
+            <a href="https://stackexchange.com/sites" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;teams tour&quot;,null,null]">Take a tour of Teams</a>
+
+            <div class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="https://stackoverflow.blog" class="float-right">company blog</a>
+        </div>
+        <div id="p-pricing-grid-free" class="flex--item d-flex fd-column wmn3">
+            <div class="bg-white bar-lg ba bc-black-075 h100 p24 fs-body2 d-flex fd-column">
+                <h2 class="px8 py4 as-start bar-sm bg-black-150 fc-black-750 fs-body3">
+                    Business
+                </h2>
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com">current community</a>
+            </h3>
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                            <div class="home-matrix-tab position-absolute top-0 overflow-hidden width-full"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="offset-1 col-11 col-sm-10 col-lg-12">
+                <div class="d-flex gs8 ai-stretch fd-column sm:fd-row">
+                        <button class="flex--item s-btn s-btn__primary js-accept-cookies js-consent-banner-hide">
+                            <div class="fs-subheading fc-white d-block ta-center mb8 mr96">
+                        <svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconSlack" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm0-4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="#007DC1"/></svg>        </a>
+
+</div>
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ta-center pb64 pt96 sm:pt32">
+    <p class="fc-black-500 fs-subheading pb0 sm:pl24 sm:pr24">Thousands of organizations around the globe use Stack Overflow for Teams</p>
+    
+<div class="js-carousel-logos t-opacity t-slow o100 mx-auto d-flex ai-center jc-center sm:jc-start bar-pill px64 md:pl0 md:pr0 hs1 overflow-x-auto w100">
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt8" width="187" height="36" data-src="https://cdn.sstatic.net/Img/product/teams/logos/barkbox-alt.svg?v=419890745024" alt="BarkBox">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block" width="140" height="35" src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04" alt="" />
+            <noscript>
+                        <img width="421" height="465" class="js-lazy-load wmx100 h-auto d-block" data-src="https://cdn.sstatic.net/Img/home/illo-integrations-left.png?v=0a97d470e180" alt="" />
+                    <noscript>
+                <img width="1270" height="892" class="js-lazy-load wmx100 w100 h-auto d-block btr-sm bt bc-orange-500 bs-lg" data-src="https://cdn.sstatic.net/Img/product/teams/logos/microsoft-alt.svg?v=e57319450314" alt="Microsoft">
+    </div>
+    <div class="flex--item wmn3 sm:mb32 p24 sm:p8">
+        <svg aria-hidden="true" class="svg-icon iconBriefcaseSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"/>

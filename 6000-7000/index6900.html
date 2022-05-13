@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=f039f0b977b7">
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/settings.mod">{"settings":{"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{"showNewFeatureNotice":true},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"questions":{"enableQuestionTitleLengthLiveWarning":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","hostBaseUrl":"https://stacksnippets.net"},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"c3d9f1e3-55f3-4eba-b268-46cee4c6789c"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}</script>
+<script>StackExchange.init();</script>
+
+    <script>
+        StackExchange.ready(function () { StackExchange.topbar.init(); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10); 
+    </script>
+
+
+
+
+
+    <div class="container wmx100 w100 p-ff-source">
+            
+
+<div id="left-sidebar" data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative">
+    <div class="left-sidebar--sticky-container js-sticky-leftnav">
+        <nav role="navigation">
+            <ol class="nav-links">
+                            <li>
+                    <ol class="nav-links">
+                    
+
+<li class="ps-relative" >
+
+    <a id="nav-companies"
+       href="https://stackoverflow.com/teams/create/free"
+            class="s-btn mt24 d-block as-stretch fs-body2 px32 bar-md p-ff-source-bold bg-black-700 h:bg-black-600 fc-white"
+            data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCount++;
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+    </clipboard-copy>
+  </div>
+</template>
+
+
+
+
+  </body>
+</html>
+
+
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>fun websites - Google Search</title><script nonce="RVZ-swdUztm8fTutpggqlg">(function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAmVBMVEX///8AAACqKS6mFx6pIylqaWmPjo6VlJRvbW1ZV1enGyKoHyXnzM25Wl2sq6veurvIhIbh4eHXqaqkAAyrLjM5ODi0UVS8YmX79fXkxsf4+PjDw8OjAADRnZ6zs7N/fn7Q0NCIhoatNTpgX1/u7u4xLi5OTU2dnJxGRUUcGhrbsrMPCgry5OQkISHr1tbNkpSxRUi/bG/Cd3lmZHImAAABuklEQVQ4jeXU23KjIBgA4J9DY6ImkUA9gBqT2s3JGuz7P9yCmmzY2p292L3o9J9BkPlAjgLUDICtVAkgSxNwi5LZp6lTY0VlC6/AJNS1p9gdbudDVrGh4DELn1nflafurlY/+nxXlV5fmKvKwlr9Bsty27/MDsex5amHIGsXerJe9D2ymXoY9Kw8SJP9GqI0zVdjlQdfNaK9OA8lNtvZ8OpPYEAGWCF0uphASE5D6g9wi7bwhDw4IrtpFqdh1jhwXURRA3M06+ECrUC9IYAzJyRPDMmKoh1g7PPQgQjtIOVCBIJcIeG+nxc9XGLiQIZeAUIi9CbAccuF3gv+CXy2EMcmLUMSnBPM07+Bm+8Ds5zrG4x5Pg0v5oKlWdhmAyyath0XnLfOFt7iBodDEayXtIMJGK6v9BEKH9PCherpBaDjhAoHUiFy59MSmdmYw4CDEaZNYyCNtCCZO+u3fnzxORhnnd9nnU2uY/ZxHf8R7P4Es3ELW44TLbichidpr4LQGMew9yklnb3XZsFdCOiCICUUExrEkF67bgNw1TrrtA7hxdy8hcFHdIBqdwBokuX6/T36+CuQD+l/xE9DhzXQPdSyJwAAAABJRU5ErkJggg\x3d\x3d';var i=['dimg_23'];_setImagesSrc(i,s);})();</script><script nonce="RVZ-swdUztm8fTutpggqlg">(function(){var e='AUZ8Yt2BK4W1qtsPuoKlqAQ';(function(){
+var a=e;2===(window.performance&&window.performance.navigation&&window.performance.navigation.type)&&window.ping("/gen_204?ct=backbutton&ei="+a);}).call(this);})();(function(){(function(){var id='tsuid3';var lve=true;(function(){
+
+
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_9','\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcTjys5GvEFPPBtoNGPQR_URB-kNbAfNSuhRKO_O\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:24px;max-height:24px" id="dimg_13" data-deferred="1"></span></button><div class="BNeawe ji5jpf tAd8D AP7Wnd">More results</div></a></div></div></div></div></div><div class="qxDOhb" id="accdef_13"></div></div></div></div><div class="x54gtf"></div><div><div class="xpc"><div class="duf-h"><div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid8" role="button" tabindex="0" data-ved="2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQzO0BegQICxAJ"><button class="DXk5Me Qi9Fd" tabindex="-1"><span class="hWHuJ"><img class="Dk7jOe" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width:40px;height:40px" id="dimg_3" data-deferred="1"></div></div></div><div class="x54gtf"></div><div><div class="xpc"><div class="duf-h"><div class="fLtXsc iIWm4b" aria-expanded="false" id="tsuid3" role="button" tabindex="0" data-ved="2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQ1QJ6BAgLEDA"><accordion-entry-search-icon><span class="ieB2Dd"><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw\x3d\x3d\x22 style\x3d\x22max-width:112px;max-height:112px\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe uEec3 AP7Wnd\x22\x3e\x3cspan class\x3d\x22UMOHqf EDgFbc\x22\x3e50 Cool and Interesting Websites to Kill Time (2022) | Beebom\x3c/span\x3e\n\x3cspan class\x3d\x22BNeawe\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.makeuseof.com/tag/best-fun-websites-beat-boredom/\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQFnoECAUQAg&amp;usg=AOvVaw2bOs4wXJwX3c4Yw-Oeed1J"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Fun Websites - Cool, Random Sites To Waste Time When Bored</div></h3><div class="BNeawe UPmit AP7Wnd">www.emizentech.com &#8250; ... &#8250; Insights for Businesses &amp; Entrepreneurs</div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="xUrNXd UMOHqf">Apr 1, 2022</span><span class="xUrNXd UMOHqf"> � </span>Here are 53 Cool websites that will surely kill your boring time. These 53 cool Websites are really exciting to play with.</div></div></div></div></div></div></a><a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=A+Soft+Murmur&amp;stick=H4sIAAAAAAAAAOOQUeLVT9c3NEyqSDOOzyjKM5IozcssLE1VKM4sSS1WyM9TyMwrSS3KSy2J4kkrzVMoT00Cy5xiRNV3ipFLP1ffIC-pJCc5CyaZZpyVkmeWk3yKkRMkaZSWnmH8i1EiFIcNDSyMi1h5whMzSxScSksUwjMqb7FJMph-bGX65SvxjfHGhYZdFzRKWsOUc7iyc_UB00WxEbsAAAA\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQuk56BAgEEBo"><div class="Lt3Tzc">What is the most fun website?</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Fun+Google+Sites&amp;sa=X&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQs9oBegQICxAZ\x22\x3e\x3cdiv\x3e\x3cdiv style\x3d\x22width:112px\x22\x3e\x3cdiv class\x3d\x22l7d08\x22 style\x3d\x22width:112px;height:112px\x22\x3e\x3cimg class\x3d\x22h1hFNe\x22 alt\x3d\x22\x22 data-ll\x3d\x22//encrypted-tbn0.gstatic.com/images?q\x3dtbn:ANd9GcTjys5GvEFPPBtoNGPQR_URB-kNbAfNSuhRKO_O\x26amp;s\x3d0\x22 src\x3d\x22data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw\x3d\x3d\x22 style\x3d\x22max-width:24px;max-height:24px\x22 id\x3d\x22dimg_25\x22\x3e\x3c/span\x3e\x3c/button\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eHowStuff...\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eNSA Haiku Generator. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22RWuggc kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eApartment Therapy\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/a\x3e\x3ca class\x3d\x22BVG0Nb\x22 href\x3d\x22/search?ie\x3dUTF-8\x26amp;q\x3d11+websites+to+cure+your+boredom\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQ1QJ6BAgLEDA"><accordion-entry-search-icon><span class="ieB2Dd"><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw\x3d\x3d\x22 style\x3d\x22max-width:112px;max-height:112px" id="dimg_7" data-deferred="1"></div><div class="RWuggc kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><span class="xUrNXd UMOHqf">Mar 26, 2020</span><span class="xUrNXd UMOHqf"> � </span>Explore the list of 90 fun, cool and random websites that could help cure your boredom. Find out which one of these is the most funny.</div></div></div></div></div></div></div><div><div class="ZINbbc xpd O9g5cc uUPGi"><div class="FybcKc"><div><div><div class="Xdlr0d"><div class="idg8be"><a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=GeoGuessr&amp;stick=H4sIAAAAAAAAAOOQUeLSz9U3KDdMtkwxNhIuycxNVShPLC5JLSpWyM_LycxLjeJJK81TKE9NKs4sSS0-xQjRklSRZhyfUZQH48OMOMXIpZ-rb1BumGyZYgyTTKuwLCkvKij8xSgcgmlBAwvjIlYxt8y8FIWQjFQFz7yyzOLMpJxUBef88ltskgymH1uZWKsvuP_4qKPU27LIiXW6rF1O9kZhAH58OY6_AAAA&amp;sa=X&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQs9oBegQICxAc\x22\x3e\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22q4vBJc\x22\x3e\x3c/div\x3e\x3cspan\x3e\x3ch2 class\x3d\x22zBAuLc l97dzf\x22\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eWiKi How. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22Q0HXG\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eJustwatch. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eSporcle\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22X7NTVe\x22\x3e\x3cdiv class\x3d\x22tHmfQe\x22\x3e\x3cdiv class\x3d\x22am3QBf\x22\x3e\x3cdiv\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe deIvCb AP7Wnd\x22\x3eA Good Movie to Watch. ... \x3c/div\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/a\x3e\x3ca class\x3d\x22BVG0Nb\x22 href\x3d\x22/search?ie\x3dUTF-8\x26amp;q\x3dUnique+sites+on+internet\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQs9oBegQICxAG"><div><div style="width:112px"><div class="l7d08" style="width:112px;height:112px"><img class="h1hFNe" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width:40px;height:40px" id="dimg_15" data-deferred="1"></div></div></div><div class="Lt3Tzc">Time wasters online</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="qxDOhb" id="accdef_3"></div></div></div><div class="Lt3Tzc">Time wasters online</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Time+wasters+online&amp;stick=H4sIAAAAAAAAAOOQMRIuycxNVShPLC5JLSpWyM_LycxLjeJJK81TKE9NKs4sSS0-xcirn65vaJhUkWYcn1GUB-OnW5YVZMQXAuWRzINJplVYlpQXFRT-YhQOwbSggYVxESune2q-e2lqcXHRLTZJBtOPrUys1Rfcf3zUUeptWeTEOl3WLid7ozAA7MZUSK8AAAA&amp;sa=X&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQuk56BAgEEBI"><div class="Lt3Tzc">What are the interesting websites?</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="qxDOhb" id="accdef_5"></div></div></div><div class="Lt3Tzc">Unique sites on internet</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="qxDOhb" id="accdef_5"></div></div></div><div class="Lt3Tzc">Unique sites on internet</div><div class="Lym8W xCgLUe"><div class="AeQQub hwc"></div><div class="YCU7eb hwc"></div><div class="IyYaEd hwx"></div><div class="ECUHQe hwx"></div></div></div></div><div class="qxDOhb" id="accdef_9"></div></div></div></div><div class="qxDOhb" id="accdef_13"></div></div></div></div><div class="qxDOhb" id="accdef_3"></div></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Wait+But+Why&amp;stick=H4sIAAAAAAAAAOOQUeLVT9c3NEy3LCvIiC8sNhIuycxNVShPLC5JLSpWyM_LycxLjeJJK81TKE9NKs4sSS0-xcirn65vaJhUkWYcn1GUB-OnW5YVZMQXAuW59HP1DcoNky1TjGGSaRWWJeVFBYW_GIVDMC1oYGFcxIpN4habJIPpx1Ym1uoL7j8-6ij1tixyYp0ua5eTvVEYAJujEWStAAAA&amp;sa=X&amp;ved=2ahUKEwidht6ZzNj3AhWFmmoFHTpBCUUQ4qYDegQICxAK">Time wasters online</a></span>

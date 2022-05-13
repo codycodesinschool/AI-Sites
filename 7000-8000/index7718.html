@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/ai/Img/apple-touch-icon.png?v=f14d741b295c" alt="Artificial Intelligence icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/advertising" class="flex--item wmn3 bg-white bar-lg bs-sm h:bs-md py32 px24 fc-black-500 h:fc-black-750" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;create a team&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32";
+  var useCaseCur = 0;
+  var useCasePlayer;
+  var useCaseSpeed = 5000;
+
+  for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) {
+  var a, x = event.srcElement;
+  if (x.id == "search2" ||x.id == "learntocode_searchbtn" || x.id == "learntocode_searchicon" || x.classList.contains("search_item")) {
+  } else {
+    a = document.getElementById("listofsearchresults");
+  a.innerHTML = "";
+  a.style.display = "none";
+  document.getElementById("search2").style.borderBottomLeftRadius = "25px";
+  val = inp.value.toUpperCase();
+  if (val == "") return false;
+  for (i = 0; i < pagesArr.length; i++) {
+    if (resultIndexes.indexOf(i) == -1 && (pagesArr[i][0].toUpperCase().indexOf(val) > -1)) {
+      resultIndexes.push(i);
+      if (resultIndexes.length > 5) break;
+    }
+  }
+  //if (resultIndexes.length == 0) return false;
+  document.getElementById("search2").style.borderBottomLeftRadius = "25px";
+    if (searchFromBox == true) {
+      document.getElementById("nav_" + x).style.display == "block") {
+    w3_close_nav(x);
+  } else {
+    w3_close_nav("tutorials");
+    w3_close_nav("references");
+  w3_close_nav("exercises");
+  w3_close();
+}
+function w3_close_nav(x) {
+  document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("navbtn_menu")) {
+      document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+    elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "fixed";
+      elem.style.top = "60px";
+      stickyadstatus = "sticky";
+        document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
+      document.getElementById("googleSearch").style.visibility = "";  
+    }
+    searchFromBox = false;
+  }
+});
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>

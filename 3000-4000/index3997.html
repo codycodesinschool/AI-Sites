@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--col">
+                        <h5 class="-title"><a href="https://stackoverflow.co/">About</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 8 })" href="https://stackoverflow.co/advertising" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                            data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                    <span class="js-billed-annually">$12 USD</span>
+                        </a>
+                    </li>
+                    <li class="related-site d-flex">
+                            Get started
+            </a>
+        </div>
+
+
+                        <div class="rounded-2 float-right home-discussions-answer overflow-hidden">
+                      <picture>
+            <source srcset="https://github.githubassets.com/images/modules/site/home/icons/folder.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="980" height="434">
+                      </picture>
+                    </div>
+
+              <h2 class="h2-mktg color-fg-default mb-3">Blazing fast cloud developer environments with <span class="text-gradient-purple-coral no-wrap">GitHub Actions</span></h2>
+        <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="/features/actions" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;click to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Marketplace;&quot;}" href="/marketplace">Marketplace</a>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center">
+      <a class="mr-4 color-fg-inherit" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+            Sign in
+          </a>
+        </div>
+
+          <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home"
+              class="d-inline-block d-lg-none f5 no-underline border color-border-default rounded-2 px-2 py-1 mr-3 mr-sm-5 color-fg-inherit"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="520d87e8f83281e6946b192f0f840552721c7fcba9b9c36d802e898a816314e2"
+            >
+              Sign&nbsp;up
+            </a>
+
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+</svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+    <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box color-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+    <template id="snippet-clipboard-copy-button">
+  <div class="zeroclipboard-container position-absolute right-0 top-0">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-lg-0 pl-lg-4">
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Support
+        </h2>
+
+        <ul class="list-style-none d-flex flex-items-center flex-justify-center flex-md-justify-start">
+            <a class="btn-mktg mb-3 mb-sm-0 mr-sm-2 btn-muted-mktg" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;}" href="/git-guides">What is Git?</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden>
+    <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+        <div class="terminal-mktg text-mono f6-mktg bg-gray-dark-mktg box-shadow-active-mktg rounded-2 js-type-in" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+  <div class="container-xl p-responsive">
+    <div class="d-flex flex-column gutter gutter-spacious flex-md-items-center my-3 my-sm-7 my-md-8 position-relative flex-md-row pb-4 pb-md-7" data-build-in-stagger="100">
+  <div class="col-12 py-3 js-build-in-item col-sm-10 col-md-6 col-lg-5 build-in-slideX-right">
+    <div class="pr-md-4">
+      
+      
+                <div class="f2-mktg text-gray-mktg text-semibold mb-5 col-5-max">That open source code you wrote for yourself might just help someone else. <span class="text-gray-dark-mktg">Dependabot keeps your projects up to date</span> with automated pull requests that update all your dependencies. Just review and merge to keep your software secure.</h3>
+          <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="https://docs.github.com/github/managing-security-vulnerabilities/configuring-dependabot-security-updates" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to atom&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:tensorflow/tensorflow;ref_loc:footer launchpad;&quot;}"
+                      >
+                <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/footer-illustration.svg" media="(min-width: 700px)" type="image/webp">
+      <source srcset="https://github.githubassets.com/assets/8630-5ad00158d0e0.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-nZpgXrBvHm7YePk3m1UhdxY43Ra8lTPxsGk7ocBtGBimPanKdybEgnPXXulh7k7tNLnPzPXFEJ5wY7QGowGOdw==" src="https://github.githubassets.com/assets/7749-9d9a605eb06f.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-sD0ByN9hdKohKI5O4x8aDCgS3P1dI1FTFJJXvXhWnU7UzRXoZvJemMFx+6r64d+CZOFfNS8nOsc4UY78ktGLsw==" src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-publish.webp" type="image/webp">
+                          <img src="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=688 688w,https://github.githubassets.com/images/modules/site/home/pr-description.webp" type="image/webp">
+                  <img src="https://github.githubassets.com/images/modules/site/home/repo-browser.png" class="width-full height-auto" width="2496" height="1480" alt="The resulting GitHub repository page from pushing" decoding="async">
+                      </picture>
+            </div>
+            </li>
+
+            <li class="col-12 d-flex flex-items-center position-relative f6-mktg text-mono text-gray-light-mktg py-2" aria-hidden="true">
+                <div class="mr-3">
+                  <img class="float-left circle border unselectable" width="32" height="32" alt="@joshaber" src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@sophshep" loading="lazy">
+                  <img class="float-left circle border unselectable" width="32" height="32" alt="@joshaber" src="https://avatars.githubusercontent.com/ampinsk?s=64&amp;v=4" loading="lazy">
+                </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+                  <div class="d-flex flex-items-center flex-column flex-lg-row gutter gutter-spacious">
+        <div class="d-none d-lg-block col-4 flex-auto">
+                  <div class="js-build-in-item home-secret-comp">
+                      <picture>
+                <source srcset="https://github.githubassets.com/images/modules/site/home/logos/platform-apple.svg" alt="Apple App Store" loading="lazy">
+                      </picture>
+                    </div>
+                </div>
+
+              <h2 class="h2-mktg mb-3"><span class="text-gradient-pink-blue">Ready player two.</span> Scale your team to any size in the cloud.</h2>
+
+              <a class="link-mktg text-semibold color-fg-default py-1 f4-mktg link-emphasis-mktg" href="/sponsors" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Compare plans&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:npm;ref_loc:code launchpad&quot;}" href="https://github.com/about">About</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Marketplace&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Marketplace;&quot;}" href="/marketplace">Marketplace</a>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to learn more about GitHub Actions&quot;,&quot;label&quot;:&quot;text:api&quot;}" href="https://docs.github.com">Developer API</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Contact Sales&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;text:enterprise&quot;}" href="/enterprise">Enterprise</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:hashicorp/terraform;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-items-center" style="margin-left: -2.3125rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><path d="m0 0h28v29h-28z" fill="#041027"></path><g fill="#ffd33d"><path d="m15 19.5a1 1 0 1 1 -2 0 1 1 0 0 1 2 0zm-.25-8.25a.75.75 0 0 0 -1.5 0v4.5a.75.75 0 0 0 1.5 0z"></path><path clip-rule="evenodd" d="m2 5.75c0-.966.784-1.75 1.75-1.75h20.5c.966 0 1.75.784 1.75 1.75v14.5a1.75 1.75 0 0 1 -1.75 1.75h-20.5a1.75 1.75 0 0 1 -1.75-1.75zm1.75-.25a.25.25 0 0 0 -.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25v-14.5a.25.25 0 0 0 -.25-.25z" fill-rule="evenodd"></path></g></svg>
+
+
+              git checkout -b origin add-status-screens
+            </div>
+
+                <div class="col-12 col-lg-5">
+                    <div  class="js-build-in-item home-codeql-comp position-relative pt-8 pt-md-9">
+                      <div class="js-build-in-item build-in-slideX-left f2-mktg text-gray-light-mktg  text-semibold mb-5 mb-lg-0 col-5-max"><span class="text-gray-dark-mktg">Run actions in any language or operating system, on Linux, macOS, Windows, ARM, and containers. Or all at once with matrix builds.</span></h3>
+          <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;click to go to GitHub Stars program&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:npm;ref_loc:code launchpad&quot;}" href="https://desktop.github.com/">GitHub Desktop</a> or stay in the command line with <a class="color-fg-accent" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to get GitHub Mobile on Google Play Store&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Learn how to get started with Discussions;ref_loc:community launchpad&quot;}">
+  Learn more about advanced security;ref_loc:secure launchpad&quot;}">
+  Learn more about Sponsors <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1" style="right: -0.26rem"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <h3 class="f2-mktg text-gray-mktg text-semibold mb-5 mb-lg-0 col-5-max"> <span class="text-gray-dark-mktg">GitHub Discussions is dedicated space for your community to come together, ask and answer questions, and have open-ended conversations.</span>
+                  </h3>
+                  <h4 class="f4-mktg text-semibold text-gray-mktg mb-3">Available for iOS and Android</h4>
+                  <ul class="list-style-none d-flex flex-wrap color-fg-muted">
+        <li class="mr-3">
+          <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Compare plans;&quot;}" href="/pricing#compare-features">
+      Compare plans
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;click to learn more about Sponsors&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Automate</a>
+        <a href="#home-secure" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;npm&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Develop</a>
+        <a href="#home-automate" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to Community forum&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Explore GitHub;&quot;}" href="/explore">
+      Explore GitHub
+</a>  </li>
+
+              <li class="js-build-in-trigger col-11 col-sm-10 col-lg-12">
+                <div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center gutter gutter-spacious pb-9 pb-md-10 mt-6 mt-lg-n6">
+                <div class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious" style="padding: 8% 0 10.5%">
+                  <div class="col-12 col-lg-5 mb-4">
+        <div class="mb-5 mb-md-6 mt-n3">
+                <div class="d-flex flex-items-center py-1 home-git-log-terminal unselectable" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20" viewBox="0 0 28 20" width="28" aria-hidden="true" class="d-block d-sm-none home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                  <h3 class="f2-mktg text-gray-light-mktg text-semibold"><span class="color-fg-default">Found a vulnerability?</span> Our security advisory remediation tools help developers identify and disclose them responsibly so maintainers can patch them in dedicated, private workspaces.</h3>
+              </div>
+                  </div>

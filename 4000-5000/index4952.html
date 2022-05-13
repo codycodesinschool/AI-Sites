@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="manifest" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#1e2327">
+
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
+    
+
+    <div class="position-relative z-1 mx-auto box-shadow-default-mktg wide-block py-0 position-relative home-git-log-dark-icons js-section" id="home-develop" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+  <div class="container-xl p-responsive pb-8 pb-md-9">
+    <div class="home-git-log-center pt-10 pt-md-11 pb-8 pb-md-9">
+
+      <div class="col-8-max mx-0 mx-lg-auto text-left text-lg-center mb-4 mb-md-7 color-bg-default pb-3">
+        <h2 class="h2-mktg mb-3"><span class="text-gradient-pink-blue">Ready player two.</span> Scale your team to any size in the cloud.</h2>
+
+              <a class="link-mktg text-semibold color-fg-default py-1 f4-mktg link-emphasis-mktg" href="https://docs.github.com/discussions" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to features&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Codespaces;&quot;}" href="/features/codespaces">
+      Codespaces
+</a>  </li>
+
+            
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--primary text-bold border-top pt-4 pb-2 mt-3" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click nav item to scroll to Develop&quot;,&quot;label&quot;:&quot;text:Inclusion&quot;}" href="/about/diversity">Inclusion</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Education&quot;,&quot;label&quot;:&quot;text:shop&quot;}" href="https://shop.github.com">Shop</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="codeeditorbr-column codeeditorbr-middle">
+          <input type="text" disabled class="codeeditorbr-input" value="www.w3schools.com/tryit/">
+        </div>
+      </div>
+        <div class="w3-bar" style="background-color:#f1f1f1">
+    <button class="w3-bar-item w3-button codeeditorbr-tablink ws-grey" style="color:black" onclick="openLangTab(event,'Backend')">Backend</button>
+  </div>
+   <div id="Frontend" class="proglang">
+      <img src="codeeditor.gif" style="width:100%;height:auto;display:block;border-bottom-left-radius:4px;border-bottom-right-radius:4px;" loading="lazy" alt="Frontend Code Editor">
+      </div>
+      
+         <div id="Backend" class="proglang" style="display:none">
+      <img src="/tryit/best2.gif" style="width:100%;height:auto;display:block;border-bottom-left-radius:4px;border-bottom-right-radius:4px;" loading="lazy" alt="Backend Code Editor">
+      </div>
+
+    </div><br>
+    <!--
+    <a href="/tryit/tryit.asp?filename=tryhtml_default" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div class="w3-row w3-padding-32 ws-black">
+<div class="w3-content" style="max-width:1400px">
+    <h1 class="learntocodeh1">Learn to Code</h1>
+    <h3 class="learntocodeh3">With the world's largest web developer site.</h3>
+    <br>
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+      <input type="text" placeholder="Search our tutorials, e.g. HTML" id="search2" autocomplete="off" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this);ga('send', 'event', 'search', 'inputFocus')">
+      <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i id="learntocode_searchicon" class="fa fa-search"></i></button>
+      <div id="listofsearchresults">
+      </div>
+    </form>  
+    <h4 style="color:white;font-size:23px;font-weight:700;margin-top:30px!important;">
+      <a href="where_to_start.asp">Not Sure Where To Begin?</a>
+    </h4>
+  </div>
+</div>
+
+<svg style="background-color:#D9EEE1;" width="100%" height="70" viewbox="0 0 100 100" preserveAspectRatio="none">
+  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" />
+</svg>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.getElementById("radio_darkpage");
+  if (b.checked) {
+    document.body.className += " darktheme";
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+    document.getElementById("wavepath").style.fill = "#282A35";    
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkcode");    
+  }
+  if (y == "dark") {
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+  } else {
+    document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkcode");
+  var b = document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+    document.getElementById("wavepath").style.fill = "#282A35";    
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+    document.getElementById("wavepath").style.fill = "#282A35";    
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
+    
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="html5_canvas.asp">HTML Canvas</a>
+<a target="_top" href="js_graphics_canvas.asp">JS Canvas</a>
+<a target="_top" href="/tags/ref_httpmethods.asp">HTTP Methods</a>
+<a target="_top" href="js_api_web_storage.asp">Web Storage API</a>
+<a target="_top" href="js_ajax_http.asp">AJAX XMLHttp</a>
+<a target="_top" href="js_arrow_function.asp">JS Arrow Function</a>
+<a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
+<a target="_top" href="/tags/ref_canvas.asp">HTML Canvas</a>
+<a target="_top" href="html_comments.asp">HTML Comments</a>
+<a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
+<a target="_top" href="/tags/ref_pxtoemconversion.asp">PX to EM Converter</a>
+<a target="_top" href="/cssref/css_colors.asp">CSS Colors</a>
+<a target="_top" href="/tags/ref_keyboardshortcuts.asp">Keyboard Shortcuts</a>
+</div>
+
+</div>
+<br>
+
+<style>  
+
+#w3_cert_badge {
+  position: absolute;
+  right: 5%;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: -20%;
+}
+
+#w3_cert_arrow {
+  position: absolute;
+  right: 5%;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: 0;
+  z-index: 1;
+}
+
+#getdiploma {
+  position: relative;
+  padding: 0 60px 50px 60px;
+  margin-bottom: 125px;
+  border-radius: 16px;
+  background-color: #282A35;
+  color: #FFC0C7;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma h2 {
+  font-size: 62px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+#getdiploma p {
+  font-size: 52px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;">Web Courses</h5>
+<a href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href='/xml/dom_http.asp'>XML Http Reference</a>
+   <a class="w3-bar-item w3-button" href='/xml/xquery_intro.asp'>Learn XQuery</a>
+  </div>
+ </div>
+ </div>
+ <br class="hidesm">
+ </div>
+</nav>
+
+
+  </div>
+</div>
+
+<div id='myAccordion' class="w3-card-2 w3-center w3-hide-large w3-hide-medium ws-grey" style="width:100%;position:absolute;display:none;">
+  <a href="javascript:void(0)" onclick="w3_open()" title="Menu"><i class='fa'>&#xf0c9;</i></a>
+    -->
+    <a class="w3-bar-item w3-button" href='/colors/default.asp'>HTML Color Reference</a>

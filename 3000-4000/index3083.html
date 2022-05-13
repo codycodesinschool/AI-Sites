@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/networkengineering/Img/apple-touch-icon.png?v=5e581fc45e58" alt="Software Engineering icon">
+        </a>
+                
+                <p class="fc-black-300 mb0 ta-center pt12">Up to 250 teammates</p>
+            </div>
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits sm:d-none fc-green-400 b128 r0 w128 h128"></span>
+    <span aria-hidden="true" class="p-bits fc-blue-200 b0 l128 w24 h24"></span>
+    <span aria-hidden="true" class="p-bits fc-gold sm:d-none t128 l128 w64 h64"></span>
+    <span aria-hidden="true" class="p-bits fc-blue-300 tn12 r128 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="p-bits fc-gold sm:d-none t128 l128 w64 h64"></span>
+    <span aria-hidden="true" class="p-bits fc-blue-300 tn12 r128 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="p-bits sm:d-none fc-green-400 b128 r0 w128 h128"></span>
+    <span aria-hidden="true" class="p-bits fc-yellow-400 b32 r128 w24 h24"></span>
+</header>
+
+<section class="wmx12 mx-auto ps-relative z-active mtn128 sm:mt0 p32 sm:pl12 sm:pr12 sm:pt48">
+    <div class="d-flex flex__allitems6 gs32 m32 ff-row-wrap jc-center wmx8 mx-auto">
+        <a href="https://stackoverflow.co/teams" class="s-btn ml8 sm:ml0 sm:mt8 fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold mt-auto" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;create a team&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32";
+  var useCaseCur = 0;
+  var useCasePlayer;
+  var useCaseSpeed = 5000;
+
+  for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) { 
+        useCaseShow(event.currentTarget, i);
+        clearInterval(useCasePlayer);
+    });
+  }   
+
+  function useCaseReset() {
+    for (var i = 0; i < useCases.length; ++i) {
+      useCases[i].className = useCaseClass;
+    }
+  }
+
+  function useCaseShow(el) {
+    useCaseReset();
+    el.className = useCaseClassActive;
+  }
+
+  function useCaseInit() {
+      useCasePlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits fc-blue-300 tn12 r128 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-lg-justify-end color-bg-default">
+        <div class="col-8 col-sm-7 col-md-6 col-lg-5 position-relative z-2 right-lg-n12 events-none">
+          <picture>
+                  <source srcset="https://github.githubassets.com/assets/7749-9d9a605eb06f.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-SpZgKJyhHfrmO9ZLmJztuQzJ+J7tYz7l2uK0FahNXJpiNvVqiy1b2P1HammIlT0b/yoq6M9ZC88oDEuIBe8X+g==" src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg" width="18" height="18"  class="d-block" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-gray-mktg mx-auto mx-md-0" style="max-width: 310px;"><span class="text-gray-mktg">Build like the best with GitHub Enterprise</span></h2>
+          <p class="f5-mktg text-semibold">home-assistant/<span class="color-fg-default">tensorflow</span></p>
+                </div>
+              </div>
+                  <div class="js-build-in-item home-readme-comp">
+                    <div class="fs-subheading fc-white d-block ta-center mb8 mr96">
+                        <svg aria-hidden="true" class="svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm0-4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="#007DC1"/></svg>        </a>
+
+</div>
+
+
+            </div>
+                    </div>
+            </form>
+
+        
+
+<ol class="s-topbar--content" role="presentation">
+
+
+    <li class="js-topbar-dialog-corral" role="presentation">
+            
+
+    <div class="topbar-dialog siteSwitcher-dialog dno" role="menu">
+        <div class="header fw-wrap">
+            <h3 class="flex--item">
+                <a href="https://stackexchange.com/sites#professional" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 9 })" href="https://stackoverflow.co/company/work-here">Work Here</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 7 })" href="https://stackoverflow.co/teams/integrations/microsoft-teams" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Microsoft Teams" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="native mr6 w24 h24 svg-icon iconSlack" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"/></svg></a></li>
+                    <li><a href="https://stackoverflow.co/teams" class="h48 d-block"><svg aria-hidden="true" class="svg-icon iconPlus" width="18" height="18" viewBox="0 0 18 18"><path d="M3 1h12c1.09 0 2 .91 2 2v12c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V3c0-1.1.9-2 2-2Zm1 8v5h2V9H4Zm4-5v10h2V4H8Zm4 3v7h2V7h-2Z"/></svg></div>
+            <div>Additional integrations &#x2014; ChatOps, Jira, GitHub &amp; Okta</div>
+        </div>
+        <div class="modal-content bg-powder-050 current-site-container">
+            <ul class="current-site ">
+                    <li class="px-1"><img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-success.svg" class="home-matrix-success-3" loading="lazy" alt="">
+                      <img src="https://github.githubassets.com/images/modules/site/home/community-discussions-1.png" class="opacity-4 width-full height-auto"
+                        alt="Technical question from the Gatsby community" style="min-width: 10px" loading="lazy" width="768" height="524">
+                      </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Character Sets</h3>
+   <a class="w3-bar-item w3-button" href='/sql/default.asp' title='SQL Tutorial'>SQL</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_ansi.asp'>HTML ANSI</a>
+   <a class="w3-bar-item w3-button" href='/bootstrap/bootstrap_ver.asp' title='Bootstrap Tutorial'>BOOTSTRAP</a>
+      <a class="w3-bar-item w3-button" href="/html/default.asp">Learn HTML</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/sql-certification-exam" target="_blank">Front End Certificate</a>
+   <a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp">W3.JS Reference</a>
+
+   <h3 class="w3-margin-top">XML</h3>
+   <a class="w3-bar-item w3-button" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+   <a class="w3-bar-item w3-button" href='/cpp/default.asp' title='C++ Tutorial'>C++</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/sql" target="_blank">SQL Course</a>
+   <a class="w3-bar-item w3-button" href='/sass/sass_functions_string.php'>Sass Reference</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML</h3>
+   <a class="w3-bar-item w3-button" href='/xml/dom_http.asp'>XML Http Reference</a>
+   <a class="w3-bar-item w3-button" href='/howto/default.asp' title='How To'>HOW TO</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_ansi.asp'>HTML Windows-1252</a>
+   <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
+   <a class="w3-bar-item w3-button" href='/mysql/mysql_ref_functions.asp'>MySQL Reference</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/data-analytics" target="_blank">Data Analytics Course</a>
+   <a class="w3-bar-item w3-button" href="/django/index.php">Learn Django</a>
+   <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank">Play a Code Game</a>
+   <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+   <a class="w3-bar-item w3-button" href="/appml/appml_reference.asp">AppML Reference</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">React Certificate</a>
+   <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href="/googlesheets/index.php">Learn Google Sheets</a>
+  
+   <h3 class="w3-margin-top">XML Tutorials</h3>
+   <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a>
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_quiz.php" target="_top">Kotlin Quiz</a>
+   <a class="w3-bar-item w3-button" href="/colors/default.asp">Learn Colors</a>
+   <a class="w3-bar-item w3-button" href='/tryit/default.asp'>Code Editor</a>
+   <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/scipy_quiz.php" target="_top">SciPy Quiz</a>
+   <a class="w3-bar-item w3-button" href="/r/r_exercises.asp">R Exercises</a>
+   <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+   <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+   <a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_quiz.asp" target="_top">Bootstrap 4 Quiz</a>
+   <a class="w3-bar-item w3-button" href='/cs/index.php' title='C# Tutorial'>C#</a>
+      <a class="w3-bar-item w3-button" href='/tags/ref_html_browsersupport.asp'>HTML Browser Support</a>   
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href='/charsets/default.asp'>HTML Character Sets</a>
+   <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/cybersecurity_quiz.php">Cyber Security Quiz</a>
+   <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/sql-certification-exam" target="_blank">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/cybersecurity_quiz.php">Cyber Security Quiz</a>
+   <a class="w3-bar-item w3-button" href='/nodejs/default.asp'>Learn Node.js</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_8859.asp'>HTML ISO-8859-1</a>
+   <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/xml" target="_blank" onclick="ga('send', 'event', 'spacesFromTopnavDefault', 'click');" title="Get Your Own Website With W3schools Spaces">Create a Website <span class="ribbon-topnav ws-yellow">NEW</span></a>

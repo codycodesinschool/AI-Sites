@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=f039f0b977b7">
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/softwareengineering/Img/apple-touch-icon.png?v=d66b1118cec8" alt="Network Engineering icon">
+        </a>
+                
+            </div>
+                    </div>
+                <a href="https://stackoverflow.co/teams/integrations/slack">Slack</a> & <a class="fc-blue-500 h:fc-blue-300" href="https://stackoverflow.co/teams" class="h48 d-block"><svg aria-hidden="true" class="svg-icon iconIndustry" width="18" height="18" viewBox="0 0 18 18"><path d="M6.5 16A1.5 1.5 0 0 1 5 14.5v-4a1.5 1.5 0 1 1 3 0v4c0 .83-.67 1.5-1.5 1.5Zm-4-4a1.5 1.5 0 0 1 0-3H4v1.5c0 .83-.67 1.5-1.5 1.5Z" fill="#E01E5A"/><path d="M2.5 5h4a1.5 1.5 0 1 1 0 3h-4a1.5 1.5 0 1 1 0-3Zm4-4C7.33 1 8 1.67 8 2.5V4H6.5a1.5 1.5 0 1 1 0-3Z" fill="#36C5F0"/><path d="M10.5 9h4a1.5 1.5 0 0 1 0 3h-4a1.5 1.5 0 0 1 0-3Zm0 7A1.5 1.5 0 0 1 9 14.5V13h1.5a1.5 1.5 0 0 1 0 3Z" fill="#ECB22E"/><path d="M10.5 1c.83 0 1.5.67 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4c0-.83.67-1.5 1.5-1.5Zm4 4a1.5 1.5 0 0 1 0 3H13V6.5c0-.83.67-1.5 1.5-1.5Z" fill="#2EB67D"/></svg>        </a>
+
+            <a href="/teams/tour" class="s-btn ws-nowrap fs-body2 px32 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold mb2 mx-auto" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;create a team&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-in");
+        } else {
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32">
+                    <svg aria-hidden="true" class="mb12 fc-green-500 svg-icon iconApprove" width="18" height="18" viewBox="0 0 18 18"><path d="M6.5 16A1.5 1.5 0 0 1 5 14.5v-4a1.5 1.5 0 1 1 3 0v4c0 .83-.67 1.5-1.5 1.5Zm-4-4a1.5 1.5 0 0 1 0-3H4v1.5c0 .83-.67 1.5-1.5 1.5Z" fill="#E01E5A"/><path d="M2.5 5h4a1.5 1.5 0 1 1 0 3h-4a1.5 1.5 0 1 1 0-3Zm4-4C7.33 1 8 1.67 8 2.5V4H6.5a1.5 1.5 0 1 1 0-3Z" fill="#36C5F0"/><path d="M10.5 9h4a1.5 1.5 0 0 1 0 3h-4a1.5 1.5 0 0 1 0-3Zm0 7A1.5 1.5 0 0 1 9 14.5V13h1.5a1.5 1.5 0 0 1 0 3Z" fill="#ECB22E"/><path d="M10.5 1c.83 0 1.5.67 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4c0-.83.67-1.5 1.5-1.5Zm4 4a1.5 1.5 0 0 1 0 3H13V6.5c0-.83.67-1.5 1.5-1.5Z" fill="#2EB67D"/></svg>        </a>
+
+            <a href="/teams/integrations/microsoft-teams">Microsoft Teams</a> in order to cut down on pings, limit distractions and make the tools even more powerful. Business and Enterprise customers get access to Jira, GitHub & Okta integrations.</p>
+
+                <div class="d-flex flex-items-center mb-2">
+                  <img src="https://avatars.githubusercontent.com/tensorflow?s=64&amp;v=4" alt="Tensorflow" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async">
+            <span class="opacity-4 text-truncate">Added package for javascript linting</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+
+
+    <div data-pjax-replace id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  {{ className }}">
+  <div class="px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="js-details-target btn-link d-lg-none mt-1 color-fg-inherit">  <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="js-details-target btn-link d-lg-none mt-1 color-fg-inherit">  <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+    
+      <div>{{ message }}</div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+    
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+
+  <div
+    class="application-main "
+    data-commit-hovercards-enabled
+    data-discussion-hovercards-enabled
+    data-issue-and-pr-hovercards-enabled
+  >
+        <main class="font-mktg">
+
+
+
+
+<div class="overflow-hidden">
+  <div class="home-hero-container position-relative js-webgl-globe-data">
+  <div class="home-hero position-absolute z-1 top-0 right-0 bottom-0 left-0 overflow-hidden">
+    <div class="overflow-hidden width-full position-relative z-1">
+  <div class="container-xl p-responsive mx-auto">
+    <div class="d-flex position-relative rounded-2 box-shadow-active-border-mktg position-relative z-1 overflow-hidden home-discussions-1">
+                      <picture>
+              <source srcset="https://github.githubassets.com/assets/environment-4a9660289ca1.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-DgPnXs+Amze4h1kug5IO7N+bSF7fHrOlHnfCBzVJAjcmOIw0WJuwbVWl3/GZOENLaem/bZH54eMxAO/EWKMzPg==" src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg" width="18" height="18"  class="d-block" loading="lazy" decoding="async" width="980" height="434">
+                      </picture>
+                <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/pr-merge.webp" type="image/webp">
+                          <img src="https://avatars.githubusercontent.com">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-Q79nyJ07nm2BBYSi9+vhJBvpQHuRvgoSSmVyAgdk3ZsHPVlUcstVg+8F1Bs7b+GACbqD9iwyOy3VaVE4eN0jbg==" rel="stylesheet" href="https://github.githubassets.com/images/modules/site/home/matrix-workflow-success.svg" class="home-matrix-success-1" loading="lazy" alt="">
+                    </div>
+
+                    <div class="home-matrix-tab-container position-absolute" style="width: 27%;">
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/dependabot-pr.png" class="width-full home-dependabot-pr rounded-2 box-shadow-active-border-light-mktg js-build-in-item" style="font-size: 0;">
+              <picture>
+                      </div>
+                  <div class="col-6 col-sm-4 col-md-3">
+                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">83<span class="text-white-fade">+</span> million</h2>
+                    <p class="mb16 s-anchors s-anchors__inherit s-anchors__underlined">
+                        By clicking “Accept all cookies”, you agree Stack Exchange can store cookies on your device and disclose information in accordance with our <a href="https://stackoverflow.co/advertising" class="bar-sm p6 d-block h:bg-black-100 js-gps-track"
+                            data-ga="[&quot;top navigation&quot;,&quot;about submenu click&quot;,null,null,null]">
+                    Learn more
+                </a>
+            </div>
+        </div>
+
+        <h1 class="p-ff-roboto-slab-bold fs-display2 mb0 pt64 pb64 ps-relative z-active overflow-hidden">
+                <p class="mb2"><strong>Teams</strong></p>
+                <p class="mb12 fs-caption fc-black-400">Q&amp;A for work</p>
+                <p class="mb12 fs-caption fc-black-400">Q&amp;A for work</p>
+                <p class="mb12 fs-caption fc-black-400">Q&amp;A for work</p>
+                <p class="mb12 fs-caption fc-medium">Connect and share knowledge within a single location that is structured and easy to search.</p>
+                <a href="/collectives"
+               class="js-gps-track s-btn s-btn__primary s-btn__xs"
+               data-gps-track="top_nav.products.click({location:1, destination:7})"
+                            data-ga="[&quot;top navigation&quot;,&quot;learn more - teams&quot;,null,null,null]">For Teams</a>
+                    </li>
+                    <li class="px-1">
+                      <a href="https://stackoverflow.co/">Company</a></h5>
+                    <ul class="-list">
+                            <li>
+                    <ol class="nav-links">
+                    
+
+<li class="ps-relative" >
+
+    <a id="nav-users"
+       href="/users"
+       class=" js-gps-track nav-links--link"
+               title="Stack Overflow for Teams is a private, secure spot for your organization's questions and answers."
+               data-gps-track="top_nav.products.click({location:1, destination:7})"
+                            data-gps-track="teams.create.left-sidenav.click({ Action: 6 })"
+           data-ga="[&quot;teams landing&quot;,&quot;plans menu click&quot;,&quot;stackoverflow.com/teams&quot;,null,null]">
+            <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotHeadset" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"/><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"/></svg>
+                            <div class="s-popover p0 wmx100 wmn4 sm:wmn-initial js-top-search-popover" id="top-search" role="menu">
+    <div class="s-popover--arrow"></div>
+                <ol class="list-reset s-anchors s-anchors__inherit">
+                    <li class="d-flex">
+                            <li><a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+            <div class="flex--item p16 sm:p12 sm:mb12">
+                <div class="left-sidebar js-unpinned-left-sidebar" data-can-be="left-sidebar" data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative">
+    <div class="left-sidebar--sticky-container js-sticky-leftnav">
+        <nav role="navigation">
+            <ol class="nav-links">
+                    
+
+<li class="ps-relative" >
+
+    <a id="nav-collective-discover"
+       href="/collectives"
+       class="pl8 ai-center js-collectives-navcta-toggle js-gps-track nav-links--link -link__with-icon"
+       
+       data-gps-track="top_nav.click({is_current:false, location:1, destination:3})"
+                            data-gps-track="teams.create.left-sidenav.click({ Action: CtaClick })"
+               data-ga="[&quot;top navigation&quot;,&quot;about menu click&quot;,null,null,null]">
+                            <li><a href="https://www.instagram.com/w3schools.com_official/" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x"></span></a>
+    <a href="https://discord.gg/6Z7UaRbUQM" target="_blank" title='Join the W3schools community on Discord'><i class='fa'>&#xe807;</i></a>
+  <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href="/python/numpy/numpy_quiz.asp" target="_top">NumPy Quiz</a>
+   <a class="w3-bar-item w3-button" href="/cs/index.php">Learn C#</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href='/bootstrap4/bootstrap_ref_all_classes.asp'>Bootstrap 4 Reference</a>
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_symbols.asp'>HTML Symbols</a>
+   <a class="w3-bar-item w3-button" href='/php/default.asp' title='PHP Tutorial'>PHP</a>
+      <a class="w3-bar-item w3-button" href='/jquery/default.asp' title='jQuery Tutorial'>JQUERY</a>
+      <a class="w3-bar-item w3-button" href='/angular/angular_ref_directives.asp", "AngularJS Reference"],
+  ["", "/python/python_reference.asp", "Python Reference"],
+  ["", "/java/java_ref_keywords.asp", "Java Reference"],
+  ["", "/sql/sql_ref_keywords.asp", "SQL Reference"],
+  ["", "/mysql/mysql_ref_functions.asp", "MySQL Reference"],
+  ["", "/php/php_ref_overview.asp", "PHP Reference"],
+  ["", "/asp/asp_ref_response.asp", "ASP Reference"],
+  ["", "/xml/dom_nodetype.asp", "XML DOM Reference"],
+  ["", "/xml/dom_http.asp", "XML Http Reference"],
+  ["", "/xml/xsl_elementref.asp", "XSLT Reference"],
+  ["", "/xml/schema_elements_ref.asp", "XML Schema Reference"],
+  ["", "/charsets/default.asp", "HTML Character Sets"],
+  ["", "/charsets/ref_html_utf8.asp", "HTML UTF-8"],
+  ["django", "/django/index.php", "Django Tutorial"],
+  ["", "/typingspeed/default.asp", "Test your typing speed"],  
+
+];
+
+function click_learntocode_search_btn() {
+  var x = document.getElementById("myAccordion");
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    if (document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
+    document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darktheme";
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredpagemode", "dark");
+  } else {
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkpage");
+  if (b.checked) {
+    document.body.className += " darkpagetheme";
+    document.body.className += " darktheme";
+    document.getElementById("radio_darkpage").checked = true;
+  }
+})();
+
+function mouseoverdarkicon() {
+  if(window.matchMedia("(pointer: coarse)").matches) {
+    return false;
+  }
+  var a = document.getElementById("google_translate_element");
+  if (a.style.display == "") {
+      a.style.visibility = "";
+      a.style.display = "none";
+  }
+  if (sfb == false) {
+    if (a.style.display == "") {
+      a.style.visibility = "";
+      a.style.display = "none";
+    } else {
+      a.style.display = "";
+      a.style.visibility == "hidden"
+      ga('send', 'event', 'search', 'inputFound');
+      window.location = n;
+    }
+  }
+}
+
+function submit_search_form() {
+    searchFromBox = true;
+    submit_search_form();
+  } else {
+    ga('send', 'event', 'search', 'inputFound');
+      window.location = n;
+    }
+  }
+}
+
+function submit_search_form() {
+    searchFromBox = true;
+    gSearch();
+    var delayInMilliseconds = 100; //0.1 second
+    setTimeout(execute_google_search, delayInMilliseconds);
+}
+
+function execute_google_search() {
+  if (typeof google == 'object') {
+    google.search.cse.element.getElement("standard0").execute(document.getElementById("search2").value);
+  } else {
+    setTimeout(execute_google_search, 100);
+  }  
+}
+
+document.body.addEventListener("click", function(event) { 
+        useCaseShow(event.currentTarget, i);
+        clearInterval(useCasePlayer);
+    });
+  }   
+
+  function useCaseReset() {
+    for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) { 
+        useCaseShow(event.currentTarget, i);
+        clearInterval(useCasePlayer);
+    });
+  }   
+
+  function useCaseReset() {
+    for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) {
+  var a, x = event.srcElement;
+  if (x.id == "search2" ||x.id == "learntocode_searchbtn" || x.id == "learntocode_searchicon" || x.classList.contains("search_item")) {
+  } else {
+    a = document.getElementById("listofsearchresults");
+  a.innerHTML = "";
+  a.style.display = "none";
+  document.getElementById("search2").style.borderBottomLeftRadius = "25px";
+    if (searchFromBox == true) {
+      document.getElementById("navbtn_" + x)) {
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("sectionxs_" + x).innerHTML = "";
+  }
+}
+function w3_open_nav(x) {
+  if (document.getElementById("skyscraper"), "width").replace("px", ""));  
+  }
+  elem.style.width = skyWidth + "px";
+  if (window.innerWidth <= 992) {
+    elem.style.position = "";
+      elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+      elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").style.position = "static";
+    }
+  }
+  if (stickyadstatus == "sticky") {
+    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
+      elem.style.position = "fixed";
+        elem.style.top = "60px";
+      stickyadstatus = "sticky";
+      document.getElementById("stickypos").style.position = "static";
+    }
+  }
+  if (stickyadstatus == "sticky") {
+    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
+      document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("sectionxs_" + x).innerHTML == "") {
+    document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredpagemode", "light");
+  }
+}
+
+function changecodetheme() {
+  var cc = document.body.className;
+  if (cc.indexOf("darktheme") > -1) {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredpagemode", "dark");
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("darktheme", "");
+    document.body.className = document.body.className.replace("darktheme", "");
+  document.body.className = document.body.className.replace("darktheme", "");
+    document.body.className = document.body.className.replace("darktheme", "");
+  document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredpagemode", "light");
+  }
+}
+
+function click_darkcode() {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "44px";
+}
+function mouseoutofdarkicon() {
+  var a = document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.body.className += " darkpagetheme";
+    ga('send', 'event', 'theme' , "darkpage");
+  }
+})();
+</script>
+<div id="pagetop" class="w3-bar w3-card-2 notranslate" style="padding-left:12px;padding-right:12px;margin-right:8px" onclick="gSearch(this)" title='Search W3Schools' id="nav_search_btn"><i class='fa'>&#xe802;</i></a>
+    <a class="w3-bar-item w3-button" href='/xml/xsl_elementref.asp'>XSLT Reference</a>
+   <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+   <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a>
+   <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24 ws-hide-800" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references" title="References" style="width:132px">References <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp">Learn Matplotlib</a>    
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/" target="_blank">Courses</a></h3>
+   <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a>
+   <a class="w3-bar-item w3-button" href="/icons/default.asp">Learn Icons</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href='/xml/xquery_intro.asp'>Learn XQuery</a>
+  </div>
+ </div>
+ </div>
+ <br class="hidesm">
+ </div>
+</nav>
+
+<!-- MAIN -->
+<div class="w3-main" id="main">
+
+<div class="ws-black w3-center" style="padding-top:90px;padding-bottom:90px;">
+  <div class="w3-content learntocodecontent" style="max-width:1400px">
+ <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+      <a href="/django/index.php" title="Django Tutorial">
+        <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">NumPy</h2>
+        </div>
+      </a>
+    </div>
+    
+    <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/graphics/svg_intro.asp" title="SVG Tutorial">
+        <div class="w3-card-2 w3-round ws-pink" style="padding:24px 0">
+          <h2 style="font-size:30px;font-weight:500">AngularJS</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp">jQuery Exercises</a>
+   <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a>
+   <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_utf8.asp'>HTML UTF-8</a>
+  </div>
+ </div>
+ <br class="hidesm">
+ </div>
+</nav>
+
+
+  </div>
+</div>
+
+<div id='myAccordion' class="w3-card-2 w3-center w3-hide-large w3-hide-medium ws-grey" style="width:100%;position:absolute;display:none;">
+  <a href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);">References <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24 ws-hide-800" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_references" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Courses' , 'Clicked on python course link in footer');">Python Course</a><br>
+<a href="https://courses.w3schools.com/courses/introduction-to-cyber-security" target="_blank">Cyber Security Course</a>
+   <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href="/where_to_start.asp">Where To Start</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/data-analytics" target="_blank">Data Analytics Course</a>
+   <a class="w3-bar-item w3-button" href="/python/numpy/numpy_exercises.asp">NumPy Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/cplusplus" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on bootstrap C# link in footer');">C# Course</a><br>
+<a href="https://courses.w3schools.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">About</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px;">Report Error</a>
+</div>
+<!--
+<div class="w3-col l3 m3 s12">
+<a class="w3-button ws-grey ws-hover-black w3-block w3-round" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px;font-size:15px">Forum</a>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h5 style="font-family: 'Source Sans Pro', sans-serif;margin-top:9px;position:relative;overflow:visible;margin-bottom:1px;" href="https://www.w3schools.com/videos/index.php" class="w3-hover-opacity"><img style="max-width:100%;margin:16px 0;" src="/images/w3lynx_200.png" alt="Code Game" loading="lazy"></a>
+  <p><a class="w3-button tut-button black-color w3-margin-bottom">Learn PHP</a>
+      </div>
+
+    </div>
+    <div class="w3-col l6 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/googlesheets/index.php" title="Google Sheets Tutorial">
+        <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">SciPy</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/excel/index.php" title="Excel Tutorial">
+        <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px 0">
+          <h2 style="font-size:30px;font-weight:500">AppML</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/datascience/default.asp">Learn Data Science</a> 
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+   <a class="w3-bar-item w3-button" href="/appml/default.asp">Learn AppML</a>
+   <a class="w3-bar-item w3-button" href="/go/go_exercises.php">Go Exercises</a>
+   <a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/python_exercises.asp">Python Exercises</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_canvas.asp'>HTML Canvas Reference</a>
+   <a class="w3-bar-item w3-button" href='/cssref/default.asp'>CSS Reference</a>
+   <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">Server Side</h3>
+   <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">CSS</a>
+  <a href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_exercises.php">Kotlin Exercises</a>
+   <a class="w3-bar-item w3-button" href="/r/r_exercises.asp">R Exercises</a>
+   <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+   <a class="w3-bar-item w3-button" href="/appml/default.asp">Learn AppML</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_ansi.asp'>HTML ANSI</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+   <a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp">Learn Matplotlib</a>    
+   <a class="w3-bar-item w3-button" href='/xml/xsl_elementref.asp'>XSLT Reference</a>
+   <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.linkedin.com/company/github" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;text:github&quot;}" class="color-fg-subtle">

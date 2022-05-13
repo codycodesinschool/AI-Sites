@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.remove('d-none');
+                } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="p-wrapper-home p48 pb0 sm:p12 ps-relative overflow-hidden">
+            Every <span class="js-user-slider p-home-tagline va-bottom ps-relative ws-nowrap d-inline-flex fd-column ai-center fc-orange-500 lg:d-block mx-auto ta-center" data-words="developer, data scientist, system admin, mobile developer, game developer">developer</span> has a<br class="lg:d-none"> tab open to<br class="d-none lg:d-block"> Stack Overflow
+        </h1>
+
+        <span class="w64 h8 bar-pill d-block bg-black-500 mx-auto"></span>
+
+        <div class="d-flex gs32 jc-center ai-center sm:fd-column sm:pl24 sm:pr24">
+            <div class="flex--item lg:d-none">
+                <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                  <div class="position-relative z-1 mx-auto box-shadow-default-mktg wide-block overflow-hidden js-section" style="padding-top: 0 !important" id="home-secure" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+
+  <div class="p-4">
+
+
+      <div class="">
+          <strong class="code-pink">→</strong>

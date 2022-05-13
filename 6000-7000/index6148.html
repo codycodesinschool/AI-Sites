@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/favicon.ico">
+  <meta name="theme-color" content="#333">
+
+  <meta property="og:site_name" content="Stack Overflow" />
+        <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff" crossorigin>
+
+
+
+    <link rel="canonical" href="https://nodejs.org/en/">
+  <link rel="alternate" href="/en/feed/vulnerability.xml" title="Node.js Blog: Vulnerability Reports" type="application/rss+xml">
+
+  <script src="/static/js/themeSwitcher.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+  
+      <a href="/en/" id="logo">
+        <img src="/static/images/openjs_foundation-logo.svg" alt="OpenJS Foundation" width="120" height="38">
+          </a>
+        </div>
+      <p>© OpenJS Foundation. All Rights Reserved. Portions of this site originally © Joyent.</p>
+      <p>Node.js is a trademark of the OpenJS Foundation. Please review the <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-list.openjsf.org">Trademark List</a> and <a
+          href="https://trademark-policy.openjsf.org">Trademark Guidelines</a> of the <a href="https://openjsf.org">OpenJS
+          Foundation</a>.</p>
+      <p>
+        <a href="https://raw.githubusercontent.com/nodejs/node/master/LICENSE">Node.js Project Licensing
+          Information</a>.
+      </p>
+      </div>
+  
+      <div class="help">
+        <ul>
+          <li><a id="editOnGitHubLink" href="#">Edit On GitHub</a></li>
+          <li><a href="https://github.com/nodejs/nodejs.org/blob/master/CONTRIBUTING.md">Contributing For Nodejs.org</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="home-repo-editor-tab--active color-text-white d-flex flex-items-center">
+                <dl class="col-12 my-0 pb-2 pb-sm-0 pr-0 pr-sm-2 flex-auto">
+                  <div class="col-12 col-lg-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon flex-shrink-0 mr-3 d-none d-md-block"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <h3 class="f2-mktg text-gray-light-mktg text-semibold">The future of code is in the cloud, not your local copy. <span class="color-fg-default">Write less code thanks to the world&#39;s largest software package registry.</span>
+                  Find the best community-approved projects to accelerate your work, then share it with the world with <a class="text-gray-light-mktg text-underline" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:GitHub Mobile;ref_loc:collaboration launchpad;&quot;}" href="/mobile">GitHub Mobile</a>.
+                  </h3>
+              </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1" height="22" width="28" alt="" loading="lazy" decoding="async" alt="Linkedin icon">
+            <span class="sr-only">GitHub’s organization on GitHub</span>
+          </a>
+        </li>
+        <li class="mr-3 flex-self-start">
+          <a href="https://www.linkedin.com/company/w3schools.com/" title='W3Schools on LinkedIn'><i class='fa'>&#xf30c;</i></a>
+  <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href="/statistics/index.php">Learn Statistics</a>
+   <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a>
+   <a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+   <a class="w3-bar-item w3-button" href='/bootstrap/bootstrap_ver.asp' title='Bootstrap Tutorial'>BOOTSTRAP</a>
+      <a class="w3-bar-item w3-button" href='/php/default.asp' title='PHP Tutorial'>PHP</a>
+      <a class="w3-bar-item w3-button" href="/go/go_exercises.php">Go Exercises</a>
+   <a class="w3-bar-item w3-button" href="/js/default.asp">Learn JavaScript</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 15px;" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href="/excel/index.php">Learn Excel</a>
+
+   <h3 class="w3-margin-top">XML Tutorials</h3>
+   <a class="w3-bar-item w3-button" href="/python/numpy/numpy_quiz.asp" target="_top">NumPy Quiz</a>
+   <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+   <a class="w3-bar-item w3-button" href='/colors/default.asp'>HTML Color Reference</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex" style="width: 140px; border-radius: 25px; margin-right: 15px;" href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')" title="Video Tutorials">Videos</a>
+    <a class="w3-button w3-block" style="font-size:22px;" target="_blank"href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromHTMLdefault')">
+    <img src="htmlvideoad2.png" style="max-width:100%;" title="html video tutorial">
+  </a>
+</div>
+-->
+
+<br>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+<a class="w3-right w3-btn" href="html_intro.asp">Next &#10095;</a>
+</div>
+<div id="mypagediv2" style="position:relative;text-align:center;"></div>
+<br>
+
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+  <div id="skyscraper">
+  
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      uic_r_h();
+      </script> 
+    </div>
+  
+  </div>
+</div>
+  
+<style>
+.ribbon-vid {
+  font-size:12px;
+  font-weight:bold;
+  padding:3px 10px;
+  margin-left:3px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+}
+</style>
+
+<div class="sidesection" id="moreAboutSubject">
+</div>
+
+<!--
+<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
+  <div class="w3-container ws-black" style="border-top-right-radius:5px;border-top-left-radius:5px;">
+    <h5><a href="/cert/default.asp" class="w3-hover-text-white">HOW TO</a></h4>
+  </div>
+  <div class="w3-container w3-padding-32">
+    <a class="w3-button w3-block w3-round bar-item-hover" style="font-size:22px;background-color:#04AA6D;color:white;border-radius:25px;" href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com" target="_self">Log in</a>
+  </div>
+
+  <div class="w3-right w3-padding-16">
+    <!--<a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white w3-hide-large w3-hide-medium" href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xxlarge w3-right">&times;</a><br>
+  <div class="w3-container w3-dark-grey">
+    <h4><a href="/howto/default.asp" class="w3-button tut-button black-color w3-margin-bottom">Learn Bootstrap</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative js-header-wrapper ">
+      <a href="#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+      <span data-view-component="true" class="octicon octicon-three-bars">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+    </button>
+
+    
+
+    <div class="sub-nav-mktg-links flex-auto f4-mktg d-lg-flex flex-lg-justify-around">
+        <a href="#home-code" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click nav item to scroll to Automate&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Explore the Actions Marketplace;ref_loc:automate launchpad&quot;}">
+  Learn more about advanced security&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Codespaces;&quot;}" href="/features/codespaces">
+      Codespaces
+</a>  </li>
+
+            
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;go to Git Guides&quot;,&quot;label&quot;:&quot;text:facebook&quot;}" class="color-fg-subtle">
+            <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
+    <video loop muted playsinline preload="none" class="width-full looping-mktg js-viewport-aware-video" data-threshold="0" poster="https://github.githubassets.com/images/modules/site/home/codeql-step-1.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/gh-mobile.png" style="border-radius: 1.75rem;">
+                      <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/footer-illustration-894.svg" type="image/svg">
+      <img
+        src="https://github.githubassets.com/assets/home-e461cf7ec7b7.css" />
+
+
+
+  <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-Hb8d69V10VxkC90NX3zvjNovHq5vrRv0XCde5qNf5WiQAB6BziCN+gEbKG+fDj8i05B2pBdyGIh+3pmaRvzLJA==" src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" width="960" height="967" class="home-astro-mona width-full position-absolute bottom-0 height-auto" alt="Mona looking at GitHub activity across the globe">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="js-build-in-trigger d-flex flex-column flex-lg-row-reverse gutter flex-lg-justify-end flex-lg-items-center pt-5 pb-8 pb-md-9">
+      <div class="col-12 col-sm-10 offset-sm-1">
+        <div class="col-6-max">
+              <div class="mb-5 mb-md-6">
+          <h3 class="js-build-in-item build-in-slideX-left col-12 col-lg-5 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                    <h3 class="p-ff-roboto-slab-bold fs-title mb12">Support teams</h3>
+                    <p class="fs-body3 px32 hmn1">Business decisions are better when backed by data. Give visibility to the data that support your strategies.</p>
+                </div>
+            </li>
+            </ol>
+            </div>
+
+                
+
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="native svg-icon iconLogoMd" width="187" height="37" viewBox="0 0 187 37"><path d="m42 23-2.2-.2c-1.7-.1-2.3-.8-2.3-2 0-1.4 1-2.2 3-2.2 1.3-.1 2.6.3 3.6 1.1l1.3-1.3c-1.4-1-3.1-1.5-4.8-1.4-2.9 0-4.9 1.5-4.9 3.9 0 2.2 1.4 3.4 4 3.6l2.2.2c1.6.1 2.2.8 2.2 2 0 1.6-1.4 2.4-3.6 2.4-1.6.1-3.1-.5-4.2-1.6L35 28.8c1.5 1.4 3.5 2 5.5 1.9 3.2 0 5.5-1.5 5.5-4.1 0-2.6-1.6-3.4-4-3.6Zm15.8-6.1c-2.2 0-3.5.4-4.7 1.9l1.3 1.3c.8-1.1 2.1-1.7 3.4-1.5 2.5 0 3.4 1 3.4 2.9v1.3h-4c-3 0-4.6 1.5-4.6 3.9 0 1 .3 2 1 2.7.8.9 1.9 1.2 3.8 1.2 1.4.1 2.9-.4 3.9-1.4v1.3h2v-9.1c-.1-2.9-1.9-4.5-5.5-4.5Zm3.4 8.9c.1.8-.1 1.7-.7 2.3a4 4 0 0 1-3 .9c-2.1 0-3.1-.7-3.1-2.3 0-1.6 1-2.4 3-2.4h3.8v1.5Zm9.7-7.1c1.2 0 2.4.5 3.1 1.5l1.3-1.3a5.4 5.4 0 0 0-4.4-2c-3.4 0-5.9 2.3-5.9 6.9 0 4.6 2.6 6.9 5.9 6.9 1.7.1 3.3-.7 4.4-2L74 27.4c-.7 1-1.9 1.5-3.1 1.5-1.2.1-2.4-.5-3.1-1.5-.7-1.1-1-2.3-.9-3.6-.1-1.3.2-2.5.9-3.6.7-1 1.9-1.6 3.1-1.5Zm16.8-1.6h-2.4L79.2 23V11.1h-2v19.4h2v-4.9l2.4-2.4 4.5 7.3h2.4l-5.6-8.6 4.8-4.8Zm9.2-.16c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm13.6-10.4-2.8 8.6-2.8-8.6h-3.7l5.2 14h2.7l5.1-14h-3.7Zm9.6-.1c-3.6 0-6.1 2.6-6.1 7.1 0 5.7 3.2 7.2 6.5 7.2 2 .1 4-.7 5.3-2.2l-2.1-2.1c-.8.9-2 1.4-3.2 1.3-1.6.1-3-1.1-3.1-2.7v-.4h8.7v-1.6c.1-3.8-2.1-6.6-6-6.6Zm-2.7 5.8c0-.5.1-1 .3-1.5.4-.9 1.3-1.4 2.3-1.4 1-.1 1.9.5 2.3 1.4.2.5.3 1 .3 1.5h-5.2Zm13.33-4.3v-1.3h-3.4v14h3.5v-8.4c-.1-1.3.8-2.4 2.1-2.6h.2c.7 0 1.4.3 1.8.8l2.6-2.6a4.1 4.1 0 0 0-3.3-1.3c-1.3-.1-2.6.4-3.5 1.4Zm7.6-2.8v15.4h3.5v-11h2.6v-2.7h-2.6v-1.5c-.1-.6.3-1.2.9-1.3h1.6v-3h-2a3.9 3.9 0 0 0-4 3.8v.3Zm20.27 1.3c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm20.7-10.4-2.3 8.6-2.9-8.6H175l-2.8 8.7-2.3-8.6h-3.7l4.3 14h2.9l2.9-8.8 2.9 8.8h3l4.3-14-3.8-.1Zm-31.22 9.8v-15.2h-3.5v15.4a3.8 3.8 0 0 0 3.6 4h2.5v-3h-1.3c-.6.1-1.1-.2-1.3-.8v-.4ZM52.7 17.4H49V13h-2v13.9c0 2 1.1 3.6 3.4 3.6h1.4v-1.7h-1c-1.3 0-1.8-.7-1.8-2v-7.7h1.9l1.8-1.7Z" fill="var(--black-800)"/><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"/><path d="m23.1 25.99.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"/></svg></a>
+                </div>
+                </div>
+            <div class="flex--item truncate">
+                    Tags
+                </div>
+            <div class="p24 h100 bg-black-025 bl br bb bbr-lg bc-black-100 p-bs-wrapper fs-body2 d-flex fd-column">
+                <h2 class="px8 py4 as-start bar-sm bg-black-700 fc-white fs-body3">
+                    Enterprise
+                </h2>
+
+                <div class="bb bc-orange-500 pb24 mb24">
+                    <div class="js-build-in build-in-slideX-left f2-mktg text-gray-mktg text-semibold">
+            <span class="text-gray-dark-mktg">Keep work moving.</span>
+                    Review or merge code, manage notifications, browse repositories, and more with <a class="color-fg-accent" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Code</a>
+        <a href="#home-collaborate" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;text:Create a new organization for free <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"/><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">2</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/></svg>
+</div>
+
+</a>
+<a class="w3-btn" id="courses_get_started_btn" 
+href="https://courses.w3schools.com/programs/data-analytics" target="_blank">Data Analytics Course</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href="/mysql/mysql_exercises.asp">MySQL Exercises</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_exercises.php">Bootstrap 5 Exercises</a>
+   <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a>
+   <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank" style="padding-top:10px;padding-bottom:10px;margin-top:12px;border-top-left-radius: 0;border-top-right-radius: 0">Play Game</a>
+</div>
+
+<!--
+
+<div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px;background-color:#d4edda">
+<p>Get your<br>certification today!</p>
+<a href="/cert/default.asp" target="_blank">Paid Courses</a>
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);">Exercises <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
+
+  <div id="loginactioncontainer" class="w3-right w3-padding-16" style="margin-left:50px">
+    <div id="mypagediv"></div>
+      <!-- <button id="w3loginbtn" style="border:none;display:none;cursor:pointer" class="login w3-right w3-hover-greener" onclick='w3_open_nav("login")'>LOG IN</button>-->
+      <a id="w3loginbtn" class="w3-bar-item w3-btn bar-item-hover w3-right" style="display:none;width:130px;background-color:#04AA6D;color:white;border-radius:25px;" href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com" target="_self">Log in</a>
+  </div>
+
+  <div class="w3-right w3-padding-16">
+    <div id="mypagediv"></div>
+      <!-- <button id="w3loginbtn" style="border:none;display:none;cursor:pointer" class="login w3-right w3-hover-greener" onclick='w3_open_nav("login")'>LOG IN</button>-->
+      <a id="w3loginbtn" class="w3-bar-item w3-btn bar-item-hover w3-right" style="display:none;width:130px;background-color:#04AA6D;color:white;border-radius:25px;" href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com" target="_self">Log in</a>
+  </div>
+
+  <div class="w3-right w3-padding-16">
+    <!--<a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white w3-hide-large w3-hide-medium" href="javascript:void(0)" onclick="w3_open()" title="Menu"><i class='fa'>&#xf0c9;</i></a>
+    -->
+    <a class="w3-bar-item w3-button" href="/statistics/index.php">Learn Statistics</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/c-sharp" target="_blank">C# Course</a>
+   <a class="w3-bar-item w3-button" href='/cssref/css_selectors.asp'>CSS Selector Reference</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp" title="Machine Learning Tutorial">
+        <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">TypeScript</h2>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/datascience/default.asp">Learn Data Science</a> 
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>   
+   <div class="w3-hide-large w3-hide-small">
+   <h3 class="w3-margin-top">HTML and CSS</h3>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap 4 Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/jquery-certification-exam" target="_blank">jQuery Certificate</a>
+   <a class="w3-bar-item w3-button" href='/xml/xquery_intro.asp'>Learn XQuery</a>
+  </div>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">JavaScript</h3>
+   <a class="w3-bar-item w3-button" href="/java/default.asp">Learn Java</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/scipy_exercises.php">SciPy Exercises</a>
+   <a class="w3-bar-item w3-button" href='/python/python_reference.asp'>Python Reference</a>
+   <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/javascript-certification-exam" target="_blank">Bootstrap 3 Certificate</a>
+   <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>   
+   <div class="w3-hide-large w3-hide-small">
+   <h3 class="w3-margin-top">Data Analytics</h3>
+   <a class="w3-bar-item w3-button" href='/r/default.asp' title='R Tutorial'>R</a>
+      <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a>
+   <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+<a target="_top" href="html_quotation_elements.asp">HTML Quotations</a>
+<a target="_top" href="css_font_pairings.asp">Font Pairings</a>
+<a target="_top" href="html_editors.asp">HTML Editors</a>
+<a target="_top" href="css_math_functions.asp">CSS Math Functions</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="js_api_web_storage.asp">Web Storage API</a>
+<a target="_top" href="js_api_web_storage.asp">Web Storage API</a>
+<a target="_top" href="js_ajax_http_response.asp">AJAX Response</a>
+<a target="_top" href="js_comments.asp">JS Comments</a>
+<a target="_top" href="js_mistakes.asp">JS Mistakes</a>
+<a target="_top" href="js_string_search.asp">JS String Search</a>
+<a target="_top" href="js_sets.asp">JS Sets</a>
+<a target="_top" href="/tags/ref_urlencode.asp">HTML URL Encode</a>
+<a target="_top" href="html_links.asp">HTML Links</a>
+<div class="tut_overview">
+  <a target="_top" href="css_background_attachment.asp">Background Attachment</a>
+  <a target="_top" href="css_colors.asp">Colors</a>
+  <a target="_top" href="html_images.asp">Images</a>
+  <a target="_top" href="html_images_background.asp">Background Images</a>
+  <a target="_top" href="html_table_styling.asp">Table Styling</a>
+  <a target="_top" href="html_table_headers.asp">Table Headers</a>
+  <a target="_top" href="css_colors_rgb.asp">RGB</a>
+  <a target="_top" href="html_tables.asp">HTML Tables</a>
+<div class="tut_overview">
+<a target="_top" href="html_lists.asp">Lists</a>
+<a target="_top" href="css3_buttons.asp">CSS Buttons</a>
+<a target="_top" href="css3_backgrounds.asp">CSS Backgrounds</a>
+<a target="_top" href="css3_gradients.asp">Linear Gradients</a>
+<a target="_top" href="js_json.asp">JS JSON</a>
+<a target="_top" href="js_date_methods.asp">JS Date Get Methods</a>
+<a target="_top" href="js_statements.asp">JS Statements</a>
+<a target="_top" href="js_htmldom_collections.asp">DOM Collections</a>
+<a target="_top" href="js_dates.asp">JS Dates</a>
+<a target="_top" href="js_htmldom_html.asp">DOM HTML</a>
+<a target="_top" href="js_json_html.asp">JSON HTML</a>
+<a target="_top" href="js_json_objects.asp">JSON Objects</a>
+<a target="_top" href="js_arrays.asp">JS Arrays</a>
+<a target="_top" href="js_htmldom_html.asp">DOM HTML</a>
+<a target="_top" href="js_json_html.asp">JSON HTML</a>
+<a target="_top" href="js_json_objects.asp">JSON Objects</a>
+<a target="_top" href="js_json_xml.asp">JSON vs XML</a>
+<a target="_top" href="js_json_datatypes.asp">JSON Data Types</a>
+<a target="_top" href="js_maps.asp">JS Maps</a>
+<a target="_top" href="js_api_web_workers.asp">Web Worker API</a>
+<a target="_top" href="js_api_geolocation.asp">Web Geolocation API</a>
+<br>
+<h2 class="left">JS AJAX</h2>
+<a target="_top" href="js_object_properties.asp">Object Properties</a>
+<a target="_top" href="html_accessibility.asp">HTML Accessibility</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+<a target="_top" href="css_grid_container.asp">Grid Container</a>
+<a target="_top" href="css_grid_item.asp">Grid Item</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+<a target="_top" href="default.asp">JS HOME</a>
+<a target="_top" href="css_outline.asp">CSS Outline</a>
+<div class="tut_overview">
+  <a target="_top" href="html_table_colspan_rowspan.asp">Colspan &amp; Rowspan</a>
+  <a target="_top" href="html_links_bookmarks.asp">Link Bookmarks</a>
+</div>
+<a target="_top" href="css_margin.asp">Margins</a>
+<a target="_top" href="css3_mediaqueries.asp">CSS Media Queries</a>
+<a target="_top" href="css3_flexbox_responsive.asp">CSS Flex Responsive</a>
+</div>
+
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+<a target="_top" href="js_classes.asp">JS Classes</a>
+<a target="_top" href="js_debugging.asp">JS Debugging</a>
+<a target="_top" href="js_cookies.asp">JS Cookies</a>
+<br>
+<h2 class="left">JS Web APIs</h2>
+<a target="_top" href="html5_canvas.asp">HTML Canvas</a>
+<a target="_top" href="/tags/ref_html_dtd.asp">HTML Doctypes</a>
+<a target="_top" href="/tags/ref_keyboardshortcuts.asp">Keyboard Shortcuts</a>
+</div>
+
+</div>
+<br>
+
+<style>  
+
+#w3_cert_badge {
+  position: absolute;
+  right: 5%;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: -20%;
+}
+
+#w3_cert_arrow {
+  position: absolute;
+  right: 5%;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: 0;
+  z-index: 1;
+}
+
+#howto_padding {
+  padding: 48px 24px 100px 24px
+}
+
+#getdiploma {
+  position: relative;
+  padding: 0 60px 50px 60px;
+  margin-bottom: 125px;
+  border-radius: 16px;
+  background-color: #282A35;
+  color: #FFC0C7;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#courses_get_started_btn:hover {
+background-color:#059862!important;
+}
+</style>
+
+<div id="internalCourses"  class="sidesection">
+<p style="font-size:18px;padding-left:2px;padding-right:2px;">Get certified<br>by completing<br>a course today!</p>
+<a href="https://courses.w3schools.com/courses/c-sharp" target="_blank">C# Course</a>
+   <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/pandas_exercises.asp">Pandas Exercises</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a>
+   <a class="w3-bar-item w3-button" href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/javascript-certification-exam" target="_blank">PHP Certificate</a>
+   <a class="w3-bar-item w3-button" href='/cs/index.php' title='C# Tutorial'>C#</a>
+      <a class="w3-bar-item w3-button" href='/angular/angular_ref_directives.asp'>AngularJS Reference</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/cplusplus" target="_blank">C++ Course</a>
+   <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a>
+   <a class="w3-bar-item w3-button" href='/xml/dom_http.asp'>XML Http Reference</a>
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_exercises.php">Kotlin Exercises</a>
+   <a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_quiz.php" target="_top">Bootstrap 5 Quiz</a>
+   <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+   <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/introduction-to-cyber-security" target="_blank">Cyber Security Course</a>
+   <a class="w3-bar-item w3-button" href='/tags/ref_canvas.asp'>HTML Canvas Reference</a>
+   <a class="w3-bar-item w3-button" href="/kotlin/kotlin_quiz.php" target="_top">Kotlin Quiz</a>
+   <a class="w3-bar-item w3-button" href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+   <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a>
+   <a class="w3-bar-item w3-button" href="/python/scipy/scipy_quiz.php" target="_top">SciPy Quiz</a>
+   <a class="w3-bar-item w3-button" href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+   <h3 class="w3-margin-top">XML Tutorials</h3>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/index.php">Cyber Security</a>
+   <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/data-analytics" target="_blank">Data Analytics Course</a>
+   <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a>
+   <a class="w3-bar-item w3-button" href='/graphics/svg_intro.asp'>Learn SVG</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href='/git/default.asp'>Learn Git</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
+   <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+   <a class="w3-bar-item w3-button" href="/js/default.asp">Learn JavaScript</a>
+   <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex" style="width: 140px; border-radius: 25px; margin-right: 15px;" href="https://courses.w3schools.com/browse/certifications/courses/xml-certification-exam" target="_blank">C++ Certificate</a>
+   <a class="w3-bar-item w3-button" href='/angular/angular_ref_directives.asp">Angular Reference</a><br>
+<a href="/jquery/jquery_ref_overview.asp">jQuery Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<!--
+<h4>Web Certificates</h4>
+<a href="/cert/default.asp">HTML Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">JavaScript Certificate</a><br>
+<a href="/cert/default.asp">PHP Certificate</a><br>
+<a href="/cert/default.asp">XML Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">Python Certificate</a><br>
+<a href="/cert/default.asp">Bootstrap Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">JavaScript Certificate</a><br>
+<a href="/cert/default.asp">XML Certificate</a><br>
+<a href="/cert/default.asp">CSS Certificate</a><br>
+<a href="/cert/default.asp">JavaScript Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">jQuery Certificate</a><br>
+<a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-block ref-button black-color">HTML Reference</a>
+  </div>
+ <div class="w3-col l6" style="padding:3%">
+  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+   <h3>HTML Example:</h3>
+   <div class="w3-code htmlHigh notranslate green-border">
+body {<br>
+&nbsp; background-color: lightblue;<br>}<br>
+<br>h1
+{<br>
+&nbsp;&nbsp;color: white;<br>
+&nbsp;&nbsp;text-align: center;<br>
+}<br><br>
+p
+{<br>
+  &nbsp;
+font-family: verdana;<br>
+&nbsp;&nbsp;font-size: 20px;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_default" class="w3-btn w3-margin-bottom" style="text-decoration:none">Python</a>
+  <a href="/cert/cert_sql.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">CSS</a>
+  <a href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/" target="_blank">Courses</a></h3>
+   <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a>
+   <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>   
+   <div class="w3-hide-large w3-hide-small">
+   <h3 class="w3-margin-top">Data Analytics</h3>
+   <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href='/tags/default.asp'>HTML Tag Reference</a>
+   <a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp">W3.JS Reference</a>
+
+   <h3 class="w3-margin-top">Programming</h3>
+   <a class="w3-bar-item w3-button" href='/graphics/svg_intro.asp'>Learn SVG</a>
+   <a class="w3-bar-item w3-button" href='/jquery/jquery_ref_overview.asp'>jQuery Reference</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+   <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+   <a class="w3-bar-item w3-button" href="/python/numpy/default.asp">Learn NumPy</a>       
+   <a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/python" target="_blank">Python Course</a>
+   <a class="w3-bar-item w3-button" href="/python/numpy/default.asp">Learn NumPy</a>    
+   <a class="w3-bar-item w3-button" href='/js/default.asp' title='JavaScript Tutorial'>JAVASCRIPT</a>
+      <a class="w3-bar-item w3-button" href='/graphics/svg_intro.asp'>Learn SVG</a>
+   <a class="w3-bar-item w3-button" href="/appml/appml_reference.asp">AppML Reference</a>
+   <a class="w3-bar-item w3-button" href="/w3js/default.asp">Learn W3.JS</a>
+
+   <h3 class="w3-margin-top">Programming</h3>
+   <a class="w3-bar-item w3-button" href="/mysql/mysql_exercises.asp">MySQL Exercises</a>
+   <a class="w3-bar-item w3-button" href="/django/index.php">Learn Django</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px">Tutorials <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
+  <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">JavaScript</h3>
+   <a class="w3-bar-item w3-button" href='/xml/xquery_intro.asp'>Learn XQuery</a>
+  </div>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">JavaScript</h3>
+   <a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/" target="_blank"  onclick="ga('send', 'event', 'Videos' , 'fromSidebar');" href="https://www.w3schools.com/videos/index.php" class="w3-hover-opacity"><img style="margin:16px 0;" src="/images/w3lynx_200.png" alt="Code Game" loading="lazy"></a>
+  <a class="ws-button" style="font-size:16px;text-decoration: none !important;display: block !important; color:#FFC0C7!important;  width: 100%; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; paxdding-top: 10px; padding-bottom: 20px; font-family: 'Source Sans Pro', sans-serif;
+}
+#courses_get_started_btn:hover {
+background-color:#059862!important;
+}
+</style>
+
+<div id="internalCourses"  class="sidesection">
+<p style="font-size:18px;padding-left:2px;padding-right:2px;">Get certified<br>by completing<br>a course today!</p>
+<a href="https://courses.w3schools.com/courses/javascript" target="_blank">JavaScript Course</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_8859.asp'>HTML ISO-8859-1</a>
+   <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/python" target="_blank" onclick="ga('send', 'event', 'Courses' , 'Clicked on bootstrap C# link in footer');">C# Course</a><br>
+<a href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">Java Certificate</a>
+   <a class="w3-bar-item w3-button" href='/graphics/svg_reference.asp'>HTML SVG Reference</a>
+   <a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp">jQuery Exercises</a>
+   <a class="w3-bar-item w3-button" href="/cybersecurity/index.php" title="Cyber Security Tutorial">
+        <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">AngularJS</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/css/css_rwd_intro.asp" title="Responsive Web Design">Learn RWD</a>
+   <a class="w3-bar-item w3-button" href="/python/pandas/pandas_quiz.asp" target="_top">Pandas Quiz</a>
+   <a class="w3-bar-item w3-button" href='/jquery/jquery_ref_overview.asp'>jQuery Reference</a>
+   <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>   
+   <div class="w3-hide-large w3-hide-small">
+   <h3 class="w3-margin-top">Data Analytics</h3>
+   <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+   <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href='/charsets/ref_html_8859.asp'>HTML ISO-8859-1</a>
+   <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+   <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
+   <a class="w3-bar-item w3-button" href='/cpp/default.asp' title='C++ Tutorial'>C++</a>

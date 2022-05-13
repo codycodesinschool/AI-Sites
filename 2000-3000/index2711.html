@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=9f3012e164b7">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider span {
+            display: none;
+            opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.remove('d-none');
+                } else {
+                logosCurrentPage = 0;
+            } else {
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-200');
+                navItems[i].classList.remove('bg-black-200');
+                navItems[i].classList.add('bg-black-800');
+            } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="p-wrapper-home p48 pb0 sm:p12 ps-relative overflow-hidden">
+     <div class="d-flex ai-center">
+                <div class="fc-blue-500 d-block h100 p24 ba p-bc-black fs-body3 bar-lg"><span class="fc-white d:fc-black d-block">You can save time and money with Stack Overflow for Teams.</span></div>
+            </div>
+    </a>
+</li>
+
+                                
+
+<li class="ps-relative" >
+
+    <a id="nav-collective-discover"
+       href="/collectives"
+       class="pl8 ai-center js-collectives-navcta-toggle js-gps-track nav-links--link -link__with-icon"
+       
+       data-gps-track="top_nav.click({is_current:true, location:1, destination:8})">
+                    <span class="text-truncate"><strong class="text-semibold text-gray-dark-mktg">$10/month</strong> <span title="Label: 2x" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+      </a>
+
+        <div class="d-lg-none home-repo-editor-tab opacity-4 d-flex flex-items-center">
+            <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home"
+            class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-border-default rounded-2 px-2 py-1 mr-3 mr-sm-5 color-fg-inherit"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="cd4f672ed9a2fa51ea92c28de162e81edb2d11a2aad6884ec89a6d60b21b1cfb"
+            data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+        <div class="terminal-mktg text-mono bg-gray-800-mktg home-pre rounded-2 js-type-in-item" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+
+  <div class="p-4">
+
+
+      <div class="">
+          <strong class="code-pink">→</strong>
+          <strong class="color-fg-success">~/octocat-classifier</strong>
+
+        <span class="js-type-letters">$ </span>
+      </div>
+
+</div></div>
+
+                    <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg" height="18" width="22"  class="d-block" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">flutter/<span class="color-fg-default">swift</span></p>
+                </div>
+              </li>
+
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Connect with others</li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to site map&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Collaborate</a>
+        <a href="#home-develop" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Learning Lab&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/">Status</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to enterprise&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up;ref_loc:Homepage;&quot;,&quot;ref_loc&quot;:&quot;Homepage&quot;}" href="/join?ref_cta=Sign+up&amp;ref_loc=homepage+sticky+nav&amp;ref_page=%2F&amp;source=homepage-sticky-nav">
+  Sign up
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1" style="right: -0.26rem"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                <h3 class="js-build-in build-in-slideX-left">
+                <h2 class="h3-mktg color-fg-default mb-3 text-gradient-mint-blue-dark"> Build on what&#39;s been built </h2>
+                <h3 class="f2-mktg text-gray-light-mktg lh-condensed text-semibold mb-3">
+                  <span class="color-fg-default">Write less code thanks to the world&#39;s largest software package registry.</span>
+                  Find the best community-approved projects to accelerate your work, then share it with the world with <a class="text-gray-light-mktg text-underline" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;text:community&quot;}" href="https://github.com/enterprise/contact?ref_page=/&amp;ref_cta=Contact%20Sales&amp;ref_loc=footer%20launchpad">
+  Contact Sales
+  
+  
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative">
+      
+
+        <div class="js-build-in-item home-cli position-absolute width-full">
+                      <div class="fc-blue-500 d-block h100 p24 ba p-bc-black fs-body3 bar-lg">
+                    <span class="fc-white d:fc-black d-block">You can save time and money with Stack Overflow for Teams.</span></div>

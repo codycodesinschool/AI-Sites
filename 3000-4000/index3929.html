@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/primary.css?v=9f3012e164b7">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+        <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=f039f0b977b7">
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="image_src" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=f039f0b977b7">
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/settings.mod">{"settings":{"userProfile":{"openGraphAPIKey":"4a307e43-b625-49bb-af15-ffadf2bda017"},"userMessaging":{"showNewFeatureNotice":true},"tags":{},"subscriptions":{"defaultBasicMaxTrueUpSeats":250,"defaultFreemiumMaxTrueUpSeats":50,"defaultMaxTrueUpSeats":1000},"snippets":{"renderDomain":"stacksnippets.net","snippetsEnabled":true},"site":{"allowImageUploads":true,"enableImgurHttps":true,"enableUserHovercards":true,"forceHttpsImages":true,"styleCode":true},"questions":{"enableQuestionTitleLengthLiveWarning":true,"maxTitleSize":150,"questionTitleLengthStartLiveWarningChars":50},"intercom":{"appId":"inf0secd","hostBaseUrl":"https://stacksnippets.net"},"paths":{},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"markdown":{"enableTables":true},"legal":{"oneTrustConfigId":"c3d9f1e3-55f3-4eba-b268-46cee4c6789c"},"flags":{"allowRetractingCommentFlags":true,"allowRetractingFlags":true},"elections":{"opaVoteResultsBaseUrl":"https://www.opavote.com/results/"},"comments":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true}}}</script>
+<script>StackExchange.init();</script>
+
+    <script>
+        StackExchange.using.setCacheBreakers({"Js/adops.en.js":"6da43f5e0a84","Js/ask.en.js":"7ff9a9068fd6","Js/begin-edit-event.en.js":"dd955babf04d","Js/copy-transpiled.en.js":"977ec0a0b497","Js/events.en.js":"","Js/explore-qlist.en.js":"2b1f34938b8b","Js/full-anon.en.js":"9606ab73611c","Js/full.en.js":"73d258849978","Js/highlightjs-loader.en.js":"3c37abf5cb6d","Js/inline-tag-editing.en.js":"77f922e6e562","Js/keyboard-shortcuts.en.js":"fa78d9020f1f","Js/markdown-it-loader.en.js":"5818ef89ff9d","Js/moderator.en.js":"df5a2eb14f4c","Js/postCollections-transpiled.en.js":"529276cfb7ae","Js/post-validation.en.js":"5dfbf70d3623","Js/question-editor.en.js":"","Js/review-v2-transpiled.en.js":"b588001d0a66","Js/revisions.en.js":"a86490719687","Js/stacks-editor.en.js":"7c971287f03c","Js/tageditor.en.js":"825c9597ce2d","Js/tageditornew.en.js":"857acd8b77e4","Js/tagsuggestions.en.js":"1bcff7d98f97","Js/unlimited-transpiled.en.js":"7ed67670b600","Js/wmd.en.js":"7014572a759f","Js/snippet-javascript-codemirror.en.js":"73fce5cc7219"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(false);
+        });
+    </script>
+    <noscript id="noscript-css"><style>body,.s-topbar{margin-top:1.9em}</style></noscript>
+    </head>
+    <body class="home-page unified-theme">
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+        
+<header class="s-topbar ps-fixed t0 l0 js-top-bar">
+    <div class="s-topbar--container">
+            <a href="#" class="s-topbar--menu-btn js-left-sidebar-toggle" role="menuitem" aria-haspopup="true" aria-controls="search" title="Click to show search"><svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18"><path d="M6.5 16A1.5 1.5 0 0 1 5 14.5v-4a1.5 1.5 0 1 1 3 0v4c0 .83-.67 1.5-1.5 1.5Zm-4-4a1.5 1.5 0 0 1 0-3H4v1.5c0 .83-.67 1.5-1.5 1.5Z" fill="#E01E5A"/><path d="M2.5 5h4a1.5 1.5 0 1 1 0 3h-4a1.5 1.5 0 1 1 0-3Zm4-4C7.33 1 8 1.67 8 2.5V4H6.5a1.5 1.5 0 1 1 0-3Z" fill="#36C5F0"/><path d="M10.5 9h4a1.5 1.5 0 0 1 0 3h-4a1.5 1.5 0 0 1 0-3Zm0 7A1.5 1.5 0 0 1 9 14.5V13h1.5a1.5 1.5 0 0 1 0 3Z" fill="#ECB22E"/><path d="M10.5 1c.83 0 1.5.67 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4c0-.83.67-1.5 1.5-1.5Zm4 4a1.5 1.5 0 0 1 0 3H13V6.5c0-.83.67-1.5 1.5-1.5Z" fill="#2EB67D"/></svg>        </a>
+
+            <a href="/teams/integrations/slack" class="mr-auto wmx4 d-block">
+                    <div class="rounded-2 box-shadow-default-border-mktg position-relative z-1 home-sponsors-1">
+                      <img src="https://avatars.githubusercontent.com/npm?s=64&amp;v=4" alt="npm" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.html</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Platform
+        </h2>
+
+        <ul class="list-style-none f5">
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to press&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" class="Link--secondary">Terms</a>
+        </li>
+
+        <li class="mr-3">
+          <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Start a free trial;ref_loc:billboard launchpad&quot;}" href="/organizations/enterprise_plan?ref_cta=Start%2520a%2520free%2520trial&amp;ref_loc=billboard&amp;ref_page=%2F" data-test-selector="start-trial-button">
+  Start a free trial
+  
+  
+</a>
+            <a class="btn-mktg btn-subtle-mktg" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to partner&quot;,&quot;label&quot;:&quot;text:Create a new organization for free;ref_loc:home launchpad&quot;}">
+  Create a new organization for free;ref_loc:home launchpad&quot;}">
+  Create a new organization for free;ref_loc:home launchpad&quot;}">
+  Create a new organization for free;ref_loc:home launchpad&quot;}">
+  Create a new organization for free;ref_loc:home launchpad&quot;}">
+  Create a new organization for free <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+            <img src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 opacity-4 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@pmarsceill" loading="lazy">
+                </picture>
+                    </div>
+
+              <div class="home-matrix-build mt-3 float-right color-bg-default width-full rounded-2 position-relative box-shadow-card-border-mktg">
+                    <div class="rounded-2 float-right home-discussions-answer overflow-hidden">
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg" width="20" height="20" class="d-block" loading="lazy" decoding="async" width="16" height="16">
+          <div>package.json</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l6 w3-center" style="padding:3%">
+  <h1 style="font-weight:700">SQL</h1>
+  <p style="font-size:19px;">The language for styling web pages</p>
+  <a href="/css/default.asp" class="w3-button ws-grey w3-block w3-border-bottom" style="text-decoration:none">Python</a>
+  <a href="/cert/cert_sql.asp" class="w3-button ws-grey w3-block" style="text-decoration:none;">And more</a>
+  </div>
+</div>
+-->
+
+<div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
+  <div id="stickyadcontainer">
+    <div style="position:relative;margin:auto;">
+      
+      <div id="adngin-sidebar_sticky-0"></div>
+        <script>
+        function secondSnigel() {
+          if(window.adngin && window.adngin.adnginLoaderReady) {
+            if (Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["mid_content"]); });
+                }
+              } else {
+              if (document.getElementById("adngin-mid_content-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky", "mid_content" ]); });
+                } else {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky"]); });
+              }
+            }
+          } else {
+            window.addEventListener('adnginLoaderReady', function() {
+              if (Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {         
+              if (document.getElementById("adngin-mid_content-0")) {
+                  adngin.queue.push(function(){  adngin.cmd.startAuction(["sidebar_sticky", "mid_content" ]); });
+              } else {
+              if (document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
+    }
+  }
+}
+function w3_close() {
+  document.getElementById("fblikeframe").style.display='block';
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color'>Close</button>";
+}
+function hideFBLike() {
+  document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+    elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
+      document.getElementById("googleSearch").style.display = "none";
+      document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("skyscraper")) {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
+  }
+  elem.style.width = skyWidth + "px";
+  if (window.innerWidth <= 992) {
+    elem.style.position = "";
+      elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").style.position = "static";
+    } else {
+        elem.style.position = "fixed";
+        elem.style.top = "60px";
+        stickyadstatus = "sticky";
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+      elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").style.position = "sticky";
+    }
+  }
+}
+function w3_getStyleValue(elmnt,style) {
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+  } else {
+    return elmnt.currentStyle[style];
+  }
+}
+</script>
+
+</head><body>
+<style>
+#darkmodemenu {
+  position:absolute;
+  top:-40px;
+  right:16px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+padding-top:10px;
+padding-bottom:10px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+#getdiploma a {
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #04AA6D;
+  padding: 17px 55px
+}
+
+#getdiploma a:hover,
+#getdiploma a:active {
+  background-color: #059862 !important;
+}
+
+
+@media screen and (max-width: 680px) {
+  #w3_cert_badge {
+    width: 190px;
+    right: 2%;
+  }
+
+  #w3_cert_arrow {
+    right: 169px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #w3_cert_badge {
+    top: -35px;
+    right: 10px;
+    width: 100px;
+  }
+  
+  #howto_padding {
+    padding: 2px 24px 90px 24px
+  }
+
+}
+
+@media screen and (max-width: 1080px) {
+  .ws-hide-1080 {
+    ddddisplay: none !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #howto_iframe {
+    height: 245px;
+  }
+}
+@media screen and (max-width:450px) {
+  #howto_iframe {
+    height: 203px;
+  }
+}
+.codeeditorbr-container {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.codeeditorbr-column {
+  float: left;
+}
+
+.codeeditorbr-left {
+  width: 20%;
+}
+
+.codeeditorbr-middle {
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  #w3_cert_arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px){
+.bigbtn {
+  display: block;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<style>
+#darkmodemenu {
+  position:absolute;
+  top:5px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  z-index:-1;
+  transition: top 0.2s;
+  user-select: none;
+}
+#darkmodemenu input,#darkmodemenu label {
+  cursor:pointer;
+}
+</style>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)"; 
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.body.className += " darktheme";
+    document.getElementById("radio_darkpage").checked = true;
+  }
+})();
+
+function mouseoverdarkicon() {
+  if(window.matchMedia("(pointer: coarse)").matches) {
+    return false;
+  }
+  var a = document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className = cc.replace("darktheme", "");
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+    document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+  } else {
+    document.getElementById("navbtn_menu")) {
+      document.getElementById("google_translate_element");
+  if (a.style.display == "") {
+      a.style.visibility = "";
+    a.style.display = "none";
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("gsc-i-id1")) {
+            document.getElementById("stickypos").style.position = "static";
+    } else {
+        elem.style.position = "fixed";
+      elem.style.top = "60px";
+        stickyadstatus = "sticky";
+      document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop) {
+      elem.style.position = "fixed";
+        elem.style.top = "60px";
+        stickyadstatus = "sticky";
+        document.getElementById("googleSearch");
+  if (a.style.visibility == "hidden" && a.style.display == "") {
+    a.style.display = "none";
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
+      document.getElementById("stickypos").style.position = "sticky";
+    }
+  }
+}
+function w3_getStyleValue(elmnt,style) {
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+  } else {
+    return elmnt.currentStyle[style];
+  }
+}
+</script>
+
+</head><body>
+<style>
+#darkmodemenu {
+  position:absolute;
+  top:5px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+padding-top:10px;
+padding-bottom:10px;
+font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
+<a href="/tags/default.asp">HTML Reference</a><br>
+<a href="/cssref/default.asp">CSS Properties</a>
+</div>
+
+<div class="w3-third">
+  <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_charactersets.asp">HTML Character Sets</a>
+<a target="_top" href="/tags/ref_canvas.asp">HTML Canvas</a>
+<a target="_top" href="/tags/ref_canvas.asp">HTML Canvas</a>
+<a target="_top" href="html_emojis.asp">HTML Emojis</a>
+<a target="_top" href="html_exercises.asp">HTML Exercises</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/css-certification-exam" target="_blank">HTML Certificate</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank">PHP Certificate</a>
+   <a class="w3-bar-item w3-button" href='/w3css/default.asp' title='W3.CSS Tutorial'>W3.CSS</a>
+      <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP</a>
+   <a class="w3-bar-item w3-button" href="/typescript/index.php">Learn TypeScript</a>
+  </div> 
+ <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:150px;font-size:21px" href="https://courses.w3schools.com/courses/css" target="_blank">CSS Course</a>
+   <a class="w3-bar-item w3-button" href='/r/default.asp' title='R Tutorial'>R</a>
+      <a class="w3-bar-item w3-button" href='/cpp/default.asp' title='C++ Tutorial'>C++</a>
+      <a class="w3-bar-item w3-button" href="/git/git_exercises.asp">Git Exercises</a>
+  </div>
+  <div class="w3-col l3 m6">
+   <h3 class="w3-margin-top">HTML</h3>
+   <a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/css" target="_blank">CSS Course</a>
+   <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+   <a class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home" style="width:77px">
+    <i class="fa fa-logo ws-text-green ws-hover-text-green" style="position:relative;font-size:42px!important;"></i>
+</div>
+<br><br>
+</div>
+
+</div>
+<script src="/lib/w3schools_footer.js?update=20220202"></script>
+
+<script>
+  MyLearning.loadUser('default');
+
+w3CodeColor();
+
+var pagesArr = [
+  ["html", "/html/default.asp", "HTML Tutorial"],
+  ["css", "/css/default.asp", "CSS Tutorial"],
+  ["js", "/js/default.asp", "JavaScript Tutorial"],
+  ["python", "/python/default.asp", "Python Tutorial"],
+  ["sql", "/sql/default.asp", "SQL Tutorial"],
+  ["php", "/php/default.asp", "PHP Tutorial"],
+  ["java", "/java/default.asp", "JAVA Tutorial"],
+  ["c", "/c/index.php", "C Tutorial"],
+  ["c++", "/cpp/default.asp", "C++ Tutorial"],
+  ["c#", "/cs/index.php", "C# Tutorial"],
+  ["jquery", "/jquery/default.asp", "jQuery Tutorial"],
+  ["w3css", "/w3css/default.asp", "W3.CSS Tutorial"],
+  ["bootstrap 3", "/bootstrap/default.asp", "Bootstrap3 Tutorial"],
+  ["bootstrap 4", "/bootstrap4/default.asp", "Bootstrap4 Tutorial"],
+  ["bootstrap 5", "/bootstrap5/index.php", "Bootstrap5 Tutorial"],
+  ["r", "/r/default.asp", "R Tutorial"],
+  ["kotlin", "/kotlin/index.php", "KOTLIN Tutorial"],
+  ["mysql", "/mysql/default.asp", "MySQL Tutorial"],
+  ["nodejs", "/nodejs/default.asp", "Node.js Tutorial"],
+  ["react", "/react/default.asp", "REACT Tutorial"],
+  ["json", "/js/js_json.asp", "JSON Tutorial"],
+  ["angularjs", "/angular/default.asp", "AngularJS Tutorial"],
+  ["w3.js", "/w3js/default.asp", "W3.JS Tutorial"],
+  ["xml", "/xml/default.asp", "XML Tutorial"],
+  ["sass", "/sass/default.php", "SASS Tutorial"],
+  ["icons", "/icons/default.asp", "Icons Tutorial"],
+  ["rwd", "/css/css_rwd_intro.asp", "Responsive Web Design Tutorial">
+        <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">React</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/excel/index.php" title="Excel Tutorial">
+        <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">React</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/git/default.asp" title="Git Tutorial">
+        <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">Artificial Intelligence</h2>
+        </div>
+      </a>
+    </div>
+  
+  
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <div class="w3-card-2 w3-round" style="color:black;background-color:#E7E9EB;padding:24px;">
+        <h2 style="font-size:45px;font-weight:700">jQuery</h2>
+        <div style="height:70px;">
+          <h5 class="w3-text-dark-grey">

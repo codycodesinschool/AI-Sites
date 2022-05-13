@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+            });
+            document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.remove('d-none');
+            });
+            document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+            });
+        });
+    });
+})(); 
+</script>
+
+
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 29 })">Teams</a></li>
+                        </ul>
+                    </div>
+            </div>
+                <div class="js-build-in-item home-cli position-absolute width-full">
+                      <div class="fc-blue-500 d-block h100 p24 ba p-bc-black fs-body3 bar-lg">
+                    <span class="fs-caption d-block fc-light">Where developers &amp; technologists worldwide</span>
+                        <span class="fs-body1 d-block">Talent</span>
+                        <span class="fs-caption d-block fc-light">

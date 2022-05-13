@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+        <link rel="apple-touch-icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/product/animations.en.js?v=660a00b4b4f3"></script>
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+        logos.appendChild(logos.children[Math.random() * i | 0]);
+        logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+            });
+            document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() {
+          if (useCaseCur === useCases.length) {
+              useCaseCur = 0;
+          }
+          useCaseShow(useCases[useCaseCur++])
+      }, useCaseSpeed)
+  }
+
+  //useCaseInit();
+})(); 
+</script>
+
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits fc-orange-400 t128 r0 w64 h64"></span>
+    <span aria-hidden="true" class="p-bits fc-gold sm:d-none t128 l128 w64 h64"></span>
+    <span aria-hidden="true" class="p-bits fc-blue-800 tn8 l16 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="p-bits fc-gold t0 l0 w128 h128 z-base"></span>
+    <span aria-hidden="true" class="p-bits fc-blue-200 b0 l128 w24 h24"></span>
+    <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-owner-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1Z" fill="#010101"/></svg>        </a>
+
+            <a href="/teams/integrations/microsoft-teams" class="ml-auto wmx4 d-block">
+                    <img width="421" height="465" class="js-lazy-load wmx100 h-auto d-block" data-src="https://cdn.sstatic.net/Img/product/teams/logos/philips-alt.svg?v=7fc60c993103" alt="Philips">
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo d-block mtn6" width="65" height="35" src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04" alt="">
+            </noscript>
+        </div>
+    </div>
+
+
+            <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--col site-footer--categories-nav">
+                    <div>
+                        <h5 class="-title"><a href="https://stackoverflow.com">current community</a>
+            </h3>
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 1, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list -social md:mb8">
+                    <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 24 })">
+                            Customize settings
+                        </button>
+                </div>
+            <div class="p24 h100 bg-black-025 bl br bb bbr-lg bc-black-100 p-bs-wrapper fs-body2 d-flex fd-column">
+                <h2 class="px8 py4 as-start bar-sm bg-orange-500 fc-white fs-body3">
+                    Free
+                </h2>
+
+                <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/assets/light_high_contrast-f89f23dd3d24.css" /><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" integrity="sha512-IVVa++hW3DBYJnNsmMMiUwt96BJ1mjUpGNDRWeui5BY1iA04E58M5NujgomnZU9R9DB+H99IlE7a+9b5XlO25g==" rel="stylesheet" href="https://github.githubassets.com/assets/github-elements-7f3d4670bea5.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-hZN/C8dP1MReDsLXTtUc3f0LOjRTx6lJtfLHtplhun0uazPq9xwV77FrhzsPUG+C6SORbdzjueWfFlw5ohmAgw==" src="https://github.githubassets.com/assets/93-c88b26ce3c81.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-K5XqHZlKou8Ex97bfu02vnw9p1q3z7EXg/hNqwyzevXKd7VQhkOwCH5y4Kx7AQ+wxdF7w2O30sb03ukDwHGVJQ==" src="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=275 275w" sizes="(max-width: 1120px) 60vw, 688px" type="image/jpeg"></source>
+  <img class="width-full height-auto position-absolute right-0 bottom-0" width="1376" height="436" loading="lazy" decoding="async" width="16" height="16">
+          <div>assets</div>
+        </div>
+
+        <div class="col-12 col-md-9 px-4 pl-md-7 pt-4 py-md-6 mb-md-0 position-relative z-1 text-center text-md-left" style="margin-bottom: 25%; box-shadow: 0 0 50px 30px #fff">
+          <h2 class="h5-mktg mb-1 mx-auto mx-md-0" style="max-width: 310px;"><span class="text-gray-mktg">Build like the best with GitHub Enterprise</span></h2>
+          <p class="f5-mktg text-semibold">flutter/<span class="color-fg-default">react</span></p>
+                </div>
+                    </div>
+              </div>
+                  <div class="home-matrix-tab-container position-absolute" style="width: 27%;">
+                      <picture>
+                        <source srcset="https://github.githubassets.com/images/modules/site/home/matrix-workflow-publish-tab.webp" type="image/webp">
+              <img src="https://github.githubassets.com/images/modules/site/home/footer-illustration.svg" media="(min-width: 700px)" type="image/svg">
+      <source srcset="https://github.githubassets.com/images/modules/site/home/codespaces-vscode-2.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/facebook?s=64&amp;v=4" alt="Facebook" class="color-bg-default avatar avatar-5 rounded-2 mr-2" loading="lazy" decoding="async" width="16" height="16">
+          <div>README.md</div>
+        </div>
+
+        <div class="d-flex py-1 px-3">
+          <img src="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=1100 1100w,https://github.githubassets.com/images/modules/site/home/codespaces-vscode-1.png" class="home-codespaces-view home-codespaces-view-3 z-2 rounded-2 box-shadow-active-border-light-mktg">
+                        <picture>
+                        <source srcset="https://github.githubassets.com/assets/environment-4a9660289ca1.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-sD0ByN9hdKohKI5O4x8aDCgS3P1dI1FTFJJXvXhWnU7UzRXoZvJemMFx+6r64d+CZOFfNS8nOsc4UY78ktGLsw==" src="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" width="16" height="16">
+          <div>index.js</div>
+        </div>
+
+        <div class="d-lg-none css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-2 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="suggestion">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+</svg>
+  
+</button>      </div>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/cs/index.php" title="C# Tutorial">
+        <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">Data Science</h2>
+        </div>
+      </a>
+    </div>
+    
+<!--
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/appml/default.asp" title="AppML Tutorial">
+        <div class="w3-card-2 w3-round ws-yellow" style="padding:36px 24px">
+          <h2 style="font-size:30px;font-weight:500">ASP</h2>
+        </div>
+      </a>
+    </div>
+
+
+    
+    
+        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;height:auto;">
+      <a href="/googlesheets/index.php" title="Google Sheets Tutorial">
+        <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+          <h2 style="font-size:30px;font-weight:500">TypeScript</h2>
+        </div>
+      </a>
+    </div>
+
+    
+    <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/graphics/default.asp" title="Graphics Tutorial">
+        <div class="w3-card-2 w3-round ws-yellow" style="padding:24px 0">
+          <h2 style="font-size:30px;font-weight:500">AngularJS</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+      <a href="/graphics/default.asp" title="Graphics Tutorial">
+        <div class="w3-card-2 w3-round" style="color:black;background-color:#96D4D4;padding:24px;">
+        <h2 style="font-size:45px;font-weight:700">Exercises and Quizzes</h2>
+  <h4>Test your skills!</h4>
+  <br>
+  <div class="w3-row-padding w3-content" style="max-width:1352px">
+    <div class="w3-half" >
+      <p><a class="w3-button exercise-button w3-round ws-green" href="/exercises/index.php">Exercises</a></h3>
+   <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+   <a class="w3-bar-item w3-button" href='/cssref/css3_browsersupport.asp'>CSS Browser Support</a>
+   <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/jquery" target="_blank" onclick="ga('send', 'event', 'Videos' , 'fromHTMLdefault')" class="w3-btn ws-black ws-hover-black" title="HTML video tutorial">Watch our Video Tutorial &raquo;<span class="ribbon-vidx ws-yellow">NEW</span></a><br>
+</div>
+<hr>
+
+<h2>Easy Learning with HTML &quot;Try it Yourself&quot;</h2>
+<p>With our &quot;Try it Yourself&quot; editor, you can edit the HTML code and view the 
+result:</p>
+
+<div class="w3-example">

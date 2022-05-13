@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/unix/Img/apple-touch-icon.png?v=5cf7fe716a89" alt="Unix &amp; Linux icon">
+        </a>
+
+                        <a href="https://stackoverflow.co/teams" 
+           class="w100 s-btn s-btn__primary s-btn__xs bg-orange-400 js-gps-track"
+           data-gps-track="teams.create.left-sidenav.click({ Action: CtaClick })"
+               data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams/create/basic&quot;,null,null]"
+            Basic
+            >
+                Request a demo
+            </a>
+        </div>
+
+
+                        <div class="fc-black-300 fs-body2 px24">Times a developer got help since 2008</div>
+            </div>
+            <div class="p24 h100 bg-black-025 bl br bb bbr-lg bc-black-100 p-bs-wrapper fs-body2 d-flex fd-column">
+                <h2 class="px8 py4 as-start bar-sm bg-black-700 fc-white fs-body3">
+                    Business
+                                </a>
+                            <li>
+                                 Professional
+                                        <li class="m6">
+                        <a href="https://stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSlider.style.width = userSlider.clientWidth + "px";
+    userSlider.style.height = userSlider.clientHeight + "px";
+
+    userSliderRun();
+  }
+
+  function userSliderRun() {
+    clearTimeout(userSliderTimeout);
+
+    userSliderTimeout = setTimeout(
+      function () {
+        userSlider.classList.add("js-loaded");
+
+        userSliderStarted = true;
+
+        userSliderCur = userWords[userSliderCount];
+
+        if (userSliderPrev) {
+          userSliderPrev.classList.add("js-user-slide-out");
+          userSliderCur.classList.remove("js-user-slide-out");
+          userSliderCur.classList.add("js-user-slide-init");
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md">
+                    <svg aria-hidden="true" class="native svg-icon iconLogoMd" width="187" height="37" viewBox="0 0 187 37"><path d="m42 23-2.2-.2c-1.7-.1-2.3-.8-2.3-2 0-1.4 1-2.2 3-2.2 1.3-.1 2.6.3 3.6 1.1l1.3-1.3c-1.4-1-3.1-1.5-4.8-1.4-2.9 0-4.9 1.5-4.9 3.9 0 2.2 1.4 3.4 4 3.6l2.2.2c1.6.1 2.2.8 2.2 2 0 1.6-1.4 2.4-3.6 2.4-1.6.1-3.1-.5-4.2-1.6L35 28.8c1.5 1.4 3.5 2 5.5 1.9 3.2 0 5.5-1.5 5.5-4.1 0-2.6-1.6-3.4-4-3.6Zm15.8-6.1c-2.2 0-3.5.4-4.7 1.9l1.3 1.3c.8-1.1 2.1-1.7 3.4-1.5 2.5 0 3.4 1 3.4 2.9v1.3h-4c-3 0-4.6 1.5-4.6 3.9 0 1 .3 2 1 2.7.8.9 1.9 1.2 3.8 1.2 1.4.1 2.9-.4 3.9-1.4v1.3h2v-9.1c-.1-2.9-1.9-4.5-5.5-4.5Zm3.4 8.9c.1.8-.1 1.7-.7 2.3a4 4 0 0 1-3 .9c-2.1 0-3.1-.7-3.1-2.3 0-1.6 1-2.4 3-2.4h3.8v1.5Zm9.7-7.1c1.2 0 2.4.5 3.1 1.5l1.3-1.3a5.4 5.4 0 0 0-4.4-2c-3.4 0-5.9 2.3-5.9 6.9 0 4.6 2.6 6.9 5.9 6.9 1.7.1 3.3-.7 4.4-2L74 27.4c-.7 1-1.9 1.5-3.1 1.5-1.2.1-2.4-.5-3.1-1.5-.7-1.1-1-2.3-.9-3.6-.1-1.3.2-2.5.9-3.6.7-1 1.9-1.6 3.1-1.5Zm16.8-1.6h-2.4L79.2 23V11.1h-2v19.4h2v-4.9l2.4-2.4 4.5 7.3h2.4l-5.6-8.6 4.8-4.8Zm9.2-.16c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm13.6-10.4-2.8 8.6-2.8-8.6h-3.7l5.2 14h2.7l5.1-14h-3.7Zm9.6-.1c-3.6 0-6.1 2.6-6.1 7.1 0 5.7 3.2 7.2 6.5 7.2 2 .1 4-.7 5.3-2.2l-2.1-2.1c-.8.9-2 1.4-3.2 1.3-1.6.1-3-1.1-3.1-2.7v-.4h8.7v-1.6c.1-3.8-2.1-6.6-6-6.6Zm-2.7 5.8c0-.5.1-1 .3-1.5.4-.9 1.3-1.4 2.3-1.4 1-.1 1.9.5 2.3 1.4.2.5.3 1 .3 1.5h-5.2Zm13.33-4.3v-1.3h-3.4v14h3.5v-8.4c-.1-1.3.8-2.4 2.1-2.6h.2c.7 0 1.4.3 1.8.8l2.6-2.6a4.1 4.1 0 0 0-3.3-1.3c-1.3-.1-2.6.4-3.5 1.4Zm7.6-2.8v15.4h3.5v-11h2.6v-2.7h-2.6v-1.5c-.1-.6.3-1.2.9-1.3h1.6v-3h-2a3.9 3.9 0 0 0-4 3.8v.3Zm20.27 1.3c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm13.6-10.4-2.8 8.6-2.8-8.6h-3.7l5.2 14h2.7l5.1-14h-3.7Zm9.6-.1c-3.6 0-6.1 2.6-6.1 7.1 0 5.7 3.2 7.2 6.5 7.2 2 .1 4-.7 5.3-2.2l-2.1-2.1c-.8.9-2 1.4-3.2 1.3-1.6.1-3-1.1-3.1-2.7v-.4h8.7v-1.6c.1-3.8-2.1-6.6-6-6.6Zm-2.7 5.8c0-.5.1-1 .3-1.5.4-.9 1.3-1.4 2.3-1.4 1-.1 1.9.5 2.3 1.4.2.5.3 1 .3 1.5h-5.2Zm13.33-4.3v-1.3h-3.4v14h3.5v-8.4c-.1-1.3.8-2.4 2.1-2.6h.2c.7 0 1.4.3 1.8.8l2.6-2.6a4.1 4.1 0 0 0-3.3-1.3c-1.3-.1-2.6.4-3.5 1.4Zm7.6-2.8v15.4h3.5v-11h2.6v-2.7h-2.6v-1.5c-.1-.6.3-1.2.9-1.3h1.6v-3h-2a3.9 3.9 0 0 0-4 3.8v.3Zm20.27 1.3c-1.6-.1-3.2.5-4.3 1.7-1.3 1.3-1.6 2.9-1.6 5.4 0 2.5.3 4.1 1.6 5.4 1.1 1.1 2.7 1.7 4.3 1.7 1.6.1 3.2-.5 4.3-1.7 1.3-1.3 1.6-2.9 1.6-5.4 0-2.5-.3-4.1-1.6-5.4a5.38 5.38 0 0 0-4.3-1.7Zm1.7 10.5c-.9.8-2.3.8-3.2 0-.7-.7-.8-2-.8-3.4s.1-2.7.8-3.4c.9-.8 2.3-.8 3.2 0 .7.7.8 1.9.8 3.4s-.1 2.7-.8 3.4Zm20.7-10.4-2.3 8.6-2.9-8.6H175l-2.8 8.7-2.3-8.6h-3.7l4.3 14h2.9l2.9-8.8 2.9 8.8h3l4.3-14-3.8-.1Zm-31.22 9.8v-15.2h-3.5v15.4a3.8 3.8 0 0 0 3.6 4h2.5v-3h-1.3c-.6.1-1.1-.2-1.3-.8v-.4ZM52.7 17.4H49V13h-2v13.9c0 2 1.1 3.6 3.4 3.6h1.4v-1.7h-1c-1.3 0-1.8-.7-1.8-2v-7.7h1.9l1.8-1.7Z" fill="var(--black-800)"/><path d="M129.55 23.38a1.88 1.88 0 0 0-1.8-1.12c-.92 0-1.52.48-1.81 1.12-.17.39-.23.68-.25 1.15h4.1a2.94 2.94 0 0 0-.24-1.15Zm-3.86 3c0 1.37.85 2.39 2.37 2.39a3 3 0 0 0 2.44-1.02l1.65 1.6a5.16 5.16 0 0 1-4.12 1.69c-2.55 0-5-1.16-5-5.52 0-3.5 1.91-5.49 4.71-5.49 3.02 0 4.72 2.2 4.72 5.14v1.2h-6.77Zm-9.17-3.93c-1.6 0-1.76 1.36-1.76 2.79 0 1.42.16 2.8 1.76 2.8s1.79-1.38 1.79-2.8c0-1.43-.19-2.8-1.79-2.8Zm-.27 12.53c-1.66 0-2.8-.33-3.92-1.4l1.68-1.7c.6.58 1.2.83 2.12.83 1.62 0 2.18-1.14 2.18-2.23v-1.1a3.18 3.18 0 0 1-2.58 1.08 3.6 3.6 0 0 1-2.57-.95c-1.02-1.01-1.1-2.4-1.1-4.27 0-1.88.08-3.25 1.1-4.26.6-.6 1.53-.95 2.6-.95 1.13 0 1.88.31 2.63 1.14v-1.01h2.62v10.36c0 2.58-1.85 4.46-4.76 4.46Zm-8.97-4.07v-6.5c0-1.47-.93-1.96-1.78-1.96s-1.8.5-1.8 1.96v6.5H101V20.16h2.63v.99c.7-.75 1.7-1.12 2.7-1.12a3.5 3.5 0 0 1 2.55.95c.87.87 1.1 1.88 1.1 3.06v6.87h-2.7Zm-11.14-4.54H94c-.98 0-1.52.45-1.52 1.22 0 .74.5 1.24 1.56 1.24.75 0 1.22-.06 1.7-.52.3-.27.4-.7.4-1.36v-.58Zm.06 4.54v-.93c-.73.73-1.41 1.04-2.66 1.04-1.22 0-2.12-.31-2.76-.95-.58-.6-.9-1.47-.9-2.42 0-1.71 1.2-3.12 3.7-3.12h2.56V24c0-1.18-.58-1.7-2.02-1.7-1.04 0-1.51.25-2.07.9l-1.73-1.68c1.06-1.16 2.1-1.49 3.9-1.49 3.04 0 4.62 1.28 4.62 3.8v7.08H96.2Zm-11 0v-6.56c0-1.43-.91-1.9-1.77-1.9-.85 0-1.74.5-1.74 1.9v6.56h-2.7v-14.7h2.7v4.94a3.58 3.58 0 0 1 2.6-1.12c2.36 0 3.6 1.65 3.6 3.93v6.95h-2.7Zm-11.02.13c-2.16 0-4.84-1.16-4.84-5.52 0-4.35 2.68-5.49 4.84-5.49 1.5 0 2.61.46 3.57 1.45l-1.83 1.81c-.56-.6-1.04-.84-1.74-.84-.65 0-1.15.23-1.54.7-.41.52-.6 1.24-.6 2.37 0 1.14.19 1.88.6 2.4.4.47.9.7 1.54.7.7 0 1.18-.25 1.74-.85l1.83 1.8a4.64 4.64 0 0 1-3.57 1.47Zm-8.6-.13L63.6 27.7l-1.98 3.22h-3.24l3.74-5.49-3.59-5.26h3.24l1.83 3.07 1.84-3.07h3.24l-3.59 5.26 3.74 5.5h-3.24Zm-17.58 0v-14.7h9.74v2.56h-6.85v3.45h5.83v2.56H50.9v3.57h6.85v2.56H48Z" fill="#205196"/><path d="M147 3h-15v-.5c0-1.3 1.21-2.5 2.5-2.5h10c1.3 0 2.5 1.2 2.5 2.5V3Z" fill="#8FD8F7"/><path d="M132 12v.5c0 1.3 1.21 2.5 2.5 2.5h6.5v3l3-3h.5c1.3 0 2.5-1.2 2.5-2.5V12h-15Z" fill="#155397"/><path d="M132 8v3h15V8h-15Z" fill="#2D6DB5"/><path d="M132 4v3h15V4h-15Z" fill="#46A2D9"/></svg></div>
+            <h2 class="fw-normal fs-headline2 lh-sm p-ff-roboto-slab mb24 mx-auto wmx6">Explore technical topics and other disciplines across 170+ Q&A communities</h2>
+            <p class="fs-subheading wmx7 mx-auto fc-black-200 mb32">All plans come with integrations for ChatOps tools <a class="fc-blue-500 h:fc-blue-300" href="https://stackoverflow.co/explore-teams" class="s-btn fs-body2 bar-md bg-blue-500 h:bg-blue-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;learn more - advertising&quot;,null,null]">
+                    <div class="p-ff-roboto-slab-bold fw-bold fs-headline1 p-font-smooth lh-xs pt12 mb6">
+                        Free
+                </h2>
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://stackoverflow.com/legal/terms-of-service">Terms of Service</a></li>
+                        </ul>
+                </div>
+            <div class="flex--item6">
+                <h2 class="p-ff-roboto-slab-bold fc-white d:fc-black fs-headline2 mb12">Integrates with and improves other tools</h2>
+                <p class="mx48 sm:ml32 sm:mr32 mb32 fc-black-600 fs-subheading">A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+                <a href="/users/signup" class="s-btn w100 ws-nowrap wmx2 fs-body2 px32 bar-md bg-orange-500 h:bg-orange-600 fc-white d:fc-black-900 p-ff-source-bold mt-auto" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;Request a demo&quot;,null,null]">For large organizations <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"/><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"/></svg>
+                    <h3 class="ps-relative px32 d:fc-black pt24 p-ff-roboto-slab-bold fs-title mb12">Support teams</h3>
+                    <p class="fs-body3 px32 hmn1">Level up your support by providing information to your customers using a natural interface: questions and answers.</p>
+                </div>
+                </a>
+                    </li>
+            </ol>
+            </div>
+
+                
+
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconShield" width="18" height="18" viewBox="0 0 18 18"><path d="M16 1a1 1 0 0 0-1 1v.38L5.3 6A2 2 0 0 0 4 7.9v2.22a2 2 0 0 0 1 1.74v1.65a3.5 3.5 0 0 0 6.87.95L15 15.63V16a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1ZM6.6 12.47l3.76 1.42a1.9 1.9 0 0 1-3.76-.39v-1.03ZM2 6a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1Z"/></svg></div>
+            <div>ChatOps integrations - Slack &amp; Microsoft Teams</div>
+        </div>
+        <div class="flex--item py32 md:pt16 md:pb16">
+                <div class="left-sidebar js-unpinned-left-sidebar" data-can-be="left-sidebar" data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative">
+    <div class="left-sidebar--sticky-container js-sticky-leftnav">
+        <nav role="navigation">
+            <ol class="nav-links">
+                    
+
+<li class="ps-relative" >
+
+    <a id="nav-collective-discover"
+       href="/collectives"
+       class="pl8 ai-center js-collectives-navcta-toggle js-gps-track nav-links--link -link__with-icon"
+       
+       data-gps-track="top_nav.click({is_current:false, location:1, destination:18})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+<svg aria-hidden="true" class="mln4 mb24 sm:d-none svg-spot spotCookieLg" style="color: var(--theme-button-filled-background-color)" width="96" height="96" viewBox="0 0 96 96"><path d="M67.37 12.9A38.67 38.67 0 0 0 50.8 9a38.02 38.02 0 0 0-16.47 3.9c-.38.3-.44.74-.19 1.2l4.74 7.49c.24.35.79.61 1.29.6.1-.01.21-.04.32-.07 1.01-.29 6.76-1.88 10.4-1.88 3.7 0 9.6 1.65 10.45 1.9.07.02.14.04.22.04.44.05 1-.15 1.25-.6l4.73-7.49c.26-.44.2-.9-.18-1.18ZM19 77.5a7.84 7.84 0 0 0 7.79 7.88 3.98 3.98 0 0 0 3.93-3.9v-18.5A4 4 0 0 0 26.8 59a7.84 7.84 0 0 0-7.8 7.89v10.6Zm57.94 6.88c4.3 0 7.78-3.54 7.78-7.89V65.9a7.84 7.84 0 0 0-7.78-7.9A4 4 0 0 0 73 61.99v18.5a3.98 3.98 0 0 0 3.94 3.89ZM49 92h6a3 3 0 0 0 0-6h-6a3 3 0 0 0 0 6Z" opacity=".2"/><path d="M54.5 12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM11 43.69a37.1 37.1 0 0 1 19.3-32.54l1.99 2.93C20.7 19.81 13.95 30.6 13.95 44.57a1.5 1.5 0 0 0 3 0c0-13 6.27-22.8 17-27.96l.05-.02 1.66 2.44c.38.57 1.1.8 1.74.57a34.63 34.63 0 0 1 11.47-1.97c4.03 0 7.94.63 11.45 1.96.66.25 1.4 0 1.79-.58l1.33-2.06c10.35 5.35 16.59 14.92 16.59 27.62a1.5 1.5 0 0 0 3 0c0-13.74-6.78-24.26-17.95-30.14l1.99-3.06A37.8 37.8 0 0 1 75 17.41a36.77 36.77 0 0 1 11 26.28V64h-3v-1.23c0-5.26-4.7-9.27-10.13-9.27-3.06 0-5.87 2.31-5.87 5.43v18.23c0 3.05 2.83 5.34 5.87 5.34.2 0 .4 0 .59-.02-.07.39-.21.77-.4 1.06-.28.43-.5.46-.56.46H54.74a4.5 4.5 0 0 0-4.24-3h-6a4.5 4.5 0 0 0 0 9h6a4.5 4.5 0 0 0 4.24-3H72.5a3.7 3.7 0 0 0 3.07-1.83c.6-.92.93-2.08.93-3.17v-.03a1.78 1.78 0 0 0 0-.09c3.74-1.32 6.5-4.62 6.5-8.65V73h4.33c2.46 0 4.17-2.19 4.17-4.5 0-1.74-.97-3.41-2.5-4.13V43.69c0-11.12-4.5-21.1-11.88-28.41A40.39 40.39 0 0 0 48.5 3.5C26.1 3.5 8 21.45 8 43.69v20.48a4.5 4.5 0 0 0-3 4.33C5 70.81 6.7 73 9.17 73H13v.23c0 5.26 4.7 9.27 10.13 9.27 3.04 0 5.87-2.3 5.87-5.34V58.93c0-3.12-2.8-5.43-5.87-5.43C17.7 53.5 13 57.51 13 62.77V64h-2V43.69ZM37.5 16.4 33 9.8a37.72 37.72 0 0 1 15.5-3.3 37.5 37.5 0 0 1 15.89 3.49l-4.16 6.39a37.63 37.63 0 0 0-22.73.03Zm14.25 68.26a1.5 1.5 0 0 0 0 1.66c-.27.4-.73.67-1.25.67h-6a1.5 1.5 0 0 1 0-3h6c.52 0 .98.27 1.25.67ZM23.13 56.5c1.7 0 2.87 1.26 2.87 2.43v18.23c0 1.06-1.14 2.34-2.87 2.34-4.08 0-7.13-2.96-7.13-6.27V62.77c0-3.31 3.05-6.27 7.13-6.27ZM9.17 67H13v3H9.17C8.69 70 8 69.5 8 68.5S8.69 67 9.17 67ZM70 58.93c0-1.17 1.16-2.43 2.87-2.43 4.08 0 7.13 2.96 7.13 6.27v10.46c0 3.31-3.05 6.27-7.13 6.27-1.73 0-2.87-1.28-2.87-2.34V58.93ZM83.5 70v-3h3.83c.48 0 1.17.5 1.17 1.5s-.69 1.5-1.17 1.5H83.5Z"/></svg>
+                    </button>
+                    </div>
+            </div>
+    </a>
+</li>
+
+                <li>
+                            <li>
+                            <li class="m6">
+                        <a href="/teams" class="s-navigation--item js-gps-track"
+                           data-s-popover-toggle-class="is-selected"
+                   data-gps-track="top_nav.products.click({location:1, destination:3})"
+                            data-gps-track="top_nav.products.click({location:1, destination:1})"
+       aria-controls="" data-controller="" data-s-popover-placement="right"
+       data-s-popover-auto-show="true" data-s-popover-hide-on-outside-click="never">
+            <div class="d-flex ai-center">
+                <div class="flex--item pl6">
+                            </div>
+                <a href="https://nodejs.org/dist/v16.15.0/" class="home-downloadbutton" title="Download 16.15.0 LTS" data-version="v16.15.0">
+            16.15.0 LTS
+            <small>Recommended For Most Users</small>
+          </a>
+
+          <ul class="list-divider-pipe home-secondary-links">
+              <li>
+                <a href="/en/download/">Downloads</a>
+            </li>
+            <li >
+                <a href="/en/download/current/">Other Downloads</a>
+              </li>
+            </ul>
+
+          </div>
+        <p>
+          Or have a look at the <a href="/en/about/releases/">Long Term Support (LTS) schedule</a>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <a href="#" id="scroll-to-top">&uarr; <span>Scroll to top</span></a>
+  
+  <footer  class="no-margin-top" >
+  
+    <div class="container">
+      <div class="openjsfoundation-footer">
+        <div class="issue-link-container">
+          <a class="openjsfoundation-logo" href="https://openjsf.org/">
+            <img src="/static/images/logo.svg" alt="Node.js" width="122" height="75">
+      </a>
+  
+      <nav aria-label="primary">
+        <ul class="list-divider-pipe home-secondary-links">
+              <li>
+                <a href="https://github.com/nodejs/node/issues">Report Node.js issue</a></li>
+          <li><a href="https://github.com/nodejs/nodejs.org/issues">Report website issue</a></li>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="/static/images/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/static/images/favicons/safari-pinned-tab.svg" color="#43853d">
+  <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="d-flex flex__allitems3 jc-center px12 md:fd-column pt32 pb64 sm:pb128 wmx9 mx-auto">
+            <div class="d-flex flex-column gutter gutter-spacious">
+        <div class="d-none d-lg-flex offset-1 col-5 px-0 position-relative z-1">
+          <div class="flex-auto ml-n7" style="height: 1rem; border-radius: 0 0 0 1rem; border-bottom: 2px solid #424d65; border-left: 2px solid #424d65;"></div>
+          <div class="ml-n7 height-full position-absolute top-0 left-0 right-0 width-full events-none overflow-hidden">
+    <div class="d-flex flex-column gutter gutter-spacious height-full events-none">
+      <div class="col-10 offset-1 home-git-log-dark height-full" style="padding: 6.5rem 0 0;">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="position-relative z-2 js-build-in build-in-scale-up js-build-in-trigger js-type-in-trigger position-relative d-flex flex-items-center mb-5 mb-md-6 home-desktop-comp">
+                  <div class="col-12 col-md-10 col-lg-6 mx-auto mx-lg-0 text-center text-lg-left mb-5 mb-md-6">
+        <h2 class="h1-mktg color-fg-default mb-2 mb-sm-3">Make your contribution</h2>
+        <p class="f2-mktg text-gray-light-mktg text-semibold"><span class="color-fg-default">Secure your code as you write it.</span> CodeQL’s code scanning automatically reviews every change to your codebase and identifies known vulnerabilities before they ever reach production.</h3>
+                  </div>
+
+                    <div class="position-absolute right-0 bottom-0 left-0 rounded-2 box-shadow-default-border-mktg z-n1">
+            <picture>
+                        <source srcset="https://github.githubassets.com/assets/dark-d4a90c367f0c.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-+J8j3T0kbK9/sL3zbkCfPtgYcRD4qQfRbT6xnfOrOTjvz4zhr0M7AXPuE642PpaxGhHs1t77cTtieW9hI2K6Gw==" rel="stylesheet" data-href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/images/modules/site/home/matrix-workflow-publish.png" class="width-full" alt="Actions build workflow" loading="lazy">
+                      <img src="https://github.githubassets.com/images/modules/site/home/matrix-workflow-publish.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 color-bg-default circle position-relative mt-lg-n7 mx-auto js-build-in" style="width: 164px; height: 164px;" data-build-margin-top="0" data-build-margin-bottom="0">
+            <div class="position-absolute width-full color-bg-default" style="bottom: -4rem;">
+    <div class="container-xl p-responsive mx-auto js-section" id="home-community">
+  <div class="d-flex flex-column gutter gutter-spacious position-relative">
+
+    <div class="col-12">
+      <div class="d-flex flex-column gutter gutter-spacious">
+      <div class="col-12 col-md-10 col-lg-6 mx-auto mx-lg-0 text-center text-lg-left mb-5 mb-md-6">
+        <h2 class="h1-mktg color-fg-default mb-2 mb-sm-3">Make your contribution</h2>
+        <p class="f2-mktg text-gray-light-mktg text-semibold mt-md-n5 mb-5 mb-md-n11 col-5-max"><span class="color-fg-default">Visual Studio Code, in your browser, full stop.</span> Codespaces brings the world’s most popular desktop editor to every repo. Code, build, test, use the terminal, and open pull requests from anywhere.</h3>
+          </div>
+
+          <div class="width-full offset-lg-2 d-flex flex-justify-center gutter-condensed gutter-lg py-2 py-lg-3">
+            <div class="col-3">
+              <a href="/flutter/flutter"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Start a free trial;ref_loc:billboard launchpad&quot;}" href="/organizations/enterprise_plan?ref_cta=Start%2520a%2520free%2520trial&amp;ref_loc=billboard&amp;ref_page=%2F" data-test-selector="start-trial-button">
+  Start a free trial
+  
+  
+</a>
+            <a class="btn-mktg mb-3 mb-sm-0 mr-sm-2 btn-muted-mktg" data-analytics-event="{&quot;category&quot;:&quot;npm&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up for GitHub;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex__center gs16 ff-row-wrap">
+            <a href="/teams/integrations/microsoft-teams" class="flex--item d-flex ai-center jc-center fc-black-900 d:fc-black-900 bg-white d:p-bg-dark-tint bar-md bs-sm h:bs-md w64 h64" title="Slack" data-controller="s-tooltip" data-s-tooltip-placement="top">    
+<svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"/><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm4.2-7.4L26 18.4l2.1-2.5L15.4 5.3l-2.1 2.5ZM21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0ZM7 30h16v-3H7v3Z" fill="#F48024"/></svg></a>
+                </div>
+            </div>
+
+                
+
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconBullhorn" width="18" height="18" viewBox="0 0 18 18"><path d="M5 3a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Zm2 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm.5 1.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Z"/><path opacity=".4" d="M5.9 2h6.35A2.75 2.75 0 0 1 15 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1Z"/></svg></div>
+            <div>Your own private space hosted on stackoverflow.com</div>
+        </div>
+        <div id="p-pricing-grid-free" class="flex--item d-flex fd-column wmn3">
+            <div class="bg-white bar-lg ba bc-black-075 h100 p24 fs-body2 d-flex fd-column">
+                <h2 class="px8 py4 as-start bar-sm bg-orange-500 fc-white fs-body3">
+                    Free
+                </h2>
+
+                <div class="bb bc-orange-500 pb24 mb24">
+                    <div class="home-matrix-string d-flex gutter-condensed flex-items-start flex-justify-center mx-3 mx-lg-0 width-full position-relative">
+                    <div class="d-flex flex-row flex-nowrap position-absolute mt-1" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+          </div>
+
+      
+      
+      
+      
+      
+    </div>
+  </div>
+
+  <div class="col-12 py-3 col-md-6 col-lg-7">
+    <div class="position-relative js-header-wrapper ">
+      <a href="#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
+      <span data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+        <div class="terminal-mktg text-mono package-registry bg-gray-800-mktg home-pre rounded-2 js-type-in" data-color-mode=dark data-light-theme=light data-dark-theme=dark>
+  <div class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;go to professional services&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Develop</a>
+        <a href="#home-automate" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Codespaces&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:ansible/ansible;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/images/modules/site/home/pr-merge.webp" type="image/webp">
+              <img src="https://avatars.githubusercontent.com/jasonetco?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 opacity-4 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@jasonetco" loading="lazy">
+                      </picture>
+                    </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">🏡 Open source home automation that puts local control and privacy first</p>
+              </a>
+            </div>
+            </div>
+          </div>

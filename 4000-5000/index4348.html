@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-in {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-out {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideOut {
+            0% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.remove('d-none');
+                } else {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="p-home-company pb128 ta-center">
+    <div class="bb bc-black-075 pb24 mb24">
+                    <div class="home-codespaces-glow-container position-absolute top-0 bottom-0 overflow-hidden">
+                      <picture>
+                          <source srcset="https://github.githubassets.com/images/modules/site/home/codeql-step-1.webp" type="image/webp">
+                        <img src="https://github.githubassets.com/images/modules/site/home/icons/actions-check.svg" class="home-actions-success-check"
+              alt="Large representation of the indicator that a workflow is running" loading="lazy">
+          </div>
+
+          <h3 class="col-5-max f2-mktg text-gray-mktg text-semibold mb-4 col-5-max">Speaking of automation, <span class="text-gray-dark-mktg"> Know when your pull request is ready to merge when everything’s green.</span> Reviews approved? Check. Tests passing? Check check. No conflicts? Ship it already.</h3>
+                  </div>
+
+              <div class="col-12 col-lg-5">
+                    <div class="home-matrix-tab-container position-absolute" style="width: 22%;">
+                      <picture>
+                  <source srcset="https://github.githubassets.com/assets/home-b03d01c8df61.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-KpuRNOm6MMmvWuaP8wFX26rnjPfD1Wf8KTdEyObOT5SLeLP47LFmHQbSCVcJpdBhAAqlf28Pk7fUdcsT8cZILg==" src="https://github.githubassets.com/images/modules/site/home/secret-alert.png" class="width-full rounded-2 home-secret-alert position-relative z-1" alt="An alert of found secret committed to the repository" loading="lazy">
+          </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-11 col-sm-10 offset-1">
+        <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pt-5 pb-8 pb-md-9">

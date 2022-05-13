@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Shared/stacks.css?v=b56cf48c9205">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/ai/Img/apple-touch-icon.png?v=f14d741b295c" alt="Artificial Intelligence icon">
+        </a>
+
+                        <a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 1, link: 24 })">
+                                  <a href="https://stackoverflow.co/teams"
+               class="js-gps-track s-btn s-btn__primary s-btn__xs"
+               data-gps-track="teams.create.left-sidenav.click({ Action: 6 })"
+           data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav free cta&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">Create a free Team</a>
+</section>
+
+<svg width="0" height="0" class="ps-absolute"><defs>
+    <clipPath id="curve" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.988 a0.007,0.012,0,0,1,-0.009,0.011 C0.955,0.983,0.802,0.925,0.501,0.925 C0.2,0.925,0.045,0.984,0.009,1 A0.007,0.012,0,0,1,0,0.988"/>
+    </clipPath>
+</defs></svg>
+
+<script>
+window.onload = function () {
+  var userSlider = document.querySelector(".js-user-slider");
+  var userWordsData = userSlider.getAttribute("data-words").split(",");
+  var userWords;
+  var userWordsWidth = [];
+  var userSliderCount = 0;
+  var userSliderStarted = false;
+  var userSliderTimeout;
+  var userSliderPrev = null;
+  var userSliderCur;
+
+  function userSliderInit() {
+    userSlider.innerHTML = "";
+
+    for (var i = 0; i < userWordsData.length; ++i) {
+      var _span = document.createElement("span");
+      var _text = document.createTextNode(userWordsData[i]);
+      var _elm = _span.appendChild(_text);
+
+      userSlider.appendChild(_span);
+    }
+
+    userWords = userSlider.childNodes;
+
+    userSlider.style.width = userSliderCur.clientWidth + "px";
+        userSlider.style.height = userSliderCur.clientHeight + "px";
+
+        userSliderPrev = userSliderCur;
+
+        if (userSliderCount === userWords.length - 1) {
+          userSliderCount = 0;
+        } else {
+          userSliderCount++;
+        }
+
+        userSliderRun();
+      },
+      userSliderStarted ? 2000 : 0
+    );
+  }
+
+  userSliderInit();
+};
+
+(function () {
+  var useCases = document.querySelectorAll(".js-use-case");
+  var useCaseClassActive = "js-use-case wmn3 fc-white d:fc-black js-use-case--is-active c-pointer flex--item bg-black-700 d:bg-black-100 py32 bar-lg bs-md";
+  var useCaseClass = "js-use-case c-pointer fc-black-025 h:bg-black-800 bar-lg flex--item py32";
+  var useCaseCur = 0;
+  var useCasePlayer;
+  var useCaseSpeed = 5000;
+
+  for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) { 
+        useCaseShow(event.currentTarget, i);
+        clearInterval(useCasePlayer);
+    });
+  }   
+
+  function useCaseReset() {
+    for (var i = 0; i < useCases.length; ++i) {
+    var useCase = useCases[i];
+    useCase.addEventListener("click", function(event) {
+  var a, x = event.srcElement;
+  if (x.id == "search2" ||x.id == "learntocode_searchbtn" || x.id == "learntocode_searchicon" || x.classList.contains("search_item")) {
+  } else {
+    a = document.getElementById("listofsearchresults");
+  a.innerHTML = "";
+  a.style.display = "none";
+  document.getElementById("search2").style.borderBottomLeftRadius = "25px";
+  val = inp.value.toUpperCase();
+  if (val == "") return false;
+  for (i = 0; i < pagesArr.length; i++) {
+    if (pagesArr[i][0].toUpperCase().substr(0, val.length) == val) {
+      resultIndexes.push(i);
+      if (resultIndexes.length > 5) break;
+    }
+  }
+  for (i = 0; i < pagesArr.length; i++) {
+    if (resultIndexes.indexOf(i) == -1 && (pagesArr[i][0].toUpperCase().indexOf(val) > -1 || pagesArr[i][2].toUpperCase().substr(0, val.length) == val) {
+      resultIndexes.push(i);
+      if (resultIndexes.length > 5) break;
+    }
+  }
+  //if (resultIndexes.length == 0) return false;
+  document.getElementById("search2").value);
+  } else {
+    setTimeout(execute_google_search, delayInMilliseconds);
+}
+
+function execute_google_search() {
+  if (typeof google == 'object') {
+    google.search.cse.element.getElement("standard0").execute(document.getElementById("search2").style.borderBottomLeftRadius = "25px";
+    if (searchFromBox == true) {
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
+      document.getElementById("stickypos").style.position = "sticky";
+  var elem = document.getElementById("stickypos").style.position = "sticky";
+    }
+  }
+}
+function w3_getStyleValue(elmnt,style) {
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+  } else {
+    return elmnt.currentStyle[style];
+  }
+}
+</script>
+
+</head><body>
+<style>
+#darkmodemenu {
+  position:absolute;
+  top:5px;
+  padding:5px 20px 10px 18px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  z-index:-1;
+  transition: top 0.2s;
+  user-select: none;
+}
+#darkmodemenu input,#darkmodemenu label {
+  cursor:pointer;
+}
+</style>
+<script>
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">CSS</span> SASS</h2>
+<a target="_top" href="/sass/default.php">SASS Tutorial</a>
+<br>
+<h2 class="left">

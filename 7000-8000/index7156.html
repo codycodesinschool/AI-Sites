@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+
+    <html class="html__responsive html__unpinned-leftnav" lang="en">
+
+    <head>
+
+        <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="Stack Overflow | The World&#x2019;s Largest Online Community for Developers" />
+    <script id="webpack-public-path" type="text/uri-list">https://cdn.sstatic.net/</script>
+    <script src="https://cdn.sstatic.net/Js/stub.en.js?v=e700279bb0cc"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Product/product.css?v=f5d2db9a2252">
+    <script defer src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/third-party/npm/@stackoverflow/stacks/dist/js/stacks.min.js?v=776313f9a094"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://cdn.sstatic.net/Js/product/lazy-load-images.en.js?v=767e999ba5d5"></script>
+
+        <link rel="alternate" type="application/atom+xml" title="Feed of recent questions" href="/feeds">
+
+    <style>
+        .p-wrapper-home {
+            max-width: 1950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -150%, 0);
+            }
+
+            100% {
+                opacity: 0;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-out {
+            animation: slideOut 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 1;
+                transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+    }
+
+    function showLogos(evt) {
+        logos.classList.add('o0');
+
+        if (evt) {
+            clearInterval(logosCarouselPlayer);
+            logosCurrentPage = parseInt(evt.currentTarget.getAttribute('data-page') || 0);
+        }
+    
+        setTimeout(function() {
+            for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-carousel-logos-nav');
+
+        for (var i = 0; i < navItems.length; ++i) {
+            if (i === logosCurrentPage) {
+                navItems[i].classList.add('bg-black-800');
+            }
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+		        transform: translate3d(0, -100%, 0);
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+            opacity: 1;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -50%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+        .js-user-slider span:first-of-type {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider {
+            transition: width 0.2s, height 0.2s;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slide-init {
+            transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+		        transform: translate3d(0, -100%, 0);
+            }
+        }
+        .js-user-slide-in {
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+
+            30% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+        }
+        
+        .js-use-case p {
+            display: none;
+            opacity: 0;
+        }
+        .js-user-slider span {
+            display: none;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: auto;
+            right: auto;
+        }
+        .js-user-slider.js-loaded span {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active p {
+            display: block;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active h3 {
+            border-top-color: var(--black-500) !important;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+        .js-use-case.js-use-case--is-active svg {
+            color: var(--blue-500) !important;
+        }
+    </style>
+
+        
+        
+        
+
+
+    <script type="application/json" data-role="module-args" data-module-name="Shared/options.mod">{"options":{"locale":"en","serverTime":1652311552,"routeName":"Home/Index","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Stack Overflow","description":"Q\u0026A for professional and enthusiast programmers","isNoticesTabEnabled":true,"enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"cookieDomain":".stackoverflow.com","childUrl":"https://meta.stackoverflow.com"
+       class="current-site-link site-link js-gps-track d-flex gs8 gsx"
+       data-id="552"
+       data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:3 })">
+        <div class="favicon favicon-stackoverflow site-icon flex--item" title="Stack Overflow"></div>
+        <span class="flex--item fl1">
+                <div class="left-sidebar js-unpinned-left-sidebar" data-can-be="left-sidebar" data-is-here-when="" class="left-sidebar js-pinned-left-sidebar ps-relative">
+    <div class="left-sidebar--sticky-container js-sticky-leftnav">
+        <nav role="navigation">
+            <ol class="nav-links">
+                            Create free Team
+                        </div>
+            <div class="p24 h100 bg-black-025 bl br bb bbr-lg bc-black-100 p-bs-wrapper fs-body2 d-flex fd-column">
+                <h2 class="p-ff-roboto-slab-bold fc-white d:fc-black fs-headline2 mb12">Integrates with and improves other tools</h2>
+                <p class="mx48 sm:ml32 sm:mr32 mb32 fc-black-600 fs-subheading">A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+                <a href="/users/signup" class="s-btn w100 ws-nowrap wmx2 fs-body2 px32 bar-md bg-orange-500 h:bg-orange-600 fc-white d:fc-black-900 p-ff-source-bold" data-ga="[&quot;home page&quot;,&quot;header cta&quot;,&quot;create a team&quot;,null,null]">For small teams <svg aria-hidden="true" class="fc-orange-500 svg-spot spotPeople" width="48" height="48" viewBox="0 0 48 48"><path d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z" opacity=".2"/><path d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4c-1.9 0-3.55-.94-4.72-2.27A7.59 7.59 0 0 1 24 25.8V11.66ZM30.63 7A4.64 4.64 0 0 0 26 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 7.62 31h4.5a2.8 2.8 0 0 1 2.4 4.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z"/></svg>
+        <p class="fs-body3 lh-md fc-black-600 mb32">Engineers should help solve the hardest questions, the unknowns, where being familiar with how the product was built is essential. But we don’t want to keep answering solved problems over and over again. That’s where Stack Overflow for Teams really helps.</p>
+        
+        <div class="fs-body3 fc-black-700">
+            <strong class="bt bc-black-075 pt16 d-inline-block p-ff-source-bold">Director of Engineering</strong><br>
+            Elastic Cloud
+        </div>
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt4" width="136" height="25" data-src="https://cdn.sstatic.net/Img/home/illo-integrations-right.png?v=90c26b9154c7" alt="">
+                    </noscript>
+        </div>
+        <div id="p-pricing-grid-business" class="flex--item d-flex fd-column wmn3 bg-bottom bg-no-repeat bg-contain ps-relative z-active fc-black-750" style="background-image:url(https://cdn.sstatic.net/Img/product/teams/screens/illo-question.png?v=14c5863a5550" alt="" />
+            <noscript>
+                <img width="1270" height="892" class="wmx100 w100 h-auto d-block btr-sm bt bc-orange-500 bs-lg" src="https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8" class="uc-none ps-absolute t128 mt128" style="left:8%" alt="">
+            <img src="https://cdn.sstatic.net/Img/home/illo-integrations-left.png?v=0a97d470e180" alt="">
+                    </noscript>
+                    <div class="flex--item s-avatar va-middle bg-orange-400">
+                                 </a>
+                            </li>
+                    <li class="bg-black-025 bt bc-black-075 py6 px6 bbr-md">
+                        <a href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a></li>
+                        <li><a class="js-gps-track -link" data-gps-track="footer.click({ location: 1, link: 1 })" href="https://stackoverflow.com/teams/create/business&quot;,null,null]"
+            Basic
+            >
+                Create a free Team
+            </a>
+        </div>
+
+                <div class="bb bc-black-100 pb24 mb24">
+                    <div class="rounded-2 box-shadow-active-mktg position-relative z-1 float-right home-sponsors-2">
+                      <img src="https://github.githubassets.com/assets/marketing-85937f0bc74f.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-8GiDf/OmGRUxPmvFpyo0UlHbuuotpSFGs71Cv3Zm/9/WjyCMcEaDpWt4d+EiYfi+/yZIOkFeKjFNIrUGTmHobg==" src="https://github.githubassets.com/assets/93-c88b26ce3c81.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-a4WgZYeVc2aKrHPyOfYm6uY7Vcw96gOwHqRhs6hkNqnhHJuZC4f94uvcomE6JS3HhgCVZTQpvU8PgucLwSkteg==" src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" width="72" height="72" class="home-sponsors-heart-1 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+            <source srcset="https://github.githubassets.com/images/modules/site/home/codespaces-glow.svg" class="home-codespaces-glow position-absolute z-n1" alt="Light glowing behind the editor" decoding="async">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="overflow-hidden js-section" id="home-automate">
+  <div class="container-xl p-responsive height-full pb-md-9">
+
+      <div class="d-flex gutter gutter-spacious flex-column list-style-none pb-md-12 mb-12">
+            <li class="col-11 col-sm-10 col-lg-12">
+                <div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center gutter gutter-spacious py-5 py-md-6">
+                  <div class="col-12 col-lg-5">
+                    <div class="mt-auto">
+            <a
+            href="https://stackoverflow.com/legal/cookie-policy">Cookie Policy</a>.
+                    </p>
+                    <p class="m-0 text-mono text-white-fade f6-mktg">Repositories</p>
+                  </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">An Open Source Machine Learning Framework for Everyone</p>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="/facebook/react"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Code;&quot;}">Secure</a>
+        <a href="#home-community" class="sub-nav-mktg-link Link--primary no-underline py-1 py-lg-2 js-scrollnav-item js-smoothscroll-anchor" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to Team&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Learn how to get started with Discussions&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Learn more about GitHub Actions;ref_loc:automate launchpad&quot;}">
+  Learn more about Sponsors <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="22" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1" style="right: -0.26rem"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+                </div>
+                <p class="f6-mktg text-gray-mktg">* GitHub CLI is available on macOS, Windows, and Linux<br>* GitHub Desktop is available on macOS and Windows</p>
+                </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">An Open Source Machine Learning Framework for Everyone</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="home-git-log-dark col-12 offset-md-1 pt-10">
+        <div class="d-flex flex-items-center mb-2">
+                  <img src="https://github.githubassets.com/assets/runtime-0e03e75ecf80.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-fz1GcL6l5OLkR8KJbj+h3RB9xHNT7BqyueLRP99uvAHF/4TINnzrq2EV2R/yEBUIHbxltkEDtCQPCmd7TilyGA==" src="https://github.githubassets.com/images/modules/site/home/actions-editor-actions.png" class="home-workflow-actions width-full" alt="The Actions Marketplace is available inline alongside the GitHub Actions workflow editor" width="706" height="452" loading="lazy" decoding="async" width="16" height="16">
+          <div>package.json</div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 position-absolute top-0 right-0 left-0 " alt="iPhone notch" loading="lazy">
+
+                    <video loop muted playsinline class="width-full js-viewport-aware-video looping-mktg" data-threshold="0" preload="none" poster="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=688 688w,https://github.githubassets.com/images/modules/site/home/dependabot-merge.png" class="opacity-4 width-full" alt="Merge pull request on GitHub" loading="lazy" decoding="async">
+            <span class="opacity-4 text-truncate">Support Octocats shared on Twitter</span>
+          </li>
+
+          <li class="col-12 col-md-9 col-lg-12">
+            <div class="d-flex flex-items-center position-relative z-1">
+          <div class="flex-auto ml-n7" style="height: 1rem; border-radius: 0 0 0 1rem; border-bottom: 2px solid #424d65; border-left: 2px solid #424d65;"></div>
+          <div class="mr-n4" style="width: 1rem; height: 10rem; margin-top: 0.875rem; border-radius: 0 16px 0 0; border-top: 2px solid #424d65; border-right: 2px solid #424d65;"></div>
+          <div class="ml-n7 height-full position-absolute top-0 width-full mt-n1" style="transform: scaleY(-1);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
+
+
+  <div class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Pricing
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;text:home&quot;}" class="color-fg-default" aria-label="Go to GitHub homepage">
+          <img class="footer-logo-mktg" src="https://github.githubassets.com/images/modules/site/home/globe-900.hevc.mp4">
+      <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async">
+                        </picture>
+                <picture>
+                <source srcset="https://github.githubassets.com/images/modules/site/home/actions-editor.png" class="width-full height-auto" alt="Pull request description on GitHub" loading="lazy" decoding="async">
+                  <p class="f5-mktg text-semibold">ansible/<span class="color-fg-default">rust</span></p>
+                </div>
+              </div>
+                  </div>
+                  <div class="col-12 col-lg-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 28 24" width="28" aria-hidden="true" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><path d="m2.5 10a1 1 0 1 0 0 2zm23 2a1 1 0 1 0 0-2zm-23 0h23v-2h-23z" fill="#465061"></path><circle cx="14" cy="11" fill="#041027" r="5" stroke="#465061" stroke-width="2"></circle></svg>
+
+            <img src="https://avatars.githubusercontent.com/nplasterer?s=64&amp;v=4" loading="lazy">
+                    </picture>
+                <picture>
+                          <source srcset="https://github.githubassets.com/assets/dark_dimmed-7196bb0d9aaf.css" /><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" integrity="sha512-XpAMBMSRZ6RTXgepS8LjKiOeNK3BilRbv8qEiA/M3m+Q4GoqxtHedOI5BAZRikCzfBL4KWYvVzYZSZ8Gp/UnUg==" rel="stylesheet" data-href="https://github.githubassets.com/images/modules/site/home/actions-autocomplete.hevc.mp4">
+            <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/icons/file.svg" alt="File icon" class="mr-1" loading="lazy" decoding="async" alt="Twitter icon">
+            <span class="sr-only">GitHub on Facebook</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to Customer stories&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up for GitHub;ref_loc:code launchpad&quot;}">
+  Sign up for GitHub <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" class="home-git-icon home-git-item flex-shrink-0 mr-3 position-relative z-1"><path d="m2.5 10a1 1 0 1 0 0 2zm23 2a1 1 0 1 0 0-2zm-23 0h23v-2h-23z" fill="#465061"></path><circle cx="14" cy="11" fill="#041027" r="5" stroke="#465061" stroke-width="2"></circle></svg>
+
+
+                  <div class="d-flex flex-column gutter gutter-spacious flex-md-items-center my-3 my-sm-7 my-md-8 position-relative flex-md-row pb-4 pb-md-7" data-build-in-stagger="100">
+  <div class="col-12 py-3 js-build-in-item col-sm-10 col-md-6 col-lg-5 build-in-slideX-left">
+    <div class="pl-md-4">
+      
+      
+                <div class="f2-mktg text-gray-mktg text-semibold mb-4 col-5-max">Write your own, or import Actions from the open source community, all within our world-class editor. Feeling stuck? Browse the Actions developer docs as you code.</h3>
+            <a class="link-mktg text-semibold color-fg-default py-1 f3-mktg link-emphasis-mktg" href="/marketplace/actions" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;go to Facebook&quot;,&quot;label&quot;:&quot;text:linkedin&quot;}" class="color-fg-subtle">
+            <img src="https://github.githubassets.com/assets/home-b03d01c8df61.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-hZN/C8dP1MReDsLXTtUc3f0LOjRTx6lJtfLHtplhun0uazPq9xwV77FrhzsPUG+C6SORbdzjueWfFlw5ohmAgw==" src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" width="72" height="72" class="home-sponsors-heart-3 js-build-in-item position-absolute z-1" alt="Floating heart" loading="lazy">
+
+                      <picture>
+            <source srcset="https://github.githubassets.com/images/modules/site/home/repo-browser.webp" type="image/webp">
+                        <img src="https://avatars.githubusercontent.com/joshaber?s=64&amp;v=4" class="d-none d-sm-block flex-shrink-0 avatar avatar-4 mr-3 circle color-bg-subtle" alt="@jasonetco" loading="lazy">
+              </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">🙃 A delightful community-driven framework for managing your zsh configuration.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="width-full overflow-hidden">
+      <div class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="color-fg-muted">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+
+</a>
+          </li>
+
+          <li class="col-12 d-flex flex-items-center position-relative f5-mktg text-gray-light-mktg py-2 unselectable" aria-hidden="true">
+              <img src="https://github.githubassets.com/images/modules/site/social-cards/github-social.png" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="GitHub: Where the world builds software </h1>
+          <p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 text-normal">Small experiments, inspired inventions, and the software everyone depends on—the code you write on GitHub can reach one codebase or millions.</p>
+
+          <a class="btn-mktg mr-2 mb-2 width-full width-sm-auto btn-muted-mktg" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to Sign up&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:GitHub Stars program;&quot;}" href="https://stars.github.com">
+      GitHub Stars program
+</a>  </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-xl p-responsive mx-auto">
+    <div class="d-flex position-relative rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Product&quot;,&quot;action&quot;:&quot;go to press&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Features;&quot;}" href="/features">
+      Features
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;npm&quot;,&quot;action&quot;:&quot;go to YouTube&quot;,&quot;label&quot;:&quot;text:resources&quot;}" href="https://resources.github.com">Resources</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-analytics-event="{&quot;category&quot;:&quot;Start a free trial&quot;,&quot;action&quot;:&quot;click to go to Events&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Contact Sales;ref_loc:footer launchpad&quot;}" href="https://cli.github.com/">GitHub CLI</a>.
+                  </h3>
+                  <h4 class="f4-mktg text-semibold text-gray-mktg mb-1">Support the projects you depend on, too.</h4>
+                  <h3 class="h5-mktg mb-5 text-gradient-blue-purple">100% to developers, zero fees</h3>
+                  <a class="link-mktg text-semibold color-fg-default py-1 f4-mktg link-emphasis-mktg" href="/signup" data-analytics-event="{&quot;category&quot;:&quot;Home&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:GitHub Stars program;&quot;}" href="https://stars.github.com">
+      GitHub Stars program
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Explore
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline position-relative Link--secondary py-2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;click to go to repository&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:home-assistant/core;ref_loc:footer launchpad;&quot;}"
+              >
+                <div class="d-flex flex-items-center py-1 home-git-log-terminal unselectable" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 110 142" aria-hidden="true" class="d-none d-md-block position-relative home-branch offset-n1"><path d="m1-8c0 75 108 75 108 150" stroke-width="2" vector-effect="non-scaling-stroke"></path></svg>
+
+          </div>
+
+          <div class="offset-1 col-11 col-sm-10 col-lg-12">
+              <div
+                class="js-build-in-trigger d-flex flex-column flex-lg-row flex-items-center gutter gutter-spacious" style="padding: 8% 0 10.5%">
+                  <div class="col-12">
+                    <div class="s-popover--arrow"></div>
+
+            <div class="ps-relative p-speech-bubble--right h100 p24 bblr-lg btlr-lg btrr-lg bg-orange-100 fc-black-800">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"/><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"/></svg>
+            Single sign-on with AD or SAML
+        </div>
+    </div>
+    <div class="flex--item px16 mx12">
+        <img class="p-logo js-lazy-load d-block mt12" width="139" height="42" data-src="https://cdn.sstatic.net/Img/home/illo-se.svg?v=f7e844293cc5" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    var logos = document.querySelector('.js-carousel-logos');
+    var logosShown = 4;
+    var logosTotalPages = Math.ceil(logos.children.length / logosShown) - 1;
+    var logosCurrentPage = 0;
+    var logosCarouselTime = 4000;
+    var logosCarouselPlayer;
+
+    logos.classList.remove('o100');
+    
+    for (var i = 0; i < logos.children.length; ++i) {
+                if (
+                    (i >= logosShown * logosCurrentPage) &&
+                    (i < (logosShown * logosCurrentPage) + logosShown)
+                ) {
+                    logos.children[i].classList.add('d-none');
+    }
+
+    var logosCarouselNav = document.createElement('div');
+    logosCarouselNav.className = 'ta-center py12';
+    logos.parentNode.insertBefore(logosCarouselNav, logos.nextSibling);
+
+    for (var i = 0; i <= logosTotalPages; ++i) {
+        var navEl = document.createElement('span');
+        navEl.className = 'js-carousel-logos-nav c-pointer w24 h6 bg-black-200 h:bg-black-400 d-inline-block bar-pill my6 mx4';
+
+        navEl.setAttribute('data-page', i);
+        navEl.addEventListener('click', showLogos);
+
+        logosCarouselNav.appendChild(navEl);
+    }
+
+    function updateNav() {
+        var navItems = document.querySelectorAll('.js-billed-' + notCycle).forEach(function(price) {
+                price.classList.add('d-none');
+            });
+            document.querySelectorAll('.js-billed-' + cycle).forEach(function(price) {
+                price.classList.add('d-none');
+                }
+            }
+
+            logos.classList.remove('o0');
+
+            updateNav();
+
+            if (logosCurrentPage >= logosTotalPages) {
+                logosCurrentPage++;
+            }
+        }, 300);        
+    }
+
+    showLogos();
+
+    logosCarouselPlayer = setInterval(function() { showLogos(); }, logosCarouselTime);
+})(); 
+</script>
+
+</section>
+
+<section class="py32 ta-center fs-body3 d-flex ai-center jc-center sm:fd-column my32">
+    <svg aria-hidden="true" class="native mx-auto mb24 svg-icon iconLogoTalentAlt" width="115" height="30" viewBox="0 0 115 30"><path d="M21 27v-8h3v11H0V19h3v8h18z" fill="#BCBBBB"/><path d="M5.4 19.1l13.6 2 .2-2.4-13.3-2.6-.5 3zm1.8-6.8l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zM17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zM5 25h14v-3H5v3zm24 10.86V28h5v1.58h-3.03v1.57h2.52v1.59h-2.52v3.1H29v.02zm6.02-3.03v-1.8c0-1.21.18-1.85.66-2.36.54-.57 1.23-.8 2.4-.8 1.23 0 1.97.28 2.5.94.38.48.54 1.1.54 2.22v1.8c0 1.21-.18 1.85-.66 2.37-.54.56-1.22.8-2.39.8-1.24 0-1.98-.28-2.5-.94-.4-.49-.55-1.1-.55-2.23zm4.14-.15v-1.5c0-1.36-.23-1.73-1.09-1.73-.86 0-1.09.37-1.09 1.73v1.5c0 1.36.23 1.74 1.1 1.74.85 0 1.08-.38 1.08-1.74zm4.88.14v3.04h-1.96V28h3.08c1.1 0 1.67.15 2.09.57.4.4.57.93.57 1.8 0 1.35-.37 2-1.35 2.29l1.7 3.19h-2.18l-1.43-3.04h-.52v.01zM44 31.34h.96c.7 0 .92-.22.92-.9 0-.66-.23-.88-.92-.88H44v1.78zm9.05 4.52v-6.27h-2.02V28h6v1.58h-2.02v6.27h-1.96v.01zm4.98 0V28h5.08v1.58h-3.14v1.52h2.65v1.58h-2.65v1.59h3.2v1.58h-5.14v.01zm10.21-1.39h-2.5l-.42 1.39H63.2L66.03 28h1.9l2.84 7.85h-2.1l-.43-1.39v.01zm-.46-1.55L67 30.27l-.8 2.65h1.58zm3.46 2.94V28h1.81l1.88 3.9 1.88-3.9h1.82v7.85h-1.87v-4.24l-1.2 2.48H74.3l-1.2-2.48v4.24h-1.87l.01.01zm8.17-1.32l1.48-.95c.36.6.82.84 1.65.84.7 0 1.03-.25 1.03-.78 0-.42-.22-.64-.8-.78-1.37-.34-1.66-.44-2.07-.7-.63-.41-.92-1-.92-1.89 0-1.57.96-2.4 2.75-2.4 1.36 0 2.21.43 2.75 1.38l-1.44.91c-.38-.54-.75-.73-1.34-.73-.55 0-.85.25-.85.71 0 .53.3.75 1.36 1.01 1 .26 1.24.34 1.64.6.53.35.79.92.79 1.8 0 .86-.21 1.42-.66 1.8-.5.42-1.28.64-2.26.64-.9 0-1.74-.2-2.29-.56a2.2 2.2 0 01-.82-.9z" fill="#F48024"/></svg>
+
+            <p class="p-ff-roboto-slab-bold fs-title px4">179% return on investment</strong> <span class="fc-white d:fc-black d-block">You can save time and money with Stack Overflow for Teams.</span> 
+                    <span class="fs-caption d-block fc-light">
+Build your employer brand                            </span>
+                        <span class="fs-caption d-block fc-light">Reach developers &amp; technologists worldwide</span>
+                        </a>
+            </li>
+    </ol>
+</li> 
+            </ol>
+        </nav>
+    </div>
+
+        <div class="s-popover"
+         id="popover-teams-create-cta"
+                   data-controller="s-popover"
+                        data-gps-track="top_nav.products.click({location:1, destination:1})"
+                        data-s-popover-placement="top"
+                                     <a href="https://stackoverflow.blog" class="float-right">company blog</a>
+        </div>
+        <div class="d-flex mb12 ">
+            <div class="mr12"><svg aria-hidden="true" class="svg-icon iconLogoTeams native mb32" width="186" viewBox="0 0 146 36"><path d="M33.9 18.9l-1.62-.2c-1.25-.09-1.82-.57-1.82-1.53 0-1.05.76-1.73 2.3-1.73 1.05 0 2.01.3 2.68.77l.96-.96a5.67 5.67 0 00-3.64-1.05c-2.2 0-3.74 1.15-3.74 2.97 0 1.73 1.05 2.6 3.07 2.78l1.72.2c1.15.09 1.73.57 1.73 1.53 0 1.25-1.06 1.82-2.69 1.82-1.24 0-2.4-.29-3.16-1.15l-.96.96c1.15 1.06 2.5 1.44 4.22 1.44 2.5 0 4.12-1.15 4.12-3.07-.19-1.92-1.43-2.6-3.16-2.78h-.01zm12.77-4.6c-1.63 0-2.69.28-3.55 1.43l.96.96c.57-.86 1.24-1.15 2.59-1.15 1.82 0 2.59.77 2.59 2.2v.97h-3.07c-2.3 0-3.55 1.15-3.55 2.97 0 .77.29 1.53.77 2.11.67.67 1.44.96 2.87.96 1.35 0 2.11-.29 2.98-1.06v.96h1.53v-6.9c-.1-2.3-1.44-3.46-4.12-3.46v.01zm2.59 6.7c0 .87-.2 1.45-.48 1.73-.67.58-1.44.68-2.3.68-1.63 0-2.3-.58-2.3-1.73s.76-1.82 2.3-1.82h2.87l-.1 1.15.01-.01zm7.29-5.36c.96 0 1.53.28 2.3 1.15l.96-.96c-1.06-1.15-1.92-1.54-3.36-1.54-2.59 0-4.5 1.73-4.5 5.28 0 3.45 1.91 5.28 4.5 5.28 1.44 0 2.3-.39 3.36-1.54l-1.06-.96c-.76.86-1.34 1.15-2.3 1.15-.96 0-1.82-.38-2.4-1.15-.48-.67-.67-1.44-.67-2.78 0-1.25.2-2.11.67-2.78a3.23 3.23 0 012.5-1.15zm12.85-1.25h-1.82l-4.6 4.5V9.8h-1.54v14.77h1.54v-3.74L64.8 19l3.45 5.57h1.82l-4.22-6.62 3.55-3.55v-.01zm7-.29c-1.53 0-2.58.58-3.26 1.34-.96.96-1.24 2.21-1.24 4.13s.28 3.16 1.24 4.12a4.5 4.5 0 003.27 1.35c1.53 0 2.68-.58 3.26-1.35.96-.96 1.24-2.2 1.24-4.12s-.28-3.17-1.24-4.13c-.58-.76-1.73-1.34-3.27-1.34h.01zm1.24 7.96c-.29.3-.67.48-1.25.48-.57 0-.95-.19-1.24-.48-.58-.57-.58-1.53-.58-2.59 0-1.15.1-2.01.58-2.59.29-.28.67-.48 1.24-.48.58 0 .96.2 1.25.48.58.58.58 1.44.58 2.6 0 1.14 0 2.1-.58 2.58zm15.83-7.86l-1.73 6.62-2.2-6.62h-1.92l-2.2 6.62-1.73-6.62h-2.79l3.26 10.65h2.21l2.2-6.72 2.21 6.72h2.21l3.26-10.65h-2.78zm-24.57 7.38V9.98h-2.68v11.8c0 1.53.96 3.07 3.07 3.07h1.53v-2.21h-.96c-.67 0-.96-.39-.96-1.06zm-76.92-5.56l1.34-1.34h-2.88v-3.36h-1.53v10.65c0 1.53.86 2.78 2.59 2.78h1.05V23.5h-.76c-.96 0-1.44-.57-1.44-1.53v-5.85l1.63-.1z" fill="#fff"/><path d="M21 27v-8h3v11H0V19h3v8h18Z" fill="#BCBBBB"/><path d="m5.4 19.1 13.56 1.96.17-2.38-13.26-2.55-.47 2.97Zm1.8-6.8 12 5.6 1.1-2.4-12-5.6-1.1 2.4Zm3.4-5.9 10.2 8.5 1.7-2-10.2-8.5-1.7 2ZM17.1.2 15 1.8l7.9 10.6 2.1-1.6L17.1.2ZM5 25h14v-3H5v3Z" fill="#F48024"/><path fill="#D6D9DC" d="M38 11h1v13h-1z"/><path d="M57.9 11.31a.37.37 0 0 0-.35-.27h-1.47a.37.37 0 0 0-.35.27l-4.47 12.14a.38.38 0 0 0 .04.35c.07.12.19.15.3.15h1.99c.15 0 .3-.11.35-.27l.74-2.17h4.23l.74 2.17c.04.16.2.27.35.27h1.98c.12 0 .23-.07.31-.15a.38.38 0 0 0 .04-.35L57.9 11.31Zm.23 7.87H55.5l1.36-3.8 1.28 3.8Zm13.83-5.54c-.2-.5-.5-.93-.9-1.36a4.68 4.68 0 0 0-3.41-1.24h-4.28c-.23 0-.38.15-.38.39v12.14c0 .23.15.38.38.38h4.28c1.44 0 2.6-.42 3.42-1.24.39-.38.7-.85.9-1.4.19-.5.3-1 .38-1.54.04-.5.08-1.09.08-1.75v-1.24a7.27 7.27 0 0 0-.47-3.14Zm-2.17 3.8c0 1-.04 1.82-.12 2.33-.08.46-.2.81-.43 1.08-.43.47-1 .7-1.79.7H65.6v-8.07h1.86c.78 0 1.36.24 1.8.7.15.16.26.39.34.66.08.31.16.62.16.97.04.39.04.93.04 1.63Zm13.14-6.4H81c-.15 0-.3.12-.39.27l-2.44 7.68-2.41-7.68c-.04-.15-.2-.27-.4-.27h-1.9c-.11 0-.23.08-.3.15-.09.08-.09.24-.05.35l4 12.14c.04.16.2.27.4.27h1.43c.16 0 .31-.11.35-.27l4.04-12.14c.04-.11 0-.23-.04-.35-.11-.07-.23-.15-.35-.15Zm10.25 0h-7.77c-.23 0-.39.15-.39.39v12.14c0 .23.16.38.39.38h1.86c.24 0 .4-.15.4-.38V11.43a.4.4 0 0 0-.4-.4Zm10.3 6.28a2.96 2.96 0 0 0-1.01-.62 6 6 0 0 0-1.44-.35l-1.4-.2a2.36 2.36 0 0 1-.7-.19c-.2-.07-.39-.19-.46-.27-.24-.2-.31-.46-.31-.85 0-.31.07-.54.19-.78.16-.23.35-.38.58-.5.28-.12.63-.2 1.01-.2.35 0 .66.04.94.08.27.04.5.16.77.28.24.11.47.27.7.5.16.15.4.15.55 0l1.2-1.16c.08-.08.12-.2.12-.28a.36.36 0 0 0-.12-.27 5.42 5.42 0 0 0-1.79-1.12 6.54 6.54 0 0 0-2.25-.35c-.9 0-1.67.15-2.33.46a3.63 3.63 0 0 0-2.1 3.46c0 1.08.35 1.97 1.01 2.6.62.58 1.44.93 2.53 1.08l1.43.2c.31.03.59.11.74.15.16.04.27.12.4.27.22.2.34.54.34.97 0 .47-.16.82-.5 1.05-.4.27-.94.43-1.64.43a4.56 4.56 0 0 1-2.02-.47 3.79 3.79 0 0 1-.81-.62.35.35 0 0 0-.28-.12.36.36 0 0 0-.27.12l-1.24 1.2a.35.35 0 0 0-.12.27c0 .12.04.2.12.27a5.52 5.52 0 0 0 2.02 1.32c.74.27 1.6.4 2.56.4a5.7 5.7 0 0 0 3.39-1.06 3.61 3.61 0 0 0 1.35-2.9 3.72 3.72 0 0 0-1.16-2.8Zm5.24-6.28h-1.86c-.23 0-.39.15-.39.39v12.14c0 .23.16.38.39.38h1.86c.24 0 .4-.15.4-.38V11.43a.4.4 0 0 0-.4-.4Zm11.69 0h-1.82c-.24 0-.4.15-.4.39v7.25l-4.89-7.45c-.07-.11-.2-.2-.3-.2h-1.72c-.23 0-.39.16-.39.4v12.14c0 .23.16.38.4.38h1.86c.23 0 .39-.15.39-.38V16.3l4.9 7.45c.07.12.19.2.3.2h1.71c.24 0 .4-.16.4-.4V11.44c-.05-.2-.24-.4-.44-.4Zm11.6 5.58h-4.43c-.23 0-.39.16-.39.4v1.54c0 .24.16.4.39.4h2.21v.3c0 .7-.19 1.24-.5 1.67-.43.5-.97.74-1.67.74a2.1 2.1 0 0 1-1.52-.59 1.37 1.37 0 0 1-.3-.46c-.09-.16-.13-.35-.2-.62l-.12-.97c0-.35-.04-.85-.04-1.51 0-1.17.04-2.02.16-2.49.07-.42.23-.77.5-1.04.2-.2.4-.35.66-.47.28-.12.55-.15.86-.15.39 0 .74.07 1.05.23.3.15.54.35.74.62.19.27.34.62.42 1 .04.2.2.32.4.32h1.86c.11 0 .23-.04.3-.16.09-.07.12-.2.09-.3a4.58 4.58 0 0 0-.82-2.06 4.57 4.57 0 0 0-4-2.02 4.72 4.72 0 0 0-4.2 2.4c-.16.35-.31.74-.39 1.13-.08.39-.11.81-.15 1.24-.04.43-.04 1-.04 1.79 0 .96.04 1.7.08 2.24.03.55.15 1.05.34 1.56.2.5.51.93.9 1.4a5.34 5.34 0 0 0 2.18 1.27c.38.12.85.16 1.28.16a4.7 4.7 0 0 0 3.61-1.52c.43-.46.74-1 .93-1.59.2-.58.28-1.28.28-2.09v-1.86c-.08-.35-.28-.5-.47-.5Z" fill="var(--black-800)"/></svg>
+            <p class="fs-subheading lh-md fc-black-600 mb32">What we love about Stack Overflow for Teams is that it’s a very dynamic tool…there’s just so many ways to use this as a liaison between different teams and different knowledge bases.</p>
+        
+        <div class="fs-body3 fc-black-700">
+            <strong class="bt bc-black-075 pt16 d-inline-block p-ff-source-bold">Software Engineer</strong><br>
+            Box
+        </div>
+    </div>
+</section>
+
+<section class="js-io-animation p-io-animation ps-relative z-active m-auto ws3 z-active d-flex ai-center jc-center ff-row-wrap l0 r0 t0 b0">
+                        <a href="https://stackoverflow.co/collectives" class="flex--item wmn3 bg-white bar-lg bs-sm h:bs-md py32 px24 fc-black-500 h:fc-black-750" data-ga="[&quot;home page&quot;,&quot;body cta&quot;,&quot;join community&quot;,null,null]">Join the community</a>
+                    <p class="fs-body3 px32 hmn1">Business decisions are better when backed by data. Give visibility to the data that support your strategies.</p>
+                </div>
+            </div>
+                    <img width="421" height="465" class="wmx100 h-auto d-block" src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04" alt="">
+            </noscript>
+        </div>
+    </div>
+
+    <span aria-hidden="true" class="p-bits fc-gold sm:d-none t128 l128 w64 h64"></span>
+    <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="Label">5x</span> 2 days ago</span>
+            </li>
+
+            <li class="col-11 col-sm-10 col-lg-12">
+                <div class="js-build-in home-matrix-comp d-flex position-absolute top-6 top-lg-3 bottom-0 flex-items-center" data-build-margin-top="0" data-build-margin-bottom="0">
+            <div class="position-absolute d-flex flex-column flex-justify-around"
+                      style="left: 9.75%; top: 9.5%; width: 5.5%; height: 80.25%;">
+                      <img src="https://avatars.githubusercontent.com/nplasterer?s=64&amp;v=4" loading="lazy">
+                </picture>
+                      </div>
+                <p class="f6-mktg mb-0 line-clamp-2" style="-webkit-box-orient: vertical; min-height: 3em;">Build blazing fast, modern apps and websites with React</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="width-full offset-1 d-flex flex-justify-center gutter-condensed gutter-lg py-2 py-lg-3">
+            <div class="col-3">
+              <a href="/ohmyzsh/ohmyzsh"
+                class="home-repo-card js-home-repo-card d-block p-3 rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Homepage&quot;,&quot;action&quot;:&quot;go to the readme project&quot;,&quot;label&quot;:&quot;text:github&quot;}" class="color-fg-subtle">
+            <img src="https://github.githubassets.com/images/modules/site/home/community-readme-1.webp" type="image/webp">
+                        <img src="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/a11y-dark.min.css" integrity="sha512-Vj6gPCk8EZlqnoveEyuGyYaWZ1+jyjMPg8g4shwyyNlRQl6d3L9At02ZHQr5K6s5duZl/+YKMnM3/8pDhoUphg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Node.js</title>
+
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js" integrity="sha512-BNc7saQYlxCL10lykUYhFBcnzdKMnjx5fp5s5wPucDyZ7rKNwCoqJh1GwEAIhuePEK4WM9askJBRsu7ma0Rzvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta name="author" content="Node.js">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=1100 1100w,https://github.githubassets.com/assets/environment-4a9660289ca1.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-7ocxdRbeEIuk5x86ryHnbc5GBupcna8GP7PEtAqWS0+sMjp4CX10GV5P0XsN7Grx1XTum3BG1FFOwwpccenxkw==" src="https://github.githubassets.com/images/modules/site/home/icons/heart.svg" class="home-git-item color-bg-default flex-shrink-0 mr-3 position-relative z-1"><path d="m2.5 10a1 1 0 1 0 0 2zm23 2a1 1 0 1 0 0-2zm-23 0h23v-2h-23z" fill="#465061"></path><circle cx="14" cy="11" fill="#041027" r="5" stroke="#465061" stroke-width="2"></circle></svg>
+
+
+                  <div class="col-12 col-lg-5 offset-lg-1">
+                  <div class="js-build-in-item home-workflow-comp position-relative rounded-2 box-shadow-card-border-light-mktg text-gray-light-mktg no-underline"
+                data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Contact Sales;ref_loc:footer launchpad&quot;}" href="https://desktop.github.com/">GitHub Desktop</a> or stay in the command line with <a class="color-fg-accent" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;}" href="/git-guides">What is Git?</a>
+        </li>
+      </ul>
