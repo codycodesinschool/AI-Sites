@@ -9,7 +9,7 @@ function getRange(i) {
   }
 for(let i = 0; i < 10000; i++) {
     let a = document.createElement("a");
-    a.href=`/${getRange(i)}/index${i+1}.html`;
+    a.href=`/AI-Sites/${getRange(i)}/index${i+1}.html`;
     a.innerText = `index ${i+1}`;
     catalog.appendChild(a);
     let br = document.createElement("br");
