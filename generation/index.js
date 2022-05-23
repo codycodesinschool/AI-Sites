@@ -23,6 +23,10 @@ function getRange(i) {
   }
 }
 
+function extraProcess(txt) {
+    return txt.replace("<!--","").replace("-->","")
+}
+
 async function main() {
     txt = "";
     for(let l of links) {
@@ -69,7 +73,7 @@ function markov() {
       var len = result.length;
       currentGram = result.substring(len - order, len);
     }
-    return (result);
+    return extraProcess(result);
   }
 
 main();
